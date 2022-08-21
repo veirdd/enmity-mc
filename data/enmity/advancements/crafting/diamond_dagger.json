@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:diamond_dagger"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/diamond_dagger"
+    }
+}

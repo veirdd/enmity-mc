@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "nbt": "{Enmity.ArmorType:\"molten\"}"
+        },
+        "chest": {
+            "nbt": "{Enmity.ArmorType:\"molten\"}"
+        },
+        "legs": {
+            "nbt": "{Enmity.ArmorType:\"molten\"}"
+        },
+        "feet": {
+            "nbt": "{Enmity.ArmorType:\"molten\"}"
+        }
+      }
+    }
+  }

@@ -1,0 +1,10 @@
+tellraw @s [{"text":"-=================[","color":"gray"},{"text":"HARPY","color":"white","bold":true},{"text":"]=================-","color":"gray"}]
+
+tellraw @s [{"text":"The Harpy is a flying hostile mob rarely encountered during the day. It is an extremely useful mob for the player as it can be tamed and used as a flying mount.","color":"gray"}]
+tellraw @s [{"text":"\nBehaviour:\n   Uses an attack pattern similar to Phantoms. A Harpy can regenerate its health which makes it much stronger.","color":"gray"}]
+tellraw @s [{"text":"\nTaming:\n   Only 10% of naturally spawned Harpies can be tamed. If a Harpy can be tamed, it will slowly fly towards a player holding a Rabbit's Foot. During that period the Harpy can still attack the player if they come too close. In order to tame the Harpy, the player must throw the Rabbit's Foot on the ground for the Harpy to eat.","color":"gray"}]
+tellraw @s [{"text":"\nTamed Harpies:\n   While tamed, a Harpy will remain stationary looking at nearby players. It can be equipped with a Saddle by throwing one directly at it. A Saddled Harpy makes for an excellent flying mount. Its flight can be controlled by holding a Stick.","color":"gray"}]
+tellraw @s [{"text":"\nSpawning:\n   Spawns in the Overworld on large heights above the player. Needs a 3x3x3 cube of air to spawn.","color":"gray"}]
+tellraw @s [{"text":"\nDrops:\n   Feather (2-4)","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 12"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

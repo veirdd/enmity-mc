@@ -1,0 +1,1 @@
+execute if score @s enmity.age matches 200.. run function enmity:entities/mobs/ender_dragon/change_phase

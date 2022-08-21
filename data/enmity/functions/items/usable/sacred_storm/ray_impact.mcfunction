@@ -1,0 +1,12 @@
+function enmity:utility/projectiles/sentries/sentry_counter
+execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:utility/projectiles/sentries/remove_sentry
+playsound minecraft:block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 0 0
+playsound minecraft:block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 0.2 0
+playsound minecraft:block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 0.4 0
+scoreboard players remove @s enmity.mana 300
+scoreboard players set @s enmity.cooldown 20
+summon area_effect_cloud ~ ~ ~ {Duration:999999999,Tags:["enmity.projectile","enmity.new","enmity.sacred_storm","enmity.sentry"],CustomName:'""',CustomNameVisible:1}
+scoreboard players set @e[type=area_effect_cloud,tag=enmity.new] enmity.age 59
+scoreboard players operation @e[type=area_effect_cloud,tag=enmity.new] enmity.player_id = @s enmity.player_id
+scoreboard players operation @e[type=area_effect_cloud,tag=enmity.new] enmity.dmg_bst = @s enmity.dmg_bst
+tag @e[tag=enmity.new] remove enmity.new

@@ -1,0 +1,6 @@
+tellraw @s [{"text":"-===========[","color":"gray"},{"text":"HEART OF DARKNESS","color":"white","bold":true},{"text":"]==========-","color":"gray"}]
+
+tellraw @s [{"text":"Description:\n   Accessory type: strength\n   +3 Magic damage\n   +1 Magic damage reduction\n   +60% Attack damage\n   +30% Attack speed\n   +4 Health\n   +2 Armor\n   Grants heat and cold resistance.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Heart of the Nether\n      Nether Star (4)\n      Nightly Matter (3)","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

@@ -1,0 +1,120 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+            {
+                "text": "Time: ",
+                "color": "gray",
+                "italic": false
+            },
+            {
+              "score": {
+                "name": "%time",
+                "objective": "enmity.value"
+              },
+              "color": "white",
+              "italic": false
+            }
+        ],
+        [
+            {
+                "text": "Body temperature: ",
+                "color": "gray",
+                "italic": false
+            },
+            {
+              "score": {
+                "name": "@s",
+                "objective": "enmity.temp"
+              },
+              "color": "white",
+              "italic": false
+            }
+        ],
+        [
+            {
+                "text": "Magic damage boost: ",
+                "color": "gray",
+                "italic": false
+            },
+            {
+              "score": {
+                "name": "@s",
+                "objective": "enmity.dmg_bst"
+              },
+              "color": "white",
+              "italic": false
+            }
+        ],
+        [
+            {
+                "text": "Magic damage reduction: ",
+                "color": "gray",
+                "italic": false
+            },
+            {
+              "score": {
+                "name": "@s",
+                "objective": "enmity.dmg_rdc"
+              },
+              "color": "white",
+              "italic": false
+            }
+        ],
+        [
+            {
+                "text": "Maximum mana: ",
+                "color": "gray",
+                "italic": false
+            },
+            {
+              "score": {
+                "name": "@s",
+                "objective": "enmity.max_mana"
+              },
+              "color": "white",
+              "italic": false
+            }
+        ],
+        [
+            {
+                "text": "Mana regeneration: ",
+                "color": "gray",
+                "italic": false
+            },
+            {
+              "score": {
+                "name": "@s",
+                "objective": "enmity.mana_regen"
+              },
+              "color": "white",
+              "italic": false
+            },
+            {
+                "text": "/s",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": "Sentry slots: ",
+                "color": "gray",
+                "italic": false
+            },
+            {
+              "score": {
+                "name": "@s",
+                "objective": "enmity.max_snt"
+              },
+              "color": "white",
+              "italic": false
+            }
+        ]
+      ],
+      "replace": true
+    }
+  ]
+  

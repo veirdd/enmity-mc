@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "nbt": "{Enmity.ArmorType:\"tidal\"}"
+        },
+        "chest": {
+            "nbt": "{Enmity.ArmorType:\"tidal\"}"
+        },
+        "legs": {
+            "nbt": "{Enmity.ArmorType:\"tidal\"}"
+        },
+        "feet": {
+            "nbt": "{Enmity.ArmorType:\"tidal\"}"
+        }
+      }
+    }
+  }

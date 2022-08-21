@@ -1,0 +1,2 @@
+execute if score @s enmity.phase_ct matches 1 run function enmity:entities/mobs/ender_dragon/phases/dp0/bolts/10_tick
+execute if score @s enmity.phase_ct matches 5 run function enmity:entities/mobs/ender_dragon/phases/dp0/bolts/10_tick

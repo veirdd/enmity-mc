@@ -1,0 +1,35 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{CustomModelData:110}"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+          [
+            {
+              "text": "Mode: ",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": "pull",
+              "color": "white",
+              "italic": false
+            }
+          ],
+          {
+            "text": "Captures entities in a forcefield projection.",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "Use while sneaking to switch between modes.",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "replace": true
+    }
+]
+  

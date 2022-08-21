@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#minecraft:is_mountain",
+        "terralith:haze_mountain",
+        "terralith:jungle_mountains",
+        "terralith:rocky_mountains",
+        "terralith:scarlet_mountains"
+    ]
+}

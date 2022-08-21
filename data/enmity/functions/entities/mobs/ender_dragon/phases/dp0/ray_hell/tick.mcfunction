@@ -1,0 +1,2 @@
+execute if score @s enmity.age matches 20..39 run function enmity:entities/mobs/ender_dragon/projectiles/ray/summon_short
+execute if score @s enmity.age matches 120..139 run function enmity:entities/mobs/ender_dragon/projectiles/ray/summon_short

@@ -1,0 +1,4 @@
+execute unless score @e[type=wither,limit=1] enmity.phase matches 4 as @e[type=wither_skull] at @s run function enmity:entities/mobs/wither/projectiles/wither_skull/summon_5
+execute if score @e[type=wither,limit=1,tag=!enmity.phase_2] enmity.phase matches 4 if score @e[type=wither,limit=1] enmity.age matches ..99 as @e[type=wither_skull] at @s run function enmity:entities/mobs/wither/projectiles/wither_skull/summon_5
+execute if score @e[type=wither,limit=1,tag=enmity.phase_2] enmity.phase matches 4 if score @e[type=wither,limit=1] enmity.age matches ..49 as @e[type=wither_skull] at @s run function enmity:entities/mobs/wither/projectiles/wither_skull/summon_5
+data modify entity @e[type=wither,limit=1] NoAI set value 1b

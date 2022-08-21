@@ -1,0 +1,1 @@
+execute if score %difficulty enmity.value matches 2 if score @s enmity.phase matches 5 run function enmity:entities/mobs/wither/phases/ray

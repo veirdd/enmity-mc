@@ -1,0 +1,1 @@
+execute if score @s[nbt=!{Size:0}] enmity.cooldown matches 0 if predicate enmity:random/random_0.25 at @s if entity @p[distance=..16,gamemode=!creative,gamemode=!spectator] anchored eyes run function enmity:entities/mobs/magma_cube/check_obstruction

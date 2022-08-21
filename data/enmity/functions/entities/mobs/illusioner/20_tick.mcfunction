@@ -1,0 +1,1 @@
+execute if score @s enmity.cooldown matches 1.. run scoreboard players remove @s enmity.cooldown 1

@@ -1,0 +1,14 @@
+{
+    "values": [
+      "minecraft:piglin",
+      "minecraft:zoglin",
+      "minecraft:hoglin",
+      "minecraft:piglin_brute",
+      "minecraft:zombified_piglin",
+      "minecraft:ravager",
+      "minecraft:vindicator",
+      "minecraft:vex",
+      "minecraft:silverfish",
+      "minecraft:endermite"
+    ]
+}

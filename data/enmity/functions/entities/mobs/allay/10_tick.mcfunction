@@ -1,0 +1,2 @@
+execute if score @s enmity.cooldown matches 1.. run scoreboard players remove @s enmity.cooldown 1
+execute if score @s enmity.cooldown matches 0 if predicate enmity:random/random_0.25 if entity @e[type=#enmity:alliance_susceptible,tag=!enmity.projectile,tag=!enmity.hit_by_alliance,distance=..8] run function enmity:entities/mobs/allay/attack

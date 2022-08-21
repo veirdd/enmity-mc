@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:lapis_jewel"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/lapis_jewel"
+    }
+}

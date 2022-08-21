@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "2 1",
+      "0 0",
+      "000"
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:iron_ingot"
+      },
+      "1": {
+        "item": "minecraft:blue_dye"
+      },
+      "2": {
+        "item": "minecraft:red_dye"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book",
+      "count": 1
+    }
+}

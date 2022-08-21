@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "enmity:ship",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 95312568,
+      "spacing": 26,
+      "separation": 18,
+      "type": "minecraft:random_spread"
+    }
+  }
+  

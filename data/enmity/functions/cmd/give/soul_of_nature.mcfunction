@@ -1,0 +1,1 @@
+give @s minecraft:firework_star{display:{Name:'{"text":"Soul of Nature","italic":false}'},Enmity:1,CustomModelData:6} 1

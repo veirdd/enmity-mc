@@ -1,0 +1,8 @@
+tellraw @s [{"text":"-==========[","color":"gray"},{"text":"CELESTIAL EXCAVATOR","color":"white","bold":true},{"text":"]=========-","color":"gray"}]
+
+tellraw @s [{"text":"The Celestial Excavator is an upgrade to the Ethereal Excavator and the most powerful of the 4 diggers.","color":"gray"}]
+tellraw @s [{"text":"\nDescription:\n   Mining speed: 20/5 (auto)\n   Mana usage: 10-30\n   Range: 16\n   Mining power: diamond\n   Destroys blocks using magic.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Ethereal Excavator\n      Celestial Shard (3)\n      Popped Chorus Fruit (8)\n      End Stone (16)","color":"gray"}]
+tellraw @s [{"text":"\nNotes:\n   The mining speed of 20 requires the player to click very fast. Holding the use key yields a mining speed of 5.\n   Mana usage is 30 when the player's mana is near to full. Otherwise it drops to 10.","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 113"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

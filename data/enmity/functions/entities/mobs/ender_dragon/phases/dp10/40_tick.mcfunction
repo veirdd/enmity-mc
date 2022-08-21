@@ -1,0 +1,1 @@
+function enmity:entities/mobs/ender_dragon/projectiles/bolt/summon_spread

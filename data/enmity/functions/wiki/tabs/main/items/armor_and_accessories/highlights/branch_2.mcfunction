@@ -1,0 +1,2 @@
+execute unless score %elder_guardian_defeated enmity.value matches 1 run function enmity:wiki/tabs/main/items/armor_and_accessories/highlights/pre_elder_guardian
+execute if score %elder_guardian_defeated enmity.value matches 1 run function enmity:wiki/tabs/main/items/armor_and_accessories/highlights/post_elder_guardian

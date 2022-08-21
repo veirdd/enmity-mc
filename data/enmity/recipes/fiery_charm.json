@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "000",
+      "010",
+      " 2 "
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:string"
+      },
+      "1": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "2": {
+        "item": "minecraft:fire_charge"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book",
+      "count": 1
+    }
+}

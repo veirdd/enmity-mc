@@ -1,0 +1,1 @@
+give @s minecraft:warped_fungus_on_a_stick{display:{Name:'{"text":"Target Dummy","italic":false}',Lore:['[{"text":"Sneak near the dummy to remove it.","italic":false,"color":"gray"}]']},Unbreakable:1,HideFlags:4,CustomModelData:87,Enmity:1} 1

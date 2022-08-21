@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "enmity:underground_cabin",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 21372137,
+      "spacing": 4,
+      "separation": 2,
+      "type": "minecraft:random_spread"
+    }
+  }
+  

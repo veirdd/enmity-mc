@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:quartz_jewel"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/quartz_jewel"
+    }
+}

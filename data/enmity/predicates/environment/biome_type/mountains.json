@@ -1,0 +1,107 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:windswept_hills"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:windswept_gravelly_hills"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:windswept_forest"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:stony_peaks"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:basalt_cliffs"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:caldera"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:cloud_forest"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:fractured_savanna"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:highlands"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:painted_mountains"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:scarlet_mountains"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:warped_mesa"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:windswept_spires"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:volcanic_peaks"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:yosemite_cliffs"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:yosemite_lowlands"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:stony_spires"
+        }
+      }
+    ]
+  }

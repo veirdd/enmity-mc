@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{Enmity.EternalItem:1}"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": "Eternal",
+          "color": "light_purple",
+          "italic": false
+        }
+      ]
+    }
+  ]
+  

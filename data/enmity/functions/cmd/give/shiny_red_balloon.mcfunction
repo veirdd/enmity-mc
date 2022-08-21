@@ -1,0 +1,1 @@
+give @s minecraft:warped_fungus_on_a_stick{display:{Name:'{"text":"Shiny Red Balloon","italic":false}',Lore:['[{"text":"Accessory type: ","italic":false,"color":"gray"},{"text":"mobility","color":"white"}]','[{"text":"Grants Jump Boost and Slow Falling.","italic":false,"color":"gray"}]']},Unbreakable:1,HideFlags:4,CustomModelData:43,Enmity:1,Enmity.CustomCrafting:1} 1

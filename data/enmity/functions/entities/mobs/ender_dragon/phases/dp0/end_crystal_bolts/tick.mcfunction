@@ -1,0 +1,1 @@
+execute as @e[type=end_crystal,tag=enmity.dragon_crystal] at @s run particle end_rod ~ ~ ~ 0 0 0 0.2 2 force

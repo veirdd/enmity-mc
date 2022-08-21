@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "nbt": "{Enmity.ArmorType:\"crystalline\"}"
+        },
+        "chest": {
+            "nbt": "{Enmity.ArmorType:\"crystalline\"}"
+        },
+        "legs": {
+            "nbt": "{Enmity.ArmorType:\"crystalline\"}"
+        },
+        "feet": {
+            "nbt": "{Enmity.ArmorType:\"crystalline\"}"
+        }
+      }
+    }
+  }

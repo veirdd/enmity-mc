@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 2
+                },
+                "add": false
+              },
+              {
+                "function": "minecraft:looting_enchant",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ],
+            "name": "minecraft:feather"
+          }
+        ]
+      },
+      {
+          "rolls": 1,
+          "entries": [
+              {
+              "type": "minecraft:item",
+              "name": "minecraft:firework_star"
+              }
+          ],
+          "functions": [
+              {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Xp:3}"
+              }
+          ]
+      }
+    ]
+  }

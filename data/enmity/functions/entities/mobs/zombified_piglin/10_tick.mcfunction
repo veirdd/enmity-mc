@@ -1,0 +1,1 @@
+execute if score %difficulty enmity.value matches 2 if entity @p[distance=..3,gamemode=!creative,gamemode=!spectator] run data modify entity @s AngryAt set from entity @p[distance=..3,gamemode=!creative,gamemode=!spectator] UUID

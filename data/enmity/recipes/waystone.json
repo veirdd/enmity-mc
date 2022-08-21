@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "010",
+      "020",
+      "030"
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:chiseled_stone_bricks"
+      },
+      "1": {
+        "item": "minecraft:lodestone"
+      },
+      "2": {
+        "item": "minecraft:nether_star"
+      },
+      "3": {
+        "item": "minecraft:respawn_anchor"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book",
+      "count": 1
+    }
+}

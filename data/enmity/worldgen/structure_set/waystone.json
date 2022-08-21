@@ -1,0 +1,19 @@
+{
+    "structures": [
+      {
+        "structure": "enmity:waystone/normal",
+        "weight": 1
+      },
+      {
+        "structure": "enmity:waystone/desert",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 15067293,
+      "spacing": 48,
+      "separation": 30,
+      "type": "minecraft:random_spread"
+    }
+  }
+  

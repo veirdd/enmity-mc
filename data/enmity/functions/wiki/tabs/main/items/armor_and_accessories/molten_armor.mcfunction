@@ -1,0 +1,6 @@
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":"MOLTEN ARMOR","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
+
+tellraw @s [{"text":"Description:\n   Helmet: +3 Armor, +2 Armor Toughness\n   Chestplate: +8 Armor, +2 Armor Toughness\n   Leggings: +6 Armor, +2 Armor Toughness\n   Boots: +3 Armor, +2 Armor Toughness\n   Set Bonus:\n      +1 Magic damage\n      +2 Magic damage reduction\n      Grants Fire Resistance.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting (each piece):\n      Corresponding Golden Armor piece\n      Magma Cream (4)\n      Netherite Scrap (2)","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

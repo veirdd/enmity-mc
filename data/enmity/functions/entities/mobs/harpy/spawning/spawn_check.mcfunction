@@ -1,0 +1,2 @@
+execute store result score @s enmity.math_a if entity @e[type=phantom,tag=enmity.harpy,tag=!enmity.tamed,distance=..128]
+execute if score @s enmity.math_a matches ..4 run function enmity:entities/mobs/harpy/spawning/spawn_attempt

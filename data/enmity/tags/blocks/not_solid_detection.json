@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#enmity:not_solid",
+        "#enmity:partial",
+        "minecraft:repeater",
+        "minecraft:comparator",
+        "#minecraft:candles"
+    ]
+}

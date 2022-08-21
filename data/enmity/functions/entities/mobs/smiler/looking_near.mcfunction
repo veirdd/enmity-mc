@@ -1,0 +1,2 @@
+execute if entity @p[gamemode=!spectator,gamemode=!creative,distance=..5] unless score @s enmity.cooldown matches 0.. run scoreboard players set @s enmity.cooldown 10
+execute if entity @p[gamemode=!spectator,gamemode=!creative,distance=5.00001..20] unless score @s enmity.cooldown matches 0.. run function enmity:entities/mobs/smiler/vanish

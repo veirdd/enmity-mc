@@ -1,0 +1,5 @@
+scoreboard players add @s enmity.raycast 1
+execute unless block ~ ~-1 ~ #enmity:not_solid run scoreboard players set @s enmity.raycast 0
+execute if score @s enmity.raycast matches 32.. run scoreboard players set @s enmity.raycast 0
+execute if score @s enmity.raycast matches 0 if predicate enmity:environment/biome/tag/skylands if block ~ ~ ~ air unless block ~ ~-1 ~ #enmity:not_solid unless entity @p[distance=..16] run summon item ~ ~ ~ {Age:3600,Item:{id:"warped_fungus_on_a_stick",Count:1,tag:{display:{Name:'{"text":"Pocket Moon","italic":false}',Lore:['[{"text":"Accessory type: ","italic":false,"color":"gray"},{"text":"effect","color":"white"}]','[{"text":"Grants immunity to knockback.","italic":false,"color":"gray"}]']},Unbreakable:1,HideFlags:4,CustomModelData:100,Enmity:1}}}
+execute if score @s enmity.raycast matches 1.. positioned ~ ~-1 ~ run function enmity:entities/other_entities/items/pocket_moon/spawn_raycast

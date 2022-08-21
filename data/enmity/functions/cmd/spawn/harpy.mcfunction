@@ -1,0 +1,3 @@
+summon phantom ~ ~ ~ {Passengers:[{id:"armor_stand",Tags:["enmity.nametag_hider","enmity.projectile"],Small:1,Invisible:1,Marker:1}],CustomName:'{"text":"Harpy"}',Size:2,Silent:1,DeathLootTable:"enmity:entities/harpy",Tags:["enmity.custom_mob","enmity.harpy","enmity.new","enmity.nametag_hidden"]}
+execute unless predicate enmity:random/random_0.1 run tag @e[type=phantom,tag=enmity.new] add enmity.untamable
+tag @e[type=phantom,tag=enmity.new] remove enmity.new

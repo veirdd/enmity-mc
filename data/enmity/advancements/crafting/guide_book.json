@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:guide_book"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/guide_book"
+    }
+}

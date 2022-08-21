@@ -1,0 +1,24 @@
+{
+    "name": "enmity:trap",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:trap/trap",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:trap/trap_flipped",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

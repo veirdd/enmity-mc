@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:iron_dagger"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/iron_dagger"
+    }
+}

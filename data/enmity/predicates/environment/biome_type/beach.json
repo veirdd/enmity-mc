@@ -1,0 +1,35 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:beach"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:stony_shory"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:mushroom_field_shore"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:granite_cliffs"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:gravel_beach"
+        }
+      }
+    ]
+  }

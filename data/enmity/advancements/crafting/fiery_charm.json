@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:fiery_charm"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/fiery_charm"
+    }
+}

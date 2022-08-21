@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "nbt": "{Enmity.ArmorType:\"celestial\"}"
+        },
+        "chest": {
+            "items": [
+                "minecraft:elytra"
+            ]
+        },
+        "legs": {
+            "nbt": "{Enmity.ArmorType:\"celestial\"}"
+        },
+        "feet": {
+            "nbt": "{Enmity.ArmorType:\"celestial\"}"
+        }
+      }
+    }
+  }

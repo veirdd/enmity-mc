@@ -1,0 +1,1 @@
+execute unless score @s enmity.health matches 20 if score @s enmity.xp matches 5.. if predicate enmity:entity/has_equipped_item/enchanted_with_mending run function enmity:utility/mending_to_life

@@ -1,0 +1,9 @@
+tellraw @s [{"text":"-================[","color":"gray"},{"text":"WAYSTONE","color":"white","bold":true},{"text":"]===============-","color":"gray"}]
+
+tellraw @s [{"text":"Waystones serve as a convenient long distance travel method. One waystone generates in every village and they rarely appear without a village.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Crafting:\n      [0][1][0]\n      [0][2][0]\n      [0][3][0]\n      0 - Chiseled Stone Bricks\n      1 - Lodestone\n      2 - Nether Star\n      3 - Respawn Anchor","color":"gray"}]
+tellraw @s [{"text":"\nFunctionality:\n   Stepping on an inactive waystone activates it indicated by a number appearing above the waystone. The displayed number is used in referring to the waystone during teleportation. To travel with a waystone, a player must sneak on top of it for about 3 seconds. After that, if the player has 3 or more xp levels, teleportation will be enabled via the message in chat.","color":"gray"}]
+tellraw @s [{"text":"\nProperties:\n   Mining level: stone\n   Immune to normal explosions.\n   Cannot be pushed and pulled by pistons.","color":"gray"}]
+tellraw @s [{"text":"\nNotes:\n   Naturally generated waystones will not drop as an item when mined, but crafted ones will.","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 14"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

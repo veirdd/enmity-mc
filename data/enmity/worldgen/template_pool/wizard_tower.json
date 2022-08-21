@@ -1,0 +1,15 @@
+{
+    "name": "enmity:wizard_tower",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:wizard_tower/tower",
+                "processors": "minecraft:mossify_10_percent"
+            }
+        }
+    ]
+}

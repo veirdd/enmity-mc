@@ -1,0 +1,151 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bundle"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Treasure Bag\",\"italic\":false}'},Enmity:1,CustomModelData:2,Items:[{id:\"warped_fungus_on_a_stick\",Count:1,tag:{display:{Name:'{\"text\":\"Withered Scepter\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"16\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"110\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"28\",\"color\":\"white\"}]','[{\"text\":\"Shoots an exploding wither skull.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:24,Enmity:1}},{id:\"warped_fungus_on_a_stick\",Count:1,tag:{display:{Name:'{\"text\":\"Withering Beam Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"32\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"140\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"32\",\"color\":\"white\"}]','[{\"text\":\"Casts a ray that deals great damage after a short cooldown.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:35,Enmity:1}},{id:\"warped_fungus_on_a_stick\",Count:1,tag:{display:{Name:'{\"text\":\"Charm of Decay\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"160\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"40\",\"color\":\"white\"}]','[{\"text\":\"Conjures a damaging wither charm.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:36,Enmity:1,Enmity.CustomCrafting:1}}]}"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 15,
+                  "max": 25
+                },
+                "add": false
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "%difficulty"
+                  },
+                  "score": "enmity.value",
+                  "scale": 1
+                },
+                "range": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 10,
+                  "max": 20
+                },
+                "add": false
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "%difficulty"
+                  },
+                  "score": "enmity.value",
+                  "scale": 1
+                },
+                "range": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Wither Rose Ring\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Inflicts Wither onto nearby enemies.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Grants immunity to Wither.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Expert mode\",\"italic\":false,\"color\":\"red\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:70,Enmity:1}"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%difficulty"
+              },
+              "score": "enmity.value",
+              "scale": 1
+            },
+            "range": 2
+          }
+        ]
+      },
+      {
+          "rolls": 1,
+          "entries": [
+              {
+              "type": "minecraft:item",
+              "name": "minecraft:firework_star"
+              }
+          ],
+          "functions": [
+              {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Xp:400}"
+              }
+          ]
+      },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_star"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"wither\"}"
+        }
+      ]
+    }
+    ]
+  }
+  

@@ -1,0 +1,53 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:taiga"
+        }
+      },
+        {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:old_growth_pine_taiga"
+        }
+      },
+        {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:old_growth_spruce_taiga"
+        }
+      },
+        {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "terralith:shield"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:siberian_taiga"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:shield_clearing"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:white_cliffs"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:yellowstone"
+        }
+      }
+    ]
+  }

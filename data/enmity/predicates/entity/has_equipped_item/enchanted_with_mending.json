@@ -1,0 +1,104 @@
+
+  
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "tag": "enmity:weapons_and_armor",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:mending"
+                    }
+                  ]
+                }
+              }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "offhand": {
+                  "tag": "enmity:weapons_and_armor",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:mending"
+                    }
+                  ]
+                }
+              }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "head": {
+                  "tag": "enmity:weapons_and_armor",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:mending"
+                    }
+                  ]
+                }
+              }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "chest": {
+                  "tag": "enmity:weapons_and_armor",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:mending"
+                    }
+                  ]
+                }
+              }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "legs": {
+                  "tag": "enmity:weapons_and_armor",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:mending"
+                    }
+                  ]
+                }
+              }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "feet": {
+                  "tag": "enmity:weapons_and_armor",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:mending"
+                    }
+                  ]
+                }
+              }
+            }
+        }
+    ]
+}
+  

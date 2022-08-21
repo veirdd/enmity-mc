@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:mineral_rumbler"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/mineral_rumbler"
+    }
+}

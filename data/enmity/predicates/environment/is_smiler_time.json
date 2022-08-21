@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "%time"
+      },
+      "score": "enmity.value",
+      "scale": 1
+    },
+    "range": {
+      "min": 14000,
+      "max": 22000
+    }
+  }
+  

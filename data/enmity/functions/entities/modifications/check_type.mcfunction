@@ -1,0 +1,5 @@
+execute if entity @s[tag=enmity.custom_mob] run function enmity:entities/modifications/custom_mob
+execute unless entity @s[tag=enmity.custom_mob] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 0 run function enmity:entities/modifications/normal_prehm
+execute unless entity @s[tag=enmity.custom_mob] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 1 run function enmity:entities/modifications/normal_hm
+execute unless entity @s[tag=enmity.custom_mob] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 0 run function enmity:entities/modifications/expert_prehm
+execute unless entity @s[tag=enmity.custom_mob] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 1 run function enmity:entities/modifications/expert_hm

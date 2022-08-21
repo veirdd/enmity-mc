@@ -1,0 +1,1 @@
+execute as @p[tag=enmity.elder_target] at @s run function enmity:entities/mobs/elder_guardian/projectiles/geyser/summon

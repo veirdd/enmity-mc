@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "nbt": "{Enmity.ArmorType:\"hadal\"}"
+        },
+        "chest": {
+            "nbt": "{Enmity.ArmorType:\"hadal\"}"
+        },
+        "legs": {
+            "nbt": "{Enmity.ArmorType:\"hadal\"}"
+        },
+        "feet": {
+            "nbt": "{Enmity.ArmorType:\"hadal\"}"
+        }
+      }
+    }
+  }

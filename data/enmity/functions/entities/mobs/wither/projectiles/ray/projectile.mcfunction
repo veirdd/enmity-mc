@@ -1,0 +1,6 @@
+tag @s add enmity.this
+execute as @e[scores={enmity.iframes=0},type=!wither,type=!#enmity:not_living,tag=!enmity.target_dummy,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
+execute positioned ^ ^ ^0.17 as @e[scores={enmity.iframes=0},type=!wither,type=!#enmity:not_living,tag=!enmity.target_dummy,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
+execute positioned ^ ^ ^0.33 as @e[scores={enmity.iframes=0},type=!wither,type=!#enmity:not_living,tag=!enmity.target_dummy,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
+tag @s remove enmity.this
+execute if entity @e[type=!#enmity:not_living,tag=enmity.hit] run function enmity:entities/mobs/wither/projectiles/ray/damage

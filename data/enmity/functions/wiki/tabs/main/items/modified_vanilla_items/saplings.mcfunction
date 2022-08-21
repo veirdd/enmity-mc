@@ -1,0 +1,5 @@
+tellraw @s [{"text":"-================[","color":"gray"},{"text":"SAPLINGS","color":"white","bold":true},{"text":"]================-","color":"gray"}]
+
+tellraw @s [{"text":"Saplings are replaced by [","color":"gray"},{"text":"tree seeds","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Tree Seeds"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 113001"}},{"text":"] as leaves drops. The Mangrove Propagule has the functionality of tree seeds but can also be planted normally.","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 114"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

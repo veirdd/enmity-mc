@@ -1,0 +1,2 @@
+execute unless score %elder_guardian_defeated enmity.value matches 1 run function enmity:wiki/tabs/main/items/magic_weapons/highlights/pre_elder_guardian
+execute if score %elder_guardian_defeated enmity.value matches 1 run function enmity:wiki/tabs/main/items/magic_weapons/highlights/branch_3

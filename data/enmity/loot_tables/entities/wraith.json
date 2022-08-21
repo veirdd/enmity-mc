@@ -1,0 +1,171 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:firework_star"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Soul Essence\",\"italic\":false}'},CustomModelData:1,Enmity:1}"
+          },
+          {
+            "function": "minecraft:set_count",
+            "count": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          {
+            "function": "minecraft:looting_enchant",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 0,
+              "max": 1
+            }
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.5
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Soul in a Jar\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"The little friend inside shoots\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"homing souls at nearby enemies.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:79,Enmity:1}"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance_with_looting",
+            "chance": 0.03,
+            "looting_multiplier": 0.01
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:firework_star"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Lightly Matter\",\"italic\":false}'},CustomModelData:8,Enmity.FloatingItem:1,Enmity:1}"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance_with_looting",
+            "chance": 0.30,
+            "looting_multiplier": 0.25
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%hardmode"
+              },
+              "score": "enmity.value",
+              "scale": 1
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "enmity:environment/in_overworld"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:firework_star"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Nightly Matter\",\"italic\":false}'},CustomModelData:9,Enmity.FloatingItem:1,Enmity:1}"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance_with_looting",
+            "chance": 0.30,
+            "looting_multiplier": 0.22
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%hardmode"
+              },
+              "score": "enmity.value",
+              "scale": 1
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "enmity:environment/in_the_nether"
+          }
+        ]
+      },
+      {
+          "rolls": 1,
+          "entries": [
+              {
+              "type": "minecraft:item",
+              "name": "minecraft:firework_star"
+              }
+          ],
+          "functions": [
+              {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Xp:8}"
+              }
+          ]
+      },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_star"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"wraith\"}"
+        }
+      ]
+    }
+    ]
+  }

@@ -1,0 +1,65 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:frozen_peaks"
+        }
+      },
+          {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:grove"
+        }
+      },
+        {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:jagged_peaks"
+        }
+      },
+        {
+        "condition": "minecraft:location_check",
+        "predicate": {
+        "biome": "minecraft:snowy_slopes"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:alpine_grove"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:emerald_peaks"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:frozen_cliffs"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:glacial_chasm"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:rocky_mountains"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:siberian_grove"
+        }
+      }
+    ]
+  }

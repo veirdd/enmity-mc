@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:shiny_red_balloon"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/shiny_red_balloon"
+    }
+}

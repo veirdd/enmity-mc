@@ -1,0 +1,94 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:warped_fungus_on_a_stick",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_nbt",
+                      "tag": "{display:{Name:'{\"text\":\"Hadopelagic Echo\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Casts a damaging sound wave.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:57,Enmity:1}"
+                    }
+                  ],
+                  "conditions": [
+                    {
+                        "condition": "minecraft:random_chance_with_looting",
+                        "chance": 0.333,
+                        "looting_multiplier": 0
+                    }
+                  ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:echo_shard",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 8,
+                                "max": 12
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sculk_catalyst"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "enchantments": [
+                                "minecraft:swift_sneak"
+                            ],
+                            "function": "minecraft:enchant_randomly"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance_with_looting",
+                            "chance": 0.2,
+                            "looting_multiplier": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                "type": "minecraft:item",
+                "name": "minecraft:firework_star"
+                }
+            ],
+            "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Xp:150}"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+gamerule doTileDrops false
+execute if score @s enmity.age matches 1 run fill ~-3 ~-2 ~3 ~3 ~-2 ~3 prismarine destroy
+execute if score @s enmity.age matches 1 run fill ~-3 ~-2 ~2 ~-3 ~-2 ~-2 prismarine destroy
+execute if score @s enmity.age matches 1 run fill ~3 ~-2 ~2 ~3 ~-2 ~-2 prismarine destroy
+execute if score @s enmity.age matches 1 run fill ~-3 ~-2 ~-3 ~3 ~-2 ~-3 prismarine destroy
+execute if score @s enmity.age matches 2 run fill ~-4 ~-2 ~4 ~4 ~-2 ~4 prismarine destroy
+execute if score @s enmity.age matches 2 run fill ~-4 ~-2 ~3 ~-4 ~-2 ~-3 prismarine destroy
+execute if score @s enmity.age matches 2 run fill ~4 ~-2 ~3 ~4 ~-2 ~-3 prismarine destroy
+execute if score @s enmity.age matches 2 run fill ~-4 ~-2 ~-4 ~4 ~-2 ~-4 prismarine destroy
+execute if score @s enmity.age matches 3 run fill ~-5 ~-2 ~5 ~5 ~-2 ~5 prismarine destroy
+execute if score @s enmity.age matches 3 run fill ~-5 ~-2 ~4 ~-5 ~-2 ~-4 prismarine destroy
+execute if score @s enmity.age matches 3 run fill ~5 ~-2 ~4 ~5 ~-2 ~-4 prismarine destroy
+execute if score @s enmity.age matches 3 run fill ~-5 ~-2 ~-5 ~5 ~-2 ~-5 prismarine destroy
+execute if score @s enmity.age matches 4 run fill ~-6 ~-2 ~6 ~6 ~-2 ~6 prismarine destroy
+execute if score @s enmity.age matches 4 run fill ~-6 ~-2 ~5 ~-6 ~-2 ~-5 prismarine destroy
+execute if score @s enmity.age matches 4 run fill ~6 ~-2 ~5 ~6 ~-2 ~-5 prismarine destroy
+execute if score @s enmity.age matches 4 run fill ~-6 ~-2 ~-6 ~6 ~-2 ~-6 prismarine destroy
+execute if score @s enmity.age matches 5 run fill ~-7 ~-2 ~7 ~7 ~-2 ~7 prismarine destroy
+execute if score @s enmity.age matches 5 run fill ~-7 ~-2 ~6 ~-7 ~-2 ~-6 prismarine destroy
+execute if score @s enmity.age matches 5 run fill ~7 ~-2 ~6 ~7 ~-2 ~-6 prismarine destroy
+execute if score @s enmity.age matches 5 run fill ~-7 ~-2 ~-7 ~7 ~-2 ~-7 prismarine destroy
+execute if score @s enmity.age matches 6 run fill ~-8 ~-2 ~8 ~8 ~-2 ~8 prismarine destroy
+execute if score @s enmity.age matches 6 run fill ~-8 ~-2 ~7 ~-8 ~-2 ~-7 prismarine destroy
+execute if score @s enmity.age matches 6 run fill ~8 ~-2 ~7 ~8 ~-2 ~-7 prismarine destroy
+execute if score @s enmity.age matches 6 run fill ~-8 ~-2 ~-8 ~8 ~-2 ~-8 prismarine destroy
+execute if score @s enmity.age matches 7 run fill ~-9 ~-2 ~9 ~9 ~-2 ~9 prismarine destroy
+execute if score @s enmity.age matches 7 run fill ~-9 ~-2 ~8 ~-9 ~-2 ~-8 prismarine destroy
+execute if score @s enmity.age matches 7 run fill ~9 ~-2 ~8 ~9 ~-2 ~-8 prismarine destroy
+execute if score @s enmity.age matches 7 run fill ~-9 ~-2 ~-9 ~9 ~-2 ~-9 prismarine destroy
+execute if score @s enmity.age matches 8 run fill ~-10 ~-2 ~10 ~10 ~-2 ~10 prismarine destroy
+execute if score @s enmity.age matches 8 run fill ~-10 ~-2 ~9 ~-10 ~-2 ~-9 prismarine destroy
+execute if score @s enmity.age matches 8 run fill ~10 ~-2 ~9 ~10 ~-2 ~-9 prismarine destroy
+execute if score @s enmity.age matches 8 run fill ~-10 ~-2 ~-10 ~10 ~-2 ~-10 prismarine destroy
+execute if score @s enmity.age matches 9 run fill ~-11 ~-2 ~11 ~11 ~-2 ~11 prismarine destroy
+execute if score @s enmity.age matches 9 run fill ~-11 ~-2 ~10 ~-11 ~-2 ~-10 prismarine destroy
+execute if score @s enmity.age matches 9 run fill ~11 ~-2 ~10 ~11 ~-2 ~-10 prismarine destroy
+execute if score @s enmity.age matches 9 run fill ~-11 ~-2 ~-11 ~11 ~-2 ~-11 prismarine destroy
+execute if score @s enmity.age matches 10 run fill ~-12 ~-2 ~12 ~12 ~-2 ~12 prismarine destroy
+execute if score @s enmity.age matches 10 run fill ~-12 ~-2 ~11 ~-12 ~-2 ~-11 prismarine destroy
+execute if score @s enmity.age matches 10 run fill ~12 ~-2 ~11 ~12 ~-2 ~-11 prismarine destroy
+execute if score @s enmity.age matches 10 run fill ~-12 ~-2 ~-12 ~12 ~-2 ~-12 prismarine destroy
+execute if score @s enmity.age matches 11 run fill ~-13 ~-2 ~13 ~13 ~-2 ~13 prismarine destroy
+execute if score @s enmity.age matches 11 run fill ~-13 ~-2 ~12 ~-13 ~-2 ~-12 prismarine destroy
+execute if score @s enmity.age matches 11 run fill ~13 ~-2 ~12 ~13 ~-2 ~-12 prismarine destroy
+execute if score @s enmity.age matches 11 run fill ~-13 ~-2 ~-13 ~13 ~-2 ~-13 prismarine destroy
+execute if score @s enmity.age matches 12 run fill ~-14 ~-2 ~14 ~14 ~-2 ~14 prismarine destroy
+execute if score @s enmity.age matches 12 run fill ~-14 ~-2 ~13 ~-14 ~-2 ~-13 prismarine destroy
+execute if score @s enmity.age matches 12 run fill ~14 ~-2 ~13 ~14 ~-2 ~-13 prismarine destroy
+execute if score @s enmity.age matches 12 run fill ~-14 ~-2 ~-14 ~14 ~-2 ~-14 prismarine destroy
+execute if score @s enmity.age matches 13 run fill ~-15 ~-2 ~15 ~15 ~-2 ~15 prismarine destroy
+execute if score @s enmity.age matches 13 run fill ~-15 ~-2 ~14 ~-15 ~-2 ~-14 prismarine destroy
+execute if score @s enmity.age matches 13 run fill ~15 ~-2 ~14 ~15 ~-2 ~-14 prismarine destroy
+execute if score @s enmity.age matches 13 run fill ~-15 ~-2 ~-15 ~15 ~-2 ~-15 prismarine destroy
+execute if score @s enmity.age matches 14 run fill ~-16 ~-2 ~16 ~16 ~-2 ~16 prismarine destroy
+execute if score @s enmity.age matches 14 run fill ~-16 ~-2 ~15 ~-16 ~-2 ~-15 prismarine destroy
+execute if score @s enmity.age matches 14 run fill ~16 ~-2 ~15 ~16 ~-2 ~-15 prismarine destroy
+execute if score @s enmity.age matches 14 run fill ~-16 ~-2 ~-16 ~16 ~-2 ~-16 prismarine destroy
+execute if score @s enmity.age matches 15 run fill ~-17 ~-2 ~17 ~17 ~-2 ~17 prismarine_bricks destroy
+execute if score @s enmity.age matches 15 run fill ~-17 ~-2 ~16 ~-17 ~-2 ~-16 prismarine_bricks destroy
+execute if score @s enmity.age matches 15 run fill ~17 ~-2 ~16 ~17 ~-2 ~-16 prismarine_bricks destroy
+execute if score @s enmity.age matches 15 run fill ~-17 ~-2 ~-17 ~17 ~-2 ~-17 prismarine_bricks destroy
+gamerule doTileDrops true
+execute if score @s enmity.age matches 16 run function enmity:entities/mobs/elder_guardian/spawn
+playsound enmity:ambience.waves ambient @a ~ ~ ~ 1 0 0
+scoreboard players add @s enmity.age 1

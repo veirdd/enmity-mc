@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "nbt": "{Enmity.ArmorType:\"bone\"}"
+        },
+        "chest": {
+            "nbt": "{Enmity.ArmorType:\"bone\"}"
+        },
+        "legs": {
+            "nbt": "{Enmity.ArmorType:\"bone\"}"
+        },
+        "feet": {
+            "nbt": "{Enmity.ArmorType:\"bone\"}"
+        }
+      }
+    }
+  }

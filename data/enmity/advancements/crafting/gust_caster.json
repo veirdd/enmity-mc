@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:gust_caster"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/gust_caster"
+    }
+}

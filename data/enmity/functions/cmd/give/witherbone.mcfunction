@@ -1,0 +1,1 @@
+give @s minecraft:firework_star{display:{Name:'{"text":"Witherbone","italic":false}'},CustomModelData:2,Enmity:1} 1

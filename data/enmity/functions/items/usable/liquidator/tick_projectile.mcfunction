@@ -1,0 +1,21 @@
+tag @s add enmity.this
+execute positioned ~ ~1.7 ~ if entity @s[tag=enmity.player_targeting] positioned ^ ^ ^6 as @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=..6] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target
+execute positioned ~ ~1.7 ~ if entity @s[tag=enmity.player_targeting] positioned ^ ^ ^9 as @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=..6] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target
+execute positioned ~ ~1.7 ~ if entity @s[tag=enmity.player_targeting] positioned ^ ^ ^12 as @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=..6] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target
+execute positioned ~ ~1.7 ~ if entity @s[tag=!enmity.player_targeting] positioned ^ ^ ^6 as @e[type=!#enmity:not_living,type=!player,tag=!enmity.projectile,distance=..6] run tag @s add enmity.homing_target
+execute positioned ~ ~1.7 ~ if entity @s[tag=!enmity.player_targeting] positioned ^ ^ ^9 as @e[type=!#enmity:not_living,type=!player,tag=!enmity.projectile,distance=..6] run tag @s add enmity.homing_target
+execute positioned ~ ~1.7 ~ if entity @s[tag=!enmity.player_targeting] positioned ^ ^ ^12 as @e[type=!#enmity:not_living,type=!player,tag=!enmity.projectile,distance=..6] run tag @s add enmity.homing_target
+execute if entity @e[type=!#enmity:not_living,tag=enmity.homing_target] run function enmity:items/usable/liquidator/home_in_projectile
+tp @s ^ ^ ^1.5
+data merge entity @s[scores={enmity.age=5}] {ArmorItems:[{},{},{},{id:"warped_fungus_on_a_stick",Count:1,tag:{CustomModelData:1007}}]}
+execute if score @s enmity.age matches ..5 run particle dust 0.2 0 1 0.5 ~ ~1.7 ~ 0 0 0 0 1 force
+execute if score @s enmity.age matches ..5 run particle dust 0 1 0 0.5 ~ ~1.7 ~ 0 0 0 0 1 force
+execute if score @s enmity.age matches 70.. run kill @s
+execute positioned ~ ~1.7 ~ positioned ~-0.25 ~-0.25 ~-0.25 as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.49 ~-0.49 ~-0.49 if entity @s[dx=0] run tag @s add enmity.hit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^0.25 positioned ~-0.25 ~-0.25 ~-0.25 as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.49 ~-0.49 ~-0.49 if entity @s[dx=0] run tag @s add enmity.hit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^0.5 positioned ~-0.25 ~-0.25 ~-0.25 as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.49 ~-0.49 ~-0.49 if entity @s[dx=0] run tag @s add enmity.hit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^0.75 positioned ~-0.25 ~-0.25 ~-0.25 as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.49 ~-0.49 ~-0.49 if entity @s[dx=0] run tag @s add enmity.hit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^1 positioned ~-0.25 ~-0.25 ~-0.25 as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.49 ~-0.49 ~-0.49 if entity @s[dx=0] run tag @s add enmity.hit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^1.25 positioned ~-0.25 ~-0.25 ~-0.25 as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.49 ~-0.49 ~-0.49 if entity @s[dx=0] run tag @s add enmity.hit
+execute if entity @e[type=!#enmity:not_living,tag=enmity.hit] positioned ~ ~1.7 ~ run function enmity:items/usable/liquidator/damage_projectile
+tag @s remove enmity.this

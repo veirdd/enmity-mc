@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#enmity:not_solid",
+        "#minecraft:candles",
+        "#enmity:glass",
+        "#minecraft:fences",
+        "minecraft:iron_bars"
+    ]
+}

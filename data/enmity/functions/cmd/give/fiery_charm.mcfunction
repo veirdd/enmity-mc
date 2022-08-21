@@ -1,0 +1,1 @@
+give @s minecraft:warped_fungus_on_a_stick{display:{Name:'{"text":"Fiery Charm","italic":false}',Lore:['[{"text":"Accessory type: ","italic":false,"color":"gray"},{"text":"effect","color":"white"}]','[{"text":"Grants heat resistance.","italic":false,"color":"gray"}]']},Unbreakable:1,HideFlags:4,CustomModelData:82,Enmity:1,Enmity.CustomCrafting:1} 1

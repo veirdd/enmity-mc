@@ -1,0 +1,10 @@
+execute if entity @s[tag=enmity.wraith] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 0 run function enmity:entities/mobs/wraith/modifications/normal_prehm
+execute if entity @s[tag=enmity.wraith] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 1 run function enmity:entities/mobs/wraith/modifications/normal_hm
+execute if entity @s[tag=enmity.wraith] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 0 run function enmity:entities/mobs/wraith/modifications/expert_prehm
+execute if entity @s[tag=enmity.wraith] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 1 run function enmity:entities/mobs/wraith/modifications/expert_hm
+execute if entity @s[tag=enmity.end_wither_skeleton] if score %difficulty enmity.value matches 1 run function enmity:entities/mobs/end_wither_skeleton/modifications/normal
+execute if entity @s[tag=enmity.end_wither_skeleton] if score %difficulty enmity.value matches 2 run function enmity:entities/mobs/end_wither_skeleton/modifications/expert
+execute if entity @s[tag=enmity.harpy] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 0 run function enmity:entities/mobs/harpy/modifications/normal_prehm
+execute if entity @s[tag=enmity.harpy] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 1 run function enmity:entities/mobs/harpy/modifications/normal_hm
+execute if entity @s[tag=enmity.harpy] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 0 run function enmity:entities/mobs/harpy/modifications/expert_prehm
+execute if entity @s[tag=enmity.harpy] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 1 run function enmity:entities/mobs/harpy/modifications/expert_hm

@@ -1,0 +1,5 @@
+execute if entity @s run particle instant_effect ~ ~0.1 ~ 0 0 0 0 1 force
+execute if score %difficulty enmity.value matches 2 if score @s enmity.age matches 10..19 if predicate enmity:random/random_0.1 run function enmity:entities/mobs/elder_guardian/projectiles/geyser/erupt
+execute if score %difficulty enmity.value matches 2 if score @s enmity.age matches 20.. run function enmity:entities/mobs/elder_guardian/projectiles/geyser/erupt
+execute if score %difficulty enmity.value matches 1 if score @s enmity.age matches 25..34 if predicate enmity:random/random_0.1 run function enmity:entities/mobs/elder_guardian/projectiles/geyser/erupt
+execute if score %difficulty enmity.value matches 1 if score @s enmity.age matches 35.. run function enmity:entities/mobs/elder_guardian/projectiles/geyser/erupt

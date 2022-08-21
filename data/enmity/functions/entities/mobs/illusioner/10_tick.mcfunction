@@ -1,0 +1,1 @@
+execute if score @s enmity.cooldown matches 0 if predicate enmity:entity/has_target if predicate enmity:random/random_0.25 if entity @p[distance=..16,gamemode=!creative,gamemode=!spectator] run function enmity:entities/mobs/illusioner/attack

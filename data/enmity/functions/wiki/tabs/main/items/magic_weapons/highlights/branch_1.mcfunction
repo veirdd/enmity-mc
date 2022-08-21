@@ -1,0 +1,2 @@
+execute unless score %hardmode enmity.value matches 1 run function enmity:wiki/tabs/main/items/magic_weapons/highlights/pre_wither
+execute if score %hardmode enmity.value matches 1 run function enmity:wiki/tabs/main/items/magic_weapons/highlights/branch_2

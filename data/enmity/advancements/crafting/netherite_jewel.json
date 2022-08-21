@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:netherite_jewel"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/netherite_jewel"
+    }
+}

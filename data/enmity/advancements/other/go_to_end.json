@@ -1,0 +1,15 @@
+
+  {
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:changed_dimension",
+        "conditions": {
+          "from": "minecraft:overworld",
+          "to": "minecraft:the_end"
+        }
+      }
+    },
+    "rewards": {
+        "function": "enmity:utility/end_teleport"
+    }
+  }

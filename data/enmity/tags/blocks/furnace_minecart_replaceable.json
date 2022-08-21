@@ -1,0 +1,22 @@
+{
+    "values": [
+        "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:dead_bush",
+        "minecraft:grass",
+        "minecraft:tall_grass",
+        "minecraft:crimson_roots",
+        "minecraft:warped_roots",
+        "minecraft:fern",
+        "minecraft:hanging_roots",
+        "minecraft:vine",
+        "minecraft:glow_lichen",
+        "minecraft:large_fern",
+        "minecraft:fire",
+        "minecraft:soul_fire",
+        "minecraft:sculk_vein",
+        "minecraft:structure_void",
+        "minecraft:light",
+        "minecraft:void_air"
+    ]
+}

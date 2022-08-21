@@ -1,0 +1,16 @@
+tellraw @s [{"text":"-===============[","color":"gray"},{"text":"TEMPERATURE","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
+
+tellraw @s [{"text":"The Temperature is one of the new dangers added by Enmity. It mainly affects players in the early game, and can be measured using a [","color":"gray"},{"text":"Thermometer","hoverEvent":{"action":"show_text","value":{"text":"Thermometer"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 113015"}},{"text":"]. Later it often can be ignored thanks to special accessories.\n\nHere's a list of factors that can affect your body temperature:","color":"gray"}]
+tellraw @s [{"text":"   - Biome type;","color":"gray"}]
+tellraw @s [{"text":"   - Dimension;","color":"gray"}]
+tellraw @s [{"text":"   - Height;","color":"gray"}]
+tellraw @s [{"text":"   - Weather;","color":"gray"}]
+tellraw @s [{"text":"   - Being submerged in liquid or powder snow;","color":"gray"}]
+tellraw @s [{"text":"   - Being set on fire;","color":"gray"}]
+tellraw @s [{"text":"   - Being near heat or cold emitting blocks, e.g. lava, blue ice;","color":"gray"}]
+tellraw @s [{"text":"   - Light level;","color":"gray"}]
+tellraw @s [{"text":"   - Having certain accessories equipped (specified in tooltips);","color":"gray"}]
+tellraw @s [{"text":"   - Wearing certain armor (specified in tooltips);","color":"gray"}]
+tellraw @s [{"text":"   - Having Fire Resistance applied (protection to heat);","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 13"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:honey_bottle"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "enmity:items/food/honey_bottle/on_eat"
+    }
+  }
+  

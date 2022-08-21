@@ -1,0 +1,1 @@
+playsound minecraft:entity.illusioner.death hostile @a[distance=0..] ~ ~ ~ 1 1.2 0

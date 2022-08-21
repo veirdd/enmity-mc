@@ -1,0 +1,2 @@
+execute if entity @s[tag=!enmity.erupting] run function enmity:entities/mobs/elder_guardian/projectiles/geyser/tick_not_erupting
+execute if entity @s[tag=enmity.erupting] run function enmity:entities/mobs/elder_guardian/projectiles/geyser/tick_erupting

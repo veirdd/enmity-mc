@@ -1,0 +1,1 @@
+give @s minecraft:firework_star{display:{Name:'{"text":"Lightly Matter","italic":false}'},Enmity:1,Enmity.FloatingItem:1,CustomModelData:8} 1

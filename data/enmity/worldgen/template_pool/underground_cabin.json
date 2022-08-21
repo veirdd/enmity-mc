@@ -1,0 +1,60 @@
+{
+    "name": "enmity:underground_cabin",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:underground_cabin/cabin_1",
+                "processors": "enmity:underground_cabin"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:underground_cabin/cabin_2",
+                "processors": "enmity:underground_cabin"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:underground_cabin/cabin_3",
+                "processors": "enmity:underground_cabin"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:underground_cabin/cabin_4",
+                "processors": "enmity:underground_cabin"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:underground_cabin/cabin_5",
+                "processors": "enmity:underground_cabin"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element",
+                "location": "enmity:underground_cabin/cabin_6",
+                "processors": "enmity:underground_cabin"
+            }
+        }
+    ]
+}

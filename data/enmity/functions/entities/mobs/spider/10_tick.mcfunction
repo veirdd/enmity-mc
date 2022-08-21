@@ -1,0 +1,4 @@
+scoreboard players set @s enmity.math_a 0
+execute store success score @s enmity.math_a if entity @p[distance=..2.5] if entity @s[nbt={OnGround:0b}] facing entity @p[gamemode=!creative,gamemode=!spectator] feet positioned ^ ^ ^1 if block ~ ~ ~ #enmity:not_solid positioned ^ ^ ^1 if block ~ ~ ~ #enmity:not_solid at @p[distance=..2.5,gamemode=!creative,gamemode=!spectator] if block ~ ~ ~ #enmity:spider_cobweb_replaceable run setblock ~ ~ ~ cobweb
+execute if score @s enmity.math_a matches 1.. run playsound entity.spider.step hostile @a[distance=0..] ~ ~ ~ 1 0.4 0
+execute if score @s enmity.math_a matches 1.. run playsound entity.spider.step hostile @a[distance=0..] ~ ~ ~ 1 0.6 0

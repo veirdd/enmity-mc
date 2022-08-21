@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:rotten_lure"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/rotten_lure"
+    }
+}

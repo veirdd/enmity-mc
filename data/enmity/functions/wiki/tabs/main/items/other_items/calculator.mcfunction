@@ -1,0 +1,7 @@
+tellraw @s [{"text":"-===============[","color":"gray"},{"text":"CALCULATOR","color":"white","bold":true},{"text":"]==============-","color":"gray"}]
+
+tellraw @s [{"text":"The Calculator displays player's facing and coordinates around the crosshair. When used, also displays current daytime in ticks, player's body temperature, magic damage boost, magic damage reduction, maximum mana, mana regeneration, and sentry slots. The statistics update only when the Calculator is held.","color":"gray"}]
+tellraw @s [{"text":"\nDescription:\n   Displays coordinates and other parameters.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Compass\n      Clock\n      Thermometer","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 113"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

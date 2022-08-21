@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:glowstone_jewel"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/glowstone_jewel"
+    }
+}

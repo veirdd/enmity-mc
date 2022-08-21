@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "010",
+      "2 2",
+      "020"
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:experience_bottle"
+      },
+      "1": {
+        "item": "minecraft:ender_pearl"
+      },
+      "2": {
+        "item": "minecraft:gold_nugget"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book",
+      "count": 1
+    }
+}

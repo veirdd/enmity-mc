@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:amethyst_helmet"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/amethyst_helmet"
+    }
+}

@@ -1,0 +1,5 @@
+tellraw @s [{"text":"-=======[","color":"gray"},{"text":"FURNACE MINECART DIGGING","color":"white","bold":true},{"text":"]=======-","color":"gray"}]
+
+tellraw @s [{"text":"Furnace Minecarts were given new functionality as block breakers (and/or rail builders):\n   - They can consume coal by picking it up from the ground and convert it to fuel, and rails which they can hold a maximum of 512;\n   - When fueled, they will keep breaking blocks in front of them at a rate of 2 blocks per second, indicated by a particle. They will also keep placing rails down as they go until all have been used.","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 13"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

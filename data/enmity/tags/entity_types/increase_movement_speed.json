@@ -1,0 +1,17 @@
+{
+    "values": [
+      "minecraft:spider",
+      "minecraft:cave_spider",
+      "minecraft:zombie",
+      "minecraft:zombie_villager",
+      "minecraft:husk",
+      "minecraft:skeleton",
+      "minecraft:stray",
+      "minecraft:zoglin",
+      "minecraft:hoglin",
+      "minecraft:zombified_piglin",
+      "minecraft:enderman",
+      "minecraft:drowned",
+      "minecraft:wither_skeleton"
+    ]
+}

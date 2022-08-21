@@ -1,0 +1,1 @@
+tp @s ^ ^ ^0.1 facing entity @p[gamemode=!spectator,gamemode=!creative,distance=5..]

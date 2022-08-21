@@ -1,0 +1,1 @@
+execute if score @s enmity.phase matches 1 if score @s enmity.age matches ..240 run function enmity:entities/mobs/elder_guardian/phases/bolts/10_tick

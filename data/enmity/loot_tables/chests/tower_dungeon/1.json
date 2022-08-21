@@ -1,0 +1,252 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4,
+                  "min": 1
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:iron_ingot",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2,
+                  "min": 1
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:gold_ingot",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 6,
+                  "min": 2
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:bread",
+            "weight": 15
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 8,
+                  "min": 2
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:bone",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 6,
+                  "min": 2
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:apple",
+            "weight": 15
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_pickaxe",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_sword",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_axe",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_shovel",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_hoe",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_chestplate",
+            "weight": 5,
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"text\":\"Bone Chestplate\",\"italic\":false}',color:11842740,Lore:['[{\"text\":\"Set bonus:\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"   +1\",\"italic\":false,\"color\":\"white\"},{\"text\":\" Magic damage\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,Enmity:1,Enmity.ArmorType:\"bone\",AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"0\",Amount:3.0,Operation:0,UUID:[I;1,1,1,3],Slot:\"chest\"}],Enmity.CustomCrafting:1}"
+                }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_helmet",
+            "weight": 5,
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"text\":\"Bone Helmet\",\"italic\":false}',color:11842740,Lore:['[{\"text\":\"Set bonus:\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"   +1\",\"italic\":false,\"color\":\"white\"},{\"text\":\" Magic damage\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,Enmity:1,Enmity.ArmorType:\"bone\",AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"0\",Amount:1.0,Operation:0,UUID:[I;1,1,1,4],Slot:\"head\"}],Enmity.CustomCrafting:1}"
+                }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_leggings",
+            "weight": 5,
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"text\":\"Bone Leggings\",\"italic\":false}',color:11842740,Lore:['[{\"text\":\"Set bonus:\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"   +1\",\"italic\":false,\"color\":\"white\"},{\"text\":\" Magic damage\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,Enmity:1,Enmity.ArmorType:\"bone\",AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"0\",Amount:2.0,Operation:0,UUID:[I;1,1,1,2],Slot:\"legs\"}],Enmity.CustomCrafting:1}"
+                }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_boots",
+            "weight": 5,
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"text\":\"Bone Boots\",\"italic\":false}',color:11842740,Lore:['[{\"text\":\"Set bonus:\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"   +1\",\"italic\":false,\"color\":\"white\"},{\"text\":\" Magic damage\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,Enmity:1,Enmity.ArmorType:\"bone\",AttributeModifiers:[{AttributeName:\"generic.armor\",Name:\"0\",Amount:1.0,Operation:0,UUID:[I;1,1,1,1],Slot:\"feet\"}],Enmity.CustomCrafting:1}"
+                }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 2,
+                  "min": 1
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:golden_apple",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:saddle"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_horse_armor"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:leather_horse_armor"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 10,
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:book"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:spyglass"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:compass",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:flint_and_steel",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bundle",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick",
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"text\":\"Thermometer\",\"italic\":false}'},Unbreakable:1,HideFlags:4,CustomModelData:31,Enmity:1,Enmity.Thermometer:1}"
+                }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick",
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"text\":\"Dust Storm\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"40\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"16\",\"color\":\"white\"}]','[{\"text\":\"Sprays a large cloud of dust.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:27,Enmity:1,Enmity.CustomCrafting:1}"
+                }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick",
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"text\":\"Silvan Spirit Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"5\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Summons a silvan spirit to fight for you.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:17,Enmity:1,Enmity.CustomCrafting:1}"
+                }
+            ]
+          }
+        ],
+        "rolls": {
+          "type": "minecraft:uniform",
+          "max": 8,
+          "min": 4
+        }
+      }
+    ]
+  }

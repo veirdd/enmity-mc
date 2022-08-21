@@ -1,0 +1,1 @@
+execute if score @s enmity.age matches ..99 run function enmity:entities/mobs/ender_dragon/projectiles/bolt/summon

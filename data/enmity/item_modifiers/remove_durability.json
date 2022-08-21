@@ -1,0 +1,6 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{Damage:0,Unbreakable:1,HideFlags:4,Enmity.DurabilityRemoved:1}"
+    }
+]

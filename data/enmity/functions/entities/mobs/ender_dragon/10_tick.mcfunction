@@ -1,0 +1,1 @@
+execute if score @s enmity.phase matches 0 run function enmity:entities/mobs/ender_dragon/phases/dp0/10_tick

@@ -1,0 +1,9 @@
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":"IN-GAME WIKI","color":"white","bold":true},{"text":"]==============-","color":"gray"}]
+
+tellraw @s [{"text":"Welcome to the in-game knowledge base. Click the buttons below to read more.\nIt is recommended to use chat width of 270px or more.\n","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Items","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Items"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 11"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Entities","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Entities"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 12"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Blocks","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Blocks"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 14"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Gameplay","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Gameplay"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 13"}},{"text":"]","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}}},{"text":"]==============-","color":"gray"}]

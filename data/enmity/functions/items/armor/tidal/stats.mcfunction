@@ -1,0 +1,10 @@
+execute if predicate enmity:entity/has_armor/mage_helmet run scoreboard players add @s enmity.dmg_rdc 4
+execute if predicate enmity:entity/has_armor/mage_helmet run scoreboard players add @s enmity.dmg_bst 6
+execute if predicate enmity:entity/has_armor/mage_helmet run scoreboard players add @s enmity.max_hp 8
+execute if predicate enmity:entity/has_armor/warrior_helmet run scoreboard players add @s enmity.dmg_rdc 6
+execute if predicate enmity:entity/has_armor/warrior_helmet run scoreboard players add @s enmity.dmg_bst 3
+execute if predicate enmity:entity/has_armor/warrior_helmet run scoreboard players add @s enmity.max_hp 12
+execute if predicate enmity:entity/has_armor/summoner_helmet run scoreboard players add @s enmity.dmg_rdc 3
+execute if predicate enmity:entity/has_armor/summoner_helmet run scoreboard players add @s enmity.dmg_bst 1
+execute if predicate enmity:entity/has_armor/summoner_helmet run scoreboard players add @s enmity.max_hp 6
+execute if predicate enmity:entity/has_armor/summoner_helmet run scoreboard players add @s enmity.max_snt 2

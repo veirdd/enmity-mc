@@ -1,0 +1,2 @@
+execute if entity @s[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:99}}]}] run function enmity:items/food/rotten_flesh/on_eat_with_brew
+advancement revoke @s only enmity:eaten_food/rotten_flesh

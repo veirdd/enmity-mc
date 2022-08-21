@@ -1,0 +1,5 @@
+execute if score %difficulty enmity.value matches 2 run tp @s ^ ^0.05 ^0.35 facing entity @p[tag=enmity.wither_target,limit=1] feet
+execute if score %difficulty enmity.value matches 1 run tp @s ^ ^0.035 ^0.25 facing entity @p[tag=enmity.wither_target,limit=1] feet
+execute as @e[type=marker,tag=enmity.wither_head] at @s run tp @s ~ ~ ~ facing entity @p[tag=enmity.wither_target,limit=1] eyes
+execute if score @s enmity.age matches 20.. if predicate enmity:random/random_0.25 as @e[type=marker,tag=enmity.wither_head,tag=enmity.right] at @s run function enmity:entities/mobs/wither/projectiles/wither_skull/summon_4
+execute if score @s enmity.age matches 20.. if predicate enmity:random/random_0.25 as @e[type=marker,tag=enmity.wither_head,tag=enmity.left] at @s run function enmity:entities/mobs/wither/projectiles/wither_skull/summon_4

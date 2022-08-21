@@ -1,0 +1,10 @@
+{
+    "values": [
+        "#enmity:not_ocean",
+        "minecraft:ocean",
+        "minecraft:cold_ocean",
+        "minecraft:warm_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:frozen_ocean"
+    ]
+}

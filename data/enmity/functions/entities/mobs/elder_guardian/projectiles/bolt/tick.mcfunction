@@ -1,0 +1,2 @@
+execute if entity @s[tag=enmity.anchored] run function enmity:entities/mobs/elder_guardian/projectiles/bolt/tick_anchored
+execute if entity @s[tag=!enmity.anchored] run function enmity:entities/mobs/elder_guardian/projectiles/bolt/tick_unanchored

@@ -1,0 +1,16 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "chest": {
+          "tag": "enmity:weapons_and_armor",
+          "enchantments": [
+            {
+              "enchantment": "minecraft:mending"
+            }
+          ]
+        }
+      }
+    }
+}

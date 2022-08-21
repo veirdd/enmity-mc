@@ -1,0 +1,1 @@
+give @s minecraft:firework_star{display:{Name:'{"text":"Celestial Shard","italic":false}'},Enmity:1,CustomModelData:7} 1

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:ring_of_devotion"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/ring_of_devotion"
+    }
+}

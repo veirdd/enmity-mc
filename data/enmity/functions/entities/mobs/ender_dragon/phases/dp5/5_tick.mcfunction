@@ -1,0 +1,1 @@
+execute if entity @p[tag=enmity.dragon_target] if score @s enmity.age matches 60..120 run function enmity:entities/mobs/ender_dragon/phases/dp5/breath/5_tick

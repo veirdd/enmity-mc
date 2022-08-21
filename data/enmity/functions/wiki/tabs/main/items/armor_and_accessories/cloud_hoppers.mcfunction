@@ -1,0 +1,6 @@
+tellraw @s [{"text":"-=============[","color":"gray"},{"text":"CLOUD HOPPERS","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
+
+tellraw @s [{"text":"Description:\n   Accessory type: mobility\n   Increases movement speed.\n   Click sneak to double jump.\n   Grants Slow Falling after performing a double jump. Look directly down to cancel the effect.\n   Disables Levitation.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Hermes Boots\n      Cloud in a Balloon\n      Ghast Tear","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

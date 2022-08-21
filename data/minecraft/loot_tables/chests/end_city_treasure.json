@@ -1,0 +1,423 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "type": "minecraft:uniform",
+          "min": 6,
+          "max": 8
+        },
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 4,
+                  "max": 12
+                },
+                "add": false
+              }
+            ],
+            "name": "minecraft:diamond"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 15,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 6,
+                  "max": 20
+                },
+                "add": false
+              }
+            ],
+            "name": "minecraft:iron_ingot"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 2,
+                  "max": 4
+                },
+                "add": false
+              }
+            ],
+            "name": "minecraft:netherite_ingot"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 15,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 6,
+                  "max": 20
+                },
+                "add": false
+              }
+            ],
+            "name": "minecraft:gold_ingot"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 8,
+                  "max": 16
+                },
+                "add": false
+              }
+            ],
+            "name": "minecraft:emerald"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_horse_armor"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_horse_armor"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_horse_armor"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:diamond_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:diamond_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:diamond_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:diamond_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:diamond_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:diamond_pickaxe"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:diamond_shovel"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:netherite_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:netherite_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:netherite_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:netherite_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:netherite_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:netherite_pickaxe"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 20,
+                  "max": 39
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:netherite_shovel"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_golden_apple",
+            "weight": 3
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:firework_star",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Eternal Shard\",\"italic\":false}',Lore:['[{\"text\":\"Can be enchantment-crafted with an item to make it eternal.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Eternal items don\\'t despawn and are protected from damage.\",\"italic\":false,\"color\":\"gray\"}]']},Enmity:1,Unbreakable:1,HideFlags:4,CustomModelData:13,Enchantments:[{id:\"\"}]}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 3
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:firework_star",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Lightly Matter\",\"italic\":false}'},Enmity:1,Enmity.FloatingItem:1,CustomModelData:8}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 2,
+                  "max": 4
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:firework_star",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Nightly Matter\",\"italic\":false}'},Enmity:1,Enmity.FloatingItem:1,CustomModelData:9}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 2,
+                  "max": 4
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:firework_star",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Celestial Shard\",\"italic\":false}'},Enmity:1,CustomModelData:7}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 30,
+                  "max": 49
+                },
+                "treasure": true
+              }
+            ],
+            "name": "minecraft:book"
+          }
+        ]
+      }
+    ]
+  }

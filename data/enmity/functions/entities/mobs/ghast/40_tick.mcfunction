@@ -1,0 +1,1 @@
+execute if predicate enmity:entity/has_target if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 1 if entity @p[distance=..20,gamemode=!creative,gamemode=!spectator] run function enmity:items/usable/the_dance_of_souls/use

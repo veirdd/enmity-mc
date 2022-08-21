@@ -1,0 +1,11 @@
+setblock ~ ~ ~ air destroy
+summon creeper ~ ~2 ~ {Fuse:0,ExplosionRadius:8,Tags:["enmity.modified"],Invulnerable:1}
+summon creeper ~ ~1 ~ {Fuse:0,ExplosionRadius:9,Tags:["enmity.modified"],Invulnerable:1}
+playsound block.end_portal.spawn block @a[distance=0..] ~ ~ ~ 2 0 0
+playsound block.end_portal.spawn block @a[distance=0..] ~ ~ ~ 2 0.2 0
+playsound block.end_portal.spawn block @a[distance=0..] ~ ~ ~ 2 0.4 0
+playsound block.end_portal.spawn block @a[distance=0..] ~ ~ ~ 2 0.6 0
+playsound block.end_portal.spawn block @a[distance=0..] ~ ~ ~ 2 0.8 0
+particle explosion_emitter ~ ~ ~ 5 5 5 0 30 force
+kill @s
+summon item ~ ~1 ~ {Invulnerable:1,NoGravity:1,Item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"Delirium","italic":false,"color":"dark_purple"}',Lore:['[{"text":"Damage: ","italic":false,"color":"gray"},{"text":"70","color":"white"},{"text":"/","color":"gray"},{"text":"30","color":"white"}]','[{"text":"Mana usage: ","italic":false,"color":"gray"},{"text":"100","color":"white"},{"text":"/","color":"gray"},{"text":"50","color":"white"}]','[{"text":"Cooldown: ","italic":false,"color":"gray"},{"text":"8","color":"white"},{"text":"/","color":"gray"},{"text":"4","color":"white"}]','[{"text":"Fires phantasmal bolts that follow your aim","italic":false,"color":"gray"}]','[{"text":"and curse the enemies. Hitting an enemy","italic":false,"color":"gray"}]','[{"text":"with more bolts extends the curse\'s duration.","italic":false,"color":"gray"}]','[{"text":"While holding sneak, summons a swarm","italic":false,"color":"gray"}]','[{"text":"of phantasmal slashes that pull entities in","italic":false,"color":"gray"}]','[{"text":"phasing them through obstacles.","italic":false,"color":"gray"}]','[{"text":"Completely ignores immunity frames.","italic":false,"color":"gray"}]','[{"text":"Eternal","color":"light_purple","italic":false}]']},Unbreakable:1,HideFlags:4,CustomModelData:7,Enmity.EternalItem:1,Enmity.FloatingItem:1,Enmity:1,Enchantments:[{}]}}}

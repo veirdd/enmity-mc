@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:hadal_leggings"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/hadal_leggings"
+    }
+}

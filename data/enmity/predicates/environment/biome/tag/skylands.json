@@ -1,0 +1,29 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:skylands_spring"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:skylands_summer"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:skylands_autumn"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:skylands_winter"
+            }
+        }
+    ]
+  }

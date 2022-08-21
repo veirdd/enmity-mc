@@ -1,0 +1,15 @@
+[
+    {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "minecraft:reference",
+          "name": "enmity:environment/in_lava"
+        },
+        {
+          "condition": "minecraft:reference",
+          "name": "enmity:environment/in_water"
+        }
+      ]
+    }
+  ]

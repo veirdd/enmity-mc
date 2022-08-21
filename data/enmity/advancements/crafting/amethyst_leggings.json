@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:amethyst_leggings"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/amethyst_leggings"
+    }
+}

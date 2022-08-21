@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " 31",
+      " 02",
+      "0  "
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:cobblestone"
+      },
+      "1": {
+        "item": "minecraft:andesite"
+      },
+      "2": {
+        "item": "minecraft:diorite"
+      },
+      "3": {
+        "item": "minecraft:granite"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book",
+      "count": 1
+    }
+}

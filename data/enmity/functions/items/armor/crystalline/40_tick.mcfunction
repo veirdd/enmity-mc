@@ -1,0 +1,1 @@
+execute if predicate enmity:random/random_0.1 run playsound block.amethyst_block.chime neutral @a[distance=0..] ~ ~ ~ 1.5 1 0

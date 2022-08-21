@@ -1,0 +1,18 @@
+tellraw @s [{"text":"-================[","color":"gray"},{"text":"ENTITIES","color":"white","bold":true},{"text":"]================-","color":"gray"}]
+
+tellraw @s [{"text":"Enmity adds a few enemies, changes some vanilla ones, and completely overhauls the bosses.\n","color":"gray"}]
+tellraw @s [{"text":"Here is a list of entities added by Enmity. Apart from that, some vanilla entities gain new behaviour patterns and abilities.\n","color":"gray"}]
+execute unless score %enmity.elder_guardian_defeated enmity.value matches 1 run tellraw @s [{"text":"Not all pages are visible yet. Progress through the game to display the remaining entries.\n","color":"gray"}]
+
+execute if score %enmity.elder_guardian_defeated enmity.value matches 1 run tellraw @s [{"text":"   [","color":"gray"},{"text":"End Wither Skeleton","color":"white","hoverEvent":{"action":"show_text","value":{"text":"End Wither Skeleton"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 121"}},{"text":"]","color":"gray"}]
+execute unless score %enmity.elder_guardian_defeated enmity.value matches 1 run tellraw @s [{"text":"   [???]","color":"gray"}]
+tellraw @s [{"text":"   [","color":"gray"},{"text":"Harpy","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Harpy"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 127"}},{"text":"]","color":"gray"}]
+execute if score %enmity.giant_defeated enmity.value matches 1 run tellraw @s [{"text":"   [","color":"gray"},{"text":"Hellbat","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Hellbat"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 122"}},{"text":"]","color":"gray"}]
+execute unless score %enmity.giant_defeated enmity.value matches 1 run tellraw @s [{"text":"   [???]","color":"gray"}]
+tellraw @s [{"text":"   [","color":"gray"},{"text":"Sculker","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Sculker"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 123"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"   [","color":"gray"},{"text":"Smiler","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Smiler"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 124"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"   [","color":"gray"},{"text":"Wraith","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Wraith"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 125"}},{"text":"]","color":"gray"}]
+execute if score %enmity.elder_guardian_defeated enmity.value matches 1 run tellraw @s [{"text":"   [","color":"gray"},{"text":"Illusioner","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Illusioner"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 126"}},{"text":"]","color":"gray"}]
+execute unless score %enmity.giant_defeated enmity.value matches 1 run tellraw @s [{"text":"   [???]","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

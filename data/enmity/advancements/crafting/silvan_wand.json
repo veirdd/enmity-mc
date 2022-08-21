@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:silvan_wand"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/silvan_wand"
+    }
+}

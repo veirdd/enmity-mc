@@ -1,0 +1,15 @@
+{
+    "name": "enmity:village/waystone_savanna",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+          "element": {
+            "element_type": "minecraft:legacy_single_pool_element",
+            "location": "enmity:village/waystone_savanna",
+            "processors": "minecraft:empty",
+            "projection": "rigid"
+          },
+          "weight": 1
+        }
+    ]
+}

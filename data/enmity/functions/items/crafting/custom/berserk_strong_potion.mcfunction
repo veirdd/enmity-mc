@@ -1,0 +1,4 @@
+scoreboard players add @s enmity.cooldown 1
+execute if score @s enmity.cooldown matches 60 run particle dust 1 0.5 0 1 ~ ~0.2 ~ 0.3 0.3 0.3 0 20 force
+execute if score @s enmity.cooldown matches 60 run summon item ~ ~ ~ {Item:{id:"minecraft:potion",Count:1,tag:{CustomPotionEffects:[{Id:27,Duration:1800,Amplifier:1}],CustomPotionColor:16140032,display:{Name:'{"text":"Potion of Berserk","italic":false}',Lore:['{"text":"Berserked II (1:30)","color":"blue","italic":false}','""','{"text":"When applied:","color":"dark_purple","italic":false}','{"text":"+4 Magic damage","color":"blue","italic":false}']},HideFlags:32,Enmity:1}}}
+execute if score @s enmity.cooldown matches 60 run kill @s

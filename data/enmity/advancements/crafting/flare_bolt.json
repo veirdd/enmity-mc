@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:flare_bolt"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/flare_bolt"
+    }
+}

@@ -1,0 +1,1 @@
+give @s minecraft:warped_fungus_on_a_stick{display:{Name:'{"text":"Dolphin\'s Fin","italic":false}',Lore:['[{"text":"Accessory type: ","italic":false,"color":"gray"},{"text":"effect","color":"white"}]','[{"text":"Grants Dolphin\'s Grace.","italic":false,"color":"gray"}]']},Unbreakable:1,HideFlags:4,CustomModelData:89,Enmity:1} 1

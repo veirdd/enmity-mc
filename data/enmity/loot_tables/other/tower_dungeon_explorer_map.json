@@ -1,0 +1,32 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:map",
+            "functions": [
+              {
+                "function": "minecraft:exploration_map",
+                "destination": "enmity:tower_dungeon",
+                "decoration": "target_x",
+                "search_radius": 400,
+                "zoom": 3,
+                "skip_existing_chunks": false
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                    "text": "Tower Dungeon Explorer Map",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

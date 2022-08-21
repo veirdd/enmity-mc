@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "enmity:tower_dungeon",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 14375603,
+      "spacing": 36,
+      "separation": 8,
+      "type": "minecraft:random_spread"
+    }
+  }
+  

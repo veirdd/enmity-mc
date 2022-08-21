@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:void_bag"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/void_bag"
+    }
+}

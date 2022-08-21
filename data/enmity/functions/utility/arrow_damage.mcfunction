@@ -1,0 +1,5 @@
+tag @s add enmity.this
+execute if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 1 as @e[type=#enmity:arrow_shooters,sort=nearest,limit=1,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run data merge entity @e[tag=enmity.this,limit=1] {damage:22}
+execute if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 0 as @e[type=#enmity:arrow_shooters,sort=nearest,limit=1,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run data merge entity @e[tag=enmity.this,limit=1] {damage:5}
+execute if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 1 as @e[type=#enmity:arrow_shooters,sort=nearest,limit=1,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run data merge entity @e[tag=enmity.this,limit=1] {damage:16}
+tag @s remove enmity.this

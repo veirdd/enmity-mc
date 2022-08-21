@@ -1,0 +1,1 @@
+give @s minecraft:firework_star{display:{Name:'{"text":"Elder Guardian\'s Scale","italic":false}'},Enmity:1,CustomModelData:10} 1

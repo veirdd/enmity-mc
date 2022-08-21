@@ -1,0 +1,2 @@
+execute if entity @s[type=#minecraft:skeletons] unless data entity @s HandItems[{id:"minecraft:bow"}] run function enmity:entities/mobs/tag_can_leap/leap
+execute unless entity @s[type=#minecraft:skeletons] run function enmity:entities/mobs/tag_can_leap/leap

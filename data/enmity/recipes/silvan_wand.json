@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " 01",
+      " 00",
+      "0  "
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:stick"
+      },
+      "1": {
+        "item": "minecraft:wheat_seeds"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book",
+      "count": 1
+    }
+}

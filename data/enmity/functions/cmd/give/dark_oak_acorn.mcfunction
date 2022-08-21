@@ -1,0 +1,1 @@
+give @s minecraft:firework_star{display:{Name:'{"text":"Dark Oak Acorn","italic":false}'},Enmity.TreeSeed:1,CustomModelData:19,Enmity:1} 1

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " 0 ",
+      "101",
+      " 1 "
+    ],
+    "key": {
+      "0": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "1": {
+        "item": "minecraft:warped_planks"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book",
+      "count": 1
+    }
+}
