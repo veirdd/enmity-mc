@@ -24,6 +24,7 @@ execute unless predicate enmity:environment/is_night as @a[gamemode=!spectator,t
 
 execute as @e[type=item] if score @s enmity.age matches 30.. if entity @s[nbt={Item:{tag:{Enmity.TreeSeed:1}}}] at @s if block ~ ~ ~ #enmity:sapling_valid_space if block ~ ~-1 ~ #minecraft:dirt run function enmity:entities/other_entities/items/tag_tree_seeds/check_type
 execute as @e[type=item] if score @s enmity.age matches 30.. if entity @s[nbt={Item:{id:"minecraft:mangrove_propagule"}}] at @s if block ~ ~ ~ #enmity:sapling_valid_space if block ~ ~-1 ~ #minecraft:dirt run function enmity:entities/other_entities/items/mangrove_propagule/place_sapling
+execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity:entities/mobs/flame_spewer/40_tick
 
 # Temperature
 

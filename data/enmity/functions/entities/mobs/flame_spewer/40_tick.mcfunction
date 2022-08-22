@@ -1,0 +1,2 @@
+execute if predicate enmity:random/random_0.25 run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator,distance=..24] eyes
+execute if predicate enmity:random/random_0.2 unless entity @p[gamemode=!spectator,gamemode=!creative,distance=..24] run function enmity:utility/projectiles/random_spread/360dg

@@ -1,0 +1,1 @@
+summon magma_cube ~ ~ ~ {NoAI:1,Size:2,DeathLootTable:"enmity:entities/flame_spewer",Tags:["enmity.custom_mob","enmity.flame_spewer"]}
