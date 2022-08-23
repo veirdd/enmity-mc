@@ -19,6 +19,7 @@ execute as @e[type=ender_dragon] at @s run function enmity:entities/mobs/ender_d
 execute as @e[type=warden] at @s run effect give @a[gamemode=!spectator,gamemode=!creative,distance=..24] darkness 10 0 true
 
 execute as @a[gamemode=!spectator] at @s if predicate enmity:environment/near_deep_dark run function enmity:entities/mobs/sculker/spawn_check
+execute as @a[gamemode=!spectator] at @s run function enmity:entities/mobs/flame_spewer/spawning/spawn_check
 execute as @a[gamemode=!spectator] at @s if predicate enmity:environment/biome/tag/skylands if predicate enmity:random/random_0.05 if predicate enmity:environment/is_night if entity @s[y=200,dy=1000] run function enmity:entities/other_entities/items/pocket_moon/spawn_check
 execute unless predicate enmity:environment/is_night as @a[gamemode=!spectator,tag=enmity.on_surface] if predicate enmity:random/random_0.05 at @s if entity @s[y=100,dy=10000] run function enmity:entities/mobs/harpy/spawning/spawn_check
 
