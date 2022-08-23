@@ -14,7 +14,7 @@ execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,t
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,gamemode=!creative,tag=!enmity.update_health] run function enmity:utility/health_modification/request
 scoreboard players set @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] enmity.iframes 10
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] run data modify entity @s Fire set value 40s
-execute if entity @s[tag=enmity.flame_spewer] if entity @a[tag=enmity.hit] if block ~ ~ ~ #enmity:replaceable run setblock ~ ~ ~ lava[level=1]
+execute if entity @s[tag=enmity.flame_spewer] at @p[tag=enmity.hit] if block ~ ~ ~ #enmity:replaceable run setblock ~ ~ ~ lava[level=1]
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
 execute at @s run playsound block.lava.extinguish neutral @a[distance=0..] ~ ~ ~ 2.0 1 0.0
 execute at @s run playsound block.lava.extinguish neutral @a[distance=0..] ~ ~ ~ 2.0 1.25 0.0
