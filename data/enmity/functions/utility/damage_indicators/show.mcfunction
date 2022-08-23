@@ -11,6 +11,7 @@ tag @e[type=item,tag=enmity.new] remove enmity.new
 execute at @e[type=marker,tag=enmity.setup,limit=1] run setblock ~ -64 ~ bedrock
 tag @s remove enmity.this
 scoreboard players set @s[tag=enmity.hit] enmity.dmg_taken_2 0
+tag @s add enmity.hurt
 
 execute if entity @s[type=ender_dragon,tag=!enmity.dead] if score @s enmity.math_a <= @s enmity.math_b run function enmity:entities/mobs/ender_dragon/on_death
 execute if entity @s[type=player] at @s run function enmity:utility/on_player_damage

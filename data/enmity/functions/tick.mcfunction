@@ -154,3 +154,4 @@ execute if score %difficulty enmity.value matches 0 run function enmity:utility/
 title @a[scores={enmity.left=1}] times 0 20 10
 scoreboard players set @a[scores={enmity.left=1..}] enmity.left 0
 clear @a knowledge_book
+tag @e[type=#enmity:not_living,tag=enmity.hurt] remove enmity.hurt
