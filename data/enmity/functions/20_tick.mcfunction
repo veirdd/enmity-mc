@@ -146,7 +146,7 @@ execute as @e[type=marker,tag=enmity.elder_anchor,tag=!enmity.arena_built] at @s
 execute if entity @e[type=elder_guardian] run bossbar set enmity.elder_guardian visible true
 execute unless entity @e[type=elder_guardian] run bossbar set enmity.elder_guardian visible false
 execute if score %difficulty enmity.value matches 1 as @e[type=bat,tag=enmity.bat] at @s run function enmity:entities/mobs/bat/10-20_tick
-execute as @e[type=magma_cube] at @s run function enmity:entities/mobs/magma_cube/20_tick
+execute as @e[type=magma_cube,tag=!enmity.custom_mob] at @s run function enmity:entities/mobs/magma_cube/20_tick
 execute as @e[type=wither_skeleton,tag=enmity.end_wither_skeleton] at @s run function enmity:entities/mobs/end_wither_skeleton/20_tick
 execute as @e[type=illusioner] at @s run function enmity:entities/mobs/illusioner/20_tick
 execute as @e[type=zombie,tag=enmity.target_dummy] at @s run function enmity:entities/other_entities/target_dummy/20_tick_body

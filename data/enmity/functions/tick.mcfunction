@@ -8,6 +8,16 @@ execute as @a[tag=enmity.give_instant_health] run function enmity:utility/health
 execute as @a[tag=enmity.clear_hunger] run function enmity:items/food/rotten_flesh/clear_hunger
 effect clear @a absorption
 
+# Entities
+
+scoreboard players add @e[type=#enmity:target_dummy,tag=enmity.target_dummy] enmity.age 1
+execute as @e[type=!#enmity:not_living,type=!player,tag=!enmity.modified,tag=!enmity.projectile] at @s run function enmity:entities/modifications/check_type
+execute as @e[type=end_crystal,tag=!enmity.modified] at @s run function enmity:entities/other_entities/end_crystal/modification
+execute as @e[type=furnace_minecart,tag=!enmity.modified] at @s run function enmity:entities/other_entities/furnace_minecart/modification
+execute as @e[type=end_crystal,tag=enmity.dragon_crystal] if entity @s[nbt={Invulnerable:0b}] at @s run data merge entity @s {Invulnerable:1}
+execute as @e[type=item,tag=!enmity.modified,nbt={Age:1s}] at @s run function enmity:entities/modifications/items_age1
+execute as @e[type=item,tag=!enmity.modified] at @s run function enmity:entities/modifications/items
+
 # Items
 
 execute as @a if entity @s[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick"}},scores={enmity.use=1..,enmity.cooldown=0}] run function enmity:items/usable
@@ -90,14 +100,6 @@ execute as @e[type=item_frame,tag=enmity.block] at @s unless block ~ ~ ~ spawner
 
 # Entities
 
-scoreboard players add @e[type=#enmity:target_dummy,tag=enmity.target_dummy] enmity.age 1
-execute as @e[type=!#enmity:not_living,type=!player,tag=!enmity.modified,tag=!enmity.projectile] at @s run function enmity:entities/modifications/check_type
-execute as @e[type=end_crystal,tag=!enmity.modified] at @s run function enmity:entities/other_entities/end_crystal/modification
-execute as @e[type=furnace_minecart,tag=!enmity.modified] at @s run function enmity:entities/other_entities/furnace_minecart/modification
-execute as @e[type=end_crystal,tag=enmity.dragon_crystal] if entity @s[nbt={Invulnerable:0b}] at @s run data merge entity @s {Invulnerable:1}
-execute as @e[type=item,tag=!enmity.modified,nbt={Age:1s}] at @s run function enmity:entities/modifications/items_age1
-execute as @e[type=item,tag=!enmity.modified] at @s run function enmity:entities/modifications/items
-
 execute as @e[type=skeleton,tag=enmity.wraith] at @s run function enmity:entities/mobs/wraith/tick
 execute as @e[type=wither,tag=!enmity.despawning] at @s run function enmity:entities/mobs/wither/tick
 execute as @e[type=elder_guardian] at @s run function enmity:entities/mobs/elder_guardian/tick
@@ -126,7 +128,6 @@ execute as @e[type=pig,tag=enmity.harpy_saddle] at @s run function enmity:entiti
 execute as @e[type=armor_stand,tag=enmity.structure_spawn] at @s unless block ~ ~-1 ~ jigsaw run function enmity:entities/structure_spawns/init
 execute as @e[type=area_effect_cloud,tag=enmity.waystone_id] at @s run function enmity:blocks/functions/waystone/tick_aec
 execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity:entities/mobs/flame_spewer/tick
-execute as @e[type=magma_cube,nbt={NoAI:1b,Size:0}] at @s run function enmity:utility/despawn
 
 # Other
 

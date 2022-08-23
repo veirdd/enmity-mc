@@ -1,6 +1,7 @@
 attribute @s generic.armor base set 12
-attribute @s generic.max_health modifier add 0-0-0-0-0 "0" 3.25 multiply_base
-scoreboard players set @s enmity.dmg_rdc 3
+attribute @s generic.max_health modifier add 0-0-0-0-0 "0" 6 multiply_base
+scoreboard players set @s enmity.dmg_rdc 4
+scoreboard players set @s enmity.dmg_bst 6
 
 scoreboard players set @s enmity.cooldown 0
 data modify entity @s Health set value 1024

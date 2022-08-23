@@ -84,7 +84,6 @@ execute as @e[type=elder_guardian] at @s run function enmity:entities/mobs/elder
 execute if score %difficulty enmity.value matches 2 as @e[type=phantom,tag=!enmity.custom_mob] at @s run function enmity:entities/mobs/phantom/10_tick
 execute if score %hardmode enmity.value matches 1 as @e[type=wither_skeleton,tag=!enmity.custom_mob] at @s run function enmity:entities/mobs/wither_skeleton/10_tick
 execute as @e[type=skeleton,tag=enmity.wraith] if score %hardmode enmity.value matches 1 at @s run function enmity:entities/mobs/wraith/10_tick
-execute if score %hardmode enmity.value matches 1 as @e[type=magma_cube] at @s run function enmity:entities/mobs/magma_cube/10_tick
 execute as @e[type=wither_skeleton,tag=enmity.end_wither_skeleton] at @s run function enmity:entities/mobs/end_wither_skeleton/10_tick
 execute as @e[type=illusioner] at @s run function enmity:entities/mobs/illusioner/10_tick
 execute as @e[type=ender_dragon] at @s run function enmity:entities/mobs/ender_dragon/10_tick
@@ -98,6 +97,7 @@ execute if score %difficulty enmity.value matches 2 as @e[type=enderman,nbt=!{An
 execute if score %hardmode enmity.value matches 1 as @e[type=creeper] at @s run function enmity:entities/mobs/creeper/10_tick
 execute as @e[type=furnace_minecart,nbt=!{Fuel:0s}] at @s run function enmity:entities/other_entities/furnace_minecart/10_tick
 execute as @e[type=allay] at @s run function enmity:entities/mobs/allay/10_tick
+execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity:entities/mobs/flame_spewer/10_tick
 
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run particle portal ~ ~0.2 ~ 0 0 0 0.5 5
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run playsound minecraft:entity.allay.ambient_without_item neutral @a[distance=0..] ~ ~ ~ 0.3 0.4 0

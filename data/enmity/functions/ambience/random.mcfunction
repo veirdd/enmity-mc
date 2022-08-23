@@ -66,7 +66,7 @@ execute if score @s enmity.biome_type matches 7..12 unless score @s enmity.biome
 
 # Other
 
-execute unless score @s enmity.biome_type matches 0 unless score @s enmity.biome_type matches 4 if predicate enmity:environment/is_night if predicate enmity:random/random_0.025 run playsound enmity:ambience.owl ambient @s ~ ~ ~ 2 1 0
+execute if predicate enmity:environment/in_overworld unless score @s enmity.biome_type matches 0 unless score @s enmity.biome_type matches 4 if predicate enmity:environment/is_night if predicate enmity:random/random_0.025 run playsound enmity:ambience.owl ambient @s ~ ~ ~ 2 1 0
 
 # Structures
 

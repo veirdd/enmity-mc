@@ -1,1 +1,1 @@
-summon magma_cube ~ ~ ~ {NoAI:1,Size:2,DeathLootTable:"enmity:entities/flame_spewer",Tags:["enmity.custom_mob","enmity.flame_spewer"]}
+summon magma_cube ~ ~ ~ {Attributes:[{Name:"generic.movement_speed",Base:0},{Name:"generic.knockback_resistance",Base:1}],PersistenceRequired:1,Silent:1,Size:2,DeathLootTable:"enmity:entities/flame_spewer",Tags:["enmity.custom_mob","enmity.flame_spewer"]}

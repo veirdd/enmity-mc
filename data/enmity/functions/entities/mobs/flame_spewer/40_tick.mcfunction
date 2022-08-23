@@ -1,2 +1,4 @@
-execute if predicate enmity:random/random_0.25 run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator,distance=..24] eyes
-execute if predicate enmity:random/random_0.2 unless entity @p[gamemode=!spectator,gamemode=!creative,distance=..24] run function enmity:utility/projectiles/random_spread/360dg
+execute unless predicate enmity:entity/has_target if predicate enmity:random/random_0.25 run function enmity:entities/mobs/flame_spewer/rotate_randomly
+execute unless predicate enmity:entity/has_target if predicate enmity:random/random_0.25 rotated as @s run summon marker ^ ^ ^-70 {Tags:["enmity.direction_anchor"]}
+execute if entity @e[type=marker,tag=enmity.direction_anchor] run playsound entity.squid.squirt hostile @a[distance=0..] ~ ~ ~ 1 1.4 0
+execute if entity @e[type=marker,tag=enmity.direction_anchor] run function enmity:entities/mobs/flame_spewer/movement
