@@ -10,5 +10,6 @@ scoreboard players operation @e[type=marker,tag=enmity.new] enmity.dmg += @s enm
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.player_id = @s enmity.player_id
 tp @e[type=marker,tag=enmity.new] @s
 execute if entity @s[type=!magma_cube] at @s anchored eyes run tp @e[type=marker,tag=enmity.new] ^ ^ ^0.2
-execute if entity @s[type=magma_cube] at @s anchored eyes run tp @e[type=marker,tag=enmity.new] ^ ^0.3 ^0.2
+execute if entity @s[type=magma_cube] at @s anchored eyes run tp @e[type=marker,tag=enmity.new] ^ ^-0.5 ^0.2
+execute if entity @s[type=magma_cube] run tag @e[type=marker,tag=enmity.new] add enmity.flame_spewer
 tag @e[type=marker,tag=enmity.flare_bolt,tag=enmity.new] remove enmity.new

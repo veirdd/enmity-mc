@@ -1,3 +1,3 @@
 particle crit ^-1 ^0.5 ^ 0 0 0 0 1 force
 execute positioned ^-1 ^0.5 ^ unless block ~ ~ ~ #enmity:unmineable unless block ~ ~ ~ #enmity:unbreakable unless block ~ ~ ~ #minecraft:needs_diamond_tool unless block ~ ~ ~ #minecraft:rails run setblock ~ ~ ~ air destroy
-execute unless entity @s[nbt={Air:0s}] if block ~ ~ ~ #enmity:furnace_minecart_replaceable unless block ~ ~-1 ~ #enmity:not_solid run function enmity:entities/other_entities/furnace_minecart/place_rail
+execute unless entity @s[nbt={Air:0s}] if block ~ ~ ~ #enmity:replaceable unless block ~ ~-1 ~ #enmity:not_solid run function enmity:entities/other_entities/furnace_minecart/place_rail

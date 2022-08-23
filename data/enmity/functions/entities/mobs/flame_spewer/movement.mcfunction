@@ -9,4 +9,3 @@ execute store result score @s enmity.math_f run data get entity @e[type=marker,t
 execute store result entity @s Motion[0] double 0.004 run scoreboard players operation @s enmity.math_a -= @s enmity.math_d
 execute store result entity @s Motion[1] double 0.004 run scoreboard players operation @s enmity.math_b -= @s enmity.math_e
 execute store result entity @s Motion[2] double 0.004 run scoreboard players operation @s enmity.math_c -= @s enmity.math_f
-kill @e[type=marker,tag=enmity.direction_anchor,limit=1]

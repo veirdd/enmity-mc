@@ -1,1 +1,1 @@
-execute if score %difficulty enmity.value matches 2 if predicate enmity:random/random_0.25 at @r[distance=..2.5,gamemode=!creative,gamemode=!spectator] if block ~ ~ ~ air run setblock ~ ~ ~ lava[level=1]
+execute if score %difficulty enmity.value matches 2 if predicate enmity:random/random_0.25 at @r[distance=..2.5,gamemode=!creative,gamemode=!spectator] if block ~ ~ ~ #enmity:replaceable run setblock ~ ~ ~ lava[level=1]
