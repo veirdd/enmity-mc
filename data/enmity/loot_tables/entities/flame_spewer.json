@@ -1,6 +1,96 @@
 {
     "type": "minecraft:entity",
     "pools": [
+        {
+          "rolls": 1,
+          "bonus_rolls": 0,
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:gunpowder",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 0,
+                    "max": 3
+                  },
+                  "add": false
+                },
+                {
+                  "function": "minecraft:looting_enchant",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 0,
+                    "max": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rolls": 1,
+          "bonus_rolls": 0,
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:obsidian",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance_with_looting",
+                  "chance": 0.1,
+                  "looting_multiplier": 0.1
+                },
+                {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "dimension": "minecraft:overworld"
+                    }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rolls": 1,
+          "bonus_rolls": 0,
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_scrap",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance_with_looting",
+                  "chance": 0.1,
+                  "looting_multiplier": 0.1
+                },
+                {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "dimension": "minecraft:the_nether"
+                    }
+                }
+              ]
+            }
+          ]
+        },
+      {
+          "rolls": 1,
+          "entries": [
+              {
+                  "type": "minecraft:item",
+                  "name": "minecraft:firework_star"
+              }
+          ],
+          "functions": [
+              {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Xp:8}"
+              }
+          ]
+      },
       {
         "rolls": 1,
         "entries": [
