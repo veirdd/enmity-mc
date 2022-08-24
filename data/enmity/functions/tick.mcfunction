@@ -15,8 +15,6 @@ execute as @e[type=!#enmity:not_living,type=!player,tag=!enmity.modified,tag=!en
 execute as @e[type=end_crystal,tag=!enmity.modified] at @s run function enmity:entities/other_entities/end_crystal/modification
 execute as @e[type=furnace_minecart,tag=!enmity.modified] at @s run function enmity:entities/other_entities/furnace_minecart/modification
 execute as @e[type=end_crystal,tag=enmity.dragon_crystal] if entity @s[nbt={Invulnerable:0b}] at @s run data merge entity @s {Invulnerable:1}
-execute as @e[type=item,tag=!enmity.modified,nbt={Age:1s}] at @s run function enmity:entities/modifications/items_age1
-execute as @e[type=item,tag=!enmity.modified] at @s run function enmity:entities/modifications/items
 
 # Items
 
@@ -99,6 +97,9 @@ execute as @e[type=item_frame,tag=enmity.block,tag=enmity.block_unset] at @s run
 execute as @e[type=item_frame,tag=enmity.block] at @s unless block ~ ~ ~ spawner run function enmity:blocks/destroy
 
 # Entities
+
+execute as @e[type=item,tag=!enmity.modified,nbt={Age:1s}] at @s run function enmity:entities/modifications/items_age1
+execute as @e[type=item,tag=!enmity.modified] at @s run function enmity:entities/modifications/items
 
 execute as @e[type=skeleton,tag=enmity.wraith] at @s run function enmity:entities/mobs/wraith/tick
 execute as @e[type=wither,tag=!enmity.despawning] at @s run function enmity:entities/mobs/wither/tick
