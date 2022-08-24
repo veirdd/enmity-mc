@@ -1,1 +1,4 @@
 summon magma_cube ~ ~ ~ {Attributes:[{Name:"generic.movement_speed",Base:0},{Name:"generic.knockback_resistance",Base:1}],PersistenceRequired:1,Silent:1,Size:2,DeathLootTable:"enmity:entities/flame_spewer",Tags:["enmity.custom_mob","enmity.flame_spewer"]}
+execute if entity @s[type=marker,tag=enmity.spawner] run playsound entity.magma_cube.jump hostile @a[distance=0..] ~ ~ ~ 1.5 0.5 0
+execute if entity @s[type=marker,tag=enmity.spawner] run playsound block.redstone_torch.burnout hostile @a[distance=0..] ~ ~ ~ 1.5 0.7 0
+execute if entity @s[type=marker,tag=enmity.spawner] run particle lava ~ ~ ~ 0.5 0.5 0.5 0 40

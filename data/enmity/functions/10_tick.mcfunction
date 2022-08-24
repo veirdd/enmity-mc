@@ -103,6 +103,8 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run playsound minecraft:entity.allay.ambient_without_item neutral @a[distance=0..] ~ ~ ~ 0.3 0.4 0
 execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run particle portal ~ ~0.8 ~ 0.2 0.4 0.2 0.5 10
 
+execute as @a[gamemode=!spectator] at @s run function enmity:entities/mobs/flame_spewer/spawning/spawn_check
+
 # Environment
 
 execute as @a if score @s enmity.biome_type matches 14 if score %difficulty enmity.value matches 1 if predicate enmity:random/random_0.05 at @s run function enmity:entities/other_entities/nether_geyser/spawn
