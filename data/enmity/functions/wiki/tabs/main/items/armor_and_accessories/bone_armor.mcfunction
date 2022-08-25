@@ -1,6 +1,0 @@
-tellraw @s [{"text":"-===============[","color":"gray"},{"text":"BONE ARMOR","color":"white","bold":true},{"text":"]==============-","color":"gray"}]
-
-tellraw @s [{"text":"Description:\n   Helmet: +1 Armor\n   Chestplate: +3 Armor\n   Leggings: +2 Armor\n   Boots: +1 Armor\n   Set Bonus:\n      +1 Magic damage","color":"gray"}]
-tellraw @s [{"text":"\nPrimary obtaining method:\n   Crafting:\n      Helmet:   Chestplate:   Leggings:   Boots:\n     [0][0][0]   [0][-][0]     [0][0][0]   [-][-][-]\n     [0][-][0]   [0][0][0]     [0][-][0]   [0][-][0]\n     [-][-][-]   [0][0][0]     [0][-][0]   [0][-][0]\n      0 - Bone","color":"gray"}]
-
-tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

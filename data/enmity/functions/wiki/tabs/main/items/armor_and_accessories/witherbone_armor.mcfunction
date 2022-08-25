@@ -1,6 +1,0 @@
-tellraw @s [{"text":"-============[","color":"gray"},{"text":"WITHERBONE ARMOR","color":"white","bold":true},{"text":"]===========-","color":"gray"}]
-
-tellraw @s [{"text":"Description:\n   Helmet: +2 Armor, +2.5 Armor Toughness\n   Chestplate: +7 Armor, +2.5 Armor Toughness\n   Leggings: +5 Armor, +2.5 Armor Toughness\n   Boots: +2 Armor, +2.5 Armor Toughness\n   Set Bonus:\n      +2 Magic damage\n      +1 Magic damage reduction\n      Has a chance to remove Wither.","color":"gray"}]
-tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting (each piece):\n      Corresponding Bone Armor piece\n      Witherbone (6)\n      Soul Essence (3)","color":"gray"}]
-
-tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

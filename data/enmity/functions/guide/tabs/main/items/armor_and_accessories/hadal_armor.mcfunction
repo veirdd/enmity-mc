@@ -1,0 +1,6 @@
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":"HADAL ARMOR","color":"white","bold":true},{"text":"]==============-","color":"gray"}]
+
+tellraw @s [{"text":"Description:\n   Helmet: +3 Armor\n   Chestplate: +6 Armor\n   Leggings: +5 Armor\n   Boots: +3 Armor\n   Set Bonus:\n      +1 Magic damage\n      +1 Magic damage reduction\n      Grants immunity to Darkness.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Crafting:\n      Helmet:   Chestplate:   Leggings:   Boots:\n     [0][0][0]   [0][-][0]     [0][0][0]   [-][-][-]\n     [0][-][0]   [0][0][0]     [0][-][0]   [0][-][0]\n     [-][-][-]   [0][0][0]     [0][-][0]   [0][-][0]\n      0 - Echo Shard","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

@@ -45,7 +45,7 @@ scoreboard objectives remove enmity.mana_display
 scoreboard objectives remove enmity.mana_regen
 scoreboard objectives remove enmity.in_end_center_time
 scoreboard objectives remove enmity.egapple_cooldown
-scoreboard objectives remove enmity.wiki
+scoreboard objectives remove enmity.guide
 scoreboard objectives remove enmity.ender_dragon_defeated
 scoreboard objectives remove enmity.value
 scoreboard objectives remove enmity.death_mode_regen_cd

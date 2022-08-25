@@ -1,7 +1,0 @@
-tellraw @s [{"text":"-============[","color":"gray"},{"text":"RING OF DEVOTION","color":"white","bold":true},{"text":"]============-","color":"gray"}]
-
-tellraw @s [{"text":"Description:\n   Accessory type: effect\n   -1 Magic damage\n   -1 Magic damage reduction\n   Nearby mobs have a chance to drop experience upon being hurt.\n   Strongly attracts experience.","color":"gray"}]
-tellraw @s [{"text":"\nPrimary obtaining method:\n   Crafting:\n      [1][2][1]\n      [0][-][0]\n      [1][0][1]\n      0 - Gold Nugget\n      1 - Bottle o' Enchanting\n      2 - Ender Pearl","color":"gray"}]
-tellraw @s [{"text":"\nNotes:\n   Has a great synergy with items enchanted with Mending due to the rework of this enchantment.","color":"gray"}]
-
-tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

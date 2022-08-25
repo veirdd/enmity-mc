@@ -139,7 +139,7 @@ execute as @e[type=!#enmity:not_living] unless entity @s[gamemode=spectator] at 
 execute as @a[scores={enmity.age=1}] unless data entity @s SpawnX run function enmity:utility/spawn_spread
 execute as @a at @s if predicate enmity:entity/is_using_waystone run function enmity:blocks/functions/waystone/tick_user
 execute if entity @e[type=!#enmity:not_living,scores={enmity.subjugator_capture_id=-2147483648..2147483647}] as @a run function enmity:items/usable/subjugator/capture_validity_check
-execute as @a if score @s enmity.wiki matches 1.. run function enmity:wiki/open
+execute as @a if score @s enmity.guide matches 1.. run function enmity:guide/open
 execute as @a run function enmity:utility/player_toggles/player_toggles
 execute as @e[type=arrow,nbt={HasBeenShot:0b}] at @s run function enmity:utility/arrow_damage
 execute if score %hardmode enmity.value matches 1 as @e[type=item,nbt={Item:{id:"minecraft:diamond_sword"}}] at @s if entity @e[type=lightning_bolt,distance=..3] run function enmity:items/crafting/custom/lightning_surge

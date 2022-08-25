@@ -1,6 +1,0 @@
-tellraw @s [{"text":"-===============[","color":"gray"},{"text":"SUBJUGATOR","color":"white","bold":true},{"text":"]==============-","color":"gray"}]
-
-tellraw @s [{"text":"Description:\n   Mode: <current mode>\n   Mana usage: 500\n   Captures entities in a forcefield projection.\n   Use while sneaking to switch between modes.","color":"gray"}]
-tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Alliance Rod\n      Celestial Shard (3)\n      Lightly Matter (2)\n      Nightly Matter (2)","color":"gray"}]
-
-tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 113"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

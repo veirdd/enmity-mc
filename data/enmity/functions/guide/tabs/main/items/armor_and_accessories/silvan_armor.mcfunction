@@ -1,0 +1,6 @@
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":"SILVAN ARMOR","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
+
+tellraw @s [{"text":"Description:\n   Helmet: +2 Armor\n   Chestplate: +5 Armor\n   Leggings: +4 Armor\n   Boots: +1 Armor\n   Set Bonus:\n      +1 Magic damage reduction\n      +1 Sentry slot","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting (each piece):\n      Corresponding Leather Armor piece\n      Soul of Nature\n      Wheat Seeds (8)","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

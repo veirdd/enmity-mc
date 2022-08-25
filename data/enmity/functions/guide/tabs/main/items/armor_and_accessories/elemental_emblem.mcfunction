@@ -1,0 +1,6 @@
+tellraw @s [{"text":"-===========[","color":"gray"},{"text":"ELEMENTAL EMBLEM","color":"white","bold":true},{"text":"]===========-","color":"gray"}]
+
+tellraw @s [{"text":"Description:\n   Accessory type: strength\n   +5 Magic damage\n   +5 Magic damage reduction\n   +100% Attack damage\n   +50% Attack speed\n   +12 Health\n   +10 Armor\n   Quickly restores health.\n   Grants heat and cold resistance.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Heart of Light\n      Heart of Darkness\n      Celestial Shard (3)\n      Lightly Matter (5)\n      Nightly Matter (5)","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

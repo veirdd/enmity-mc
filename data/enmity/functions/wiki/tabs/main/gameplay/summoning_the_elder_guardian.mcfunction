@@ -1,7 +1,0 @@
-tellraw @s [{"text":"-=====[","color":"gray"},{"text":"SUMMONING THE ELDER GUARDIAN","color":"white","bold":true},{"text":"]=====-","color":"gray"}]
-
-tellraw @s [{"text":"The Elder Guardian must be summoned and doesn't spawn naturally. Here are the steps for summoning it:\n","color":"gray"}]
-tellraw @s [{"text":"1. Build a structure (inside or above a monument):\n   First layer:   Second layer:\n [0][0][0][0][0]\n [0][1][1][1][0]     [2][2][2]\n [0][1][1][1][0]     [2][3][2]\n [0][1][1][1][0]     [2][2][2]\n [0][0][0][0][0]\n   0 - prismarine bricks\n   1 - dark prismarine\n   2 - prismarine\n   3 - water","color":"gray"}]
-tellraw @s [{"text":"2. Bring a Guardian into the created water pool and sacrifice it inside.","color":"gray"}]
-
-tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 13"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

@@ -46,7 +46,7 @@ scoreboard objectives add enmity.mana_display trigger
 scoreboard objectives add enmity.mana_regen dummy
 scoreboard objectives add enmity.in_end_center_time dummy
 scoreboard objectives add enmity.egapple_cooldown dummy
-scoreboard objectives add enmity.wiki trigger
+scoreboard objectives add enmity.guide trigger
 scoreboard objectives add enmity.ender_dragon_defeated dummy
 scoreboard objectives add enmity.value dummy
 scoreboard objectives add enmity.death_mode_regen_cd dummy

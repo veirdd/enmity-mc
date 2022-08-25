@@ -1,0 +1,9 @@
+tellraw @s [{"text":"-==================[","color":"gray"},{"text":"GUIDE","color":"white","bold":true},{"text":"]=================-","color":"gray"}]
+
+tellraw @s [{"text":"Welcome to the guide. Click the buttons below to read more.\nIt is recommended to use chat width of 270px or more.\n","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Items","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Items"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 11"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Entities","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Entities"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 12"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Blocks","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Blocks"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 14"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"[","color":"gray"},{"text":"Gameplay","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Gameplay"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 13"}},{"text":"]","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}}},{"text":"]==============-","color":"gray"}]

@@ -1,0 +1,2 @@
+execute unless score %hardmode enmity.value matches 1 run function enmity:guide/tabs/main/items/armor_and_accessories/highlights/pre_wither
+execute if score %hardmode enmity.value matches 1 run function enmity:guide/tabs/main/items/armor_and_accessories/highlights/branch_2

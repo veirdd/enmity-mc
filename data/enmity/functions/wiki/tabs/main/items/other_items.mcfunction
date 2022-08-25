@@ -1,2 +1,0 @@
-execute unless score %giant_defeated enmity.value matches 1 run function enmity:wiki/tabs/main/items/other_items/highlights/pre_giant
-execute if score %giant_defeated enmity.value matches 1 run function enmity:wiki/tabs/main/items/other_items/highlights/branch_1

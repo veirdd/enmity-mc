@@ -1,0 +1,5 @@
+tellraw @s [{"text":"-========[","color":"gray"},{"text":"ENCHANTED GOLDEN APPLE","color":"white","bold":true},{"text":"]========-","color":"gray"}]
+
+tellraw @s [{"text":"Enchanted Golden Apples grant very powerful Regeneration for 5 seconds and satiate the player fully. Consuming 2 Enchanted Golden Apples within 60 seconds kills you. They can be found in chests in end cities on top of existing sources.","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 114"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

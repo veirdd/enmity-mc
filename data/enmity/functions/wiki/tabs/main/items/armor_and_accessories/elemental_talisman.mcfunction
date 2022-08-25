@@ -1,6 +1,0 @@
-tellraw @s [{"text":"-==========[","color":"gray"},{"text":"ELEMENTAL TALISMAN","color":"white","bold":true},{"text":"]==========-","color":"gray"}]
-
-tellraw @s [{"text":"Description:\n   Accessory type: mana\n   +4 Mana regeneration\n   +800 Mana capacity\n   +1 Sentry slot\n   Restores mana upon taking damage.\n   Grants Night Vision, even in the Deep Dark.","color":"gray"}]
-tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Ethereal Ring\n      Silvan Necklace\n      Magic Cuffs\n      Celestial Shard (3)\n      Elder Guardian's Scale (5)\n      Nether Star (5)","color":"gray"}]
-
-tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

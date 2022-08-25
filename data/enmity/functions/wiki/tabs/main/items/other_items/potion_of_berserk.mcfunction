@@ -1,6 +1,0 @@
-tellraw @s [{"text":"-===========[","color":"gray"},{"text":"POTION OF BERSERK","color":"white","bold":true},{"text":"]===========-","color":"gray"}]
-
-tellraw @s [{"text":"Potions of Berserk are used to increase the player's magic damage. Level I provides a damage increase of 2 and level II an increase of 4.","color":"gray"}]
-tellraw @s [{"text":"\nPrimary obtaining method:\n   A Potion of Strength dropped onto an enchantment table will transform into a Potion of Berserk after 1 minute.\n   The level and duration of the potion are preserved.","color":"gray"}]
-
-tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki set 113"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.wiki"}},{"text":"]==============-","color":"gray"}]

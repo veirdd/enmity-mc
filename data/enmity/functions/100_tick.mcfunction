@@ -24,7 +24,7 @@ execute as @a at @s if predicate enmity:environment/near_campfire run effect giv
 
 # Other
 
-scoreboard players enable @a enmity.wiki
+scoreboard players enable @a enmity.guide
 scoreboard players enable @a enmity.player_targeting
 scoreboard players enable @a enmity.mana_display
 

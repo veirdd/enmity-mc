@@ -1,2 +1,0 @@
-execute unless score %ender_dragon_defeated enmity.value matches 1 run function enmity:wiki/tabs/main/items/magic_weapons/highlights/pre_ender_dragon
-execute if score %ender_dragon_defeated enmity.value matches 1 run function enmity:wiki/tabs/main/items/magic_weapons/highlights/end

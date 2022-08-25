@@ -1,0 +1,7 @@
+tellraw @s [{"text":"-================[","color":"gray"},{"text":"DAGGERS","color":"white","bold":true},{"text":"]================-","color":"gray"}]
+
+tellraw @s [{"text":"Daggers are alternative versions of swords. They deal slightly lower damage but have a higher attack speed instead. They can also perform slash attacks.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Crafting:\n      [-][-][-]\n      [-][0][-]\n      [-][1][-]\n      0 - Corresponding sword material\n      1 - Stick","color":"gray"}]
+tellraw @s [{"text":"\nNotes:\n   Daggers are more comfortable in use than swords and allow attacking slightly faster but are less effective against armored targets.\n   The Netherite Dagger is crafted the same way as the other daggers; not by upgrading a Diamond Dagger in a smithing table.","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 113"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

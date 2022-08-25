@@ -1,0 +1,6 @@
+tellraw @s [{"text":"-=============[","color":"gray"},{"text":"HEART OF LIGHT","color":"white","bold":true},{"text":"]============-","color":"gray"}]
+
+tellraw @s [{"text":"Description:\n   Accessory type: strength\n   +1 Magic damage\n   +2 Magic damage reduction\n   +30% Attack damage\n   +20% Attack speed\n   +6 Health\n   +4 Armor\n   Slowly restores health.\n   Grants heat and cold resistance.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Heart of the Overworld\n      Nether Star (4)\n      Lightly Matter (3)","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]
