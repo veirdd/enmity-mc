@@ -1,1 +1,1 @@
-execute if predicate enmity:entity/is_sprinting if entity @s[nbt={OnGround:1b}] run particle dust 0 1 0.3 1 ~ ~0.2 ~ 0.2 0.2 0.2 0 3 force
+execute if predicate enmity:entity/is_sprinting if predicate enmity:entity/is_on_ground run particle dust 0 1 0.3 1 ~ ~0.2 ~ 0.2 0.2 0.2 0 3 force

@@ -8,6 +8,28 @@ execute as @a[tag=enmity.give_instant_health] run function enmity:utility/health
 execute as @a[tag=enmity.clear_hunger] run function enmity:items/food/rotten_flesh/clear_hunger
 effect clear @a absorption
 
+# Stats
+
+scoreboard players remove @e[scores={enmity.iframes=1..}] enmity.iframes 1
+scoreboard players set @a[scores={enmity.jump=1..}] enmity.jump 0
+execute as @a unless score @s enmity.age matches 2147483647 unless score @s enmity.health matches 0 run scoreboard players add @s enmity.age 1
+execute store result score %time enmity.value run time query daytime
+scoreboard players add @a[predicate=!enmity:entity/is_on_ground] enmity.midair_time 1
+scoreboard players set @a[predicate=enmity:entity/is_on_ground] enmity.midair_time 0
+
+scoreboard players set @a[gamemode=!survival,gamemode=!adventure] enmity.mana 9999
+execute as @a[gamemode=!creative,gamemode=!spectator,scores={enmity.mana=4999..}] run scoreboard players operation @s enmity.mana = @s enmity.max_mana
+scoreboard players remove @a[scores={enmity.cooldown=1..}] enmity.cooldown 1
+scoreboard players set @a[gamemode=!creative,gamemode=!spectator] enmity.mana_regen 2
+execute as @a[gamemode=!creative,gamemode=!spectator,nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/items/mana_regen
+scoreboard players operation @a[gamemode=!creative,gamemode=!spectator,scores={enmity.cooldown=1..}] enmity.mana_regen /= %const_2 enmity.value
+execute as @a[gamemode=!creative,gamemode=!spectator] run scoreboard players operation @s enmity.mana += @s enmity.mana_regen
+execute as @a[gamemode=!creative,gamemode=!spectator] if score @s enmity.mana > @s enmity.max_mana run scoreboard players operation @s enmity.mana = @s enmity.max_mana
+execute as @a run function enmity:utility/mana_display/check_type
+execute as @a if score @s[tag=!enmity.mana_sound_played] enmity.mana = @s enmity.max_mana at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 2 0
+execute as @a if score @s enmity.mana = @s enmity.max_mana run tag @s add enmity.mana_sound_played
+execute as @a if score @s enmity.mana < @s enmity.max_mana run tag @s remove enmity.mana_sound_played
+
 # Entities
 
 scoreboard players add @e[type=#enmity:target_dummy,tag=enmity.target_dummy] enmity.age 1
@@ -70,26 +92,6 @@ execute as @e[type=area_effect_cloud,tag=enmity.cloud] at @s run function enmity
 execute as @e[type=item,tag=enmity.gunpowder_bomb] at @s run function enmity:items/usable/sulphur_staff/tick_projectile
 execute as @e[type=item,tag=enmity.gunpowder_bomb,tag=enmity.no_motion,scores={enmity.age=2..}] at @s run function enmity:items/usable/sulphur_staff/motion
 execute as @e[type=bat,tag=enmity.sculkbolt] at @s run function enmity:entities/mobs/warden/tick_projectile
-
-# Stats
-
-scoreboard players remove @e[scores={enmity.iframes=1..}] enmity.iframes 1
-scoreboard players set @a[scores={enmity.jump=1..}] enmity.jump 0
-execute as @a unless score @s enmity.age matches 2147483647 unless score @s enmity.health matches 0 run scoreboard players add @s enmity.age 1
-execute store result score %time enmity.value run time query daytime
-
-scoreboard players set @a[gamemode=!survival,gamemode=!adventure] enmity.mana 9999
-execute as @a[gamemode=!creative,gamemode=!spectator,scores={enmity.mana=4999..}] run scoreboard players operation @s enmity.mana = @s enmity.max_mana
-scoreboard players remove @a[scores={enmity.cooldown=1..}] enmity.cooldown 1
-scoreboard players set @a[gamemode=!creative,gamemode=!spectator] enmity.mana_regen 2
-execute as @a[gamemode=!creative,gamemode=!spectator,nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/items/mana_regen
-scoreboard players operation @a[gamemode=!creative,gamemode=!spectator,scores={enmity.cooldown=1..}] enmity.mana_regen /= %const_2 enmity.value
-execute as @a[gamemode=!creative,gamemode=!spectator] run scoreboard players operation @s enmity.mana += @s enmity.mana_regen
-execute as @a[gamemode=!creative,gamemode=!spectator] if score @s enmity.mana > @s enmity.max_mana run scoreboard players operation @s enmity.mana = @s enmity.max_mana
-execute as @a run function enmity:utility/mana_display/check_type
-execute as @a if score @s[tag=!enmity.mana_sound_played] enmity.mana = @s enmity.max_mana at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 2 0
-execute as @a if score @s enmity.mana = @s enmity.max_mana run tag @s add enmity.mana_sound_played
-execute as @a if score @s enmity.mana < @s enmity.max_mana run tag @s remove enmity.mana_sound_played
 
 # Blocks
 

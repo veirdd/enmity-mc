@@ -31,11 +31,7 @@ execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity
 scoreboard players set @a[gamemode=!adventure,gamemode=!survival] enmity.temp_cd 0
 execute as @a unless score @s enmity.temp_cd matches -10..10 if score @s enmity.temp matches -3..3 at @s run function enmity:utility/health_modification/temperature_damage
 
-execute as @a[gamemode=!spectator] if predicate enmity:entity/has_armor/crystalline_set at @s run function enmity:items/armor/crystalline/40_tick
-
-# Environment
-
-execute as @a if predicate enmity:environment/near_deep_dark unless entity @s[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64}}]}] run effect clear @s night_vision
+execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/crystalline_set] at @s run function enmity:items/armor/crystalline/40_tick
 
 # Other
 

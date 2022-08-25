@@ -60,6 +60,7 @@ scoreboard objectives remove enmity.waystone
 scoreboard objectives remove enmity.waystone_tp
 scoreboard objectives remove enmity.xp
 scoreboard objectives remove enmity.xp_old
+scoreboard objectives remove enmity.midair_time
 bossbar remove enmity.giant
 bossbar remove enmity.elder_guardian
 kill @e[type=marker,tag=enmity.setup]

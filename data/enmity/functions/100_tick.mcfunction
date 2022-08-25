@@ -4,7 +4,7 @@ execute as @a[tag=!enmity.give_instant_health,tag=!enmity.update_health] if scor
 execute as @a[tag=!enmity.give_instant_health,tag=!enmity.update_health] if score @s enmity.health < @s enmity.max_hp if entity @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:55}}]}] run function enmity:utility/health_modification/increase_health_by_1
 execute as @a[tag=!enmity.give_instant_health,tag=!enmity.update_health] if score @s enmity.health < @s enmity.max_hp if entity @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:76}}]}] run function enmity:utility/health_modification/increase_health_by_1
 execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:79}}]}] at @s if entity @e[type=#enmity:enemies,distance=..12,tag=!enmity.projectile] run function enmity:items/accessories/soul_in_a_jar/100_tick
-execute as @a[gamemode=!spectator] if predicate enmity:entity/has_armor/hadal_set at @s run particle shriek 0 ~ ~-0.2 ~ 0 0 0 0 1
+execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/hadal_set] at @s run particle shriek 0 ~ ~-0.2 ~ 0 0 0 0 1
 
 # Entities
 

@@ -1,0 +1,19 @@
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Inventory:[{Slot:9b,id:\"minecraft:warped_fungus_on_a_stick\",tag:{CustomModelData:64}}]}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Inventory:[{Slot:12b,id:\"minecraft:warped_fungus_on_a_stick\",tag:{CustomModelData:17}}]}"
+            }
+        }
+    ]
+  }

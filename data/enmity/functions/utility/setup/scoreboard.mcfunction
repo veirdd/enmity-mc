@@ -61,6 +61,7 @@ scoreboard objectives add enmity.waystone dummy
 scoreboard objectives add enmity.waystone_tp trigger
 scoreboard objectives add enmity.xp xp
 scoreboard objectives add enmity.xp_old dummy
+scoreboard objectives add enmity.midair_time dummy
 scoreboard players set %const_-1 enmity.value -1
 scoreboard players set %const_0 enmity.value 0
 scoreboard players set %const_1 enmity.value 1
