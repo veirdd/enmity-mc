@@ -102,6 +102,7 @@ execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity
 
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run particle portal ~ ~0.2 ~ 0 0 0 0.5 5
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run playsound minecraft:entity.allay.ambient_without_item neutral @a[distance=0..] ~ ~ ~ 0.3 0.4 0
+execute as @e[type=item,tag=enmity.moon_shrine] at @s run particle end_rod ~ ~ ~ 3 3 3 0.02 10
 
 execute as @a[gamemode=!spectator] at @s run function enmity:entities/mobs/flame_spewer/spawning/spawn_check
 

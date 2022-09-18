@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "enmity:moon_shrine",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 10376564,
+      "spacing": 9,
+      "separation": 8,
+      "type": "minecraft:random_spread"
+    }
+  }
+  
