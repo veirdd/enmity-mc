@@ -5,3 +5,4 @@ execute if score @s enmity.math_a matches 12 at @s run function enmity:items/acc
 execute if score @s enmity.math_a matches 28 at @s run function enmity:items/accessories/celestial_tracers/tick
 execute if score @s enmity.math_a matches 44 at @s run function enmity:items/accessories/cloud_in_a_balloon/tick
 execute if score @s enmity.math_a matches 86 at @s run function enmity:items/accessories/cloud_hoppers/tick
+execute if score @s enmity.math_a matches 113 at @s run function enmity:items/accessories/winged_strawberry/tick
