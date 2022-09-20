@@ -18,15 +18,15 @@ execute if entity @s[type=illusioner,tag=!enmity.fixed_illusioner] run function 
 execute if entity @s[type=#enmity:extend_follow_range,tag=!enmity.range_extended] run function enmity:entities/mobs/tag_extend_follow_range/modification
 execute if entity @s[type=creeper,tag=!enmity.range_extended] run function enmity:entities/mobs/tag_extend_follow_range/modification
 execute if entity @s[type=#enmity:enemies,type=!creeper] run attribute @s generic.armor base set 12
-execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "0" 0.4 multiply_base
-execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] if predicate enmity:random/random_0.5 run attribute @s generic.movement_speed modifier add 0-0-0-0-1 "0" 0.25 multiply_base
-execute if entity @s[type=#enmity:increase_attack_damage_more] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "0" 23 add
-execute if entity @s[type=#enmity:increase_attack_damage_less] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "0" 20 add
-execute if entity @s[type=#enmity:increase_max_health] run attribute @s generic.max_health modifier add 0-0-0-0-0 "0" 2.5 multiply_base
-attribute @s[type=#enmity:enemies,type=!creeper] generic.knockback_resistance modifier add 0-0-0-0-0 "0" 0.25 add
+execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.4 multiply_base
+execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] if predicate enmity:random/random_0.5 run attribute @s generic.movement_speed modifier add 0-0-0-0-1 "" 0.25 multiply_base
+execute if entity @s[type=#enmity:increase_attack_damage_more] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 23 add
+execute if entity @s[type=#enmity:increase_attack_damage_less] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 20 add
+execute if entity @s[type=#enmity:increase_max_health] run attribute @s generic.max_health modifier add 0-0-0-0-0 "" 2.5 multiply_base
+attribute @s[type=#enmity:enemies,type=!creeper] generic.knockback_resistance modifier add 0-0-0-0-0 "" 0.25 add
 execute if entity @s[type=#enmity:end_enemies] if predicate enmity:environment/in_the_end run tag @s add enmity.end
-execute if entity @s[type=phantom,tag=enmity.end] run attribute @s generic.attack_damage modifier add 0-0-0-0-2 "0" 30 add
-execute if entity @s[type=phantom,tag=enmity.end] run attribute @s generic.max_health modifier add 0-0-0-0-1 "0" 3 multiply_base
+execute if entity @s[type=phantom,tag=enmity.end] run attribute @s generic.attack_damage modifier add 0-0-0-0-2 "" 30 add
+execute if entity @s[type=phantom,tag=enmity.end] run attribute @s generic.max_health modifier add 0-0-0-0-1 "" 3 multiply_base
 scoreboard players set @s[type=#enmity:enemies,tag=!enmity.boss] enmity.dmg_rdc 4
 execute if entity @s[type=iron_golem] run attribute @s generic.armor base set 30
 execute if entity @s[type=iron_golem] run attribute @s generic.max_health base set 500
@@ -60,7 +60,7 @@ execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:ar
 execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_weapon
 execute if score %death_mode enmity.value matches 1 if entity @s[tag=enmity.equipped] unless predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/enchant_equipment
 execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:utility/despawn
-execute if entity @s[type=magma_cube] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "0" 1.3 multiply_base
+execute if entity @s[type=magma_cube] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 1.3 multiply_base
 
 scoreboard players set @s enmity.cooldown 0
 data modify entity @s Health set value 1024

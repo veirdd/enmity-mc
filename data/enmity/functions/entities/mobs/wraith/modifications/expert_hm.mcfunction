@@ -1,6 +1,6 @@
 attribute @s generic.armor base set 12
-attribute @s generic.attack_damage modifier add 0-0-0-0-0 "0" 6 multiply_base
-attribute @s generic.max_health modifier add 0-0-0-0-0 "0" 3.25 multiply_base
+attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 6 multiply_base
+attribute @s generic.max_health modifier add 0-0-0-0-0 "" 3.25 multiply_base
 attribute @s generic.follow_range base set 64
 attribute @s generic.knockback_resistance base set 1
 attribute @s generic.movement_speed base set 0.23

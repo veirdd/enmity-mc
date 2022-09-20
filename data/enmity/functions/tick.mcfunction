@@ -131,6 +131,7 @@ execute as @e[type=pig,tag=enmity.harpy_saddle] at @s run function enmity:entiti
 execute as @e[type=armor_stand,tag=enmity.structure_spawn] at @s unless block ~ ~-1 ~ jigsaw run function enmity:entities/structure_spawns/init
 execute as @e[type=area_effect_cloud,tag=enmity.waystone_id] at @s run function enmity:blocks/functions/waystone/tick_aec
 execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity:entities/mobs/flame_spewer/tick
+execute as @e[type=drowned] at @s run function enmity:entities/mobs/drowned/tick
 
 # Other
 

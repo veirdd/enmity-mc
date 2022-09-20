@@ -3,7 +3,7 @@ execute at @e[type=wither] run scoreboard players add @s enmity.math_a 1
 execute if score @s enmity.math_a matches 2.. run function enmity:entities/mobs/wither/despawning/despawn_alive
 execute unless score @s enmity.math_a matches 2.. unless predicate enmity:environment/in_the_nether run function enmity:entities/mobs/wither/despawning/despawn_wrong_dimension
 execute unless score @s enmity.math_a matches 2.. if predicate enmity:environment/in_the_nether run tellraw @a {"text":"The Wither has awoken.","color":"gray"}
-attribute @s generic.max_health modifier add 0-0-0-0-0 "0" 200 add
+attribute @s generic.max_health modifier add 0-0-0-0-0 "" 200 add
 scoreboard players set @s enmity.dmg_rdc 2
 scoreboard players set @s enmity.dmg_rdc_mtp 80
 scoreboard players set @s enmity.phase 0

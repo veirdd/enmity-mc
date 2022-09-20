@@ -16,15 +16,15 @@ execute if entity @s[type=#enmity:enemy_replaceable] unless entity @p[distance=.
 execute if entity @s[type=illusioner,tag=!enmity.fixed_illusioner] run function enmity:entities/replacement_spawns/illusioner
 
 execute if entity @s[type=#enmity:enemies,type=!creeper] run attribute @s generic.armor base set 8
-execute if entity @s[type=#enmity:increase_max_health] run attribute @s generic.max_health modifier add 0-0-0-0-0 "0" 2 multiply_base
-execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "0" 0.25 multiply_base
-execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] if predicate enmity:random/random_0.5 run attribute @s generic.movement_speed modifier add 0-0-0-0-1 "0" 0.2 multiply_base
-execute if entity @s[type=#enmity:increase_attack_damage_more] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "0" 19 add
-execute if entity @s[type=#enmity:increase_attack_damage_less] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "0" 17 add
+execute if entity @s[type=#enmity:increase_max_health] run attribute @s generic.max_health modifier add 0-0-0-0-0 "" 2 multiply_base
+execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.25 multiply_base
+execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] if predicate enmity:random/random_0.5 run attribute @s generic.movement_speed modifier add 0-0-0-0-1 "" 0.2 multiply_base
+execute if entity @s[type=#enmity:increase_attack_damage_more] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 19 add
+execute if entity @s[type=#enmity:increase_attack_damage_less] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 17 add
 execute if entity @s[type=#enmity:end_enemies] if predicate enmity:environment/in_the_end run tag @s add enmity.end
-execute if entity @s[type=phantom,tag=enmity.end] run attribute @s generic.attack_damage modifier add 0-0-0-0-2 "0" 28 add
-execute if entity @s[type=phantom,tag=enmity.end] run attribute @s generic.max_health modifier add 0-0-0-0-1 "0" 2 multiply_base
-execute if entity @s[type=illusioner] run attribute @s generic.max_health modifier add 0-0-0-0-1 "0" 2.75 multiply_base
+execute if entity @s[type=phantom,tag=enmity.end] run attribute @s generic.attack_damage modifier add 0-0-0-0-2 "" 28 add
+execute if entity @s[type=phantom,tag=enmity.end] run attribute @s generic.max_health modifier add 0-0-0-0-1 "" 2 multiply_base
+execute if entity @s[type=illusioner] run attribute @s generic.max_health modifier add 0-0-0-0-1 "" 2.75 multiply_base
 execute if entity @s[type=iron_golem] run attribute @s generic.armor base set 30
 execute if entity @s[type=iron_golem] run attribute @s generic.max_health base set 500
 execute if entity @s[type=iron_golem] run attribute @s generic.attack_damage base set 24
@@ -45,7 +45,7 @@ execute if entity @s[type=skeleton] if predicate enmity:random/random_0.25 run e
 execute if entity @s[type=wandering_trader] run function enmity:entities/mobs/wandering_trader/modification_hardmode
 execute if entity @s[type=warden] run attribute @s generic.max_health base set 60
 execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:utility/despawn
-execute if entity @s[type=magma_cube] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "0" 0.8 multiply_base
+execute if entity @s[type=magma_cube] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.8 multiply_base
 
 scoreboard players set @s enmity.cooldown 0
 data modify entity @s Health set value 1024

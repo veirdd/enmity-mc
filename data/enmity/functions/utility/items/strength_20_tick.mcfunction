@@ -17,18 +17,18 @@ execute if score @s enmity.math_a matches 76 run scoreboard players add @s enmit
 execute if score @s enmity.math_a matches 77 run scoreboard players add @s enmity.max_hp 4
 execute if score @s enmity.math_a matches 78 run scoreboard players add @s enmity.max_hp 12
 
-execute if score @s enmity.math_a matches 51 run attribute @s generic.armor modifier add 0-0-0-0-1 "0" 2 add
-execute if score @s enmity.math_a matches 58 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "0" 0.15 multiply
-execute if score @s enmity.math_a matches 61 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "0" 0.2 multiply
-execute if score @s enmity.math_a matches 55 run attribute @s generic.armor modifier add 0-0-0-0-1 "0" 2 add
-execute if score @s enmity.math_a matches 56 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "0" 0.15 multiply
-execute if score @s enmity.math_a matches 56 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "0" 0.2 multiply
-execute if score @s enmity.math_a matches 76 run attribute @s generic.armor modifier add 0-0-0-0-1 "0" 6 add
-execute if score @s enmity.math_a matches 76 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "0" 0.3 multiply
-execute if score @s enmity.math_a matches 76 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "0" 0.2 multiply
-execute if score @s enmity.math_a matches 77 run attribute @s generic.armor modifier add 0-0-0-0-1 "0" 2 add
-execute if score @s enmity.math_a matches 77 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "0" 0.6 multiply
-execute if score @s enmity.math_a matches 77 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "0" 0.3 multiply
-execute if score @s enmity.math_a matches 78 run attribute @s generic.armor modifier add 0-0-0-0-1 "0" 10 add
-execute if score @s enmity.math_a matches 78 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "0" 1 multiply
-execute if score @s enmity.math_a matches 78 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "0" 0.5 multiply
+execute if score @s enmity.math_a matches 51 run attribute @s generic.armor modifier add 0-0-0-0-1 "" 2 add
+execute if score @s enmity.math_a matches 58 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "" 0.15 multiply
+execute if score @s enmity.math_a matches 61 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "" 0.2 multiply
+execute if score @s enmity.math_a matches 55 run attribute @s generic.armor modifier add 0-0-0-0-1 "" 2 add
+execute if score @s enmity.math_a matches 56 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "" 0.15 multiply
+execute if score @s enmity.math_a matches 56 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "" 0.2 multiply
+execute if score @s enmity.math_a matches 76 run attribute @s generic.armor modifier add 0-0-0-0-1 "" 6 add
+execute if score @s enmity.math_a matches 76 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "" 0.3 multiply
+execute if score @s enmity.math_a matches 76 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "" 0.2 multiply
+execute if score @s enmity.math_a matches 77 run attribute @s generic.armor modifier add 0-0-0-0-1 "" 2 add
+execute if score @s enmity.math_a matches 77 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "" 0.6 multiply
+execute if score @s enmity.math_a matches 77 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "" 0.3 multiply
+execute if score @s enmity.math_a matches 78 run attribute @s generic.armor modifier add 0-0-0-0-1 "" 10 add
+execute if score @s enmity.math_a matches 78 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "" 1 multiply
+execute if score @s enmity.math_a matches 78 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "" 0.5 multiply

@@ -1,7 +1,7 @@
 attribute @s generic.armor base set 8
-attribute @s generic.attack_damage modifier add 0-0-0-0-0 "0" 17 multiply_base
-attribute @s generic.max_health modifier add 0-0-0-0-0 "0" 5.5 multiply_base
-attribute @s generic.follow_range modifier add 0-0-0-0-0 "0" 2 multiply_base
+attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 17 multiply_base
+attribute @s generic.max_health modifier add 0-0-0-0-0 "" 5.5 multiply_base
+attribute @s generic.follow_range modifier add 0-0-0-0-0 "" 2 multiply_base
 scoreboard players set @s enmity.dmg_rdc 4
 scoreboard players set @s enmity.dmg_bst 11
 

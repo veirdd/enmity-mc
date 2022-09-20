@@ -1,0 +1,3 @@
+attribute @s generic.movement_speed modifier remove 0-0-0-0-69
+execute if score %difficulty enmity.value matches 1 if predicate enmity:entity/has_target if predicate enmity:environment/in_water unless predicate enmity:entity/is_on_ground run attribute @s generic.movement_speed modifier add 0-0-0-0-69 "" 0.2 add
+execute if score %difficulty enmity.value matches 2 if predicate enmity:entity/has_target if predicate enmity:environment/in_water unless predicate enmity:entity/is_on_ground run attribute @s generic.movement_speed modifier add 0-0-0-0-69 "" 0.4 add

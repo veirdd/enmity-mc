@@ -1,5 +1,5 @@
 bossbar set enmity.elder_guardian max 800
-attribute @s generic.max_health modifier add 0-0-0-0-0 "0" 720 add
+attribute @s generic.max_health modifier add 0-0-0-0-0 "" 720 add
 data merge entity @s[tag=!enmity.boss] {DeathLootTable:"minecraft:empty"}
 data merge entity @s[tag=enmity.boss] {Silent:1,NoAI:1}
 scoreboard players set @s enmity.dmg_rdc 5
