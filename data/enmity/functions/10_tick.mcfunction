@@ -22,45 +22,10 @@ execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/silvan_set] 
 execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/tidal_set] at @s run function enmity:items/armor/tidal/10_tick
 execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/celestial_set] at @s run effect give @s resistance 2 3 true
 
-execute as @a[predicate=enmity:entity/has_armor/bone_boots] run item modify entity @s armor.feet enmity:armor_color/bone
-execute as @a[predicate=enmity:entity/has_armor/bone_leggings] run item modify entity @s armor.legs enmity:armor_color/bone
-execute as @a[predicate=enmity:entity/has_armor/bone_chestplate] run item modify entity @s armor.chest enmity:armor_color/bone
-execute as @a[predicate=enmity:entity/has_armor/bone_helmet] run item modify entity @s armor.head enmity:armor_color/bone
-execute as @a[predicate=enmity:entity/has_armor/silvan_boots] run item modify entity @s armor.feet enmity:armor_color/silvan
-execute as @a[predicate=enmity:entity/has_armor/silvan_leggings] run item modify entity @s armor.legs enmity:armor_color/silvan
-execute as @a[predicate=enmity:entity/has_armor/silvan_chestplate] run item modify entity @s armor.chest enmity:armor_color/silvan
-execute as @a[predicate=enmity:entity/has_armor/silvan_helmet] run item modify entity @s armor.head enmity:armor_color/silvan
-execute as @a[predicate=enmity:entity/has_armor/molten_boots] run item modify entity @s armor.feet enmity:armor_color/molten
-execute as @a[predicate=enmity:entity/has_armor/molten_leggings] run item modify entity @s armor.legs enmity:armor_color/molten
-execute as @a[predicate=enmity:entity/has_armor/molten_chestplate] run item modify entity @s armor.chest enmity:armor_color/molten
-execute as @a[predicate=enmity:entity/has_armor/molten_helmet] run item modify entity @s armor.head enmity:armor_color/molten
-execute as @a[predicate=enmity:entity/has_armor/witherbone_boots] run item modify entity @s armor.feet enmity:armor_color/witherbone
-execute as @a[predicate=enmity:entity/has_armor/witherbone_leggings] run item modify entity @s armor.legs enmity:armor_color/witherbone
-execute as @a[predicate=enmity:entity/has_armor/witherbone_chestplate] run item modify entity @s armor.chest enmity:armor_color/witherbone
-execute as @a[predicate=enmity:entity/has_armor/witherbone_helmet] run item modify entity @s armor.head enmity:armor_color/witherbone
-execute as @a[predicate=enmity:entity/has_armor/wool_boots] run item modify entity @s armor.feet enmity:armor_color/wool
-execute as @a[predicate=enmity:entity/has_armor/wool_leggings] run item modify entity @s armor.legs enmity:armor_color/wool
-execute as @a[predicate=enmity:entity/has_armor/wool_chestplate] run item modify entity @s armor.chest enmity:armor_color/wool
-execute as @a[predicate=enmity:entity/has_armor/wool_helmet] run item modify entity @s armor.head enmity:armor_color/wool
-execute as @a[predicate=enmity:entity/has_armor/crystalline_boots] run item modify entity @s armor.feet enmity:armor_color/crystalline
-execute as @a[predicate=enmity:entity/has_armor/crystalline_leggings] run item modify entity @s armor.legs enmity:armor_color/crystalline
-execute as @a[predicate=enmity:entity/has_armor/crystalline_chestplate] run item modify entity @s armor.chest enmity:armor_color/crystalline
-execute as @a[predicate=enmity:entity/has_armor/crystalline_helmet] run item modify entity @s armor.head enmity:armor_color/crystalline
-execute as @a[predicate=enmity:entity/has_armor/tidal_boots] run item modify entity @s armor.feet enmity:armor_color/tidal
-execute as @a[predicate=enmity:entity/has_armor/tidal_leggings] run item modify entity @s armor.legs enmity:armor_color/tidal
-execute as @a[predicate=enmity:entity/has_armor/tidal_chestplate] run item modify entity @s armor.chest enmity:armor_color/tidal
-execute as @a[predicate=enmity:entity/has_armor/tidal_helmet] run item modify entity @s armor.head enmity:armor_color/tidal
-execute as @a[predicate=enmity:entity/has_armor/amethyst_boots] run item modify entity @s armor.feet enmity:armor_color/amethyst
-execute as @a[predicate=enmity:entity/has_armor/amethyst_leggings] run item modify entity @s armor.legs enmity:armor_color/amethyst
-execute as @a[predicate=enmity:entity/has_armor/amethyst_chestplate] run item modify entity @s armor.chest enmity:armor_color/amethyst
-execute as @a[predicate=enmity:entity/has_armor/amethyst_helmet] run item modify entity @s armor.head enmity:armor_color/amethyst
-execute as @a[predicate=enmity:entity/has_armor/celestial_boots] run item modify entity @s armor.feet enmity:armor_color/celestial
-execute as @a[predicate=enmity:entity/has_armor/celestial_leggings] run item modify entity @s armor.legs enmity:armor_color/celestial
-execute as @a[predicate=enmity:entity/has_armor/celestial_helmet] run item modify entity @s armor.head enmity:armor_color/celestial
-execute as @a[predicate=enmity:entity/has_armor/hadal_boots] run item modify entity @s armor.feet enmity:armor_color/hadal
-execute as @a[predicate=enmity:entity/has_armor/hadal_leggings] run item modify entity @s armor.legs enmity:armor_color/hadal
-execute as @a[predicate=enmity:entity/has_armor/hadal_chestplate] run item modify entity @s armor.chest enmity:armor_color/hadal
-execute as @a[predicate=enmity:entity/has_armor/hadal_helmet] run item modify entity @s armor.head enmity:armor_color/hadal
+execute as @a[predicate=enmity:entity/has_armor/enmity_boots] run function enmity:utility/items/armor_color/boots
+execute as @a[predicate=enmity:entity/has_armor/enmity_leggings] run function enmity:utility/items/armor_color/leggings
+execute as @a[predicate=enmity:entity/has_armor/enmity_chestplate] run function enmity:utility/items/armor_color/chestplate
+execute as @a[predicate=enmity:entity/has_armor/enmity_helmet] run function enmity:utility/items/armor_color/helmet
 
 # Projectiles
 

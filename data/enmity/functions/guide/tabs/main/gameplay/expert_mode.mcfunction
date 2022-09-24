@@ -4,7 +4,7 @@ tellraw @s [{"text":"Expert mode introduces lots of new mechanics and dangers th
 tellraw @s [{"text":"   - Most mobs deal more damage, have increased health, speed, non-magic damage resistance, and magic damage reduction, and some have their behaviour changed or gain new abilities;","color":"gray"}]
 tellraw @s [{"text":"   - Some mobs spawn with additional armor and a chance for it to be enchanted.","color":"gray"}]
 tellraw @s [{"text":"   - Bosses are more powerful and their behaviour is changed in some cases;","color":"gray"}]
-tellraw @s [{"text":"   - Some mobs have different spawnrates;","color":"gray"}]
+tellraw @s [{"text":"   - Some mobs have different spawn conditions and rates;","color":"gray"}]
 tellraw @s [{"text":"   - Zombified Piglins become hostile if the player comes too close to them;","color":"gray"}]
 tellraw @s [{"text":"   - Temperature damage is more violent in extreme temperatures;","color":"gray"}]
 tellraw @s [{"text":"   - Geysers in the Nether are much more common and larger;","color":"gray"}]

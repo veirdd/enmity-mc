@@ -1,0 +1,10 @@
+execute if predicate enmity:entity/has_armor/bone_helmet run item modify entity @s armor.head enmity:armor_color/bone
+execute if predicate enmity:entity/has_armor/silvan_helmet run item modify entity @s armor.head enmity:armor_color/silvan
+execute if predicate enmity:entity/has_armor/molten_helmet run item modify entity @s armor.head enmity:armor_color/molten
+execute if predicate enmity:entity/has_armor/witherbone_helmet run item modify entity @s armor.head enmity:armor_color/witherbone
+execute if predicate enmity:entity/has_armor/wool_helmet run item modify entity @s armor.head enmity:armor_color/wool
+execute if predicate enmity:entity/has_armor/crystalline_helmet run item modify entity @s armor.head enmity:armor_color/crystalline
+execute if predicate enmity:entity/has_armor/tidal_helmet run item modify entity @s armor.head enmity:armor_color/tidal
+execute if predicate enmity:entity/has_armor/amethyst_helmet run item modify entity @s armor.head enmity:armor_color/amethyst
+execute if predicate enmity:entity/has_armor/celestial_helmet run item modify entity @s armor.head enmity:armor_color/celestial
+execute if predicate enmity:entity/has_armor/hadal_helmet run item modify entity @s armor.head enmity:armor_color/hadal
