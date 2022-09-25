@@ -25,6 +25,7 @@ execute if score @s enmity.guide matches 1 run function enmity:guide/tabs/main
         execute if score @s enmity.guide matches 126 run function enmity:guide/tabs/main/entities/illusioner
         execute if score @s enmity.guide matches 127 run function enmity:guide/tabs/main/entities/harpy
         execute if score @s enmity.guide matches 128 run function enmity:guide/tabs/main/entities/flame_spewer
+        execute if score @s enmity.guide matches 129 run function enmity:guide/tabs/main/entities/nimbus
     execute if score @s enmity.guide matches 13 run function enmity:guide/tabs/main/gameplay
         execute if score @s enmity.guide matches 13001 run function enmity:guide/tabs/main/gameplay/accessories
         execute if score @s enmity.guide matches 13002 run function enmity:guide/tabs/main/gameplay/darkness

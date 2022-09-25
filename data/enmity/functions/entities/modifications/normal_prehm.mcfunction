@@ -1,4 +1,4 @@
-execute if entity @s[type=spider] unless entity @p[distance=..24] if predicate enmity:environment/underground_and_deep run function enmity:entities/replacement_spawns/cave_spider
+execute if entity @s[type=spider] unless entity @p[distance=..24] if predicate enmity:environment/underground_and_below run function enmity:entities/replacement_spawns/cave_spider
 execute if entity @s[type=#enmity:wraith_replaceable] unless entity @p[distance=..24] if predicate enmity:random/random_0.01 run function enmity:entities/replacement_spawns/wraith
 execute if entity @s[type=#enmity:wraith_replaceable] unless entity @p[distance=..24] if predicate enmity:random/random_0.1 if predicate enmity:environment/deep_underground run function enmity:entities/replacement_spawns/wraith
 execute if entity @s[type=skeleton] unless entity @p[distance=..24] if predicate enmity:environment/in_the_nether run function enmity:entities/replacement_spawns/wraith

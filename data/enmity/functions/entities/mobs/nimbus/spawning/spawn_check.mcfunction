@@ -1,0 +1,2 @@
+execute store result score @s enmity.math_a if entity @e[type=zombie,tag=enmity.nimbus,nbt=!{PersistenceRequired:1b},distance=..64]
+execute if score @s enmity.math_a matches ..8 run function enmity:entities/mobs/nimbus/spawning/spawn

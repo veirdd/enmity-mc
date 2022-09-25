@@ -7,4 +7,5 @@ execute if score @s enmity.math_a matches 0 if entity @s[tag=!enmity.encountered
 execute if score @s enmity.math_a matches 0 if entity @s[tag=!enmity.encountered.sculker] if entity @e[type=shulker,distance=..16] store result score @s enmity.math_a run tag @s add enmity.encountered.sculker
 execute if score @s enmity.math_a matches 0 if entity @s[tag=!enmity.encountered.smiler] if entity @e[type=zombie,tag=enmity.smiler,distance=..32] store result score @s enmity.math_a run tag @s add enmity.encountered.smiler
 execute if score @s enmity.math_a matches 0 if entity @s[tag=!enmity.encountered.wraith] if entity @e[type=skeleton,tag=enmity.wraith,distance=..16] store result score @s enmity.math_a run tag @s add enmity.encountered.wraith
+execute if score @s enmity.math_a matches 0 if entity @s[tag=!enmity.encountered.nimbus] if entity @e[type=zombie,tag=enmity.nimbus,distance=..16] store result score @s enmity.math_a run tag @s add enmity.encountered.nimbus
 execute if score @s enmity.math_a matches 1 run tellraw @s [{"text":"You have unlocked a new entity entry in the guide.","color":"gray"}]

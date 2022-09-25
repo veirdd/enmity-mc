@@ -1,0 +1,2 @@
+execute positioned ~ ~1 ~ if predicate enmity:environment/at_world_height run tag @s add enmity.sky_access
+execute if score @s enmity.raycast matches ..320 positioned ~ ~1 ~ if block ~ ~ ~ air run function enmity:utility/check_sky_access/raycast
