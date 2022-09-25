@@ -132,6 +132,7 @@ execute as @e[type=armor_stand,tag=enmity.structure_spawn] at @s unless block ~ 
 execute as @e[type=area_effect_cloud,tag=enmity.waystone_id] at @s run function enmity:blocks/functions/waystone/tick_aec
 execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity:entities/mobs/flame_spewer/tick
 execute as @e[type=drowned] at @s run function enmity:entities/mobs/drowned/tick
+execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/mobs/nimbus/tick
 
 # Other
 

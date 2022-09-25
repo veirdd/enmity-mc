@@ -19,6 +19,7 @@ execute if entity @s[type=squid] unless entity @p[distance=..24] if predicate en
 execute if entity @s[type=#enmity:extend_follow_range,tag=!enmity.range_extended] run function enmity:entities/mobs/tag_extend_follow_range/modification
 execute if entity @s[type=#enmity:enemies,type=!creeper] run attribute @s generic.armor base set 12
 execute if entity @s[type=#enmity:increase_max_health] run attribute @s generic.max_health modifier add 0-0-0-0-0 "" 0.75 multiply_base
+execute if entity @s[type=#minecraft:skeletons] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.25 multiply_base
 execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.3 multiply_base
 execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] if predicate enmity:random/random_0.5 run attribute @s generic.movement_speed modifier add 0-0-0-0-1 "" 0.2 multiply_base
 execute if entity @s[type=#enmity:increase_attack_damage_more] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 2.5 add

@@ -64,6 +64,7 @@ execute if score %hardmode enmity.value matches 1 as @e[type=creeper] at @s run 
 execute as @e[type=furnace_minecart,nbt=!{Fuel:0s}] at @s run function enmity:entities/other_entities/furnace_minecart/10_tick
 execute as @e[type=allay] at @s run function enmity:entities/mobs/allay/10_tick
 execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity:entities/mobs/flame_spewer/10_tick
+execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/mobs/nimbus/10_tick
 
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run particle portal ~ ~0.2 ~ 0 0 0 0.5 5
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run playsound minecraft:entity.allay.ambient_without_item neutral @a[distance=0..] ~ ~ ~ 0.3 0.4 0
