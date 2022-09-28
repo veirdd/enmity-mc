@@ -1,5 +1,6 @@
 execute if predicate enmity:environment/in_overworld if entity @s[tag=enmity.on_surface] unless predicate enmity:environment/sky if predicate enmity:random/random_0.2 run playsound enmity:ambience.wind ambient @s ~ ~ ~ 0.08 0.9 0
 execute if predicate enmity:environment/is_thundering if predicate enmity:environment/in_overworld if entity @s[tag=enmity.on_surface] unless predicate enmity:environment/sky if predicate enmity:random/random_0.01 run function enmity:ambience/sounds/thunder
+execute if predicate enmity:environment/in_overworld if entity @s[tag=enmity.on_surface] unless score @s enmity.biome_type matches 0 unless score @s enmity.biome_type matches 4 if predicate enmity:environment/is_night if predicate enmity:random/random_0.025 run playsound enmity:ambience.owl ambient @s ~ ~ ~ 2 1 0
 
 # Desert
 
@@ -63,10 +64,6 @@ execute if score @s enmity.biome_type matches 7..12 unless score @s enmity.biome
 execute if score @s enmity.biome_type matches 7 if predicate enmity:random/random_0.01 if entity @s[tag=enmity.on_surface] unless predicate enmity:environment/sky if predicate enmity:environment/is_night run playsound enmity:ambience.night_crickets ambient @s ~ ~ ~ 0.1 1 0
 execute if score @s enmity.biome_type matches 7..12 unless score @s enmity.biome_type matches 8..11 if predicate enmity:random/random_0.005 if entity @s[tag=enmity.on_surface] unless predicate enmity:environment/sky if predicate enmity:environment/is_night run function enmity:ambience/sounds/taiga/crows_silent
 execute if score @s enmity.biome_type matches 7..12 unless score @s enmity.biome_type matches 8..11 if predicate enmity:random/random_0.005 if entity @s[tag=enmity.on_surface] unless predicate enmity:environment/sky if predicate enmity:environment/is_night run function enmity:ambience/sounds/taiga/wolf
-
-# Other
-
-execute if predicate enmity:environment/in_overworld unless score @s enmity.biome_type matches 0 unless score @s enmity.biome_type matches 4 if predicate enmity:environment/is_night if predicate enmity:random/random_0.025 run playsound enmity:ambience.owl ambient @s ~ ~ ~ 2 1 0
 
 # Structures
 

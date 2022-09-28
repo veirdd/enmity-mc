@@ -11,13 +11,13 @@ execute if score @s enmity.setup matches 3 run tellraw @s [{"text":"The world di
 playsound block.note_block.hat master @s ~ ~ ~ 2 2 0
 tag @s remove enmity.setup
 function enmity:cmd/give/eldritch_candle
-execute if score @s enmity.setup matches 1 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 0.8 0
-execute if score @s enmity.setup matches 1 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 1.2 0
-execute if score @s enmity.setup matches 1 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 1.6 0
-execute if score @s enmity.setup matches 2 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 0.8 0
-execute if score @s enmity.setup matches 2 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 0.7 0
-execute if score @s enmity.setup matches 2 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 0.5 0
-execute if score @s enmity.setup matches 3 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 0 0
-execute if score @s enmity.setup matches 3 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 0.3 0
-execute if score @s enmity.setup matches 3 run playsound block.beacon.power_select neutral @s[distance=0..] ~ ~ ~ 2 0.6 0
+execute if score @s enmity.setup matches 1 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 0.8 0
+execute if score @s enmity.setup matches 1 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 1.2 0
+execute if score @s enmity.setup matches 1 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 1.6 0
+execute if score @s enmity.setup matches 2 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 0.8 0
+execute if score @s enmity.setup matches 2 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 0.7 0
+execute if score @s enmity.setup matches 2 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 0.5 0
+execute if score @s enmity.setup matches 3 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 0 0
+execute if score @s enmity.setup matches 3 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 0.3 0
+execute if score @s enmity.setup matches 3 run playsound block.beacon.power_select neutral @s ~ ~ ~ 2 0.6 0
 scoreboard players set @s enmity.setup 0

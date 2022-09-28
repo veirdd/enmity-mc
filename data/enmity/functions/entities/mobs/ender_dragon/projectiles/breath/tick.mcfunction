@@ -3,8 +3,7 @@ execute if score %difficulty enmity.value matches 1 positioned ^ ^ ^5 facing ent
 execute if score %difficulty enmity.value matches 2 positioned ^ ^ ^5 facing entity @p[tag=enmity.dragon_target] eyes positioned ^ ^ ^0.2 run summon marker ~ ~ ~ {Tags:["enmity.new"]}
 tp @s ^ ^ ^1.2 facing entity @e[type=marker,tag=enmity.new,limit=1]
 kill @e[type=marker,tag=enmity.new]
-playsound entity.cat.hiss neutral @a[distance=0..] ~ ~ ~ 0.5 0 0
-playsound entity.guardian.ambient neutral @a[distance=0..] ~ ~ ~ 2 0 0
+playsound entity.guardian.ambient neutral @a[distance=0..] ~ ~ ~ 2 0.2 0
 execute if score @s enmity.age matches ..10 run particle dragon_breath ~ ~ ~ 0.3 0.3 0.3 0.01 3 force
 execute if score @s enmity.age matches 11..20 run particle dragon_breath ~ ~ ~ 0.5 0.5 0.5 0.01 4 force
 execute if score @s enmity.age matches 21..30 run particle dragon_breath ~ ~ ~ 0.8 0.8 0.8 0.01 6 force

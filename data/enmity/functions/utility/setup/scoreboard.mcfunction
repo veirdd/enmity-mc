@@ -34,8 +34,8 @@ scoreboard objectives add enmity.temp dummy
 scoreboard objectives add enmity.temp_cd dummy
 scoreboard objectives add enmity.taken_dmg dummy
 scoreboard objectives add enmity.die minecraft.custom:minecraft.deaths
-scoreboard objectives add enmity.dmg_taken_1 dummy
-scoreboard objectives add enmity.dmg_taken_2 dummy
+scoreboard objectives add enmity.dmg_buffer_1 dummy
+scoreboard objectives add enmity.dmg_buffer_2 dummy
 scoreboard objectives add enmity.phantasmal_curse dummy
 scoreboard objectives add enmity.player_targeting trigger
 scoreboard objectives add enmity.food food

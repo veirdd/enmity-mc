@@ -1,4 +1,4 @@
-execute store result score @s[tag=!enmity.hit] enmity.taken_dmg run scoreboard players operation @s enmity.dmg_taken_2 -= @s enmity.dmg_taken_1
+execute store result score @s[tag=!enmity.hit] enmity.taken_dmg run scoreboard players operation @s enmity.dmg_buffer_2 -= @s enmity.dmg_buffer_1
 scoreboard players operation @s[tag=enmity.hit] enmity.taken_dmg = @s enmity.math_b
 scoreboard players operation @s[tag=enmity.hit,type=!player] enmity.taken_dmg += %const_1 enmity.value
 execute if score @s enmity.taken_dmg matches ..0 run scoreboard players set @s enmity.taken_dmg 1
@@ -10,7 +10,7 @@ execute at @e[type=marker,tag=enmity.setup,limit=1] run data modify entity @e[ty
 tag @e[type=item,tag=enmity.new] remove enmity.new
 execute at @e[type=marker,tag=enmity.setup,limit=1] run setblock ~ -64 ~ bedrock
 tag @s remove enmity.this
-scoreboard players set @s[tag=enmity.hit] enmity.dmg_taken_2 0
+scoreboard players set @s[tag=enmity.hit] enmity.dmg_buffer_2 0
 tag @s add enmity.hurt
 
 execute if entity @s[type=ender_dragon,tag=!enmity.dead] if score @s enmity.math_a <= @s enmity.math_b run function enmity:entities/mobs/ender_dragon/on_death

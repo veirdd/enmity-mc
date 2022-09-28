@@ -1,4 +1,7 @@
-playsound entity.ender_dragon.hurt neutral @a[distance=0..] ~ ~ ~ 2 0 0
+execute as @a[distance=..256] at @s facing entity @e[type=ender_dragon,limit=1] eyes positioned ^ ^ ^24 run playsound entity.ender_dragon.hurt neutral @s[distance=0..] ~ ~ ~ 2 0 0
+execute as @a[distance=..256] at @s facing entity @e[type=ender_dragon,limit=1] eyes positioned ^ ^ ^24 run playsound entity.ender_dragon.hurt neutral @s[distance=0..] ~ ~ ~ 2 0.4 0
+execute as @a[distance=..256] at @s facing entity @e[type=ender_dragon,limit=1] eyes positioned ^ ^ ^24 run playsound entity.ender_dragon.hurt neutral @s[distance=0..] ~ ~ ~ 2 0.4 0
+execute as @a[distance=..256] at @s facing entity @e[type=ender_dragon,limit=1] eyes positioned ^ ^ ^24 run playsound block.ender_chest.open neutral @s[distance=0..] ~ ~ ~ 2 0 0
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.dragon_projectile","enmity.projectile","enmity.dragon_bolt"]}
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.dragon_projectile","enmity.projectile","enmity.dragon_bolt"]}
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.dragon_projectile","enmity.projectile","enmity.dragon_bolt"]}

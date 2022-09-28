@@ -1,8 +1,4 @@
-playsound entity.wither.ambient neutral @a[distance=0..] ~ ~ ~ 2 0 0
-playsound entity.cat.hiss neutral @a[distance=0..] ~ ~ ~ 2 0 0
-playsound entity.wither.ambient neutral @a[distance=0..] ~ ~ ~ 2 0 0
-playsound entity.cat.hiss neutral @a[distance=0..] ~ ~ ~ 2 0 0
-playsound entity.wither.shoot neutral @a[distance=0..] ~ ~ ~ 1 0 0
+execute as @a[distance=..256] at @s facing entity @e[type=ender_dragon,limit=1] eyes positioned ^ ^ ^24 run playsound entity.wither.ambient neutral @s ~ ~ ~ 2 0 0
 summon minecraft:marker ^ ^6 ^-6 {Tags:["enmity.new","enmity.dragon_projectile","enmity.projectile","enmity.dragon_breath"]}
 data modify entity @e[type=marker,tag=enmity.new,limit=1] Pos[1] set from entity @s Pos[1]
 execute store result score @e[type=marker,tag=enmity.new,limit=1] enmity.rotation run data get entity @s Rotation[0] 1

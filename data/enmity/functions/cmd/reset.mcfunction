@@ -33,8 +33,8 @@ scoreboard objectives remove enmity.temp
 scoreboard objectives remove enmity.temp_cd
 scoreboard objectives remove enmity.die
 scoreboard objectives remove enmity.taken_dmg
-scoreboard objectives remove enmity.dmg_taken_1
-scoreboard objectives remove enmity.dmg_taken_2
+scoreboard objectives remove enmity.dmg_buffer_1
+scoreboard objectives remove enmity.dmg_buffer_2
 scoreboard objectives remove enmity.phantasmal_curse
 scoreboard objectives remove enmity.player_targeting
 scoreboard objectives remove enmity.food
