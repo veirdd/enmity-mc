@@ -14,7 +14,7 @@ execute if entity @s[type=#enmity:enemy_replaceable] unless entity @p[distance=.
 execute if entity @s[type=#enmity:enemies,type=!illusioner,type=!silverfish] unless entity @p[distance=..24] if predicate enmity:environment/structure/stronghold run function enmity:entities/replacement_spawns/illusioner
 execute if entity @s[type=#enmity:enemy_replaceable] unless entity @p[distance=..24] if entity @p[distance=..72] if predicate enmity:random/random_0.5 if predicate enmity:environment/in_overworld if predicate enmity:environment/is_smiler_time unless entity @e[type=zombie,tag=enmity.smiler,distance=..48] run function enmity:entities/replacement_spawns/smiler
 execute if entity @s[type=illusioner,tag=!enmity.fixed_illusioner] run function enmity:entities/replacement_spawns/illusioner
-execute if entity @s[type=squid] unless entity @p[distance=..24] if predicate enmity:random/random_0.2 run function enmity:entities/replacement_spawns/drowned_from_squid
+execute if entity @s[type=squid] unless entity @p[distance=..24] if predicate enmity:random/random_0.25 run function enmity:entities/replacement_spawns/drowned_from_squid
 
 execute if entity @s[type=#enmity:extend_follow_range,tag=!enmity.range_extended] run function enmity:entities/mobs/tag_extend_follow_range/modification
 execute if entity @s[type=#enmity:enemies,type=!creeper] run attribute @s generic.armor base set 12
