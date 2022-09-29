@@ -1,3 +1,6 @@
+execute positioned ~ ~50 ~ run summon marker ~ ~ ~ {Tags:["enmity.direction_anchor"]}
+execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player,tag=!enmity.boss] run function enmity:utility/motion
+effect give @e[type=!#enmity:not_living,tag=enmity.hit,type=!player,tag=!enmity.boss] slow_falling 1 0 true
 effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] wither 1 1 true
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] store result score @s enmity.math_a run data get entity @s Health
 scoreboard players operation @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] enmity.math_b = @s enmity.dmg

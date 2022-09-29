@@ -1,3 +1,5 @@
+execute positioned ^ ^ ^100 positioned ~ ~20 ~ run summon marker ~ ~ ~ {Tags:["enmity.direction_anchor"]}
+execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player,tag=!enmity.boss] run function enmity:utility/motion
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] store result score @s enmity.math_a run data get entity @s Health
 scoreboard players operation @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] enmity.math_b = @s enmity.dmg
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] run scoreboard players operation @s enmity.math_b -= @s enmity.dmg_rdc
@@ -11,20 +13,6 @@ execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,t
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.math_a
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,gamemode=!creative,gamemode=!spectator,tag=!enmity.update_health] run function enmity:utility/health_modification/request
 effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 3 1
-execute positioned ^ ^ ^100 positioned ~ ~10 ~ run summon marker ~ ~ ~ {Tags:["enmity.direction_anchor"]}
-execute store result score @s enmity.math_a run data get entity @s Pos[0]
-execute store result score @s enmity.math_b run data get entity @s Pos[1]
-execute store result score @s enmity.math_c run data get entity @s Pos[2]
-execute store result score @s enmity.math_d run data get entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Pos[0]
-execute store result score @s enmity.math_e run data get entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Pos[1]
-execute store result score @s enmity.math_f run data get entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Pos[2]
-scoreboard players operation @s enmity.math_d -= @s enmity.math_a
-scoreboard players operation @s enmity.math_e -= @s enmity.math_b
-scoreboard players operation @s enmity.math_f -= @s enmity.math_c
-execute as @e[type=!#enmity:not_living,tag=!enmity.boss,tag=enmity.hit] store result entity @s Motion[0] double 0.01 run scoreboard players get @e[type=armor_stand,tag=enmity.this,limit=1] enmity.math_d
-execute as @e[type=!#enmity:not_living,tag=!enmity.boss,tag=enmity.hit] store result entity @s Motion[1] double 0.01 run scoreboard players get @e[type=armor_stand,tag=enmity.this,limit=1] enmity.math_e
-execute as @e[type=!#enmity:not_living,tag=!enmity.boss,tag=enmity.hit] store result entity @s Motion[2] double 0.01 run scoreboard players get @e[type=armor_stand,tag=enmity.this,limit=1] enmity.math_f
-kill @e[type=marker,tag=enmity.direction_anchor]
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
 particle explosion ^ ^ ^-0.6 0 0 0 0 1 force
 particle squid_ink ~ ~ ~ 0.3 0.3 0.3 0.2 20 force
