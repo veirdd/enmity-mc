@@ -6,14 +6,14 @@ execute unless entity @s[name="pexdark"] run particle cloud ~ ~0.5 ~ 0.3 0.3 0.3
 execute unless entity @s[name="pexdark"] run particle end_rod ~ ~1 ~ 0.2 0.2 0.2 0.3 40 force
 execute if entity @s[name="pexdark"] run particle dust 0 1 0 2 ~ ~0.5 ~ 0.3 0.3 0.3 0 40 force
 execute if entity @s[name="pexdark"] run particle totem_of_undying ~ ~1 ~ 0.2 0.2 0.2 1 40 force
-summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2"]}
-summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2"]}
-summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2"]}
-summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2"]}
-summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2"]}
-summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2"]}
-summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2"]}
-summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2"]}
+summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2","enmity.actual_soul2"]}
+summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2","enmity.actual_soul2"]}
+summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2","enmity.actual_soul2"]}
+summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2","enmity.actual_soul2"]}
+summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2","enmity.actual_soul2"]}
+summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2","enmity.actual_soul2"]}
+summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2","enmity.actual_soul2"]}
+summon bat ~ ~0.5 ~ {Silent:1,Invulnerable:1,Tags:["enmity.projectile","enmity.new","enmity.soul2","enmity.actual_soul2"]}
 scoreboard players set @e[type=bat,tag=enmity.soul2,tag=enmity.new] enmity.dmg 11
 scoreboard players operation @e[type=bat,tag=enmity.new] enmity.dmg += @s enmity.dmg_bst
 effect give @e[type=bat,tag=enmity.new] invisibility 1000000 255 true
