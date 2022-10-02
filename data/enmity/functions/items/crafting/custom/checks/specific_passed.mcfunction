@@ -26,3 +26,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:potion",tag:{Potion:"minecraft:str
 execute if entity @s[nbt={Item:{id:"minecraft:splash_potion",tag:{Potion:"minecraft:strength"}}}] run function enmity:items/crafting/custom/berserk_splash_potion
 execute if entity @s[nbt={Item:{id:"minecraft:splash_potion",tag:{Potion:"minecraft:long_strength"}}}] run function enmity:items/crafting/custom/berserk_long_splash_potion
 execute if entity @s[nbt={Item:{id:"minecraft:splash_potion",tag:{Potion:"minecraft:strong_strength"}}}] run function enmity:items/crafting/custom/berserk_strong_splash_potion
+execute if entity @s[nbt={Item:{id:"minecraft:glass_bottle"}}] if entity @e[type=item,limit=1,distance=..0.5,nbt={Item:{id:"minecraft:firework_star",Count:5b,tag:{CustomModelData:5,Enmity:1}}}] run function enmity:items/crafting/custom/cloud_in_a_bottle

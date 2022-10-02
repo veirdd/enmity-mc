@@ -21,3 +21,4 @@ execute if score @s enmity.guide matches 113021 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 113022 run function enmity:guide/tabs/main/items/other_items/void_bag
 execute if score @s enmity.guide matches 113023 run function enmity:guide/tabs/main/items/other_items/subjugator
 execute if score @s enmity.guide matches 113024 run function enmity:guide/tabs/main/items/other_items/daggers
+execute if score @s enmity.guide matches 113025 run function enmity:guide/tabs/main/items/other_items/cloud

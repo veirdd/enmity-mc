@@ -38,36 +38,41 @@
       },
       {
         "rolls": 1,
+        "bonus_rolls": 0,
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:warped_fungus_on_a_stick"
-          }
-        ],
-        "functions": [
-          {
-            "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Gust Caster\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Fires a short ranged whirlwind.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:3,Enmity:1,Enmity.CustomCrafting:1}"
-          }
-        ],
-        "conditions": [
-          {
-            "condition": "minecraft:value_check",
-            "value": {
-                "type": "minecraft:score",
-                "target": {
-                "type": "minecraft:fixed",
-                "name": "%hardmode"
+            "name": "minecraft:coal",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 2
                 },
-                "score": "enmity.value",
-                "scale": 1
-            },
-            "range": 0
-          },
-          {
-            "condition": "minecraft:random_chance_with_looting",
-            "chance": 0.025,
-            "looting_multiplier": 0.03
+                "add": false
+              },
+              {
+                "function": "minecraft:looting_enchant",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                }
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Cloud\",\"italic\":false}'},CustomModelData:5,Enmity:1,Enmity.FloatingItem:1}"
+              }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance_with_looting",
+                    "chance": 0.4,
+                    "looting_multiplier": 0.2
+                }
+            ]
           }
         ]
       },
