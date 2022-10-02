@@ -4,8 +4,6 @@ execute unless entity @e[type=wither] run tag @a[tag=enmity.wither_target] remov
 execute unless entity @e[type=elder_guardian] run tag @a[tag=enmity.elder_target] remove enmity.elder_target
 execute unless entity @e[type=ender_dragon] run tag @a[tag=enmity.dragon_target] remove enmity.dragon_target
 
-kill @e[type=item,name='{"text":"Air"}']
-
 # Items
 
 execute as @a[tag=!enmity.give_instant_health,tag=!enmity.update_health] if score @s enmity.health < @s enmity.max_hp if entity @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:78}}]}] run function enmity:utility/health_modification/increase_health_by_1
