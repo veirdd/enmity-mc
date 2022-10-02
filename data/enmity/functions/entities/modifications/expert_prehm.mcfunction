@@ -19,7 +19,7 @@ execute if entity @s[type=squid] unless entity @p[distance=..24] if predicate en
 execute if entity @s[type=#enmity:extend_follow_range,tag=!enmity.range_extended] run function enmity:entities/mobs/tag_extend_follow_range/modification
 execute if entity @s[type=#enmity:enemies,type=!creeper] run attribute @s generic.armor base set 12
 execute if entity @s[type=#enmity:increase_max_health] run attribute @s generic.max_health modifier add 0-0-0-0-0 "" 0.75 multiply_base
-execute if entity @s[type=#minecraft:skeletons] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.25 multiply_base
+execute if entity @s[type=#minecraft:skeletons] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.2 multiply_base
 execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.3 multiply_base
 execute if entity @s[type=#enmity:increase_movement_speed] unless entity @s[nbt={IsBaby:1b}] if predicate enmity:random/random_0.5 run attribute @s generic.movement_speed modifier add 0-0-0-0-1 "" 0.2 multiply_base
 execute if entity @s[type=#enmity:increase_attack_damage_more] run attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 2.5 add
@@ -49,10 +49,10 @@ execute if entity @s[type=wandering_trader] run function enmity:entities/mobs/wa
 execute if entity @s[type=warden] run attribute @s generic.max_health base set 100
 execute if entity @s[type=warden] run attribute @s generic.movement_speed base set 0.35
 execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_armor
-execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_weapon
+execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,type=!skeleton] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_weapon
 execute unless score %death_mode enmity.value matches 1 if entity @s[tag=enmity.equipped] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/enchant_equipment
 execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_armor
-execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_weapon
+execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,type=!skeleton] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_weapon
 execute if score %death_mode enmity.value matches 1 if entity @s[tag=enmity.equipped] unless predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/enchant_equipment
 execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:utility/despawn
 
