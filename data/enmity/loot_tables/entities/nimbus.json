@@ -42,7 +42,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:coal",
+            "name": "minecraft:firework_star",
             "functions": [
               {
                 "function": "minecraft:set_count",
