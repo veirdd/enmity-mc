@@ -1,4 +1,5 @@
 tag @s remove enmity.hit
+execute if score @s enmity.max_hp matches 2 run attribute @s generic.max_health base set 2
 execute if score @s enmity.max_hp matches 20 run attribute @s generic.max_health base set 20
 execute if score @s enmity.max_hp matches 22 run attribute @s generic.max_health base set 22
 execute if score @s enmity.max_hp matches 24 run attribute @s generic.max_health base set 24

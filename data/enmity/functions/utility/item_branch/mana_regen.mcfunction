@@ -5,3 +5,4 @@ execute if score @s enmity.math_b matches 20 run scoreboard players add @s enmit
 execute if score @s enmity.math_b matches 21 run scoreboard players add @s enmity.mana_regen 2
 execute if score @s enmity.math_b matches 22 run scoreboard players add @s enmity.mana_regen 2
 execute if score @s enmity.math_b matches 64 run scoreboard players add @s enmity.mana_regen 4
+execute if score @s enmity.math_b matches 114 run scoreboard players add @s enmity.mana_regen 8

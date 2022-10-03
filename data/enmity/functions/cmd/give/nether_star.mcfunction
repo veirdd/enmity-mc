@@ -1,0 +1,1 @@
+give @s nether_star{Enmity.BossLoot:0}

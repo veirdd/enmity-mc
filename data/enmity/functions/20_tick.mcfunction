@@ -35,11 +35,11 @@ scoreboard players set @a enmity.max_mana 200
 scoreboard players set @a enmity.max_snt 1
 scoreboard players set @a enmity.dmg_rdc 0
 scoreboard players set @a enmity.dmg_bst 0
-execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/mana_20_tick
+execute as @a if predicate enmity:entity/has_armor/enmity_set run function enmity:utility/item_branch/armor_20_tick
 execute as @a[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/strength_20_tick
 execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/mobility_20_tick
 execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/effect_20_tick
-execute as @a if predicate enmity:entity/has_armor/enmity_set run function enmity:utility/item_branch/armor_20_tick
+execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/mana_20_tick
 execute as @a run function enmity:utility/protection_to_dr
 execute if score %death_mode enmity.value matches 0 as @a run function enmity:utility/calculate_dmg_rdc_mtp
 execute if score %death_mode enmity.value matches 1 run scoreboard players set @a enmity.dmg_rdc_mtp 110
