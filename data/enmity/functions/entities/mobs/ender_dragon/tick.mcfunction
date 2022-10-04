@@ -2,6 +2,8 @@ execute if score @s enmity.phase_ct matches 1.. at @a[scores={enmity.in_end_cent
 kill @e[type=area_effect_cloud,nbt={Particle:"minecraft:dragon_breath"},tag=!enmity.custom]
 execute as @e[type=area_effect_cloud,tag=enmity.dragon_breath_cloud] at @s if block ~ ~-0.1 ~ #enmity:not_solid run tp @s ~ ~-0.1 ~
 execute as @e[type=area_effect_cloud,tag=enmity.dragon_breath_cloud] at @s unless block ~ ~ ~ #enmity:not_solid run tp @s ~ ~0.1 ~
+execute as @e[type=end_crystal,tag=enmity.dragon_crystal,scores={enmity.cooldown=0}] at @s if entity @p[distance=..5] run function enmity:entities/mobs/ender_dragon/crystal_explosion
+scoreboard players remove @e[type=end_crystal,tag=enmity.dragon_crystal,scores={enmity.cooldown=1..}] enmity.cooldown 1
 
 execute store result score @s enmity.phase run data get entity @s DragonPhase
 execute if score @s enmity.phase matches 1..4 run data modify entity @s DragonPhase set value 0

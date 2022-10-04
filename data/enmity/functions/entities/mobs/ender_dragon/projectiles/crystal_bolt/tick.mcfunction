@@ -5,7 +5,7 @@ execute if entity @p[distance=..24] run tp @s ^ ^ ^0.9 facing entity @e[type=mar
 execute unless entity @p[distance=..24] run tp @s ^ ^ ^1.2 facing entity @e[type=marker,tag=enmity.new,limit=1]
 kill @e[type=marker,tag=enmity.new]
 particle dust 0.5 0 1 0.8 ~ ~ ~ 0.1 0.1 0.1 0 2 force
-particle dust 0.5 0 1 0.8 ^ ^ ^0.5 0.1 0.1 0.1 0 2 force
+particle end_rod ~ ~ ~ 0 0 0 0 1 force
 execute as @e[type=!ender_dragon,scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.target_dummy,tag=!enmity.projectile,dx=0] run tag @s add enmity.hit
 execute positioned ~ ~-1 ~ as @e[type=!ender_dragon,scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.target_dummy,tag=!enmity.projectile,dx=0] run tag @s add enmity.hit
 execute positioned ~-1 ~ ~ as @e[type=!ender_dragon,scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.target_dummy,tag=!enmity.projectile,dx=0] run tag @s add enmity.hit

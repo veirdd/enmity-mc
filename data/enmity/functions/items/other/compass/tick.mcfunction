@@ -8,4 +8,3 @@ execute if score @s enmity.rotation matches -135..-46 run title @s title [{"text
 execute if score @s enmity.rotation matches -45..44 run title @s title [{"text":"-<","color":"gray"},{"text":"S","color":"white"},{"text":">-","color":"gray"}]
 execute if score @s enmity.rotation matches 45..134 run title @s title [{"text":"-<","color":"gray"},{"text":"W","color":"white"},{"text":">-","color":"gray"}]
 title @s subtitle [{"text":"X: ","color":"gray"},{"score":{"name":"@s","objective":"enmity.posx"},"color":"white"},{"text":" Y: ","color":"gray"},{"score":{"name":"@s","objective":"enmity.posy"},"color":"white"},{"text":" Z: ","color":"gray"},{"score":{"name":"@s","objective":"enmity.posz"},"color":"white"}]
-item modify entity @s weapon.offhand enmity:calculator/calculator

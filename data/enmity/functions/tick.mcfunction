@@ -52,6 +52,8 @@ execute as @a[tag=enmity.entrail_spewer] at @s run function enmity:items/usable/
 execute as @a[tag=enmity.subjugator] at @s run function enmity:items/usable/subjugator/tick
 execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:97}}}] at @s run function enmity:items/other/calculator/tick
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:97}}]}] at @s run function enmity:items/other/calculator/tick_offhand
+execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s run function enmity:items/other/compass/tick
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] at @s run function enmity:items/other/compass/tick
 
 scoreboard players set @a enmity.use 0
 
