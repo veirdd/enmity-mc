@@ -12,11 +12,12 @@ execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,t
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.math_a
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,gamemode=!creative,gamemode=!spectator,tag=!enmity.update_health] run function enmity:utility/health_modification/request
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
+playsound block.beacon.power_select neutral @a[distance=0..] ~ ~ ~ 2 0.25 0
 playsound block.barrel.open neutral @a[distance=0..] ~ ~ ~ 2 0.25 0
 playsound block.barrel.open neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound block.note_block.basedrum neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound block.note_block.basedrum neutral @a[distance=0..] ~ ~ ~ 2 0 0
-summon marker ^ ^ ^-0.5 {Tags:["enmity.projectile","enmity.helium_flash_explosion","enmity.new"]}
+summon marker ~ ~ ~ {Tags:["enmity.projectile","enmity.terminal_flash_explosion","enmity.new"]}
 scoreboard players set @e[type=marker,tag=enmity.new] enmity.dmg 11
 execute if entity @s[tag=enmity.player_targeting] run tag @e[type=marker,tag=enmity.new] add enmity.player_targeting
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.player_id = @s enmity.player_id

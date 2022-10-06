@@ -4,4 +4,6 @@ summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1,ArmorItems:[{},{},{},{id:"war
 effect give @e[type=zombie,tag=enmity.new] invisibility 1000000 0 true
 effect give @e[type=zombie,tag=enmity.new] weakness 1000000 0 true
 scoreboard players set @e[type=armor_stand,tag=enmity.new] enmity.math_f 0
-tag @e[tag=enmity.new,limit=2] remove enmity.new
+scoreboard players set @e[type=armor_stand,tag=enmity.new] enmity.age 0
+scoreboard players set @e[type=zombie,tag=enmity.new] enmity.age 0
+tag @e[type=#enmity:target_dummy,tag=enmity.new] remove enmity.new

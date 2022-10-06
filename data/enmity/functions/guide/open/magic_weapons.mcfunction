@@ -19,7 +19,7 @@ execute if score @s enmity.guide matches 111018 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 111019 run function enmity:guide/tabs/main/items/magic_weapons/guardian_thorn
 execute if score @s enmity.guide matches 111020 run function enmity:guide/tabs/main/items/magic_weapons/gust_caster
 execute if score @s enmity.guide matches 111021 run function enmity:guide/tabs/main/items/magic_weapons/hadopelagic_echo
-execute if score @s enmity.guide matches 111022 run function enmity:guide/tabs/main/items/magic_weapons/helium_flash
+execute if score @s enmity.guide matches 111022 run function enmity:guide/tabs/main/items/magic_weapons/terminal_flash
 execute if score @s enmity.guide matches 111023 run function enmity:guide/tabs/main/items/magic_weapons/infernal_helix_staff
 execute if score @s enmity.guide matches 111024 run function enmity:guide/tabs/main/items/magic_weapons/lapis_staff
 execute if score @s enmity.guide matches 111025 run function enmity:guide/tabs/main/items/magic_weapons/lightning_surge

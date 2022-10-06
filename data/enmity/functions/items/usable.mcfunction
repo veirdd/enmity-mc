@@ -25,7 +25,7 @@ execute if entity @s[scores={enmity.use=36,enmity.mana=160..}] at @s anchored ey
 execute if entity @s[scores={enmity.use=37,enmity.mana=80..}] at @s run function enmity:items/usable/rainbow_rod/use
 execute if entity @s[scores={enmity.use=38,enmity.mana=90..}] at @s anchored eyes positioned ^ ^ ^ unless predicate enmity:environment/in_water run function enmity:items/usable/flamelash/use
 execute if entity @s[scores={enmity.use=39,enmity.mana=120..}] at @s run function enmity:items/usable/liquidator/use
-execute if entity @s[scores={enmity.use=40,enmity.mana=120..}] at @s run function enmity:items/usable/helium_flash/use
+execute if entity @s[scores={enmity.use=40,enmity.mana=120..}] at @s run function enmity:items/usable/terminal_flash/use
 execute if entity @s[scores={enmity.use=41,enmity.mana=80..}] at @s anchored eyes positioned ^ ^ ^ unless predicate enmity:environment/in_water run function enmity:items/usable/flare_bolt/use
 execute if entity @s[scores={enmity.use=42}] at @s if predicate enmity:environment/is_night unless entity @e[type=giant] if predicate enmity:environment/in_overworld run function enmity:items/usable/rotten_lure/use
 execute if entity @s[scores={enmity.use=45,enmity.mana=20..}] at @s anchored eyes positioned ^ ^ ^ unless predicate enmity:environment/in_water run function enmity:items/usable/flame_barrage/check_for_ammo

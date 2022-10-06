@@ -11,5 +11,4 @@ execute as @e[type=!#enmity:not_living,tag=enmity.hit,tag=!enmity.invulnerable,t
 execute as @e[type=!#enmity:not_living,tag=enmity.hit,tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.math_a -= @s enmity.math_b
 execute as @e[type=!#enmity:not_living,tag=enmity.hit,tag=!enmity.invulnerable,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.math_a
 execute as @a[tag=enmity.hit,tag=!enmity.invulnerable,gamemode=!creative,gamemode=!spectator,tag=!enmity.update_health] run function enmity:utility/health_modification/request
-execute as @e[type=!#enmity:not_living,tag=enmity.hit,type=!player] run data modify entity @s Fire set value 100s
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
