@@ -1,9 +1,7 @@
 tag @s add enmity.this
-execute as @a if score @s enmity.player_id = @e[type=marker,tag=enmity.this,limit=1] enmity.player_id run tag @s add enmity.this
-execute rotated as @p[tag=enmity.this] positioned ^ ^ ^1 facing entity @p[tag=enmity.this] eyes positioned ^ ^ ^0.7 run summon marker ~ ~ ~ {Tags:["enmity.direction_anchor"]}
-execute facing entity @e[type=marker,tag=enmity.direction_anchor] feet run tp @s ~ ~ ~ facing ^ ^ ^1
-kill @e[type=marker,tag=enmity.direction_anchor]
-tag @a[tag=enmity.this] remove enmity.this
+execute if entity @s[tag=enmity.player_targeting] as @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=..16] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target
+execute if entity @s[tag=!enmity.player_targeting] as @e[type=!#enmity:not_living,type=!player,tag=!enmity.projectile,distance=..16] run tag @s add enmity.homing_target
+execute if entity @e[type=!#enmity:not_living,tag=enmity.homing_target] run function enmity:items/usable/terminal_flash/home_in_projectile
 execute if score @s enmity.age matches ..5 run tp @s ^ ^ ^0.9
 execute if score @s enmity.age matches 6..10 run tp @s ^ ^ ^0.7
 execute if score @s enmity.age matches 11..15 run tp @s ^ ^ ^0.55
@@ -16,10 +14,10 @@ execute if score @s enmity.age matches 41..50 run tp @s ^ ^ ^0.02
 execute if score @s enmity.age matches 35 run particle end_rod ~ ~ ~ 0 0 0 0.3 20 force
 execute if score @s enmity.age matches 45 run particle end_rod ~ ~ ~ 0 0 0 0.3 20 force
 execute if score @s enmity.age matches 55 run particle end_rod ~ ~ ~ 0 0 0 0.3 50 force
-execute if score @s enmity.age matches 35 run playsound block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 2 0
-execute if score @s enmity.age matches 45 run playsound block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 2 0
-execute if score @s enmity.age matches 35 run playsound block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 0 0
-execute if score @s enmity.age matches 45 run playsound block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 0 0
+execute if score @s enmity.age matches 35 run playsound block.beacon.activate neutral @a[distance=0..] ~ ~ ~ 2 2 0
+execute if score @s enmity.age matches 45 run playsound block.beacon.activate neutral @a[distance=0..] ~ ~ ~ 2 2 0
+execute if score @s enmity.age matches 35 run playsound block.beacon.activate neutral @a[distance=0..] ~ ~ ~ 2 1.5 0
+execute if score @s enmity.age matches 45 run playsound block.beacon.activate neutral @a[distance=0..] ~ ~ ~ 2 1.5 0
 particle end_rod ~ ~ ~ 0 0 0 0.02 4 force
 particle end_rod ^ ^ ^0.4 0 0 0 0.02 4 force
 particle soul_fire_flame ~ ~ ~ 0.075 0.075 0.075 0 1 force
