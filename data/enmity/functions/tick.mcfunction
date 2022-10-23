@@ -95,6 +95,7 @@ execute as @e[type=area_effect_cloud,tag=enmity.cloud] at @s run function enmity
 execute as @e[type=item,tag=enmity.gunpowder_bomb] at @s run function enmity:items/usable/sulphur_staff/tick_projectile
 execute as @e[type=item,tag=enmity.gunpowder_bomb,tag=enmity.no_motion,scores={enmity.age=2..}] at @s run function enmity:items/usable/sulphur_staff/motion
 execute as @e[type=bat,tag=enmity.sculkbolt] at @s run function enmity:entities/mobs/warden/tick_projectile
+execute as @e[type=armor_stand,tag=enmity.smitation_rod] at @s run function enmity:items/usable/smitation_rod/tick
 
 # Blocks
 
@@ -142,7 +143,7 @@ execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/
 execute as @a at @s run function enmity:utility/sentry_anchor/tick
 execute as @a run function enmity:utility/xp_gain/check
 execute as @a[gamemode=!spectator] unless predicate enmity:entity/is_riding_vehicle at @s run function enmity:utility/fall_through_leaves
-execute as @a[scores={enmity.age=1}] unless data entity @s SpawnX run function enmity:utility/spawn_spread
+execute if score %difficulty enmity.value matches 1.. as @a[scores={enmity.age=1}] unless data entity @s SpawnX run function enmity:utility/spawn_spread
 execute as @a at @s if predicate enmity:entity/is_using_waystone run function enmity:blocks/functions/waystone/tick_user
 execute if entity @e[type=!#enmity:not_living,scores={enmity.subjugator_capture_id=-2147483648..2147483647}] as @a run function enmity:items/usable/subjugator/capture_validity_check
 execute as @a if score @s enmity.guide matches 1.. run function enmity:guide/open

@@ -1,0 +1,1 @@
+particle electric_spark ~ ~1.8 ~ 0 0 0 0.5 1 force
