@@ -1,4 +1,6 @@
-tp @s ~ ~ ~ ~10 ~
+data modify entity @s CustomNameVisible set value 0
+data modify entity @s CustomNameVisible set value 1
+execute at @s run tp @s ~ ~ ~ ~10 ~
 particle smoke ^ ^0.3 ^1.5 0 1 0 0.2 0 force
 particle smoke ^ ^0.3 ^-1.5 0 1 0 0.2 0 force
 particle smoke ^-1.5 ^0.3 ^ 0 1 0 0.2 0 force

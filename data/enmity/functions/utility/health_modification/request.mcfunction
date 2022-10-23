@@ -1,6 +1,8 @@
 scoreboard players set @s enmity.math_a 0
 scoreboard players operation @s enmity.math_a = @e[tag=enmity.this,limit=1] enmity.dmg
 scoreboard players operation @s enmity.math_a -= @s enmity.dmg_rdc
+execute if score @s enmity.dmg_rdc_mtp matches 0.. run scoreboard players operation @s enmity.math_a *= @s enmity.dmg_rdc_mtp
+execute if score @s enmity.dmg_rdc_mtp matches 0.. run scoreboard players operation @s enmity.math_a /= %const_100 enmity.value
 execute if score @s enmity.math_a matches ..1 run function enmity:utility/health_modification/reduce_health_by_1
 execute if score @s enmity.math_a matches 2 run function enmity:utility/health_modification/reduce_health_by_2
 execute if score @s enmity.math_a matches 3 run function enmity:utility/health_modification/reduce_health_by_3

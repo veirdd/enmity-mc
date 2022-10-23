@@ -88,6 +88,8 @@ execute as @e[type=!#enmity:not_living,tag=enmity.hit_by_alliance] at @s anchore
 execute as @e[type=phantom,tag=enmity.harpy] at @s run function enmity:entities/mobs/harpy/20_tick
 execute as @e[type=!#enmity:not_living,tag=enmity.nametag_hidden] unless data entity @s Passengers[{id:"minecraft:armor_stand"}] run data merge entity @s {CustomName:""}
 
+execute as @a[gamemode=!spectator] at @s run function enmity:entities/mobs/flame_spewer/spawning/spawn_check
+
 # Ambience
 
 execute as @a[scores={enmity.amb_loop=0}] at @s run function enmity:ambience/loop
@@ -100,4 +102,4 @@ execute as @a unless score @s enmity.health matches 0.. run function enmity:util
 execute as @a unless score @s enmity.player_id matches 0.. run function enmity:utility/register_new_player/request
 execute as @e unless score @s enmity.iframes matches -9999.. run scoreboard players set @s enmity.iframes 0
 
-schedule function enmity:20_tick 1s
+schedule function enmity:20_tick 20t

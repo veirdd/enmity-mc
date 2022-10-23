@@ -12,7 +12,7 @@ execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,t
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.math_a
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,gamemode=!creative,tag=!enmity.update_health] run function enmity:utility/health_modification/request
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
-scoreboard players set @e[tag=enmity.this2,limit=1] enmity.raycast 0
+scoreboard players set @s enmity.raycast 0
 particle smoke ~ ~ ~ 0 0 0 0.05 30 force
 playsound block.note_block.basedrum neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound block.note_block.basedrum neutral @a[distance=0..] ~ ~ ~ 2 0 0

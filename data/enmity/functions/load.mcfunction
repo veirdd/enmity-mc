@@ -1,5 +1,6 @@
 schedule function enmity:10_tick 5t
 schedule function enmity:20_tick 10t
-function enmity:40_tick
-function enmity:100_tick
-schedule function enmity:utility/setup/setup_check 1s
+schedule function enmity:40_tick 20t
+schedule function enmity:100_tick 50t
+schedule function enmity:400_tick 200t
+schedule function enmity:utility/setup/setup_check 20t

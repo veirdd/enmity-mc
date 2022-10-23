@@ -6,7 +6,7 @@ execute unless entity @e[type=ender_dragon] run tag @a[tag=enmity.dragon_target]
 
 # Items
 
-execute as @a[tag=!enmity.give_instant_health,tag=!enmity.update_health] if score @s enmity.health < @s enmity.max_hp if entity @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:78}}]}] run function enmity:utility/health_modification/increase_health_by_1
+execute if score %death_mode enmity.value matches 0 as @a[tag=!enmity.give_instant_health,tag=!enmity.update_health] if score @s enmity.health < @s enmity.max_hp if entity @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:78}}]}] run function enmity:utility/health_modification/increase_health_by_1
 
 # Entities
 
@@ -36,4 +36,4 @@ execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/crystalline_
 
 execute as @a at @s run function enmity:utility/entity_encounter
 
-schedule function enmity:40_tick 2s
+schedule function enmity:40_tick 40t

@@ -1,7 +1,6 @@
 scoreboard players add @s enmity.raycast 1
 particle bubble_pop ~ ~ ~ 0 0 0 0 1 force
-particle bubble_pop ^ ^ ^0.16 0 0 0 0 1 force
-particle bubble_pop ^ ^ ^0.33 0 0 0 0 1 force
+particle electric_spark ^ ^ ^0.25 0 0 0 0 1 force
 tag @s[tag=enmity.current_entity] remove enmity.current_entity
 tp @e[type=marker,tag=enmity.lightning_surge,limit=1] ~ ~ ~ facing ^ ^ ^1
 execute as @e[type=marker,tag=enmity.lightning_surge,limit=1] at @s run function enmity:utility/solid_detection/check

@@ -139,8 +139,9 @@ execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/
 
 # Other
 
+execute as @a at @s run function enmity:utility/sentry_anchor/tick
 execute as @a run function enmity:utility/xp_gain/check
-execute as @e[type=!#enmity:not_living] unless entity @s[gamemode=spectator] at @s run function enmity:utility/fall_through_leaves
+execute as @a[gamemode=!spectator] unless predicate enmity:entity/is_riding_vehicle at @s run function enmity:utility/fall_through_leaves
 execute as @a[scores={enmity.age=1}] unless data entity @s SpawnX run function enmity:utility/spawn_spread
 execute as @a at @s if predicate enmity:entity/is_using_waystone run function enmity:blocks/functions/waystone/tick_user
 execute if entity @e[type=!#enmity:not_living,scores={enmity.subjugator_capture_id=-2147483648..2147483647}] as @a run function enmity:items/usable/subjugator/capture_validity_check
