@@ -1,5 +1,5 @@
 tag @s add enmity.this
-execute positioned ~ ~-1 ~ as @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=..12,type=!player] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target_potential
+execute positioned ~ ~-1 ~ as @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=..24,type=!player] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target_potential
 tag @e[type=!#enmity:not_living,tag=enmity.homing_target_potential,limit=1,sort=nearest] add enmity.homing_target
 tag @e[type=!#enmity:not_living,tag=enmity.homing_target_potential] remove enmity.homing_target_potential
 execute facing entity @e[tag=enmity.homing_target,limit=1] eyes run tp @s ^ ^ ^0.35

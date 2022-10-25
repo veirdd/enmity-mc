@@ -155,7 +155,7 @@ execute as @a[scores={enmity.die=1..}] at @s run function enmity:utility/on_play
 clear @a firework_star{Enmity.DeleteItem:1}
 clear @a gunpowder{Enmity.DeleteItem:1}
 kill @e[type=item,tag=!enmity.projectile,nbt={Item:{tag:{Enmity.DeleteItem:1}}}]
-execute as @e[type=!ender_dragon] at @s if predicate enmity:environment/in_the_end if entity @s[y=-32,dy=-10000] run function enmity:utility/end_to_overworld_tp
+execute as @e[type=!ender_dragon,predicate=enmity:environment/in_the_end] at @s if entity @s[y=-32,dy=-10000] run function enmity:utility/end_to_overworld_tp
 execute as @a[tag=enmity.dragon_target] at @s if predicate enmity:environment/in_overworld run tag @s remove enmity.dragon_target
 execute in the_end positioned 0 64 0 run scoreboard players add @a[distance=..128] enmity.in_end_center_time 1
 execute in the_end positioned 0 64 0 as @a unless entity @s[distance=..128] run scoreboard players set @s enmity.in_end_center_time 0

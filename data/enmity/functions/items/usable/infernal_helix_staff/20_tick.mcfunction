@@ -10,4 +10,4 @@ execute if score @s enmity.age matches 7..12 run data modify entity @s CustomNam
 execute if score @s enmity.age matches 0..6 run data modify entity @s CustomName set value '[{"text":"|","color":"red"},{"text":"|||||||||","color":"gray"}]'
 scoreboard players add @s enmity.math_a 1
 execute if score @s enmity.math_a matches 2 run scoreboard players set @s enmity.math_a 0
-execute if score @s enmity.math_a matches 1 if entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.projectile,distance=..12] run function enmity:items/usable/infernal_helix_staff/summon_projectile
+execute if score @s enmity.math_a matches 1 if entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.projectile,distance=..16] run function enmity:items/usable/infernal_helix_staff/summon_projectile

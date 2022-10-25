@@ -1,6 +1,6 @@
 playsound minecraft:item.trident.hit neutral @a[distance=0..] ~ ~ ~ 1.5 0.7 0
-playsound minecraft:entity.leash_knot.break neutral @a[distance=0..] ~ ~ ~ 2 0.7 0
-playsound minecraft:entity.shulker.death neutral @a[distance=0..] ~ ~ ~ 1.5 2 0
+playsound minecraft:entity.creeper.primed neutral @a[distance=0..] ~ ~ ~ 2 2 0
+playsound minecraft:block.anvil.land neutral @a[distance=0..] ~ ~ ~ 1.5 2 0
 summon marker ~ ~ ~ {Tags:["enmity.projectile","enmity.smitation_rod"]}
 scoreboard players operation @e[type=marker,tag=enmity.smitation_rod] enmity.player_id = @s enmity.player_id
 scoreboard players set @e[type=marker,tag=enmity.smitation_rod] enmity.dmg 2
