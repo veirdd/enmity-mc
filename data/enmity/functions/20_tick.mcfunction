@@ -65,6 +65,8 @@ execute as @e[type=area_effect_cloud,tag=enmity.cloud,scores={enmity.age=0}] at 
 execute as @e[type=area_effect_cloud,tag=enmity.cloud] at @s run function enmity:items/usable/cloud_staff/20_tick
 execute as @e[type=armor_stand,tag=enmity.smitation_rod,scores={enmity.age=0}] at @s run function enmity:items/usable/smitation_rod/die
 execute as @e[type=armor_stand,tag=enmity.smitation_rod] at @s run function enmity:items/usable/smitation_rod/20_tick
+execute as @e[type=armor_stand,tag=enmity.sculk_verge,scores={enmity.age=0}] at @s run function enmity:items/usable/sculk_verge/die
+execute as @e[type=armor_stand,tag=enmity.sculk_verge] at @s run function enmity:items/usable/sculk_verge/20_tick
 
 # Items
 

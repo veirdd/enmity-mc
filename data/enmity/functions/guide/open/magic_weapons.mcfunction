@@ -45,3 +45,4 @@ execute if score @s enmity.guide matches 111044 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 111045 run function enmity:guide/tabs/main/items/magic_weapons/withering_beam_staff
 execute if score @s enmity.guide matches 111046 run function enmity:guide/tabs/main/items/magic_weapons/web_slinger
 execute if score @s enmity.guide matches 111047 run function enmity:guide/tabs/main/items/magic_weapons/smitation_rod
+execute if score @s enmity.guide matches 111048 run function enmity:guide/tabs/main/items/magic_weapons/sculk_verge

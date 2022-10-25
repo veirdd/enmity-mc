@@ -1,0 +1,239 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:badlands"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:eroded_badlands"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:wooded_badlands"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:desert"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:ice_spikes"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:windswept_savanna"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:savanna"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:snowy_plains"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "minecraft:savanna_plateau"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:desert_canyon"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:ancient_sands"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:arid_highlands"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:ashen_savanna"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:brushland"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:bryce_canyon"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:cold_shrubland"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:desert_oasis"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:desert_spires"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:fractured_savanna"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:frozen_cliffs"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:glacial_chasm"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:gravel_beach"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:gravel_desert"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:hot_shrubland"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:ice_marsh"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:red_oasis"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:rocky_shrubland"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:sandstone_valley"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:savanna_slopes"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:scarlet_mountains"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:shrubland"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:siberian_grove"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:snowy_badlands"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:snowy_maple_forest"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:snowy_shield"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:warped_mesa"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:white_mesa"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:wintry_forest"
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biome": "terralith:wintry_lowlands"
+            }
+        }
+    ]
+  }

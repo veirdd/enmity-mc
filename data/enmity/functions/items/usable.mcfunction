@@ -60,4 +60,5 @@ execute if entity @s[scores={enmity.use=106}] at @s run function enmity:items/us
 execute if entity @s[scores={enmity.use=108..110}] unless predicate enmity:entity/is_sneaking at @s anchored feet positioned ^ ^ ^ run function enmity:items/usable/subjugator/use
 execute if entity @s[scores={enmity.use=108..110}] if predicate enmity:entity/is_sneaking at @s run function enmity:items/usable/subjugator/switch_mode
 execute if entity @s[scores={enmity.use=115,enmity.mana=80..}] at @s anchored eyes run function enmity:items/usable/smitation_rod/raycast
+execute if entity @s[scores={enmity.use=116,enmity.mana=120..}] at @s anchored eyes run function enmity:items/usable/sculk_verge/raycast
 scoreboard players set @s enmity.use 0

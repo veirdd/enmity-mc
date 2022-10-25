@@ -9,4 +9,4 @@ execute if entity @s[predicate=enmity:entity/is_sneaking] run tag @e[type=armor_
 scoreboard players set @e[type=armor_stand,tag=enmity.new] enmity.age 59
 scoreboard players operation @e[type=armor_stand,tag=enmity.new] enmity.player_id = @s enmity.player_id
 scoreboard players operation @e[type=armor_stand,tag=enmity.new] enmity.dmg_bst += @s enmity.dmg_bst
-tag @e[tag=enmity.new,tag=enmity.silvan_spirit] remove enmity.new
+tag @e[type=armor_stand,tag=enmity.new] remove enmity.new

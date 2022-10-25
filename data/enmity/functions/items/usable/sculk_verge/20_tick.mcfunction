@@ -8,5 +8,5 @@ execute if score @s enmity.age matches 19..24 run data modify entity @s CustomNa
 execute if score @s enmity.age matches 13..18 run data modify entity @s CustomName set value '[{"text":"|||","color":"red"},{"text":"|||||||","color":"gray"}]'
 execute if score @s enmity.age matches 7..12 run data modify entity @s CustomName set value '[{"text":"||","color":"red"},{"text":"||||||||","color":"gray"}]'
 execute if score @s enmity.age matches 0..6 run data modify entity @s CustomName set value '[{"text":"|","color":"red"},{"text":"|||||||||","color":"gray"}]'
-execute unless score @s enmity.cooldown matches 2.. run scoreboard players add @s enmity.cooldown 1
-execute if score @s enmity.cooldown matches 2 if entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.projectile,distance=..16] run function enmity:items/usable/infernal_helix_staff/summon_projectile
+execute unless score @s enmity.cooldown matches 5.. run scoreboard players add @s enmity.cooldown 1
+execute if score @s enmity.cooldown matches 5 if entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.projectile,distance=..8,limit=1] run function enmity:items/usable/sculk_verge/attack

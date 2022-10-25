@@ -6,3 +6,4 @@ scoreboard players operation @e[type=bat,tag=enmity.new] enmity.dmg += @s enmity
 effect give @e[type=bat,tag=enmity.new] invisibility 1000000 255 true
 scoreboard players operation @e[type=bat,tag=enmity.new] enmity.player_id = @s enmity.player_id
 tag @e[type=bat,tag=enmity.new] remove enmity.new
+scoreboard players set @s enmity.cooldown 0

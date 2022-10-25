@@ -95,7 +95,6 @@ execute as @e[type=area_effect_cloud,tag=enmity.cloud] at @s run function enmity
 execute as @e[type=item,tag=enmity.gunpowder_bomb] at @s run function enmity:items/usable/sulphur_staff/tick_projectile
 execute as @e[type=item,tag=enmity.gunpowder_bomb,tag=enmity.no_motion,scores={enmity.age=2..}] at @s run function enmity:items/usable/sulphur_staff/motion
 execute as @e[type=bat,tag=enmity.sculkbolt] at @s run function enmity:entities/mobs/warden/tick_projectile
-execute as @e[type=armor_stand,tag=enmity.smitation_rod] at @s run function enmity:items/usable/smitation_rod/tick
 
 # Blocks
 

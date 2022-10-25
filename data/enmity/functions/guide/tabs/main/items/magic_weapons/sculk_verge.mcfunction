@@ -1,6 +1,6 @@
-tellraw @s [{"text":"-============[","color":"gray"},{"text":"HADOPELAGIC ECHO","color":"white","bold":true},{"text":"]===========-","color":"gray"}]
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":"SCULK VERGE","color":"white","bold":true},{"text":"]==============-","color":"gray"}]
 
-tellraw @s [{"text":"Description:\n   Damage: 5\n   Mana usage: 80\n   Cooldown: 20\n   Casts a damaging sound wave.","color":"gray"}]
+tellraw @s [{"text":"Description:\n   Damage: 16\n   Mana usage: 120\n   Cooldown: 32\n   Summons a sculk amalgam that emits deadly pulses.\n   This is a following sentry.\n   Up to 3 following sentries may orbit you at once.\n   Sneak while using to force the sentry to stay.","color":"gray"}]
 tellraw @s [{"text":"\nPrimary obtaining method:\n   Dropped by Wardens (~16.7% chance).","color":"gray"}]
 
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]
