@@ -1,4 +1,4 @@
-# enmity
+# Enmity
  
 INSTALLATION GUIDE
 
