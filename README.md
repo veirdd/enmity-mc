@@ -2,7 +2,7 @@
  
 INSTALLATION GUIDE
 
-Here are the steps required for the installation of Enmity (please note all the steps are required for the datapack to function as intended):
+Here are the steps required for the installation and proper functioning of Enmity:
 
 	1. Download and install the latest version of the OptiFine from [https://optifine.net/downloads].
 	2. Install and enable the attached Enmity resource pack. Make sure it's on top of other active resource packs.
@@ -15,6 +15,8 @@ Here are the steps required for the installation of Enmity (please note all the 
 		4.3 Make sure that Enmity is at the top in the datapack selection menu.
 
 GAME SETTINGS
+
+These are the required or preferred Minecraft settings:
 
 	1. Particles must be enabled. (Options -> Video Settings -> Animations -> All ON)
 	2. It is recommended to use Fabulous Graphics. (Options -> Video Settings -> Graphics: Fabulous)
