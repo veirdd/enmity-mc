@@ -4,6 +4,7 @@ playsound minecraft:entity.ender_dragon.flap neutral @a[distance=0..] ~ ~ ~ 2 0 
 playsound minecraft:block.respawn_anchor.set_spawn neutral @a[distance=0..] ~ ~ ~ 1 0.5 0
 playsound minecraft:block.sculk_sensor.clicking neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound minecraft:block.sculk_sensor.clicking neutral @a[distance=0..] ~ ~ ~ 2 0 0
+particle dust_color_transition 0 1 1 1 0 0 0 ~ ~0.8 ~ 0.5 0.5 0.5 0 50 force
 scoreboard players remove @s enmity.mana 100
 scoreboard players set @s enmity.cooldown 28
 summon armor_stand ~ ~ ~ {Small:1,NoGravity:1,Tags:["enmity.projectile","enmity.new","enmity.sculk_verge","enmity.sentry","enmity.following"],CustomName:'""',CustomNameVisible:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"sculk",Count:1}],Silent:1,Invisible:1}

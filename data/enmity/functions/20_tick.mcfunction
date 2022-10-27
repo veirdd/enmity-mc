@@ -92,8 +92,6 @@ execute as @e[type=!#enmity:not_living,tag=enmity.hit_by_alliance] at @s anchore
 execute as @e[type=phantom,tag=enmity.harpy] at @s run function enmity:entities/mobs/harpy/20_tick
 execute as @e[type=!#enmity:not_living,tag=enmity.nametag_hidden] unless data entity @s Passengers[{id:"minecraft:armor_stand"}] run data merge entity @s {CustomName:""}
 
-execute as @a[gamemode=!spectator] at @s run function enmity:entities/mobs/flame_spewer/spawning/spawn_check
-
 # Ambience
 
 execute as @a[scores={enmity.amb_loop=0}] at @s run function enmity:ambience/loop
