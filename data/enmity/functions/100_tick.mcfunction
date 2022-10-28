@@ -29,4 +29,5 @@ scoreboard players enable @a enmity.guide
 scoreboard players enable @a enmity.player_targeting
 scoreboard players enable @a enmity.mana_display
 
+
 schedule function enmity:100_tick 100t

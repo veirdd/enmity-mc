@@ -17,6 +17,10 @@ execute as @a at @s run function enmity:utility/temperature
 
 # Stats
 
+execute as @a unless score @s enmity.health matches 0.. run function enmity:utility/enable_health
+execute as @a unless score @s enmity.player_id matches 0.. run function enmity:utility/register_new_player/request
+execute as @e unless score @s enmity.iframes matches -9999.. run scoreboard players set @s enmity.iframes 0
+
 scoreboard players remove @a[scores={enmity.egapple_cooldown=1..}] enmity.egapple_cooldown 1
 
 execute as @a run attribute @s generic.movement_speed modifier remove 0-0-0-0-2
@@ -98,10 +102,5 @@ execute as @a[scores={enmity.amb_loop=0}] at @s run function enmity:ambience/loo
 execute as @a at @s run function enmity:ambience/random
 execute as @a[scores={enmity.amb_loop=1..}] run scoreboard players remove @s enmity.amb_loop 1
 
-# Other
-
-execute as @a unless score @s enmity.health matches 0.. run function enmity:utility/enable_health
-execute as @a unless score @s enmity.player_id matches 0.. run function enmity:utility/register_new_player/request
-execute as @e unless score @s enmity.iframes matches -9999.. run scoreboard players set @s enmity.iframes 0
 
 schedule function enmity:20_tick 20t

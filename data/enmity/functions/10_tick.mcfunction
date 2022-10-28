@@ -74,4 +74,5 @@ execute as @a at @s if predicate enmity:environment/near_deep_dark unless predic
 
 effect give @e[tag=enmity.invulnerable] resistance 2 255 true
 
+
 schedule function enmity:10_tick 10t

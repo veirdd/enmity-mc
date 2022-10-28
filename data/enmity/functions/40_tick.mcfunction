@@ -37,4 +37,5 @@ execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/crystalline_
 
 execute as @a at @s run function enmity:utility/entity_encounter
 
+
 schedule function enmity:40_tick 40t
