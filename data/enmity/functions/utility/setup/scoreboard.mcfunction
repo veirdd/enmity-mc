@@ -77,6 +77,7 @@ scoreboard players set %const_10 enmity.value 10
 scoreboard players set %const_11 enmity.value 11
 scoreboard players set %const_14 enmity.value 14
 scoreboard players set %const_20 enmity.value 20
+scoreboard players set %const_21 enmity.value 21
 scoreboard players set %const_30 enmity.value 30
 scoreboard players set %const_40 enmity.value 40
 scoreboard players set %const_50 enmity.value 50
@@ -84,7 +85,9 @@ scoreboard players set %const_60 enmity.value 60
 scoreboard players set %const_70 enmity.value 70
 scoreboard players set %const_80 enmity.value 80
 scoreboard players set %const_90 enmity.value 90
+scoreboard players set %const_91 enmity.value 91
 scoreboard players set %const_100 enmity.value 100
+scoreboard players set %const_136 enmity.value 136
 scoreboard players set %const_180 enmity.value 180
 scoreboard players set %const_200 enmity.value 200
 scoreboard players set %const_360 enmity.value 360

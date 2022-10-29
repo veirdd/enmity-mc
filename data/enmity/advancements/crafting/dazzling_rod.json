@@ -3,11 +3,11 @@
         "Unlocked": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "enmity:smitation_rod"
+                "recipe": "enmity:dazzling_rod"
             }
         }
     },
     "rewards": {
-        "function": "enmity:items/crafting/smitation_rod"
+        "function": "enmity:items/crafting/dazzling_rod"
     }
 }

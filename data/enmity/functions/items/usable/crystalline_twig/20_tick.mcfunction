@@ -8,4 +8,8 @@ execute if score @s enmity.age matches 19..24 run data modify entity @s CustomNa
 execute if score @s enmity.age matches 13..18 run data modify entity @s CustomName set value '[{"text":"|||","color":"red"},{"text":"|||||||","color":"gray"}]'
 execute if score @s enmity.age matches 7..12 run data modify entity @s CustomName set value '[{"text":"||","color":"red"},{"text":"||||||||","color":"gray"}]'
 execute if score @s enmity.age matches 0..6 run data modify entity @s CustomName set value '[{"text":"|","color":"red"},{"text":"|||||||||","color":"gray"}]'
-execute positioned ~ ~1.8 ~ facing entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.projectile,distance=..5,limit=1,sort=nearest] eyes run function enmity:items/usable/smitation_rod/attack
+execute unless score @s enmity.cooldown matches 4.. run scoreboard players add @s enmity.cooldown 1
+execute if score @s enmity.cooldown matches 1 run data modify entity @s ArmorItems[3].tag.CustomModelData set value 1016
+execute if score @s enmity.cooldown matches 2 run data modify entity @s ArmorItems[3].tag.CustomModelData set value 1017
+execute if score @s enmity.cooldown matches 3 run data modify entity @s ArmorItems[3].tag.CustomModelData set value 1018
+execute if score @s enmity.cooldown matches 4 run data modify entity @s ArmorItems[3].tag.CustomModelData set value 1019

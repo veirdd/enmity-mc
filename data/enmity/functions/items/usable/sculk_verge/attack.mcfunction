@@ -9,3 +9,4 @@ execute as @a[scores={enmity.iframes=0},distance=..3] unless score @e[tag=enmity
 execute if entity @e[type=!#enmity:not_living,tag=enmity.hit] run function enmity:items/usable/sculk_verge/damage
 tag @s remove enmity.this
 scoreboard players set @s enmity.cooldown 0
+tag @s remove enmity.ready

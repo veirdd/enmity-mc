@@ -10,5 +10,5 @@ execute if entity @s[tag=enmity.liquidation_trident] at @s run function enmity:i
 execute if entity @s[tag=enmity.boulder,scores={enmity.age=5..}] at @s run function enmity:entities/mobs/giant/projectiles/boulder/tick
 execute if entity @s[tag=enmity.boulder,scores={enmity.age=5..},tag=enmity.no_motion] at @s run function enmity:entities/mobs/giant/projectiles/boulder/motion
 execute if entity @s[tag=enmity.fang] at @s run function enmity:items/usable/fang_staff/tick_projectile
-execute if entity @s[tag=enmity.smitation_rod] at @s run function enmity:items/usable/smitation_rod/tick
+execute if entity @s[tag=enmity.dazzling_rod] at @s run function enmity:items/usable/dazzling_rod/tick
 execute if entity @s[tag=enmity.sculk_verge] at @s run function enmity:items/usable/sculk_verge/tick

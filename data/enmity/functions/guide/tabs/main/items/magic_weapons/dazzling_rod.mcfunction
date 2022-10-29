@@ -1,4 +1,4 @@
-tellraw @s [{"text":"-=============[","color":"gray"},{"text":"SMITATION ROD","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":"DAZZLING ROD","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
 
 tellraw @s [{"text":"Description:\n   Damage: 3\n   Mana usage: 100\n   Cooldown: 32\n   Summons a charged lightning tower.","color":"gray"}]
 tellraw @s [{"text":"\nPrimary obtaining method:\n   Crafting:\n      [-][1][2]\n      [-][0][1]\n      [0][-][-]\n      0 - Iron Ingot\n      1 - Copper Ingot\n      2 - Copper Block","color":"gray"}]
