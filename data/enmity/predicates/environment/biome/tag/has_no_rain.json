@@ -142,12 +142,6 @@
         {
             "condition": "minecraft:location_check",
             "predicate": {
-                "biome": "terralith:hot_shrubland"
-            }
-        },
-        {
-            "condition": "minecraft:location_check",
-            "predicate": {
                 "biome": "terralith:ice_marsh"
             }
         },
@@ -234,6 +228,12 @@
             "predicate": {
                 "biome": "terralith:wintry_lowlands"
             }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "terralith:lush_desert"
+          }
         }
     ]
   }

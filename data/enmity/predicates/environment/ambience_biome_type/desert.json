@@ -72,6 +72,12 @@
         "predicate": {
           "biome": "terralith:sandstone_valley"
         }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "terralith:lush_desert"
+        }
       }
     ]
   }
