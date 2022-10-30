@@ -5,6 +5,6 @@ tellraw @s [{"text":"\nBehaviour:\n   Uses an attack pattern similar to Phantoms
 tellraw @s [{"text":"\nTaming:\n   Only 10% of naturally spawned Harpies can be tamed. If a Harpy can be tamed, it will slowly fly towards a player holding a Rabbit's Foot. During that period the Harpy can still attack the player if they come too close. In order to tame the Harpy, the player must throw the Rabbit's Foot on the ground.","color":"gray"}]
 tellraw @s [{"text":"\nTamed:\n   While tamed, a Harpy will remain stationary. It can be equipped with a Saddle by throwing one directly at it. A Saddled Harpy makes for an excellent flying mount. Its flight can be controlled by holding a Stick.","color":"gray"}]
 tellraw @s [{"text":"\nSpawning:\n   Spawns in the Overworld on large heights above the player. Needs a 3x3x3 cube of air and sky access to spawn.","color":"gray"}]
-tellraw @s [{"text":"\nDrops:\n   Feather (2-4)","color":"gray"}]
+tellraw @s [{"text":"\nDrops:\n   Harpy Feather (1-2)","color":"gray"}]
 
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 12"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-==================[","color":"gray"},{"text":"ITEMS","color":"white","bold":true},{"text":"]=================-","color":"gray"}]
 
-tellraw @s [{"text":"Enmity adds well over 150 new items. Some vanilla items were also changed, giving them new uses or properties.\n","color":"gray"}]
+tellraw @s [{"text":"Enmity adds over 150 new items. Some vanilla items were also changed and given new uses or properties.\n","color":"gray"}]
 tellraw @s [{"text":"The guide does not mention all obtaining methods of most items to keep the pages compact.\n","color":"gray"}]
 
 tellraw @s [{"text":"[","color":"gray"},{"text":"Magic Weapons","color":"white","hoverEvent":{"action":"show_text","value":{"text":"Magic Weapons"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111"}},{"text":"]","color":"gray"}]

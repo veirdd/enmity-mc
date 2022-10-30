@@ -1,0 +1,1 @@
+give @s minecraft:feather{display:{Name:'{"text":"Harpy Feather","italic":false}'},CustomModelData:1,Enmity:1,Enmity.CustomCrafting:1} 1

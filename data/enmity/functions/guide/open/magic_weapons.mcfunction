@@ -46,3 +46,4 @@ execute if score @s enmity.guide matches 111045 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 111046 run function enmity:guide/tabs/main/items/magic_weapons/web_slinger
 execute if score @s enmity.guide matches 111047 run function enmity:guide/tabs/main/items/magic_weapons/dazzling_rod
 execute if score @s enmity.guide matches 111048 run function enmity:guide/tabs/main/items/magic_weapons/sculk_verge
+execute if score @s enmity.guide matches 111049 run function enmity:guide/tabs/main/items/magic_weapons/crystalline_twig

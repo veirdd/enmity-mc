@@ -57,3 +57,4 @@ execute if score @s enmity.guide matches 112056 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 112057 run function enmity:guide/tabs/main/items/armor_and_accessories/ring_of_devotion
 execute if score @s enmity.guide matches 112058 run function enmity:guide/tabs/main/items/armor_and_accessories/winged_strawberry
 execute if score @s enmity.guide matches 112059 run function enmity:guide/tabs/main/items/armor_and_accessories/mana_capacitor
+execute if score @s enmity.guide matches 112060 run function enmity:guide/tabs/main/items/armor_and_accessories/hermes_boots
