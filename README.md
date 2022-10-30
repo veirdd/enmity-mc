@@ -8,7 +8,7 @@ Here are the steps required for the installation and proper functioning of Enmit
 	2. Install and enable the attached Enmity resource pack. Make sure it's on top of other active resource packs.
 	3. During new world creation:
 		4.1. Install Enmity. (Place the archive in the datapacks folder.)
-		4.2. Download Terralith v2.2.1a from [https://www.curseforge.com/minecraft/mc-mods/terralith/files]
+		4.2. Download Terralith v2.2.1a from [https://www.curseforge.com/minecraft/mc-mods/terralith/files].
 			4.2.1. Place the downloaded jar archive in the datapacks folder.
 			4.2.2. Right click the jar archive, select "Extract files", click "OK".
 			4.2.3. After extraction, you may now remove the jar archive.
