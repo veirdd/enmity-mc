@@ -1,7 +1,8 @@
 scoreboard players remove @s enmity.mana 120
 scoreboard players set @s enmity.cooldown 24
-playsound item.trident.throw neutral @a[distance=0..] ~ ~ ~ 2 0.75 0
-playsound item.trident.riptide_3 neutral @a[distance=0..] ~ ~ ~ 1 2 0
+playsound block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 1.25 0
+playsound entity.leash_knot.break neutral @a[distance=0..] ~ ~ ~ 2 0.75 0
+playsound entity.bee.sting neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound block.redstone_torch.burnout neutral @a[distance=0..] ~ ~ ~ 2 1.5 0
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.terminal_flash","enmity.projectile"]}
 scoreboard players set @e[type=marker,tag=enmity.new] enmity.dmg 21

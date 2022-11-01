@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":"SACRED STORM","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
 
 tellraw @s [{"text":"Description:\n   Damage: 12\n   Mana usage: 300\n   Cooldown: 20\n   Summons a sigil that strikes enemies with beams.\n   This is a following sentry.\n   Up to 3 following sentries may orbit you at once.\n   Sneak while using to force the sentry to stay.","color":"gray"}]
-tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Charm of Decay\n      Celestial Shard (3)\n      Nightly Matter (6)\n      Popped Chorus Fruit (16)\n      Lightning Surge","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Charm of Decay\n      The Dance of Souls\n      Celestial Shard (3)\n      Nightly Matter (6)\n      Popped Chorus Fruit (16)","color":"gray"}]
 
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

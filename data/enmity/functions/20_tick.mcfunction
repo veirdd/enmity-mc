@@ -39,11 +39,11 @@ scoreboard players set @a enmity.max_mana 200
 scoreboard players set @a enmity.max_snt 1
 scoreboard players set @a enmity.dmg_rdc 0
 scoreboard players set @a enmity.dmg_bst 0
-execute as @a if predicate enmity:entity/has_armor/enmity_set run function enmity:utility/item_branch/armor_20_tick
-execute as @a[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/strength_20_tick
-execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/mobility_20_tick
-execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/effect_20_tick
-execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/mana_20_tick
+execute as @a if predicate enmity:entity/has_armor/enmity_set run function enmity:utility/item_branch/20_tick/armor
+execute as @a[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/20_tick/strength
+execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/20_tick/mobility
+execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/20_tick/effect
+execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/20_tick/mana
 execute as @a run function enmity:utility/protection_to_dr
 execute if score %death_mode enmity.value matches 0 as @a run function enmity:utility/calculate_dmg_rdc_mtp
 execute if score %death_mode enmity.value matches 1 run scoreboard players set @a enmity.dmg_rdc_mtp 110
@@ -53,26 +53,13 @@ execute as @a if predicate enmity:entity/has_effect/berserked run function enmit
 
 scoreboard players remove @e[tag=enmity.sentry,scores={enmity.age=1..}] enmity.age 1
 
-execute as @e[type=armor_stand,tag=enmity.silvan_spirit,scores={enmity.age=0}] at @s run function enmity:items/usable/silvan_spirit_staff/die
-execute as @e[type=armor_stand,tag=enmity.silvan_spirit] at @s run function enmity:items/usable/silvan_spirit_staff/20_tick
-execute as @e[type=area_effect_cloud,tag=enmity.infernal_helix,scores={enmity.age=0}] at @s run function enmity:items/usable/infernal_helix_staff/die
-execute as @e[type=area_effect_cloud,tag=enmity.infernal_helix] at @s run function enmity:items/usable/infernal_helix_staff/20_tick
-execute as @e[type=area_effect_cloud,tag=enmity.charm_of_decay,scores={enmity.age=0}] at @s run function enmity:items/usable/charm_of_decay/die
-execute as @e[type=area_effect_cloud,tag=enmity.charm_of_decay] at @s run function enmity:items/usable/charm_of_decay/20_tick
+execute as @e[type=armor_stand,tag=enmity.projectile] run function enmity:utility/projectile_branch/20_tick/armor_stand
+execute as @e[type=area_effect_cloud,tag=enmity.projectile] run function enmity:utility/projectile_branch/20_tick/area_effect_cloud
+
 execute as @e[type=zombie,tag=enmity.call_of_the_undead,scores={enmity.age=0}] at @s run function enmity:items/usable/call_of_the_undead/die
 execute as @e[type=zombie,tag=enmity.call_of_the_undead] at @s run function enmity:items/usable/call_of_the_undead/20_tick
 execute as @e[type=guardian,tag=enmity.guardian_sentry,scores={enmity.age=0}] at @s run function enmity:items/usable/guardian_thorn/die
 execute as @e[type=guardian,tag=enmity.guardian_sentry] at @s run function enmity:items/usable/guardian_thorn/20_tick
-execute as @e[type=area_effect_cloud,tag=enmity.sacred_storm,scores={enmity.age=0}] at @s run function enmity:items/usable/sacred_storm/die
-execute as @e[type=area_effect_cloud,tag=enmity.sacred_storm] at @s run function enmity:items/usable/sacred_storm/20_tick
-execute as @e[type=area_effect_cloud,tag=enmity.cloud,scores={enmity.age=0}] at @s run function enmity:items/usable/cloud_staff/die
-execute as @e[type=area_effect_cloud,tag=enmity.cloud] at @s run function enmity:items/usable/cloud_staff/20_tick
-execute as @e[type=armor_stand,tag=enmity.dazzling_rod,scores={enmity.age=0}] at @s run function enmity:items/usable/dazzling_rod/die
-execute as @e[type=armor_stand,tag=enmity.dazzling_rod] at @s run function enmity:items/usable/dazzling_rod/20_tick
-execute as @e[type=armor_stand,tag=enmity.sculk_verge,scores={enmity.age=0}] at @s run function enmity:items/usable/sculk_verge/die
-execute as @e[type=armor_stand,tag=enmity.sculk_verge] at @s run function enmity:items/usable/sculk_verge/20_tick
-execute as @e[type=armor_stand,tag=enmity.crystalline_cluster,scores={enmity.age=0}] at @s run function enmity:items/usable/crystalline_twig/die
-execute as @e[type=armor_stand,tag=enmity.crystalline_cluster] at @s run function enmity:items/usable/crystalline_twig/20_tick
 
 # Items
 

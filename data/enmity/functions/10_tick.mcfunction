@@ -1,7 +1,7 @@
 # Items
 
-execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/mobility_10_tick
-execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/effect_10_tick
+execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/10_tick/mobility
+execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/10_tick/effect
 execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64}}]}] at @s run effect give @s night_vision 30 0 true
 execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:22}}]}] at @s unless predicate enmity:environment/near_deep_dark run effect give @s night_vision 30 0 true
 
@@ -9,16 +9,11 @@ execute as @a[gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:warped_fungus
 execute as @a[gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:33}}}] at @s run effect give @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=0.01..16,tag=!enmity.target_dummy] glowing 1 0 true
 execute as @a[gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:33}}]}] at @s run effect give @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=0.01..16,tag=!enmity.target_dummy] glowing 1 0 true
 
-execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/witherbone_set] at @s run function enmity:items/armor/witherbone/10_tick
-execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/molten_set] at @s run function enmity:items/armor/molten/10_tick
-execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/silvan_set] at @s run function enmity:items/armor/silvan/10_tick
-execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/tidal_set] at @s run function enmity:items/armor/tidal/10_tick
-execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/celestial_set] at @s run effect give @s resistance 2 3 true
-
-execute as @a[predicate=enmity:entity/has_armor/enmity_boots] run function enmity:utility/item_branch/armor_color/boots
-execute as @a[predicate=enmity:entity/has_armor/enmity_leggings] run function enmity:utility/item_branch/armor_color/leggings
-execute as @a[predicate=enmity:entity/has_armor/enmity_chestplate] run function enmity:utility/item_branch/armor_color/chestplate
-execute as @a[predicate=enmity:entity/has_armor/enmity_helmet] run function enmity:utility/item_branch/armor_color/helmet
+execute as @a[predicate=enmity:entity/has_armor/enmity_set] run function enmity:utility/item_branch/10_tick/armor
+execute as @a[predicate=enmity:entity/has_armor/enmity_boots] run function enmity:utility/item_branch/10_tick/armor_color/boots
+execute as @a[predicate=enmity:entity/has_armor/enmity_leggings] run function enmity:utility/item_branch/10_tick/armor_color/leggings
+execute as @a[predicate=enmity:entity/has_armor/enmity_chestplate] run function enmity:utility/item_branch/10_tick/armor_color/chestplate
+execute as @a[predicate=enmity:entity/has_armor/enmity_helmet] run function enmity:utility/item_branch/10_tick/armor_color/helmet
 
 # Projectiles
 

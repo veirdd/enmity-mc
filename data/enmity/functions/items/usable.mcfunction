@@ -13,7 +13,7 @@ execute if entity @s[scores={enmity.use=14,enmity.mana=80..}] at @s run function
 execute if entity @s[scores={enmity.use=16,enmity.mana=80..}] at @s run function enmity:items/usable/emerald_staff/use
 execute if entity @s[scores={enmity.use=17,enmity.mana=100..}] at @s anchored eyes run function enmity:items/usable/silvan_spirit_staff/raycast
 execute if entity @s[scores={enmity.use=18,enmity.mana=90..}] at @s run function enmity:items/usable/soul_scepter/use
-execute if entity @s[scores={enmity.use=19,enmity.mana=160..}] at @s run function enmity:items/usable/the_dance_of_souls/use
+execute if entity @s[scores={enmity.use=19,enmity.mana=160..}] at @s anchored eyes run function enmity:items/usable/the_dance_of_souls/raycast
 execute if entity @s[scores={enmity.use=24,enmity.mana=110..}] at @s run function enmity:items/usable/withered_scepter/use
 execute if entity @s[scores={enmity.use=25,enmity.mana=140..}] at @s anchored eyes run function enmity:items/usable/infernal_helix_staff/raycast
 execute if entity @s[scores={enmity.use=26,enmity.mana=50..}] at @s anchored eyes positioned ^ ^ ^0.3 run function enmity:items/usable/nights_ray/use

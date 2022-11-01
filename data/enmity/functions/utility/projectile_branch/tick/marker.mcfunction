@@ -39,3 +39,5 @@ execute if entity @s[tag=enmity.cobweb] at @s run function enmity:items/usable/w
 execute if entity @s[tag=enmity.homing_trail] at @s run function enmity:items/accessories/effervescent_aglets/tick_projectile
 execute if entity @s[tag=enmity.spectral_lifesteal] at @s run function enmity:items/usable/spectral_rift/tick_lifesteal
 execute if entity @s[tag=enmity.crystalline_bolt] at @s run function enmity:items/usable/crystalline_twig/tick_projectile
+execute if entity @s[tag=enmity.nether_geyser_spawner] at @s run function enmity:entities/other_entities/nether_geyser/tick_spawner
+execute if entity @s[tag=enmity.nether_geyser] at @s run function enmity:entities/other_entities/nether_geyser/tick_geyser
