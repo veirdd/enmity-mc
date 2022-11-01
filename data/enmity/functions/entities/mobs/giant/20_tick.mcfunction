@@ -2,10 +2,9 @@ execute if score @s enmity.idle_cd matches ..0 run function enmity:entities/mobs
 scoreboard players remove @s enmity.idle_cd 20
 execute if entity @s[tag=!enmity.despawning,tag=!enmity.rising] unless predicate enmity:environment/is_night run function enmity:entities/mobs/giant/despawning/despawn_daytime
 execute store result score @s enmity.hp_dummy run data get entity @s Health
-execute if score %difficulty enmity.value matches 1 if score @s enmity.hp_dummy matches ..150 run tag @s add enmity.phase_2
-execute if score %difficulty enmity.value matches 1 if score @s enmity.hp_dummy matches 150.. run tag @s remove enmity.phase_2
-execute if score %difficulty enmity.value matches 2 if score @s enmity.hp_dummy matches ..262 run tag @s add enmity.phase_2
-execute if score %difficulty enmity.value matches 2 if score @s enmity.hp_dummy matches 262.. run tag @s remove enmity.phase_2
+execute if score @s enmity.hp_dummy matches 250.. run scoreboard players set @s enmity.phase_ct 0
+execute if score @s enmity.hp_dummy matches 100..249 run scoreboard players set @s enmity.phase_ct 1
+execute if score @s enmity.hp_dummy matches ..99 run scoreboard players set @s enmity.phase_ct 2
 execute if entity @a[distance=..24,gamemode=!spectator] run tag @s[tag=!enmity.despawning] remove enmity.invulnerable
 execute unless entity @a[distance=..24,gamemode=!spectator] run tag @s[tag=!enmity.despawning] add enmity.invulnerable
 execute unless entity @a[distance=..48,gamemode=!spectator,scores={enmity.age=600..}] unless entity @s[tag=enmity.despawning] run function enmity:entities/mobs/giant/despawning/despawn_failed

@@ -27,3 +27,4 @@ execute store result entity @e[type=!#enmity:not_living,tag=!enmity.boss,tag=enm
 kill @e[type=marker,tag=enmity.direction_anchor]
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
 kill @s
+playsound item.nether_wart.plant neutral @a[distance=0..] ~ ~ ~ 2 1.5 0

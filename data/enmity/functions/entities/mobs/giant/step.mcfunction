@@ -1,6 +1,6 @@
-playsound block.stone.break hostile @a[distance=0..] ~ ~ ~ 2 0 0
-playsound block.gravel.break hostile @a[distance=0..] ~ ~ ~ 1 0 0
-playsound block.sand.break hostile @a[distance=0..] ~ ~ ~ 2 0 0
+playsound block.packed_mud.step hostile @a[distance=0..] ~ ~ ~ 2 1 0
+playsound block.packed_mud.step hostile @a[distance=0..] ~ ~ ~ 2 0.5 0
+playsound block.packed_mud.step hostile @a[distance=0..] ~ ~ ~ 2 0 0
 particle block dirt ~ ~ ~ 1.25 0.5 1.25 0 20 force
 particle block stone ~ ~ ~ 1.25 0.5 1.25 0 20 force
 tag @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,distance=..4,type=!player,type=!giant] add enmity.hit

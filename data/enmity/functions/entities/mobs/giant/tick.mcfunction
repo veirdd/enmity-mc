@@ -1,4 +1,5 @@
-tp @s[tag=!enmity.despawning] ^ ^ ^0.15 facing entity @p[gamemode=!spectator]
+execute if score %difficulty enmity.value matches 1 run tp @s[tag=!enmity.despawning] ^ ^ ^0.14 facing entity @p[gamemode=!spectator]
+execute if score %difficulty enmity.value matches 2 run tp @s[tag=!enmity.despawning] ^ ^ ^0.18 facing entity @p[gamemode=!spectator]
 execute unless entity @a[distance=..24,gamemode=!spectator] run tp @s[tag=!enmity.despawning] ^ ^ ^0.3 facing entity @p[gamemode=!spectator]
 execute at @s anchored eyes run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator] eyes
 tag @s add enmity.in_blocks
@@ -17,3 +18,7 @@ execute if entity @s[tag=enmity.rising] run function enmity:entities/mobs/giant/
 tag @s[tag=enmity.in_blocks] remove enmity.in_blocks
 execute store result bossbar enmity.giant value run data get entity @s Health
 execute if predicate enmity:environment/in_the_nether run function enmity:entities/mobs/giant/despawning/silent
+execute if entity @s[scores={enmity.phase_ct=1..}] run scoreboard players add @s enmity.phase 1
+execute if score %difficulty enmity.value matches 1 if entity @s[scores={enmity.phase_ct=1..}] if score @s enmity.phase matches ..30 run function enmity:items/usable/entrail_spewer/giant_summon
+execute if score %difficulty enmity.value matches 2 if entity @s[scores={enmity.phase_ct=1..}] if score @s enmity.phase matches ..60 run function enmity:items/usable/entrail_spewer/giant_summon
+execute if score @s enmity.phase matches 150.. if predicate enmity:random/random_0.01 run scoreboard players set @s enmity.phase 0

@@ -1,5 +1,5 @@
 execute unless block ~ ~-0.2 ~ #enmity:not_solid run function enmity:entities/mobs/giant/step
-execute if score %difficulty enmity.value matches 2 if entity @s[tag=!enmity.rising,tag=enmity.phase_2,tag=!enmity.despawning] if predicate enmity:random/random_0.25 run function enmity:entities/mobs/giant/projectiles/boulder/summon
-execute if score %difficulty enmity.value matches 2 if entity @s[tag=!enmity.rising,tag=!enmity.phase_2,tag=!enmity.despawning] if predicate enmity:random/random_0.15 run function enmity:entities/mobs/giant/projectiles/boulder/summon
-execute if score %difficulty enmity.value matches 1 if entity @s[tag=!enmity.rising,tag=enmity.phase_2,tag=!enmity.despawning] if predicate enmity:random/random_0.2 run function enmity:entities/mobs/giant/projectiles/boulder/summon
-execute if score %difficulty enmity.value matches 1 if entity @s[tag=!enmity.rising,tag=!enmity.phase_2,tag=!enmity.despawning] if predicate enmity:random/random_0.1 run function enmity:entities/mobs/giant/projectiles/boulder/summon
+execute if score %difficulty enmity.value matches 2 if entity @s[tag=!enmity.rising,scores={enmity.phase_ct=0},tag=!enmity.despawning] if predicate enmity:random/random_0.15 run function enmity:items/usable/boulder_staff/giant_summon
+execute if score %difficulty enmity.value matches 1 if entity @s[tag=!enmity.rising,scores={enmity.phase_ct=0},tag=!enmity.despawning] if predicate enmity:random/random_0.2 run function enmity:items/usable/boulder_staff/giant_summon
+execute if score %difficulty enmity.value matches 2 if entity @s[tag=!enmity.rising,scores={enmity.phase_ct=2},tag=!enmity.despawning] if predicate enmity:random/random_0.5 run function enmity:entities/mobs/giant/summon_boulder
+execute if score %difficulty enmity.value matches 1.. if entity @s[tag=!enmity.rising,scores={enmity.phase_ct=2},tag=!enmity.despawning] if predicate enmity:random/random_0.5 run function enmity:entities/mobs/giant/summon_boulder
