@@ -10,6 +10,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"m
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"harpy"}}}] at @s run function enmity:entities/mobs/harpy/on_death
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"flame_spewer"}}}] at @s run function enmity:entities/mobs/flame_spewer/on_death
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"nimbus"}}}] at @s run function enmity:entities/mobs/nimbus/on_death
+execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"smiler"}}}] at @s positioned ~ ~1.6 ~ facing entity @p[gamemode=!spectator] eyes run function enmity:entities/mobs/smiler/on_death
 execute if entity @s[nbt={Item:{id:"minecraft:elytra"}}] unless entity @s[nbt={Item:{tag:{Enmity:1}}}] run kill @s
 execute if entity @s[nbt={Item:{tag:{Enmity.CustomBlock:1}}}] run kill @s
 execute if entity @s[nbt={Item:{tag:{Enmity.BossLoot:1}}}] run data merge entity @s {Age:-32768,Glowing:1,Invulnerable:1,Item:{tag:{Enmity.BossLoot:0}}}

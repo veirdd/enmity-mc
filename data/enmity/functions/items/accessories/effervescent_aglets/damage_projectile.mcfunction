@@ -1,4 +1,4 @@
-effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] wither 1 1 true
+effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 1 1 true
 execute as @e[type=!#enmity:not_living,tag=enmity.hit,type=!player] store result score @s enmity.math_a run data get entity @s Health
 scoreboard players operation @e[type=!#enmity:not_living,tag=enmity.hit,type=!player] enmity.math_b = @s enmity.dmg
 execute as @e[type=!#enmity:not_living,tag=enmity.hit,type=!player] run scoreboard players operation @s enmity.math_b -= @s enmity.dmg_rdc

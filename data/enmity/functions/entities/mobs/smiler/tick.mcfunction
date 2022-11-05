@@ -3,7 +3,7 @@ tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
 execute if entity @p[gamemode=!spectator,distance=..72,nbt={ActiveEffects:[{Id:16}]}] run function enmity:entities/mobs/smiler/vanish
 execute if entity @e[type=lightning_bolt] run function enmity:entities/mobs/smiler/vanish
 execute if predicate enmity:environment/is_thundering run function enmity:entities/mobs/smiler/vanish
-execute if entity @e[type=zombie,tag=enmity.smiler,distance=0.00001..20] run function enmity:entities/mobs/smiler/vanish
+execute if entity @e[type=zombie,tag=enmity.smiler,distance=0.00001..16] run function enmity:entities/mobs/smiler/vanish
 execute store result score @s enmity.math_a if entity @a[distance=..72]
 execute unless score @s enmity.math_a matches 1 run function enmity:entities/mobs/smiler/vanish
 execute unless predicate enmity:environment/is_smiler_time run function enmity:entities/mobs/smiler/vanish
@@ -17,6 +17,9 @@ tag @s add enmity.this
 execute as @p at @s anchored eyes facing entity @e[type=zombie,tag=enmity.this] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 unless entity @s[distance=..1.2] as @e[type=zombie,tag=enmity.this] at @s run function enmity:entities/mobs/smiler/not_looking_near
 execute as @p at @s anchored eyes facing entity @e[type=zombie,tag=enmity.this] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..1.2] as @e[type=zombie,tag=enmity.this] at @s run function enmity:entities/mobs/smiler/looking_near
 execute if score @s enmity.cooldown matches 1.. at @p[gamemode=!spectator,gamemode=!creative,distance=..10] run tp @p[gamemode=!spectator,gamemode=!creative,distance=..10] ~ ~ ~ facing entity @s feet
+execute if score @s enmity.cooldown matches 1.. facing entity @p[gamemode=!spectator,gamemode=!creative,distance=..10] feet run tp @s ^ ^ ^0.5
+execute if score @s enmity.cooldown matches 3 run data modify entity @s ArmorItems[3].tag.CustomModelData set value 1020
+execute if score @s enmity.cooldown matches 5 run effect give @a[distance=..10] blindness
 tag @s remove enmity.this
 execute if score @s enmity.cooldown matches 0 run function enmity:entities/mobs/smiler/cooldown_done
 scoreboard players remove @s enmity.cooldown 1

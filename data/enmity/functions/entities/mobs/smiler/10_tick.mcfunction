@@ -1,0 +1,2 @@
+execute at @s anchored eyes positioned ^ ^ ^3 if entity @e[type=#minecraft:impact_projectiles,distance=..5] run function enmity:entities/mobs/smiler/avoid_projectile
+execute at @s anchored eyes positioned ^ ^ ^3 if entity @e[type=#enmity:common_projectiles,tag=enmity.projectile,distance=..5] run function enmity:entities/mobs/smiler/avoid_projectile
