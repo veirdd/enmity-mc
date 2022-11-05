@@ -7,6 +7,6 @@ execute at @e[type=marker,tag=enmity.boulder_spawn] run summon minecraft:armor_s
 execute as @e[type=armor_stand,tag=enmity.new] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
 execute as @e[type=armor_stand,tag=enmity.new] at @s run tp @s ~ ~ ~ ~ 0
 kill @e[type=marker,tag=enmity.boulder_spawn]
-execute if score %difficulty enmity.value matches 2 run scoreboard players set @e[type=armor_stand,tag=enmity.new] enmity.dmg 6
-execute if score %difficulty enmity.value matches 1 run scoreboard players set @e[type=armor_stand,tag=enmity.new] enmity.dmg 4
+execute if score %difficulty enmity.value matches 2 run scoreboard players set @e[type=armor_stand,tag=enmity.new] enmity.dmg 7
+execute if score %difficulty enmity.value matches 1 run scoreboard players set @e[type=armor_stand,tag=enmity.new] enmity.dmg 5
 tag @e[type=armor_stand,tag=enmity.new] remove enmity.new

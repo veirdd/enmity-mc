@@ -35,6 +35,7 @@
       "minecraft:witch",
       "minecraft:pillager",
       "minecraft:bat",
-      "minecraft:warden"
+      "minecraft:warden",
+      "minecraft:giant"
     ]
 }
