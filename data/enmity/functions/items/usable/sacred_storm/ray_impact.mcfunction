@@ -3,7 +3,6 @@ execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:utili
 playsound minecraft:block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound minecraft:block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 0.2 0
 playsound minecraft:block.ender_chest.open neutral @a[distance=0..] ~ ~ ~ 2 0.4 0
-scoreboard players remove @s enmity.mana 300
 scoreboard players set @s enmity.cooldown 20
 summon area_effect_cloud ~ ~ ~ {Duration:999999999,Tags:["enmity.projectile","enmity.new","enmity.sacred_storm","enmity.sentry","enmity.following"],CustomName:'""',CustomNameVisible:1}
 execute if entity @s[predicate=enmity:entity/is_sneaking] run tag @e[type=area_effect_cloud,tag=enmity.new] remove enmity.following

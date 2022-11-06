@@ -1,3 +1,4 @@
+schedule function enmity:2_tick 1t
 schedule function enmity:10_tick 5t
 schedule function enmity:20_tick 10t
 schedule function enmity:40_tick 20t

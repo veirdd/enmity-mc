@@ -1,0 +1,6 @@
+tellraw @s [{"text":"-==========[","color":"gray"},{"text":"NECKLACE OF VITALITY","color":"white","bold":true},{"text":"]=========-","color":"gray"}]
+
+tellraw @s [{"text":"Description:\n   Accessory type: mana\n   +10/s Mana regeneration\n   +10/s Mana regeneration for each summoned sentry\n   +1 Magic damage reduction for each 2 summoned sentries\n   +2 Health for each 2 summoned sentries\n   +2 Sentry slots","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Mana Power Ring\n      Soul of Nature (8)\n      Lightly Matter (3)\n      Nightly Matter (3)","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

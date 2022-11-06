@@ -11,3 +11,4 @@ execute if score @s enmity.math_a matches 64 run scoreboard players add @s enmit
 execute if score @s enmity.math_a matches 114 run scoreboard players add @s enmity.max_mana 800
 execute if score @s enmity.math_a matches 114 run scoreboard players add @s enmity.dmg_bst 5
 execute if score @s enmity.math_a matches 114 run scoreboard players set @s enmity.max_hp 2
+execute if score @s enmity.math_a matches 118 run function enmity:items/accessories/necklace_of_vitality/sentry_boost

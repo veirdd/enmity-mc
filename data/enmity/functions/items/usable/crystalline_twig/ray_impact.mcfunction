@@ -5,7 +5,6 @@ playsound minecraft:block.amethyst_cluster.break neutral @a[distance=0..] ~ ~ ~ 
 playsound minecraft:block.amethyst_cluster.break neutral @a[distance=0..] ~ ~ ~ 2 1 0
 playsound minecraft:block.amethyst_cluster.break neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound minecraft:block.note_block.chime neutral @a[distance=0..] ~ ~ ~ 2 0 0
-scoreboard players remove @s enmity.mana 100
 scoreboard players set @s enmity.cooldown 32
 summon armor_stand ^ ^ ^-0.5 {Tags:["enmity.projectile","enmity.new","enmity.crystalline_cluster","enmity.sentry"],CustomName:'""',CustomNameVisible:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"warped_fungus_on_a_stick",tag:{CustomModelData:1016},Count:1}],Silent:1,Invisible:1,Small:1}
 scoreboard players set @e[type=armor_stand,tag=enmity.new] enmity.age 59

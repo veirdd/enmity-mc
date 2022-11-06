@@ -19,20 +19,8 @@ execute as @a unless score @s enmity.age matches 2147483647 unless score @s enmi
 execute store result score %time enmity.value run time query daytime
 scoreboard players add @a[predicate=!enmity:entity/is_on_ground] enmity.midair_time 1
 scoreboard players set @a[predicate=enmity:entity/is_on_ground] enmity.midair_time 0
-
-scoreboard players set @a[gamemode=!survival,gamemode=!adventure] enmity.mana 9999
-execute as @a[gamemode=!creative,gamemode=!spectator,scores={enmity.mana=4999..}] run scoreboard players operation @s enmity.mana = @s enmity.max_mana
 scoreboard players remove @a[scores={enmity.cooldown=1..}] enmity.cooldown 1
 scoreboard players remove @a[scores={enmity.cooldown=1..},nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:114}}]}] enmity.cooldown 1
-scoreboard players set @a[gamemode=!creative,gamemode=!spectator] enmity.mana_regen 2
-execute as @a[gamemode=!creative,gamemode=!spectator,nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/tick/mana_regen
-scoreboard players operation @a[gamemode=!creative,gamemode=!spectator,scores={enmity.cooldown=1..}] enmity.mana_regen /= %const_2 enmity.value
-execute as @a[gamemode=!creative,gamemode=!spectator] run scoreboard players operation @s enmity.mana += @s enmity.mana_regen
-execute as @a[gamemode=!creative,gamemode=!spectator] if score @s enmity.mana > @s enmity.max_mana run scoreboard players operation @s enmity.mana = @s enmity.max_mana
-execute as @a run function enmity:utility/mana_display/check_type
-execute as @a if score @s[tag=!enmity.mana_sound_played] enmity.mana = @s enmity.max_mana at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 2 0
-execute as @a if score @s enmity.mana = @s enmity.max_mana run tag @s add enmity.mana_sound_played
-execute as @a if score @s enmity.mana < @s enmity.max_mana run tag @s remove enmity.mana_sound_played
 
 # Entities
 
@@ -130,7 +118,7 @@ execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/
 
 # Other
 
-execute as @a at @s run function enmity:utility/sentry_anchor/tick
+execute as @a at @s run function enmity:utility/projectiles/sentries/sentry_anchor/tick
 execute as @a run function enmity:utility/xp_gain/check
 execute as @a if score @s enmity.guide matches 1.. run function enmity:guide/open
 execute as @a run function enmity:utility/player_toggles/player_toggles
@@ -138,8 +126,8 @@ execute as @a[gamemode=!spectator] unless predicate enmity:entity/is_riding_vehi
 execute if score %difficulty enmity.value matches 1.. as @a[scores={enmity.age=1}] unless data entity @s SpawnX run function enmity:utility/spawn_spread
 execute as @a at @s if predicate enmity:entity/is_using_waystone run function enmity:blocks/functions/waystone/tick_user
 execute if entity @e[type=!#enmity:not_living,scores={enmity.subjugator_capture_id=-2147483648..2147483647}] as @a run function enmity:items/usable/subjugator/capture_validity_check
-kill @e[type=item,tag=!enmity.projectile,nbt={Item:{tag:{Enmity.DeleteItem:1}}}]
 execute as @e[type=arrow,nbt={HasBeenShot:0b}] at @s run function enmity:utility/arrow_damage
+kill @e[type=item,tag=!enmity.projectile,tag=enmity.modified,nbt={Item:{tag:{Enmity.DeleteItem:1}}}]
 execute if score %hardmode enmity.value matches 1 as @e[type=item,nbt={Item:{id:"minecraft:diamond_sword"}}] at @s if entity @e[type=lightning_bolt,distance=..3] run function enmity:items/crafting/custom/lightning_surge
 execute if score %hardmode enmity.value matches 0 as @a[gamemode=!creative,gamemode=!spectator] at @s unless score %giant_defeated enmity.value matches 1 run function enmity:utility/prevent_nether
 execute as @a[scores={enmity.die=1..}] at @s run function enmity:utility/on_player_death
