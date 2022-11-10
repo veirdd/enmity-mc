@@ -1,0 +1,1 @@
+give @s minecraft:honey_bottle{display:{Name:'{"text":"Mana Potion","italic":false}',Lore:['[{"text":"Fully restores mana.","italic":false,"color":"gray"}]']},CustomModelData:1,Enmity:1} 1

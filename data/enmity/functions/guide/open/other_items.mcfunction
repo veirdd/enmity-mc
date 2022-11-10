@@ -23,3 +23,5 @@ execute if score @s enmity.guide matches 113023 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 113024 run function enmity:guide/tabs/main/items/other_items/daggers
 execute if score @s enmity.guide matches 113025 run function enmity:guide/tabs/main/items/other_items/cloud
 execute if score @s enmity.guide matches 113026 run function enmity:guide/tabs/main/items/other_items/harpy_feather
+execute if score @s enmity.guide matches 113027 run function enmity:guide/tabs/main/items/other_items/mana_berries
+execute if score @s enmity.guide matches 113028 run function enmity:guide/tabs/main/items/other_items/mana_potion

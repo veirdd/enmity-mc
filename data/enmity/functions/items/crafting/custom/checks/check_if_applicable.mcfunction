@@ -14,3 +14,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity:1,Custo
 execute if entity @s[nbt={Item:{id:"minecraft:compass"}}] run function enmity:items/crafting/custom/checks/specific_passed
 execute if entity @s[nbt={Item:{id:"minecraft:potion"}}] run function enmity:items/crafting/custom/checks/specific_passed
 execute if entity @s[nbt={Item:{id:"minecraft:glass_bottle"}}] run function enmity:items/crafting/custom/checks/specific_passed
+execute if entity @s[nbt={Item:{id:"minecraft:honey_bottle"}}] run function enmity:items/crafting/custom/checks/specific_passed

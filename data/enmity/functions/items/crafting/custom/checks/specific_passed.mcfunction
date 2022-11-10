@@ -27,3 +27,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:splash_potion",tag:{Potion:"minecr
 execute if entity @s[nbt={Item:{id:"minecraft:splash_potion",tag:{Potion:"minecraft:long_strength"}}}] run function enmity:items/crafting/custom/berserk_long_splash_potion
 execute if entity @s[nbt={Item:{id:"minecraft:splash_potion",tag:{Potion:"minecraft:strong_strength"}}}] run function enmity:items/crafting/custom/berserk_strong_splash_potion
 execute if entity @s[nbt={Item:{id:"minecraft:glass_bottle"}}] if entity @e[type=item,limit=1,distance=..0.5,nbt={Item:{id:"minecraft:firework_star",Count:5b,tag:{CustomModelData:5,Enmity:1}}}] run function enmity:items/crafting/custom/cloud_in_a_bottle
+execute if entity @s[nbt={Item:{id:"minecraft:honey_bottle"}}] if entity @e[type=item,limit=1,distance=..0.5,nbt={Item:{id:"minecraft:glow_berries",Count:2b}}] run function enmity:items/crafting/custom/mana_potion
