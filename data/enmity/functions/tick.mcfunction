@@ -6,6 +6,7 @@ execute as @e[type=!#enmity:not_living] at @s run function enmity:utility/damage
 execute as @a[tag=enmity.update_health,tag=!enmity.give_instant_health] run function enmity:utility/health_modification/update_health
 execute as @a[tag=enmity.give_instant_health] run function enmity:utility/health_modification/give_instant_health
 execute as @a[tag=enmity.clear_hunger] run function enmity:items/food/rotten_flesh/clear_hunger
+execute as @a[tag=enmity.clear_wither] run function enmity:utility/health_modification/clear_wither
 effect clear @a absorption
 clear @a firework_star{Enmity.DeleteItem:1}
 clear @a gunpowder{Enmity.DeleteItem:1}
@@ -38,10 +39,6 @@ execute as @a[tag=enmity.delirium] at @s anchored eyes positioned ^ ^ ^3 run fun
 execute as @a[tag=enmity.flame_barrage] at @s run function enmity:items/usable/flame_barrage/tick
 execute as @a[tag=enmity.entrail_spewer] at @s run function enmity:items/usable/entrail_spewer/tick
 execute as @a[tag=enmity.subjugator] at @s run function enmity:items/usable/subjugator/tick
-execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:97}}}] at @s run function enmity:items/other/calculator/tick
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:97}}]}] at @s run function enmity:items/other/calculator/tick_offhand
-execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s run function enmity:items/other/compass/tick
-execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] at @s run function enmity:items/other/compass/tick
 execute as @a if entity @s[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick"}},scores={enmity.use=1..,enmity.cooldown=0}] run function enmity:items/usable
 execute as @a if score @s enmity.use_bundle matches 1.. if entity @s[nbt={SelectedItem:{tag:{Enmity:1,CustomModelData:4}}}] at @s run function enmity:items/usable/void_bag/use
 
@@ -121,6 +118,7 @@ execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/
 execute as @a at @s run function enmity:utility/projectiles/sentries/sentry_anchor/tick
 execute as @a run function enmity:utility/xp_gain/check
 execute as @a if score @s enmity.guide matches 1.. run function enmity:guide/open
+execute as @a if score @s enmity.remove_sentries matches 1.. run function enmity:utility/projectiles/sentries/remove_all
 execute as @a run function enmity:utility/player_toggles/player_toggles
 execute as @a[gamemode=!spectator] unless predicate enmity:entity/is_riding_vehicle at @s run function enmity:utility/fall_through_leaves
 execute if score %difficulty enmity.value matches 1.. as @a[scores={enmity.age=1}] unless data entity @s SpawnX run function enmity:utility/spawn_spread

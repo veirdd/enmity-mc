@@ -28,6 +28,7 @@ execute as @a at @s if predicate enmity:environment/near_campfire run effect giv
 scoreboard players enable @a enmity.guide
 scoreboard players enable @a enmity.player_targeting
 scoreboard players enable @a enmity.mana_display
+scoreboard players enable @a enmity.remove_sentries
 
 
 schedule function enmity:100_tick 100t

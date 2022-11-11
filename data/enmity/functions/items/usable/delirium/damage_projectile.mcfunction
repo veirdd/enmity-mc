@@ -2,6 +2,7 @@ tag @e[type=!#enmity:not_living,tag=enmity.hit,limit=1,sort=nearest] add enmity.
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
 tag @e[type=!#enmity:not_living,tag=enmity.this2] add enmity.hit
 tag @e[type=!#enmity:not_living,tag=enmity.this2] remove enmity.this2
+execute as @a[tag=!enmity.invulnerable,tag=enmity.hit] unless data entity @s ActiveEffects[{Id:20}] run tag @s add enmity.clear_wither
 effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 1 1 true
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] store result score @s enmity.hp_dummy run data get entity @s Health
 scoreboard players operation @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] enmity.taken_dmg = @s enmity.dmg

@@ -3,7 +3,8 @@ particle squid_ink ~ ~1 ~ 0.3 0.3 0.3 0.1 3 force
 particle reverse_portal ~ ~1 ~ 0.2 0.2 0.2 0.6 6 force
 particle smoke ~ ~1 ~ 0.2 0.2 0.2 0.3 8 force
 tag @s add enmity.hit
-effect give @s[tag=!enmity.invulnerable,type=!player] wither 1 1 true
+execute unless data entity @s[tag=!enmity.invulnerable,type=player] ActiveEffects[{Id:20}] run tag @s add enmity.clear_wither
+effect give @s[type=!#enmity:not_living,tag=!enmity.invulnerable] wither 1 1 true
 execute if entity @s[tag=!enmity.invulnerable,type=!player] store result score @s enmity.hp_dummy run data get entity @s Health
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.taken_dmg = %const_14 enmity.value
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.math_a = @s enmity.dmg_rdc

@@ -1,3 +1,4 @@
+execute as @a[tag=!enmity.invulnerable,tag=enmity.hit] unless data entity @s ActiveEffects[{Id:20}] run tag @s add enmity.clear_wither
 effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 1 1 true
 execute as @e[type=!#enmity:not_living,tag=enmity.hit,type=!player] store result score @s enmity.hp_dummy run data get entity @s Health
 scoreboard players operation @e[type=!#enmity:not_living,tag=enmity.hit,type=!player] enmity.taken_dmg = @s enmity.dmg

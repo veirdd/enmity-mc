@@ -1,3 +1,10 @@
+# Items
+
+execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:97}}}] at @s run function enmity:items/other/calculator/2_tick
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:97}}]}] at @s run function enmity:items/other/calculator/2_tick_offhand
+execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s run function enmity:items/other/compass/2_tick
+execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] at @s run function enmity:items/other/compass/2_tick
+
 # Stats
 
 scoreboard players set @a[gamemode=!survival,gamemode=!adventure] enmity.mana 9999

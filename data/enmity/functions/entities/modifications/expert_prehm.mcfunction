@@ -50,10 +50,11 @@ execute if entity @s[type=warden] run attribute @s generic.max_health base set 1
 execute if entity @s[type=warden] run attribute @s generic.movement_speed base set 0.35
 execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_armor
 execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,type=!skeleton] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_weapon
-execute unless score %death_mode enmity.value matches 1 if entity @s[tag=enmity.equipped] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/enchant_equipment
+execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,tag=enmity.equipped] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/enchant_equipment
 execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_armor
 execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,type=!skeleton] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_weapon
-execute if score %death_mode enmity.value matches 1 if entity @s[tag=enmity.equipped] unless predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/enchant_equipment
+execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,tag=enmity.equipped] unless predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/enchant_equipment
+execute if entity @s[type=#enmity:armor_wearing] run function enmity:entities/modifications/equip/remove_durability
 execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:utility/despawn
 
 scoreboard players set @s enmity.cooldown 0

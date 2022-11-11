@@ -1,6 +1,7 @@
 execute at @e[type=!#enmity:not_living,tag=enmity.hit] run particle sculk_soul ~ ~1 ~ 0.2 0.2 0.2 0.05 15 force
 execute at @e[type=!#enmity:not_living,tag=enmity.hit] run playsound entity.phantom.bite neutral @a[distance=0..] ~ ~ ~ 1 2 0
 execute at @e[type=!#enmity:not_living,tag=enmity.hit] run playsound block.sculk_sensor.clicking neutral @a[distance=0..] ~ ~ ~ 2 2 0
+execute as @a[tag=!enmity.invulnerable,tag=enmity.hit] unless data entity @s ActiveEffects[{Id:20}] run tag @s add enmity.clear_wither
 effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 1 1 true
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] store result score @s enmity.hp_dummy run data get entity @s Health
 scoreboard players operation @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] enmity.taken_dmg = @s enmity.dmg

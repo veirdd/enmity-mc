@@ -4,6 +4,7 @@ playsound block.pointed_dripstone.drip_water_into_cauldron neutral @a[distance=0
 playsound block.pointed_dripstone.drip_water_into_cauldron neutral @a[distance=0..] ~ ~ ~ 2 2 0
 playsound block.pointed_dripstone.drip_water_into_cauldron neutral @a[distance=0..] ~ ~ ~ 2 2 0
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.cloud_bolt","enmity.projectile"]}
+summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.cloud_bolt","enmity.projectile"]}
 scoreboard players set @e[type=marker,tag=enmity.cloud_bolt,tag=enmity.new] enmity.dmg 6
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.dmg += @s enmity.dmg_bst
 tp @e[type=marker,tag=enmity.new] @s
