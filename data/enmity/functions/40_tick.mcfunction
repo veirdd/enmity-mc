@@ -21,7 +21,7 @@ execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity
 
 execute as @a[gamemode=!spectator] at @s if predicate enmity:environment/near_deep_dark run function enmity:entities/mobs/sculker/spawn_check
 execute unless predicate enmity:environment/is_night as @a[gamemode=!spectator,predicate=enmity:environment/in_overworld,tag=enmity.on_surface] if predicate enmity:random/random_0.05 at @s if entity @s[y=100,dy=10000] run function enmity:entities/mobs/harpy/spawning/spawn_check
-execute if predicate enmity:environment/is_raining as @a[gamemode=!spectator,predicate=enmity:environment/in_overworld,predicate=!enmity:environment/biome/tag/has_no_rain,tag=enmity.on_surface] if predicate enmity:random/random_0.05 at @s run function enmity:entities/mobs/nimbus/spawning/spawn_check
+execute if predicate enmity:environment/is_raining as @a[gamemode=!spectator,predicate=enmity:environment/in_overworld,predicate=!enmity:environment/biome/tag/has_no_rain,tag=enmity.on_surface] if predicate enmity:random/random_0.1 at @s run function enmity:entities/mobs/nimbus/spawning/spawn_check
 execute if predicate enmity:environment/is_thundering as @a[gamemode=!spectator,predicate=enmity:environment/in_overworld,predicate=!enmity:environment/biome/tag/has_no_rain,tag=enmity.on_surface] if predicate enmity:random/random_0.15 at @s run function enmity:entities/mobs/nimbus/spawning/spawn_check
 execute as @a[gamemode=!spectator] at @s if predicate enmity:random/random_0.25 run function enmity:entities/mobs/flame_spewer/spawning/spawn_check
 

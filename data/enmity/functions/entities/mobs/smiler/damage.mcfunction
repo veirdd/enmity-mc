@@ -12,11 +12,11 @@ execute as @a[tag=enmity.hit] at @s run playsound block.sculk_shrieker.shriek ho
 execute as @a[tag=enmity.hit] at @s run playsound block.sculk_shrieker.shriek hostile @s ~ ~ ~ 2 1 0
 execute as @a[tag=enmity.hit] at @s run playsound block.sculk_shrieker.shriek hostile @s ~ ~ ~ 2 0.5 0
 execute as @a[tag=enmity.hit] at @s run playsound block.sculk_shrieker.shriek hostile @s ~ ~ ~ 2 0.5 0
-execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 1.5 2 0
-execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 1.5 2 0
-execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 1.5 1.6 0
-execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 1.5 1.6 0
-execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 1.5 1.2 0
-execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 1.5 1.2 0
+execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 2 2 0
+execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 2 2 0
+execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 2 1.6 0
+execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 2 1.6 0
+execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 2 1.2 0
+execute as @a[tag=enmity.hit] at @s run playsound entity.enderman.scream hostile @s ~ ~ ~ 2 1.2 0
 tag @a[tag=enmity.hit] remove enmity.hit
 execute as @e[type=zombie,tag=enmity.smiler] at @s run function enmity:entities/mobs/smiler/vanish

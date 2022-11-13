@@ -1,5 +1,5 @@
 scoreboard players operation @s enmity.math_d = @s enmity.taken_dmg
-scoreboard players operation @s enmity.math_d *= %const_20 enmity.value
+scoreboard players operation @s enmity.math_d *= %const_50 enmity.value
 scoreboard players operation @s enmity.math_e = @s enmity.max_mana
 scoreboard players operation @s enmity.math_e -= @s enmity.mana
 execute if score @s enmity.math_d > @s enmity.math_e run scoreboard players operation @s enmity.math_d = @s enmity.math_e

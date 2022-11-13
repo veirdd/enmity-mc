@@ -1,6 +1,9 @@
 execute positioned ^ ^ ^0.2 positioned ~-0.3 ~-0.3 ~-0.3 as @a[scores={enmity.iframes=0},gamemode=!creative,gamemode=!spectator,tag=!enmity.update_health,dx=0,limit=1] positioned ~-0.39 ~-0.39 ~-0.39 if entity @s[dx=0] run tag @s add enmity.hit
 tag @s add enmity.this
 scoreboard players operation @a[tag=enmity.hit] enmity.taken_dmg = @s enmity.dmg
+execute as @a[tag=enmity.hit] store result score @s enmity.math_a run attribute @s generic.armor get
+scoreboard players operation @a[tag=enmity.hit] enmity.math_a /= %const_5 enmity.value
+execute as @a[tag=enmity.hit] run scoreboard players operation @s enmity.taken_dmg -= @s enmity.math_a
 execute as @a[tag=enmity.hit] run function enmity:utility/health_modification/request
 tag @s remove enmity.this
 effect give @a[tag=enmity.hit] poison 5 0

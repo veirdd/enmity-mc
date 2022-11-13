@@ -5,6 +5,10 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s run function enmity:items/other/compass/2_tick
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] at @s run function enmity:items/other/compass/2_tick
 
+# Entities
+
+execute at @e[type=item,tag=!enmity.projectile,tag=!enmity.eternal,scores={enmity.age=270..}] run particle dust 1 0 0 0.5 ~ ~0.7 ~ 0 0 0 0 2
+
 # Stats
 
 scoreboard players set @a[gamemode=!survival,gamemode=!adventure] enmity.mana 9999

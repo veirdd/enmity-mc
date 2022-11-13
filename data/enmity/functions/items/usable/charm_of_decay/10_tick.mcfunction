@@ -1,4 +1,6 @@
 tag @s add enmity.this
+effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 4 3 true
+effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] slowness 1 4 true
 execute as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,distance=..2] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.hit
 execute at @e[tag=enmity.hit] run playsound entity.evoker.cast_spell neutral @a[distance=0..] ~ ~ ~ 2 1.5 0
 execute at @e[tag=enmity.hit] run particle squid_ink ~ ~1 ~ 0.7 0.7 0.7 0 10 force
@@ -14,7 +16,5 @@ execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,t
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] run scoreboard players operation @s enmity.hp_dummy -= @s enmity.taken_dmg
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.hp_dummy
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,gamemode=!creative,tag=!enmity.update_health] run function enmity:utility/health_modification/request
-effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 4 3 true
-effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] slowness 1 4 true
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
 tag @s remove enmity.this

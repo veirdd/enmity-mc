@@ -21,4 +21,5 @@ execute unless entity @e[type=!#enmity:not_living,tag=enmity.captured] run funct
 execute at @e[type=!#enmity:not_living,tag=enmity.captured] run particle portal ~ ~1 ~ 0.5 0.5 0.5 2 7 force
 execute at @e[type=!#enmity:not_living,tag=enmity.captured] run particle reverse_portal ~ ~1 ~ 0.5 0.5 0.5 0.5 4 force
 execute at @e[type=!#enmity:not_living,tag=enmity.captured] run playsound entity.guardian.ambient neutral @a[distance=0..] ~ ~1 ~ 2 2 0
+effect give @e[type=!#enmity:not_living,tag=enmity.captured] slow_falling 2 0 true
 tag @e[type=!#enmity:not_living,tag=enmity.captured] remove enmity.captured
