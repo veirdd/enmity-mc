@@ -1,4 +1,4 @@
-execute at @s anchored eyes run tp @s ~ ~ ~ facing entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.projectile,limit=1,sort=nearest] eyes
+execute at @s anchored eyes run tp @s ~ ~ ~ facing entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.tamed,tag=!enmity.projectile,limit=1,sort=nearest] eyes
 playsound entity.elder_guardian.death neutral @a[distance=0..] ~ ~ ~ 2 2 0
 playsound block.note_block.basedrum neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound block.note_block.basedrum neutral @a[distance=0..] ~ ~ ~ 2 0 0

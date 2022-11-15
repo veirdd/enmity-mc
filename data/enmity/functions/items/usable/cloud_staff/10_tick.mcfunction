@@ -1,2 +1,2 @@
-execute if entity @s[tag=!enmity.red] if entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.projectile,distance=..20,limit=1] run function enmity:items/usable/cloud_staff/attack
+execute if entity @s[tag=!enmity.red] if entity @e[type=#enmity:enemies,tag=!enmity.sentry,tag=!enmity.tamed,tag=!enmity.projectile,distance=..20,limit=1] run function enmity:items/usable/cloud_staff/attack
 execute if entity @s[tag=enmity.red] if entity @e[type=!#enmity:not_living,tag=!enmity.sentry,tag=!enmity.projectile,distance=..20,limit=1] run function enmity:items/usable/cloud_staff/attack

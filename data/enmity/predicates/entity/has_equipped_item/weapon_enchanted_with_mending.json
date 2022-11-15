@@ -32,6 +32,44 @@
                 }
               }
             }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:warped_fungus_on_a_stick"
+                  ],
+                  "nbt": "{Enmity:1}",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:mending"
+                    }
+                  ]
+                }
+              }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "offhand": {
+                  "items": [
+                    "minecraft:warped_fungus_on_a_stick"
+                  ],
+                  "nbt": "{Enmity:1}",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:mending"
+                    }
+                  ]
+                }
+              }
+            }
         }
     ]
 }

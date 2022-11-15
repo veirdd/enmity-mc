@@ -46,6 +46,13 @@ scoreboard players set @a enmity.use 0
 
 execute as @a[gamemode=!spectator,nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/tick/mobility
 execute as @a[gamemode=!spectator,nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/tick/effect
+
+#
+
+tag @e[type=!#enmity:not_living,tag=enmity.hurt] remove enmity.hurt
+
+# Items
+
 execute as @a if predicate enmity:entity/has_armor/hadal_set run effect clear @s darkness
 execute as @a if predicate enmity:entity/has_armor/celestial_set run function enmity:items/armor/celestial/tick
 
@@ -138,4 +145,3 @@ execute if score %difficulty enmity.value matches 0.. as @a unless score @s enmi
 execute if score %difficulty enmity.value matches 0 run function enmity:utility/setup/setup_tick
 title @a[scores={enmity.left=1}] times 0 20 10
 scoreboard players set @a[scores={enmity.left=1..}] enmity.left 0
-tag @e[type=#enmity:not_living,tag=enmity.hurt] remove enmity.hurt
