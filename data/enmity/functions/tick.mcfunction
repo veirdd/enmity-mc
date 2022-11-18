@@ -2,7 +2,7 @@
 
 tag @a[gamemode=spectator] add enmity.projectile
 tag @a[gamemode=!spectator] remove enmity.projectile
-execute as @e[type=!#enmity:not_living] at @s run function enmity:utility/damage_indicators/check
+execute as @e[type=!#enmity:not_living] at @s run function enmity:utility/damage/check
 execute as @a[tag=enmity.update_health,tag=!enmity.give_instant_health] run function enmity:utility/health_modification/update_health
 execute as @a[tag=enmity.give_instant_health] run function enmity:utility/health_modification/give_instant_health
 execute as @a[tag=enmity.clear_hunger] run function enmity:items/food/rotten_flesh/clear_hunger

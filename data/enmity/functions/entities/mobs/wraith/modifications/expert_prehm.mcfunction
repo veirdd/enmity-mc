@@ -1,5 +1,5 @@
 attribute @s generic.armor base set 12
-attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 1 multiply_base
+attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 2.25 multiply_base
 effect give @s slow_falling 1000000 0 true
 effect give @s invisibility 1000000 0 true
 attribute @s generic.max_health modifier add 0-0-0-0-0 "" 1.25 multiply_base

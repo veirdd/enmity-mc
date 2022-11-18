@@ -1,4 +1,5 @@
 attribute @s generic.armor base set 8
+attribute @s generic.attack_damage modifier add 0-0-0-0-0 "" 1 multiply_base
 attribute @s generic.follow_range base set 16
 effect give @s slow_falling 1000000 0 true
 effect give @s invisibility 1000000 0 true

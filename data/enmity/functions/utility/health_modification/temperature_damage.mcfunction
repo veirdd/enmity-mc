@@ -5,4 +5,4 @@ effect give @s slowness 2 0 true
 effect give @s mining_fatigue 2 0 true
 effect give @s weakness 2 0 true
 function enmity:utility/health_modification/reduce_health_by_1
-function enmity:utility/damage_indicators/show
+function enmity:utility/damage/init

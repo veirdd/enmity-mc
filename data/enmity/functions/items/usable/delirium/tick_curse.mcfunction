@@ -7,16 +7,14 @@ execute unless data entity @s[tag=!enmity.invulnerable,type=player] ActiveEffect
 effect give @s[type=!#enmity:not_living,tag=!enmity.invulnerable] wither 1 1 true
 execute if entity @s[tag=!enmity.invulnerable,type=!player] store result score @s enmity.hp_dummy run data get entity @s Health
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.taken_dmg = %const_14 enmity.value
+execute if entity @s[tag=!enmity.invulnerable,type=!player] if score @s enmity.dmg_rdc_mtp matches 0.. run scoreboard players operation @s enmity.taken_dmg *= @s enmity.dmg_rdc_mtp
+execute if entity @s[tag=!enmity.invulnerable,type=!player] if score @s enmity.dmg_rdc_mtp matches 0.. run scoreboard players operation @s enmity.taken_dmg /= %const_100 enmity.value
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.math_a = @s enmity.dmg_rdc
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.math_a /= %const_2 enmity.value
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.taken_dmg -= @s enmity.math_c
-execute if entity @s[tag=!enmity.invulnerable,type=!player] if score @s enmity.dmg_rdc_mtp matches 0.. run scoreboard players operation @s enmity.taken_dmg *= @s enmity.dmg_rdc_mtp
-execute if entity @s[tag=!enmity.invulnerable,type=!player] if score @s enmity.dmg_rdc_mtp matches 0.. run scoreboard players operation @s enmity.taken_dmg /= %const_100 enmity.value
 execute if entity @s[tag=!enmity.invulnerable,type=player] run scoreboard players set @s enmity.taken_dmg 1
-execute if entity @s[tag=!enmity.invulnerable,type=!player] at @s run function enmity:utility/damage_indicators/show
-execute if entity @s[tag=!enmity.invulnerable,type=player,gamemode=!creative] at @s run function enmity:utility/damage_indicators/show
 execute if entity @s[tag=!enmity.invulnerable,type=!player,type=!ender_dragon] if score @s enmity.hp_dummy <= @s enmity.taken_dmg run kill @s
-execute if entity @s[tag=!enmity.invulnerable,type=!player] if score @s enmity.taken_dmg matches ..0 run scoreboard players set @s enmity.taken_dmg 1
+execute if entity @s[tag=!enmity.invulnerable] unless entity @s[gamemode=creative] at @s run function enmity:utility/damage/init
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.hp_dummy -= @s enmity.taken_dmg
 execute if entity @s[tag=!enmity.invulnerable,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.hp_dummy
 execute if entity @s[tag=!enmity.invulnerable,type=player,gamemode=!creative,gamemode=!spectator,tag=!enmity.update_health] run function enmity:utility/health_modification/request
