@@ -1,1 +1,1 @@
-give @s minecraft:firework_star{display:{Name:'{"text":"Birch Catkin","italic":false}'},Enmity.TreeSeed:1,CustomModelData:16,Enmity:1} 1
+give @s minecraft:firework_star{display:{Name:'{"text":"Birch Catkin","italic":false}'},Enmity.ItemGroups:["tree_seeds"],CustomModelData:16,Enmity:1} 1

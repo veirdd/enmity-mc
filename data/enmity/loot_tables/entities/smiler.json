@@ -12,7 +12,7 @@
         "functions": [
           {
             "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Smiler\\'s Fang\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"12\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Damages and stuns the enemy in sight.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:94,Enmity:1}"
+            "tag": "{display:{Name:'{\"text\":\"Smiler\\'s Fang\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"12\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Damages and stuns the enemy in sight.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:94,Enmity:1,Enmity.ItemGroups:[\"weapons\"]}"
           }
         ],
         "conditions": [

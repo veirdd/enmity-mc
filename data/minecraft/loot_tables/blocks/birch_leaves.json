@@ -60,7 +60,7 @@
                 "functions": [
                     {
                         "function": "minecraft:set_nbt",
-                        "tag": "{display:{Name:'{\"text\":\"Birch Catkin\",\"italic\":false}'},Enmity.TreeSeed:1,CustomModelData:16,Enmity:1}"
+                        "tag": "{display:{Name:'{\"text\":\"Birch Catkin\",\"italic\":false}'},Enmity.ItemGroups:[\"tree_seeds\"],CustomModelData:16,Enmity:1}"
                     }
                 ]
               }

@@ -106,7 +106,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Gust Caster\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Fires a short ranged whirlwind.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:3,Enmity:1,Enmity.CustomCrafting:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Gust Caster\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"100\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Fires a short ranged whirlwind.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:3,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\"]}"
                 }
             ]
           },
@@ -116,7 +116,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Water Bolt\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"6\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"60\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"12\",\"color\":\"white\"}]','[{\"text\":\"Shoots a slow moving bolt of water.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:4,Enmity:1,Enmity.CustomCrafting:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Water Bolt\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"6\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"60\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"12\",\"color\":\"white\"}]','[{\"text\":\"Shoots a slow moving bolt of water.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:4,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\"]}"
                 }
             ]
           },
@@ -126,7 +126,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Emerald Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots an emerald bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:16,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"gem_staves\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Emerald Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots an emerald bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:16,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\",\"gem_staves\"]}"
                 }
             ]
           },
@@ -136,7 +136,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Diamond Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"90\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Shoots a diamond bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:6,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"gem_staves\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Diamond Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"90\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Shoots a diamond bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:6,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\",\"gem_staves\"]}"
                 }
             ]
           },
@@ -146,7 +146,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Redstone Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"6\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"90\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots a redstone bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:15,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"gem_staves\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Redstone Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"6\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"90\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots a redstone bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:15,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\",\"gem_staves\"]}"
                 }
             ]
           },
@@ -156,7 +156,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Emerald Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots an emerald bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:16,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"gem_staves\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Emerald Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots an emerald bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:16,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\",\"gem_staves\"]}"
                 }
             ]
           }

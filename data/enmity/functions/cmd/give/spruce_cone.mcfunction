@@ -1,1 +1,1 @@
-give @s minecraft:firework_star{display:{Name:'{"text":"Spruce Cone","italic":false}'},Enmity.TreeSeed:1,CustomModelData:15,Enmity:1} 1
+give @s minecraft:firework_star{display:{Name:'{"text":"Spruce Cone","italic":false}'},Enmity.ItemGroups:["tree_seeds"],CustomModelData:15,Enmity:1} 1

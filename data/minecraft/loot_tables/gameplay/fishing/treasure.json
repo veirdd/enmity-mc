@@ -81,7 +81,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Hermes Boots\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"mobility\",\"color\":\"white\"}]','[{\"text\":\"Increases movement speed.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:5,Enmity:1,Enmity.CustomCrafting:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Hermes Boots\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"mobility\",\"color\":\"white\"}]','[{\"text\":\"Increases movement speed.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:5,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
                 }
             ]
           },
@@ -92,7 +92,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Magic Cuffs\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Restores mana upon taking damage.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:63,Enmity:1,Enmity.CustomCrafting:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Magic Cuffs\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Restores mana upon taking damage.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:63,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
                 }
             ]
           },
@@ -103,7 +103,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Cloud in a Bottle\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"mobility\",\"color\":\"white\"}]','[{\"text\":\"Click sneak to double jump.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Disables Levitation.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:11,Enmity:1,Enmity.CustomCrafting:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Cloud in a Bottle\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"mobility\",\"color\":\"white\"}]','[{\"text\":\"Click sneak to double jump.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Disables Levitation.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:11,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
                 }
             ]
           },
@@ -114,7 +114,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Four-leaf Clover\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Increases luck.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:84,Enmity:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Four-leaf Clover\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Increases luck.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:84,Enmity:1,Enmity.ItemGroups:[\"accessories\"]}"
                 }
             ]
           },
@@ -125,7 +125,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Fiery Charm\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants heat resistance.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:82,Enmity:1,Enmity.CustomCrafting:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Fiery Charm\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants heat resistance.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:82,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
                 }
             ]
           },
@@ -136,7 +136,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Frozen Charm\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants cold resistance.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:81,Enmity:1,Enmity.CustomCrafting:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Frozen Charm\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants cold resistance.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:81,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
                 }
             ]
           }

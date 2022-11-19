@@ -25,7 +25,7 @@ execute if predicate enmity:environment/is_raining as @a[gamemode=!spectator,pre
 execute if predicate enmity:environment/is_thundering as @a[gamemode=!spectator,predicate=enmity:environment/in_overworld,predicate=!enmity:environment/biome/tag/has_no_rain,tag=enmity.on_surface] if predicate enmity:random/random_0.15 at @s run function enmity:entities/mobs/nimbus/spawning/spawn_check
 execute as @a[gamemode=!spectator] at @s if predicate enmity:random/random_0.25 run function enmity:entities/mobs/flame_spewer/spawning/spawn_check
 
-execute as @e[type=item,scores={enmity.age=30..}] if entity @s[nbt={Item:{tag:{Enmity.TreeSeed:1}}}] at @s if block ~ ~ ~ #enmity:sapling_valid_space if block ~ ~-1 ~ #minecraft:dirt run function enmity:entities/other_entities/items/tag_tree_seeds/check_type
+execute as @e[type=item,scores={enmity.age=30..}] if entity @s[nbt={Item:{tag:{Enmity.ItemGroups:["tree_seeds"]}}}] at @s if block ~ ~ ~ #enmity:sapling_valid_space if block ~ ~-1 ~ #minecraft:dirt run function enmity:entities/other_entities/items/tag_tree_seeds/check_type
 execute as @e[type=item,scores={enmity.age=30..}] if entity @s[nbt={Item:{id:"minecraft:mangrove_propagule"}}] at @s if block ~ ~ ~ #enmity:sapling_valid_space if block ~ ~-1 ~ #minecraft:dirt run function enmity:entities/other_entities/items/mangrove_propagule/place_sapling
 
 # Temperature

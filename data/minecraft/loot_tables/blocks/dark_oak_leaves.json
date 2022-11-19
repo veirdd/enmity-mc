@@ -60,7 +60,7 @@
                 "functions": [
                     {
                         "function": "minecraft:set_nbt",
-                        "tag": "{display:{Name:'{\"text\":\"Dark Oak Acorn\",\"italic\":false}'},Enmity.TreeSeed:1,CustomModelData:19,Enmity:1}"
+                        "tag": "{display:{Name:'{\"text\":\"Dark Oak Acorn\",\"italic\":false}'},Enmity.ItemGroups:[\"tree_seeds\"],CustomModelData:19,Enmity:1}"
                     }
                 ]
               }

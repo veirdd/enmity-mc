@@ -85,7 +85,7 @@
               "functions": [
                   {
                       "function": "minecraft:set_nbt",
-                      "tag": "{display:{Name:'{\"text\":\"Hermes Boots\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"mobility\",\"color\":\"white\"}]','[{\"text\":\"Increases movement speed.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:5,Enmity:1,Enmity.CustomCrafting:1}"
+                      "tag": "{display:{Name:'{\"text\":\"Hermes Boots\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"mobility\",\"color\":\"white\"}]','[{\"text\":\"Increases movement speed.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:5,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
                   }
               ]
             },
@@ -95,7 +95,7 @@
               "functions": [
                   {
                       "function": "minecraft:set_nbt",
-                      "tag": "{display:{Name:'{\"text\":\"Magic Cuffs\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Restores mana upon taking damage.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:63,Enmity:1,Enmity.CustomCrafting:1}"
+                      "tag": "{display:{Name:'{\"text\":\"Magic Cuffs\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Restores mana upon taking damage.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:63,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
                   }
               ]
             },
@@ -105,7 +105,7 @@
               "functions": [
                   {
                       "function": "minecraft:set_nbt",
-                      "tag": "{display:{Name:'{\"text\":\"Cloud in a Bottle\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"mobility\",\"color\":\"white\"}]','[{\"text\":\"Click sneak to double jump.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Disables Levitation.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:11,Enmity:1,Enmity.CustomCrafting:1}"
+                      "tag": "{display:{Name:'{\"text\":\"Cloud in a Bottle\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"mobility\",\"color\":\"white\"}]','[{\"text\":\"Click sneak to double jump.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Disables Levitation.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:11,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
                   }
               ]
             }
@@ -339,7 +339,7 @@
               "functions": [
                   {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Ancient Bone Dust\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants Haste.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:91,Enmity:1}"
+                    "tag": "{display:{Name:'{\"text\":\"Ancient Bone Dust\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants Haste.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:91,Enmity:1,Enmity.ItemGroups:[\"accessories\"]}"
                   }
               ]
             },
@@ -350,7 +350,7 @@
               "functions": [
                   {
                       "function": "minecraft:set_nbt",
-                      "tag": "{display:{Name:'{\"text\":\"Repelling Stone\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Repels nearby arrows, including yours.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:93,Enmity:1}"
+                      "tag": "{display:{Name:'{\"text\":\"Repelling Stone\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Repels nearby arrows, including yours.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:93,Enmity:1,Enmity.ItemGroups:[\"accessories\"]}"
                   }
               ]
             }
@@ -372,7 +372,7 @@
               "functions": [
                   {
                       "function": "minecraft:set_nbt",
-                      "tag": "{display:{Name:'{\"text\":\"Web Slinger\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"60\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Sprays out threads of web\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"that slow enemies down.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:98,Enmity:1}"
+                      "tag": "{display:{Name:'{\"text\":\"Web Slinger\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"60\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Sprays out threads of web\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"that slow enemies down.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:98,Enmity:1,Enmity.ItemGroups:[\"weapons\"]}"
                   }
               ]
             }

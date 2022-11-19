@@ -1,1 +1,1 @@
-give @s minecraft:warped_fungus_on_a_stick{display:{Name:'{"text":"Thermometer","italic":false}'},Unbreakable:1,HideFlags:4,CustomModelData:31,Enmity:1,Enmity.Thermometer:1} 1
+give @s minecraft:warped_fungus_on_a_stick{display:{Name:'{"text":"Thermometer","italic":false}'},Unbreakable:1,HideFlags:4,CustomModelData:31,Enmity:1,Enmity.Thermometer:1,Enmity.ItemGroups:["tools"]} 1
