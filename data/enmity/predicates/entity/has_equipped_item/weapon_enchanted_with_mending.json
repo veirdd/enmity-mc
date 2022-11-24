@@ -42,7 +42,7 @@
                   "items": [
                     "minecraft:warped_fungus_on_a_stick"
                   ],
-                  "nbt": "{Enmity.ItemGroups:[\"weapons\"]}",
+                  "nbt": "{Enmity.ItemGroups:[\"usable\",\"weapons\"]}",
                   "enchantments": [
                     {
                       "enchantment": "minecraft:mending"
@@ -61,7 +61,7 @@
                   "items": [
                     "minecraft:warped_fungus_on_a_stick"
                   ],
-                  "nbt": "{Enmity.ItemGroups:[\"weapons\"]}",
+                  "nbt": "{Enmity.ItemGroups:[\"usable\",\"weapons\"]}",
                   "enchantments": [
                     {
                       "enchantment": "minecraft:mending"

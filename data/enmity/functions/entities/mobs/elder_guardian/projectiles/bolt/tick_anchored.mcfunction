@@ -5,8 +5,8 @@ execute if score @s enmity.age matches 79 run playsound entity.elder_guardian.de
 execute if score @s enmity.age matches 79 run playsound block.note_block.basedrum neutral @a[distance=0..] ~ ~ ~ 2 0 0
 execute if score @s enmity.age matches 79 run playsound block.note_block.basedrum neutral @a[distance=0..] ~ ~ ~ 2 0 0
 execute if score @s enmity.age matches 79 run particle dust 0.3 0.6 1 1 ~ ~ ~ 0.5 0.5 0.5 0 50 force
-execute if score @s[tag=!enmity.reached_target] enmity.age matches 80.. run function enmity:utility/projectiles/random_spread/5dg
-execute if entity @s[tag=enmity.reached_target] unless entity @p[distance=..4] run function enmity:utility/projectiles/random_spread/10dg
+execute if score @s[tag=!enmity.reached_target] enmity.age matches 80.. run function enmity:misc/projectiles/random_spread/5dg
+execute if entity @s[tag=enmity.reached_target] unless entity @p[distance=..4] run function enmity:misc/projectiles/random_spread/10dg
 execute if score %difficulty enmity.value matches 2 if entity @p[tag=enmity.elder_target,distance=..3] run tag @s add enmity.reached_target
 execute if score %difficulty enmity.value matches 2 if entity @p[tag=enmity.elder_target,distance=3..12] run tp @s[tag=!enmity.reached_target] ~ ~ ~ facing entity @p[tag=enmity.elder_target] eyes
 execute if score %difficulty enmity.value matches 1 if entity @p[tag=enmity.elder_target,distance=..4] run tag @s add enmity.reached_target

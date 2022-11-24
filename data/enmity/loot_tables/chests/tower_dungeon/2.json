@@ -299,7 +299,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Thermometer\",\"italic\":false}'},Unbreakable:1,HideFlags:4,CustomModelData:31,Enmity:1,Enmity.Thermometer:1,Enmity.ItemGroups:[\"tools\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Thermometer\",\"italic\":false}'},Unbreakable:1,HideFlags:4,CustomModelData:31,Enmity:1,Enmity.Thermometer:1,Enmity.ItemGroups:[\"usable\",\"tools\"]}"
                 }
             ]
           },
@@ -309,7 +309,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Bezoar\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants immunity to Poison.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:111,Enmity:1,Enmity.ItemGroups:[\"accessories\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Bezoar\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants immunity to Poison.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:111,Enmity:1,Enmity.ItemGroups:[\"accessories\",\"effect\"]}"
                 }
             ],
             "weight": 2
@@ -330,7 +330,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Lapis Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Shoots a lapis bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:14,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\",\"gem_staves\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Lapis Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Shoots a lapis bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:14,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"usable\",\"weapons\",\"gem_staves\"]}"
                 }
             ]
           },
@@ -340,7 +340,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Redstone Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"6\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"90\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots a redstone bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:15,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\",\"gem_staves\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Redstone Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"6\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"90\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots a redstone bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:15,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"usable\",\"weapons\",\"gem_staves\"]}"
                 }
             ]
           },
@@ -350,7 +350,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Emerald Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots an emerald bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:16,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\",\"gem_staves\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Emerald Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"7\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"80\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"20\",\"color\":\"white\"}]','[{\"text\":\"Shoots an emerald bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:16,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"usable\",\"weapons\",\"gem_staves\"]}"
                 }
             ]
           },
@@ -360,7 +360,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Diamond Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"90\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Shoots a diamond bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:6,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"weapons\",\"gem_staves\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Diamond Staff\",\"italic\":false}',Lore:['[{\"text\":\"Damage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"8\",\"color\":\"white\"}]','[{\"text\":\"Mana usage: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"90\",\"color\":\"white\"}]','[{\"text\":\"Cooldown: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"24\",\"color\":\"white\"}]','[{\"text\":\"Shoots a diamond bolt.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:6,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"usable\",\"weapons\",\"gem_staves\"]}"
                 }
             ]
           }
@@ -380,7 +380,7 @@
                 "functions": [
                     {
                         "function": "minecraft:set_nbt",
-                        "tag": "{display:{Name:'{\"text\":\"Fiery Charm\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants heat resistance.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:82,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
+                        "tag": "{display:{Name:'{\"text\":\"Fiery Charm\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants heat resistance.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:82,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\",\"effect\"]}"
                     }
                 ]
             },
@@ -390,7 +390,7 @@
                 "functions": [
                     {
                         "function": "minecraft:set_nbt",
-                        "tag": "{display:{Name:'{\"text\":\"Frozen Charm\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants cold resistance.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:81,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\"]}"
+                        "tag": "{display:{Name:'{\"text\":\"Frozen Charm\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants cold resistance.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:81,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\",\"effect\"]}"
                     }
                 ]
             }

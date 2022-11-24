@@ -12,7 +12,7 @@
             "functions": [
                 {
                 "function": "minecraft:set_nbt",
-                "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Xp:8}"
+                "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Enmity.Xp:8}"
                 }
             ]
         }

@@ -1,0 +1,16 @@
+[
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:reference",
+            "name": "enmity:entity/enmity_use/usable_in_mainhand"
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:reference",
+            "name": "enmity:entity/enmity_use/accessory_in_mainhand"
+        }
+    }
+]

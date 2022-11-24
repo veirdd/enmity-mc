@@ -17,6 +17,6 @@ scoreboard players operation @s enmity.rotation += %const_90 enmity.value
 tag @s add enmity.this
 execute as @e[type=armor_stand,tag=enmity.new] store result entity @s Pose.Head[0] float 1 run scoreboard players get @p[tag=enmity.this] enmity.rotation
 tag @s remove enmity.this
-execute as @e[type=armor_stand,tag=enmity.new,tag=!enmity.no_spread] run function enmity:utility/projectiles/random_spread/10dg
+execute as @e[type=armor_stand,tag=enmity.new,tag=!enmity.no_spread] run function enmity:misc/projectiles/random_spread/10dg
 execute if score @s enmity.player_targeting matches 1 run tag @e[type=armor_stand,tag=enmity.new] add enmity.player_targeting
 tag @e[type=armor_stand,tag=enmity.new] remove enmity.new

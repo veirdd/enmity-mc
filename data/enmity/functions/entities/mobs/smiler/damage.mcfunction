@@ -1,8 +1,8 @@
 execute if score %difficulty enmity.value matches 1 run scoreboard players set @a[tag=!enmity.invulnerable,tag=enmity.hit] enmity.taken_dmg 16
 execute if score %difficulty enmity.value matches 2 run scoreboard players set @a[tag=!enmity.invulnerable,tag=enmity.hit] enmity.taken_dmg 20
 tag @s add enmity.this
-execute as @a[tag=!enmity.invulnerable,tag=enmity.hit] at @s run function enmity:utility/damage/init
-execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,tag=!enmity.update_health] run function enmity:utility/health_modification/request
+execute as @a[tag=!enmity.invulnerable,tag=enmity.hit] at @s run function enmity:misc/damage/init
+execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,tag=!enmity.update_health] run function enmity:misc/health_modification/request
 tag @s remove enmity.this
 execute as @a[tag=enmity.hit] at @s run playsound block.sculk_shrieker.shriek hostile @s ~ ~ ~ 2 2 0
 execute as @a[tag=enmity.hit] at @s run playsound block.sculk_shrieker.shriek hostile @s ~ ~ ~ 2 2 0

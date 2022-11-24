@@ -1,6 +1,6 @@
 tag @s add enmity.this
-execute if entity @s[tag=!enmity.end_wither_skeleton] run function enmity:utility/solid_detection/check
-execute if entity @s[tag=!enmity.end_wither_skeleton] positioned ^ ^ ^0.3 run function enmity:utility/solid_detection/check
+execute if entity @s[tag=!enmity.end_wither_skeleton] run function enmity:misc/solid_detection/check
+execute if entity @s[tag=!enmity.end_wither_skeleton] positioned ^ ^ ^0.3 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] run function enmity:items/usable/soul_scepter/die_projectile
 execute if entity @s[tag=!enmity.wraith,tag=!enmity.end_wither_skeleton] if entity @s[tag=enmity.player_targeting] positioned ^ ^ ^3 positioned ~ ~-1 ~ as @e[type=!#enmity:not_living,tag=!enmity.projectile,sort=nearest,distance=..6] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target
 execute if entity @s[tag=!enmity.wraith,tag=!enmity.end_wither_skeleton] if entity @s[tag=!enmity.player_targeting] positioned ^ ^ ^3 positioned ~ ~-1 ~ as @e[type=!#enmity:not_living,type=!player,tag=!enmity.projectile,sort=nearest,distance=..6] run tag @s add enmity.homing_target

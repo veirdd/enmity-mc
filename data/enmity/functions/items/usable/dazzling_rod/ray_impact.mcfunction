@@ -1,5 +1,5 @@
-function enmity:utility/projectiles/sentries/sentry_counter
-execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:utility/projectiles/sentries/remove_sentry
+function enmity:misc/projectiles/sentries/sentry_counter
+execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 execute positioned ~ ~1 ~ run particle flash ^ ^ ^-0.5 0.2 0.2 0.2 0 5 force
 playsound minecraft:item.trident.thunder neutral @a[distance=0..] ~ ~ ~ 2 2 0
 scoreboard players set @s enmity.cooldown 32

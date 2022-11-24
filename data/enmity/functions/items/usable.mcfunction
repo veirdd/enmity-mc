@@ -1,5 +1,7 @@
+scoreboard players set @s enmity.use 0
 scoreboard players set @s enmity.raycast 0
-execute store result score @s enmity.use run data get entity @s SelectedItem.tag.CustomModelData
+execute store result score @s enmity.use run data get entity @s SelectedItem{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity.ItemGroups:["usable"]}}.tag.CustomModelData
+execute if score @s enmity.use matches 0 store result score @s enmity.use run data get entity @s Inventory[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity.ItemGroups:["usable"]}}].tag.CustomModelData
 execute if entity @s[scores={enmity.use=1,enmity.mana=50..}] at @s run function enmity:items/usable/silvan_wand/use
 execute if entity @s[scores={enmity.use=7,enmity.mana=100..}] unless predicate enmity:entity/is_sneaking at @s run function enmity:items/usable/delirium/use
 execute if entity @s[scores={enmity.use=7,enmity.mana=50..}] if predicate enmity:entity/is_sneaking at @s anchored eyes run function enmity:items/usable/delirium/use_secondary

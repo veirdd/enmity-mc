@@ -62,7 +62,7 @@ execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:ar
 execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,type=!skeleton] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_weapon
 execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,tag=enmity.equipped] unless predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/enchant_equipment
 execute if entity @s[type=#enmity:armor_wearing] run function enmity:entities/modifications/equip/remove_durability
-execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:utility/despawn
+execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:misc/despawn
 execute if entity @s[type=magma_cube] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 1.3 multiply_base
 
 scoreboard players set @s enmity.cooldown 0

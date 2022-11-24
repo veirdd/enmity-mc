@@ -1,5 +1,5 @@
-function enmity:utility/projectiles/sentries/sentry_counter
-execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:utility/projectiles/sentries/remove_sentry
+function enmity:misc/projectiles/sentries/sentry_counter
+execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 playsound minecraft:entity.ender_dragon.flap neutral @a[distance=0..] ~ ~ ~ 2 0.7 0
 playsound minecraft:entity.lightning_bolt.thunder neutral @a[distance=0..] ~ ~ ~ 2 1.3 0
 scoreboard players set @s enmity.cooldown 16

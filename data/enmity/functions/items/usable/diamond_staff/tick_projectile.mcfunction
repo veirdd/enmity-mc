@@ -1,6 +1,6 @@
 tag @s add enmity.this
-function enmity:utility/solid_detection/check
-execute positioned ^ ^ ^0.35 run function enmity:utility/solid_detection/check
+function enmity:misc/solid_detection/check
+execute positioned ^ ^ ^0.35 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] run function enmity:items/usable/diamond_staff/die_projectile
 tp @s ^ ^ ^0.7
 particle dust 0 0.8 1 1 ~ ~ ~ 0.025 0.025 0.025 0 3 force

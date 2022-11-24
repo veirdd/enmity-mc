@@ -4,7 +4,7 @@ execute if score @s enmity.age matches 16 run particle firework ~ ~ ~ 0 0 0 0.1 
 execute if entity @s[tag=enmity.player_targeting] if score @s enmity.age matches 16.. as @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=..32] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target
 execute if entity @s[tag=!enmity.player_targeting] if score @s enmity.age matches 16.. as @e[type=!#enmity:not_living,type=!player,tag=!enmity.projectile,distance=..32] run tag @s add enmity.homing_target
 execute if score @s enmity.age matches 16.. unless entity @e[tag=enmity.homing_target] run kill @s
-execute if score @s enmity.age matches ..15 run function enmity:utility/projectiles/random_spread/10dg
+execute if score @s enmity.age matches ..15 run function enmity:misc/projectiles/random_spread/10dg
 execute if score @s enmity.age matches ..15 run tp @s ^ ^ ^0.8
 execute if score @s enmity.age matches 16.. run tp @s ^ ^ ^0.8 facing entity @e[tag=enmity.homing_target,limit=1,sort=nearest] eyes
 tag @e[tag=enmity.homing_target] remove enmity.homing_target

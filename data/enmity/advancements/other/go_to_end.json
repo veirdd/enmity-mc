@@ -10,6 +10,6 @@
       }
     },
     "rewards": {
-        "function": "enmity:utility/end_teleport"
+        "function": "enmity:misc/end_teleport"
     }
   }

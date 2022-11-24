@@ -1,5 +1,5 @@
 tag @s add enmity.this
-execute positioned ~ ~1.7 ~ run function enmity:utility/solid_detection/check
+execute positioned ~ ~1.7 ~ run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] positioned ~ ~1.7 ~ run function enmity:items/usable/silvan_wand/die_projectile
 tp @s ^ ^ ^0.5
 particle dust 0.45 0.75 0 0.5 ~ ~1.7 ~ 0 0 0 0 1 force

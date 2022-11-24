@@ -3,9 +3,9 @@ execute if entity @s[tag=enmity.player_targeting] positioned ^ ^ ^3 positioned ~
 execute if entity @s[tag=!enmity.player_targeting] positioned ^ ^ ^3 positioned ~ ~-1 ~ as @e[type=!#enmity:not_living,type=!player,tag=!enmity.projectile,limit=1,sort=nearest,distance=..6] run tag @s add enmity.homing_target
 execute if entity @e[type=!#enmity:not_living,tag=enmity.homing_target] run function enmity:items/usable/rainbow_rod/home_in_projectile
 tp @s ^ ^ ^1
-function enmity:utility/solid_detection/check
-execute positioned ^ ^ ^0.33 run function enmity:utility/solid_detection/check
-execute positioned ^ ^ ^0.67 run function enmity:utility/solid_detection/check
+function enmity:misc/solid_detection/check
+execute positioned ^ ^ ^0.33 run function enmity:misc/solid_detection/check
+execute positioned ^ ^ ^0.67 run function enmity:misc/solid_detection/check
 playsound block.note_block.chime neutral @a[distance=0..] ~ ~ ~ 0.5 2 0
 particle entity_effect ~ ~ ~ 0 0 0 0.1 2 force
 particle end_rod ^ ^ ^0.25 0 0 0 0 1 force

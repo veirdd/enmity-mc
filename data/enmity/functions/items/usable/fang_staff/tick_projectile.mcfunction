@@ -1,6 +1,6 @@
 tag @s add enmity.this
-execute positioned ~ ~1.7 ~ run function enmity:utility/solid_detection/check
-execute positioned ~ ~1.7 ~ positioned ^ ^ ^0.35 run function enmity:utility/solid_detection/check
+execute positioned ~ ~1.7 ~ run function enmity:misc/solid_detection/check
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^0.35 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] positioned ~ ~1.7 ~ run function enmity:items/usable/fang_staff/die_projectile
 execute positioned ~ ~1.7 ~ if entity @s[tag=enmity.player_targeting] positioned ^ ^ ^3 as @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=..5] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id run tag @s add enmity.homing_target
 execute positioned ~ ~1.7 ~ if entity @s[tag=!enmity.player_targeting] positioned ^ ^ ^3 as @e[type=!#enmity:not_living,type=!player,tag=!enmity.projectile,distance=..5] run tag @s add enmity.homing_target

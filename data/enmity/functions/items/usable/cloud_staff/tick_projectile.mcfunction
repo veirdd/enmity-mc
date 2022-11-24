@@ -6,8 +6,8 @@ execute if entity @s[tag=!enmity.red] run particle dust 0 0 1 0.4 ^ ^ ^0.4 0.02 
 execute if entity @s[tag=enmity.red] run particle dust 0.8 0 0 0.4 ~ ~ ~ 0.02 0.02 0.02 0 4 force
 execute if entity @s[tag=enmity.red] run particle dust 0.8 0 0 0.4 ^ ^ ^0.2 0.02 0.02 0.02 0 4 force
 execute if entity @s[tag=enmity.red] run particle dust 0.8 0 0 0.4 ^ ^ ^0.4 0.02 0.02 0.02 0 4 force
-function enmity:utility/solid_detection/check
-execute positioned ^ ^ ^0.4 run function enmity:utility/solid_detection/check
+function enmity:misc/solid_detection/check
+execute positioned ^ ^ ^0.4 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] run function enmity:items/usable/cloud_staff/die_projectile
 execute if entity @s[tag=!enmity.red] positioned ~-0.25 ~-0.25 ~-0.25 as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.49 ~-0.49 ~-0.49 if entity @s[dx=0] run tag @s add enmity.hit
 execute if entity @s[tag=enmity.red] positioned ~-0.25 ~-0.25 ~-0.25 as @e[scores={enmity.iframes=0},type=!#enmity:not_living,tag=!enmity.projectile,dx=0] positioned ~-0.49 ~-0.49 ~-0.49 if entity @s[dx=0] run tag @s add enmity.hit

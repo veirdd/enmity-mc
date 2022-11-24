@@ -1,6 +1,6 @@
 tag @s add enmity.this
-execute if entity @s[tag=!enmity.reached_target] run function enmity:utility/projectiles/random_spread/5dg
-execute if entity @s[tag=enmity.reached_target] run function enmity:utility/projectiles/random_spread/10dg
+execute if entity @s[tag=!enmity.reached_target] run function enmity:misc/projectiles/random_spread/5dg
+execute if entity @s[tag=enmity.reached_target] run function enmity:misc/projectiles/random_spread/10dg
 execute if entity @e[type=#enmity:enemies,limit=1,sort=nearest,tag=!enmity.sentry,tag=!enmity.projectile,distance=..2.4] run tag @s add enmity.reached_target
 execute if entity @e[type=#enmity:enemies,limit=1,sort=nearest,tag=!enmity.sentry,tag=!enmity.projectile,distance=2.4..7] run tp @s[tag=!enmity.reached_target] ~ ~ ~ facing entity @e[type=#enmity:enemies,limit=1,sort=nearest,tag=!enmity.sentry,tag=!enmity.projectile,distance=2.4..7] eyes
 tp @s ^ ^ ^0.8

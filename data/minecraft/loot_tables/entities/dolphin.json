@@ -53,7 +53,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Dolphin\\'s Fin\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants Dolphin\\'s Grace.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:89,Enmity:1,Enmity.ItemGroups:[\"accessories\"]}"
+                "tag": "{display:{Name:'{\"text\":\"Dolphin\\'s Fin\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Grants Dolphin\\'s Grace.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:89,Enmity:1,Enmity.ItemGroups:[\"accessories\",\"effect\"]}"
               }
             ],
             "conditions": [
@@ -77,7 +77,7 @@
           "functions": [
               {
               "function": "minecraft:set_nbt",
-              "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Xp:3}"
+              "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Enmity.Xp:3}"
               }
           ]
       }

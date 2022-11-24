@@ -14,9 +14,9 @@ execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard playe
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.taken_dmg -= @s enmity.math_c
 execute if entity @s[tag=!enmity.invulnerable,type=player] run scoreboard players set @s enmity.taken_dmg 1
 execute if entity @s[tag=!enmity.invulnerable,type=!player,type=!ender_dragon] if score @s enmity.hp_dummy <= @s enmity.taken_dmg run kill @s
-execute if entity @s[tag=!enmity.invulnerable] unless entity @s[gamemode=creative] at @s run function enmity:utility/damage/init
+execute if entity @s[tag=!enmity.invulnerable] unless entity @s[gamemode=creative] at @s run function enmity:misc/damage/init
 execute if entity @s[tag=!enmity.invulnerable,type=!player] run scoreboard players operation @s enmity.hp_dummy -= @s enmity.taken_dmg
 execute if entity @s[tag=!enmity.invulnerable,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.hp_dummy
-execute if entity @s[tag=!enmity.invulnerable,type=player,gamemode=!creative,gamemode=!spectator,tag=!enmity.update_health] run function enmity:utility/health_modification/request
+execute if entity @s[tag=!enmity.invulnerable,type=player,gamemode=!creative,gamemode=!spectator,tag=!enmity.update_health] run function enmity:misc/health_modification/request
 tag @s remove enmity.hit
 scoreboard players remove @s enmity.phantasmal_curse 1

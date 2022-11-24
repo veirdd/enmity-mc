@@ -1,5 +1,5 @@
-function enmity:utility/projectiles/sentries/sentry_counter
-execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:utility/projectiles/sentries/remove_sentry
+function enmity:misc/projectiles/sentries/sentry_counter
+execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 playsound minecraft:entity.evoker.prepare_summon neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound minecraft:entity.evoker.prepare_summon neutral @a[distance=0..] ~ ~ ~ 2 0 0
 particle smoke ~ ~1 ~ 0.3 0.3 0.3 0.05 50 force

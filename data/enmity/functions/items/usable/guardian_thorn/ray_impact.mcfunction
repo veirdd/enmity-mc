@@ -1,5 +1,5 @@
-function enmity:utility/projectiles/sentries/sentry_counter
-execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:utility/projectiles/sentries/remove_sentry
+function enmity:misc/projectiles/sentries/sentry_counter
+execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 playsound entity.elder_guardian.curse neutral @a[distance=0..] ~ ~ ~ 2 1.3 0
 playsound entity.elder_guardian.curse neutral @a[distance=0..] ~ ~ ~ 2 1.2 0
 playsound entity.illusioner.mirror_move neutral @a[distance=0..] ~ ~ ~ 2 2 0

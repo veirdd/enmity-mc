@@ -48,7 +48,7 @@
         "functions": [
           {
             "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Soul in a Jar\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"The little friend inside shoots\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"homing souls at nearby enemies.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:79,Enmity:1,Enmity.ItemGroups:[\"accessories\"]}"
+            "tag": "{display:{Name:'{\"text\":\"Soul in a Jar\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"The little friend inside shoots\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"homing souls at nearby enemies.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:79,Enmity:1,Enmity.ItemGroups:[\"accessories\",\"effect\"]}"
           }
         ],
         "conditions": [
@@ -148,7 +148,7 @@
           "functions": [
               {
               "function": "minecraft:set_nbt",
-              "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Xp:8}"
+              "tag": "{Enmity.DeleteItem:1,CustomModelData:12,display:{Name:'{\"text\":\"Death Essence\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"It\\'s very volatile.\",\"italic\":false,\"color\":\"gray\"}']},Enmity.Type:\"death\",Enmity.Xp:8}"
               }
           ]
       },

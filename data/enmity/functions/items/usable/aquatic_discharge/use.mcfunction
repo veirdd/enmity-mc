@@ -8,6 +8,6 @@ scoreboard players set @e[type=marker,tag=enmity.new] enmity.dmg 13
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.dmg += @s enmity.dmg_bst
 tp @e[type=marker,tag=enmity.new] @s
 execute at @s anchored eyes run tp @e[type=marker,tag=enmity.new] ^ ^ ^0.2 ~ ~-10
-execute as @e[type=marker,tag=enmity.new] run function enmity:utility/projectiles/random_spread/10dg
+execute as @e[type=marker,tag=enmity.new] run function enmity:misc/projectiles/random_spread/10dg
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.player_id = @s enmity.player_id
 tag @e[type=marker,tag=enmity.new] remove enmity.new

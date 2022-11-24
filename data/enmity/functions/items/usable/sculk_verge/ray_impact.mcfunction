@@ -1,5 +1,5 @@
-function enmity:utility/projectiles/sentries/sentry_counter
-execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:utility/projectiles/sentries/remove_sentry
+function enmity:misc/projectiles/sentries/sentry_counter
+execute if score @s enmity.snt_ct >= @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 playsound minecraft:entity.ender_dragon.flap neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound minecraft:block.respawn_anchor.set_spawn neutral @a[distance=0..] ~ ~ ~ 1 0.5 0
 playsound minecraft:block.sculk_sensor.clicking neutral @a[distance=0..] ~ ~ ~ 2 0 0

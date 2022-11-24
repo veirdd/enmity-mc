@@ -1,6 +1,6 @@
 tag @s add enmity.this
-function enmity:utility/solid_detection/check
-execute positioned ^ ^ ^0.4 run function enmity:utility/solid_detection/check
+function enmity:misc/solid_detection/check
+execute positioned ^ ^ ^0.4 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] run function enmity:items/usable/gust_caster/die_projectile
 execute if predicate enmity:environment/in_liquid run function enmity:items/usable/gust_caster/die_projectile
 tp @s ^ ^ ^0.8

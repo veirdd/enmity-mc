@@ -9,7 +9,7 @@ scoreboard players set @e[type=marker,tag=enmity.cloud_bolt,tag=enmity.new] enmi
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.dmg += @s enmity.dmg_bst
 tp @e[type=marker,tag=enmity.new] @s
 execute at @s anchored eyes run tp @e[type=marker,tag=enmity.new] ^ ^ ^0.2
-execute as @e[type=marker,tag=enmity.new] run function enmity:utility/projectiles/random_spread/5dg
+execute as @e[type=marker,tag=enmity.new] run function enmity:misc/projectiles/random_spread/5dg
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.player_id = @s enmity.player_id
 execute if entity @s[tag=enmity.red] run tag @e[type=marker,tag=enmity.cloud_bolt,tag=enmity.new] add enmity.red
 tag @e[type=marker,tag=enmity.cloud_bolt,tag=enmity.new] remove enmity.new

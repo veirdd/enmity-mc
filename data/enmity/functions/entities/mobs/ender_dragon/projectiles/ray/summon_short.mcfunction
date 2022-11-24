@@ -1,7 +1,7 @@
 execute as @p[tag=enmity.dragon_target] at @s run summon marker ~ ~1.5 ~ {Tags:["enmity.projectile","enmity.dragon_ray","enmity.new"]}
-execute as @e[type=marker,tag=enmity.new] at @s run function enmity:utility/projectiles/random_spread/360dg
+execute as @e[type=marker,tag=enmity.new] at @s run function enmity:misc/projectiles/random_spread/360dg
 execute as @e[type=marker,tag=enmity.new] at @s run tp @s ^ ^ ^-6
-execute as @e[type=marker,tag=enmity.new] at @s run function enmity:utility/projectiles/random_spread/20dg
+execute as @e[type=marker,tag=enmity.new] at @s run function enmity:misc/projectiles/random_spread/20dg
 execute at @p[tag=enmity.dragon_target] run playsound block.fire.extinguish neutral @a[distance=0..] ^ ^ ^6 2 1.5 0
 scoreboard players set @e[type=marker,tag=enmity.new] enmity.raycast 24
 scoreboard players set @e[type=marker,tag=enmity.new] enmity.math_a 24

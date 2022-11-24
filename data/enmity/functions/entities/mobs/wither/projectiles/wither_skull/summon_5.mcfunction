@@ -6,7 +6,7 @@ execute anchored eyes unless block ^ ^ ^1 #enmity:not_solid as @e[type=armor_sta
 execute as @e[type=armor_stand,tag=enmity.wither_skull2,tag=enmity.new] at @s run tp @s ^ ^ ^1.5
 execute store result score @s enmity.rotation run data get entity @s Rotation[1]
 execute store result entity @e[type=armor_stand,tag=enmity.new,tag=enmity.wither_skull2,limit=1] Pose.Head[0] float 1 run scoreboard players get @s enmity.rotation
-execute as @e[type=armor_stand,tag=enmity.wither_skull2,tag=enmity.new] run function enmity:utility/projectiles/random_spread/10dg
+execute as @e[type=armor_stand,tag=enmity.wither_skull2,tag=enmity.new] run function enmity:misc/projectiles/random_spread/10dg
 execute if score %difficulty enmity.value matches 2 run scoreboard players set @e[type=armor_stand,tag=enmity.wither_skull2,tag=enmity.new] enmity.dmg 10
 execute if score %difficulty enmity.value matches 1 run scoreboard players set @e[type=armor_stand,tag=enmity.wither_skull2,tag=enmity.new] enmity.dmg 8
 tag @e[type=armor_stand,tag=enmity.wither_skull2,tag=enmity.new] remove enmity.new

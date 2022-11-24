@@ -1,6 +1,6 @@
 tag @s add enmity.this
-execute positioned ~ ~1.7 ~ run function enmity:utility/solid_detection/check
-execute positioned ~ ~1.7 ~ positioned ^ ^ ^0.4 run function enmity:utility/solid_detection/check
+execute positioned ~ ~1.7 ~ run function enmity:misc/solid_detection/check
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^0.4 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] positioned ~ ~1.7 ~ run function enmity:items/usable/sky_fracture/die_projectile
 tp @s ^ ^ ^0.8
 data merge entity @s[scores={enmity.age=5}] {ArmorItems:[{},{},{},{id:"warped_fungus_on_a_stick",Count:1,tag:{CustomModelData:1005}}]}

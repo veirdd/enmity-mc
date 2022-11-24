@@ -4,4 +4,5 @@ execute if entity @s[nbt={Item:{tag:{Enmity.EternalItem:1}}}] run function enmit
 execute if data entity @s Item.tag.Enchantments[{id:"minecraft:unbreaking"}] run function enmity:entities/other_entities/items/enchanted_unbreaking/modification
 execute if entity @s[nbt={Item:{tag:{Enmity.BossLoot:1}}}] run function enmity:entities/other_entities/items/boss_loot/modification
 execute if entity @s[nbt={Item:{id:"minecraft:nether_star"}}] unless entity @s[nbt={Item:{tag:{Enmity.BossLoot:0}}}] run kill @s
+execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"crop_xp"}}}] at @s run function enmity:misc/crop_xp
 tag @s add enmity.modified

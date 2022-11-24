@@ -5,8 +5,8 @@ particle fishing ^-0.02 ^ ^0.2 0 0 0 0 1 force
 particle fishing ^-0.02 ^ ^0.4 0 0 0 0 1 force
 particle fishing ^-0.02 ^ ^0.6 0 0 0 0 1 force
 particle fishing ^-0.02 ^ ^0.8 0 0 0 0 1 force
-function enmity:utility/solid_detection/check
-execute positioned ^ ^ ^0.5 run function enmity:utility/solid_detection/check
+function enmity:misc/solid_detection/check
+execute positioned ^ ^ ^0.5 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] run kill @s
 execute if predicate enmity:environment/in_water run particle bubble ~ ~ ~ 0 0 0 0.07 3 force
 execute if predicate enmity:environment/in_water run particle bubble ^ ^ ^0.5 0 0 0 0.07 3 force

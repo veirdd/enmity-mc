@@ -37,7 +37,7 @@ data merge entity @s[type=skeleton] {HandItems:[{id:"bow",Count:1b},{}]}
 execute if entity @s[type=wandering_trader] run function enmity:entities/mobs/wandering_trader/modification_prehardmode
 execute if entity @s[type=warden] run attribute @s generic.max_health base set 60
 execute if entity @s[type=#enmity:armor_wearing] run function enmity:entities/modifications/equip/remove_durability
-execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:utility/despawn
+execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:misc/despawn
 
 scoreboard players set @s enmity.cooldown 0
 data modify entity @s Health set value 1024

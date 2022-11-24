@@ -1,1 +1,0 @@
-execute unless entity @e[type=marker,tag=enmity.setup] run function enmity:utility/setup/setup

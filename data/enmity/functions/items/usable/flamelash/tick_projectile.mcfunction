@@ -1,6 +1,6 @@
 tag @s add enmity.this
-function enmity:utility/solid_detection/check
-execute positioned ^ ^ ^0.5 run function enmity:utility/solid_detection/check
+function enmity:misc/solid_detection/check
+execute positioned ^ ^ ^0.5 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] run function enmity:items/usable/flamelash/die_projectile
 playsound block.fire.extinguish neutral @a[distance=0..] ~ ~ ~ 0.5 2 0
 execute as @a if score @s enmity.player_id = @e[type=marker,tag=enmity.this,limit=1] enmity.player_id run tag @s add enmity.this

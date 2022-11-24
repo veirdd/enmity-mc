@@ -7,7 +7,7 @@ execute store result score @s enmity.math_c run data get entity @s Pos[2]
 summon marker ~ ~ ~ {Tags:["enmity.direction_anchor"]}
 execute store result entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Rotation[0] float 1 run data get entity @p[tag=enmity.this] Rotation[0]
 execute store result entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Rotation[1] float 1 run data get entity @p[tag=enmity.this] Rotation[1]
-execute as @e[type=marker,tag=enmity.direction_anchor,limit=1] run function enmity:utility/projectiles/random_spread/5dg
+execute as @e[type=marker,tag=enmity.direction_anchor,limit=1] run function enmity:misc/projectiles/random_spread/5dg
 execute as @e[type=marker,tag=enmity.direction_anchor,limit=1] at @s run tp ^ ^ ^100
 execute store result score @s enmity.math_d run data get entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Pos[0]
 execute store result score @s enmity.math_e run data get entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Pos[1]

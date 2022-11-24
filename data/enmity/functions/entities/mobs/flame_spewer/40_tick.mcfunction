@@ -6,5 +6,5 @@ kill @e[type=marker,tag=enmity.direction_anchor]
 execute if block ~ ~ ~ lava run scoreboard players set @s enmity.temp 15
 execute unless block ~ ~ ~ lava unless score @s enmity.temp matches 0 run scoreboard players remove @s enmity.temp 1
 execute unless score @s enmity.temp matches 1.. run effect give @s instant_damage 1 0 true
-execute unless entity @p[distance=..32] if predicate enmity:random/random_0.05 run function enmity:utility/despawn
-execute unless entity @p[distance=..128] run function enmity:utility/despawn
+execute unless entity @p[distance=..32] if predicate enmity:random/random_0.05 run function enmity:misc/despawn
+execute unless entity @p[distance=..128] run function enmity:misc/despawn

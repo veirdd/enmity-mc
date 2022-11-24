@@ -1,7 +1,7 @@
 # Other
 
 execute as @a if score @s enmity.health > @s enmity.max_hp run effect give @s instant_health
-execute as @a[tag=!enmity.update_health] run function enmity:utility/health_modification/update_health
+execute as @a[tag=!enmity.update_health] run function enmity:misc/health_modification/update_health
 kill @e[type=item,name="Air"]
 difficulty hard
 gamerule freezeDamage false
@@ -9,16 +9,16 @@ gamerule announceAdvancements false
 execute if score %death_mode enmity.value matches 1 run gamerule naturalRegeneration false
 execute if score %death_mode enmity.value matches 0 run gamerule naturalRegeneration true
 execute as @e[type=item] at @s if block ~ ~ ~ enchanting_table run function enmity:items/crafting/custom/checks/check_if_applicable
-execute as @a run function enmity:utility/projectiles/sentries/sentry_counter
-execute as @a if score @s enmity.snt_ct > @s enmity.max_snt run function enmity:utility/projectiles/sentries/remove_sentry
+execute as @a run function enmity:misc/projectiles/sentries/sentry_counter
+execute as @a if score @s enmity.snt_ct > @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 execute as @a at @s run function enmity:ambience/set_biome_type
-execute as @a at @s run function enmity:utility/surface_detection
-execute as @a at @s run function enmity:utility/temperature
+execute as @a at @s run function enmity:misc/surface_detection
+execute as @a at @s run function enmity:misc/temperature
 
 # Stats
 
-execute as @a unless score @s enmity.health matches 0.. run function enmity:utility/enable_health
-execute as @a unless score @s enmity.player_id matches 0.. run function enmity:utility/register_new_player/request
+execute as @a unless score @s enmity.health matches 0.. run function enmity:misc/enable_health
+execute as @a unless score @s enmity.player_id matches 0.. run function enmity:misc/register_new_player/request
 execute as @e unless score @s enmity.iframes matches -9999.. run scoreboard players set @s enmity.iframes 0
 
 scoreboard players remove @a[scores={enmity.egapple_cooldown=1..}] enmity.egapple_cooldown 1
@@ -39,13 +39,13 @@ scoreboard players set @a enmity.max_mana 200
 scoreboard players set @a enmity.max_snt 1
 scoreboard players set @a enmity.dmg_rdc 0
 scoreboard players set @a enmity.dmg_bst 0
-execute as @a if predicate enmity:entity/has_armor/enmity_set run function enmity:utility/item_branch/20_tick/armor
-execute as @a[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/20_tick/strength
-execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/20_tick/mobility
-execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/20_tick/effect
-execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:utility/item_branch/20_tick/mana
-execute as @a run function enmity:utility/protection_to_dr
-execute if score %death_mode enmity.value matches 0 as @a run function enmity:utility/calculate_dmg_rdc_mtp
+execute as @a if predicate enmity:entity/has_armor/enmity_set run function enmity:misc/item_branch/20_tick/armor
+execute as @a[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/strength
+execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/mobility
+execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/effect
+execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/mana
+execute as @a run function enmity:misc/protection_to_dr
+execute if score %death_mode enmity.value matches 0 as @a run function enmity:misc/calculate_dmg_rdc_mtp
 execute if score %death_mode enmity.value matches 1 run scoreboard players set @a enmity.dmg_rdc_mtp 110
 execute as @a if predicate enmity:entity/has_effect/berserked run function enmity:items/food/berserk_potion/effect
 
@@ -53,8 +53,8 @@ execute as @a if predicate enmity:entity/has_effect/berserked run function enmit
 
 scoreboard players remove @e[tag=enmity.sentry,scores={enmity.age=1..}] enmity.age 1
 
-execute as @e[type=armor_stand,tag=enmity.projectile] run function enmity:utility/projectile_branch/20_tick/armor_stand
-execute as @e[type=area_effect_cloud,tag=enmity.projectile] run function enmity:utility/projectile_branch/20_tick/area_effect_cloud
+execute as @e[type=armor_stand,tag=enmity.projectile] run function enmity:misc/projectile_branch/20_tick/armor_stand
+execute as @e[type=area_effect_cloud,tag=enmity.projectile] run function enmity:misc/projectile_branch/20_tick/area_effect_cloud
 
 execute as @e[type=zombie,tag=enmity.call_of_the_undead,scores={enmity.age=0}] at @s run function enmity:items/usable/call_of_the_undead/die
 execute as @e[type=zombie,tag=enmity.call_of_the_undead] at @s run function enmity:items/usable/call_of_the_undead/20_tick

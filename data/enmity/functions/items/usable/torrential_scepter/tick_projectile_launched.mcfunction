@@ -1,5 +1,5 @@
 tag @s add enmity.this
-function enmity:utility/projectiles/random_spread/5dg
+function enmity:misc/projectiles/random_spread/5dg
 execute if entity @s[tag=enmity.player_targeting] as @e[type=!#enmity:not_living,limit=1,sort=nearest,tag=!enmity.projectile,distance=2.4..7] unless score @s enmity.player_id = @e[type=marker,tag=enmity.this,limit=1] enmity.player_id run tp @e[type=marker,tag=enmity.this,limit=1,tag=!enmity.reached_target] ~ ~ ~ facing entity @s eyes
 execute if entity @s[tag=!enmity.player_targeting] as @e[type=!#enmity:not_living,type=!player,limit=1,sort=nearest,tag=!enmity.projectile,distance=2.4..7] run tp @e[type=marker,tag=enmity.this,limit=1,tag=!enmity.reached_target] ~ ~ ~ facing entity @s eyes
 tp @s ^ ^ ^0.8

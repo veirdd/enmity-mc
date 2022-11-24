@@ -84,7 +84,7 @@
             "functions": [
                 {
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"Thermometer\",\"italic\":false}'},Unbreakable:1,HideFlags:4,CustomModelData:31,Enmity:1,Enmity.Thermometer:1,Enmity.ItemGroups:[\"tools\"]}"
+                    "tag": "{display:{Name:'{\"text\":\"Thermometer\",\"italic\":false}'},Unbreakable:1,HideFlags:4,CustomModelData:31,Enmity:1,Enmity.Thermometer:1,Enmity.ItemGroups:[\"usable\",\"tools\"]}"
                 }
             ]
           }

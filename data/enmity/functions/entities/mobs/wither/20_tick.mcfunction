@@ -5,7 +5,7 @@ execute if score @s enmity.phase matches 4 if entity @a[tag=enmity.wither_target
 execute if score @s enmity.phase matches 4 as @a[gamemode=!creative,gamemode=!spectator,distance=24..48] at @s run playsound block.redstone_torch.burnout neutral @s[distance=0..] ~ ~ ~ 2 0.5 0
 execute if score @s enmity.phase matches 4 as @a[gamemode=!creative,gamemode=!spectator,distance=24..48] run title @s title ""
 execute if score @s enmity.phase matches 4 as @a[gamemode=!creative,gamemode=!spectator,distance=24..48] run title @s subtitle {"text":"You are too far away from the Wither.","color":"gray"}
-execute if score @s enmity.phase matches 4 as @a[gamemode=!creative,gamemode=!spectator,distance=24..48] run function enmity:utility/health_modification/reduce_health_by_3
+execute if score @s enmity.phase matches 4 as @a[gamemode=!creative,gamemode=!spectator,distance=24..48] run function enmity:misc/health_modification/reduce_health_by_3
 execute if score @s enmity.phase matches 4 as @a[gamemode=!creative,gamemode=!spectator,distance=24..48] run playsound entity.player.hurt player @a[distance=0..] ~ ~ ~ 1 1 0
 execute if score @s enmity.phase matches 2 if score @s enmity.age matches 40.. run function enmity:entities/mobs/wither/phases/homing
 execute if score %difficulty enmity.value matches 1 if score @s enmity.phase matches 5 run function enmity:entities/mobs/wither/phases/ray

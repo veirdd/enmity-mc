@@ -6,7 +6,7 @@ execute unless entity @e[type=ender_dragon] run tag @a[tag=enmity.dragon_target]
 
 # Items
 
-execute if score %death_mode enmity.value matches 0 as @a[tag=!enmity.give_instant_health,tag=!enmity.update_health] if score @s enmity.health < @s enmity.max_hp if entity @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:78}}]}] run function enmity:utility/health_modification/increase_health_by_1
+execute if score %death_mode enmity.value matches 0 as @a[tag=!enmity.give_instant_health,tag=!enmity.update_health] if score @s enmity.health < @s enmity.max_hp if entity @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:78}}]}] run function enmity:misc/health_modification/increase_health_by_1
 
 execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/crystalline_set] at @s run function enmity:items/armor/crystalline/40_tick
 
@@ -31,11 +31,11 @@ execute as @e[type=item,scores={enmity.age=30..}] if entity @s[nbt={Item:{id:"mi
 # Temperature
 
 scoreboard players set @a[gamemode=!adventure,gamemode=!survival] enmity.temp_cd 0
-execute as @a unless score @s enmity.temp_cd matches -10..10 if score @s enmity.temp matches -3..3 at @s run function enmity:utility/health_modification/temperature_damage
+execute as @a unless score @s enmity.temp_cd matches -10..10 if score @s enmity.temp matches -3..3 at @s run function enmity:misc/health_modification/temperature_damage
 
 # Other
 
-execute as @a at @s run function enmity:utility/entity_encounter
+execute as @a at @s run function enmity:misc/entity_encounter
 
 
 schedule function enmity:40_tick 40t

@@ -3,7 +3,7 @@ execute positioned ~ ~-1 ~ as @e[type=!#enmity:not_living,tag=!enmity.projectile
 tag @e[type=!#enmity:not_living,tag=enmity.homing_target_potential,limit=1,sort=nearest] add enmity.homing_target
 tag @e[type=!#enmity:not_living,tag=enmity.homing_target_potential] remove enmity.homing_target_potential
 execute facing entity @e[tag=enmity.homing_target,limit=1] eyes run tp @s ^ ^ ^0.35
-function enmity:utility/solid_detection/check
+function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] run function enmity:items/usable/infernal_helix_staff/die_projectile
 tag @e[tag=enmity.homing_target] remove enmity.homing_target
 playsound block.fire.extinguish neutral @a[distance=0..] ~ ~ ~ 0.5 2 0

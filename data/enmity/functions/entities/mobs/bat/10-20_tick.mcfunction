@@ -4,7 +4,7 @@ scoreboard players operation @a[tag=enmity.hit] enmity.taken_dmg = @s enmity.dmg
 execute as @a[tag=enmity.hit] store result score @s enmity.math_a run attribute @s generic.armor get
 scoreboard players operation @a[tag=enmity.hit] enmity.math_a /= %const_5 enmity.value
 execute as @a[tag=enmity.hit] run scoreboard players operation @s enmity.taken_dmg -= @s enmity.math_a
-execute as @a[tag=enmity.hit] run function enmity:utility/health_modification/request
+execute as @a[tag=enmity.hit] run function enmity:misc/health_modification/request
 tag @s remove enmity.this
 effect give @a[tag=enmity.hit] poison 5 0
 execute if entity @a[tag=enmity.hit] run particle dust 0 0.5 0 1 ^ ^ ^0.3 0.3 0.3 0.3 0 10 force
