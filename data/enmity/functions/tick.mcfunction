@@ -122,6 +122,9 @@ execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity
 execute as @e[type=drowned] at @s run function enmity:entities/mobs/drowned/tick
 execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/mobs/nimbus/tick
 
+kill @e[type=item,tag=!enmity.projectile,tag=enmity.modified,nbt={Item:{tag:{Enmity.DeleteItem:1}}}]
+execute as @e[type=arrow,nbt={HasBeenShot:0b}] at @s run function enmity:misc/arrow_damage
+
 # Other
 
 execute as @a at @s run function enmity:misc/projectiles/sentries/sentry_anchor/tick
@@ -133,8 +136,6 @@ execute as @a[gamemode=!spectator] unless predicate enmity:entity/is_riding_vehi
 execute if score %difficulty enmity.value matches 1.. as @a[scores={enmity.age=1}] unless data entity @s SpawnX run function enmity:misc/spawn_spread
 execute as @a at @s if predicate enmity:entity/is_using_waystone run function enmity:blocks/functions/waystone/tick_user
 execute if entity @e[type=!#enmity:not_living,scores={enmity.subjugator_capture_id=-2147483648..2147483647}] as @a run function enmity:items/usable/subjugator/capture_validity_check
-execute as @e[type=arrow,nbt={HasBeenShot:0b}] at @s run function enmity:misc/arrow_damage
-kill @e[type=item,tag=!enmity.projectile,tag=enmity.modified,nbt={Item:{tag:{Enmity.DeleteItem:1}}}]
 execute if score %hardmode enmity.value matches 1 as @e[type=item,nbt={Item:{id:"minecraft:diamond_sword"}}] at @s if entity @e[type=lightning_bolt,distance=..3] run function enmity:items/crafting/custom/lightning_surge
 execute if score %hardmode enmity.value matches 0 as @a[gamemode=!creative,gamemode=!spectator] at @s unless score %giant_defeated enmity.value matches 1 run function enmity:misc/prevent_nether
 execute as @a[scores={enmity.die=1..}] at @s run function enmity:misc/on_player_death
