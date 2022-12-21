@@ -8,6 +8,7 @@ execute as @a[tag=enmity.give_instant_health] run function enmity:misc/health_mo
 execute as @a[tag=enmity.clear_hunger] run function enmity:items/food/rotten_flesh/clear_hunger
 execute as @a[tag=enmity.clear_wither] run function enmity:misc/health_modification/clear_wither
 effect clear @a absorption
+execute as @a if data entity @s ActiveEffects[{Id:25}] run function enmity:misc/sculker_bullet_hit_check
 clear @a firework_star{Enmity.DeleteItem:1}
 clear @a gunpowder{Enmity.DeleteItem:1}
 clear @a knowledge_book
@@ -121,6 +122,8 @@ execute as @e[type=area_effect_cloud,tag=enmity.waystone_id] at @s run function 
 execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity:entities/mobs/flame_spewer/tick
 execute as @e[type=drowned] at @s run function enmity:entities/mobs/drowned/tick
 execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/mobs/nimbus/tick
+execute as @e[type=shulker] if entity @s[nbt={HurtTime:9s}] run function enmity:entities/mobs/sculker/sensed_player
+execute as @e[type=zombie,tag=enmity.visage] at @s run function enmity:entities/mobs/visage/tick
 
 kill @e[type=item,tag=!enmity.projectile,tag=enmity.modified,nbt={Item:{tag:{Enmity.DeleteItem:1}}}]
 execute as @e[type=arrow,nbt={HasBeenShot:0b}] at @s run function enmity:misc/arrow_damage

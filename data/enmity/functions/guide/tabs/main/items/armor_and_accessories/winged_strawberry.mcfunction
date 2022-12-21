@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-============[","color":"gray"},{"text":"WINGED STRAWBERRY","color":"white","bold":true},{"text":"]===========-","color":"gray"}]
 
-tellraw @s [{"text":"Description:\n   Accessory type: mobility\n   Click sneak to perform a dash.\n   Grants Speed and Jump Boost.\n   Disables Levitation.","color":"gray"}]
+tellraw @s [{"text":"Description:\n   Accessory type: mobility\n   Click sneak to perform a dash.\n   Grants Speed and Jump Boost.","color":"gray"}]
 tellraw @s [{"text":"\nPrimary obtaining method:\n   Has a 0.5% chance to spawn in moon shrines.","color":"gray"}]
 tellraw @s [{"text":"\n\n     1UP\n\n","color":"yellow"}]
 

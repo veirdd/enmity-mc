@@ -11,6 +11,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"h
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"flame_spewer"}}}] at @s run function enmity:entities/mobs/flame_spewer/on_death
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"nimbus"}}}] at @s run function enmity:entities/mobs/nimbus/on_death
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"smiler"}}}] at @s positioned ~ ~1.6 ~ facing entity @p[gamemode=!spectator] eyes run function enmity:entities/mobs/smiler/on_death
+execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"visage"}}}] at @s run function enmity:entities/mobs/visage/on_death
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"crop_xp"}}}] at @s run function enmity:misc/crop_xp
 execute if entity @s[nbt={Item:{id:"minecraft:elytra"}}] unless entity @s[nbt={Item:{tag:{Enmity:1}}}] run kill @s
 execute if entity @s[nbt={Item:{tag:{Enmity.CustomBlock:1}}}] run kill @s

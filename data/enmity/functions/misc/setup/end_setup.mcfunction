@@ -2,6 +2,7 @@ effect clear @a weakness
 effect clear @a invisibility
 effect clear @a saturation
 gamerule sendCommandFeedback true
+scoreboard players set %death_mode enmity.value 0
 execute if score @s enmity.setup matches 1 run scoreboard players set %difficulty enmity.value 1
 execute if score @s enmity.setup matches 1 run tellraw @s [{"text":"The world difficulty has been set to","color":"gray"},{"text":" normal","color":"green"},{"text":". Have fun!","color":"gray"}]
 execute if score @s enmity.setup matches 2.. run scoreboard players set %difficulty enmity.value 2

@@ -16,3 +16,7 @@ execute if entity @s[type=zombie,tag=enmity.nimbus] if score %difficulty enmity.
 execute if entity @s[type=zombie,tag=enmity.nimbus] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 1 run function enmity:entities/mobs/nimbus/modifications/normal_hm
 execute if entity @s[type=zombie,tag=enmity.nimbus] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 0 run function enmity:entities/mobs/nimbus/modifications/expert_prehm
 execute if entity @s[type=zombie,tag=enmity.nimbus] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 1 run function enmity:entities/mobs/nimbus/modifications/expert_hm
+execute if entity @s[type=zombie,tag=enmity.visage] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 0 run function enmity:entities/mobs/visage/modifications/normal_prehm
+execute if entity @s[type=zombie,tag=enmity.visage] if score %difficulty enmity.value matches 1 if score %hardmode enmity.value matches 1 run function enmity:entities/mobs/visage/modifications/normal_hm
+execute if entity @s[type=zombie,tag=enmity.visage] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 0 run function enmity:entities/mobs/visage/modifications/expert_prehm
+execute if entity @s[type=zombie,tag=enmity.visage] if score %difficulty enmity.value matches 2 if score %hardmode enmity.value matches 1 run function enmity:entities/mobs/visage/modifications/expert_hm

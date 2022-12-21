@@ -10,7 +10,7 @@ execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] 
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] run scoreboard players operation @s enmity.hp_dummy -= @s enmity.taken_dmg
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.hp_dummy
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,gamemode=!creative,tag=!enmity.update_health] run function enmity:misc/health_modification/request
-effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 3 1
+effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 6 1
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
 particle explosion ^ ^ ^-0.6 0 0 0 0 1 force
 particle squid_ink ~ ~ ~ 0.3 0.3 0.3 0.2 20 force

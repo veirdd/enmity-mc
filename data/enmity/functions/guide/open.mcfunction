@@ -17,15 +17,17 @@ execute if score @s enmity.guide matches 1 run function enmity:guide/tabs/main
             execute if score @s enmity.guide matches 1146 run function enmity:guide/tabs/main/items/modified_vanilla_items/totem_of_undying
             execute if score @s enmity.guide matches 1147 run function enmity:guide/tabs/main/items/modified_vanilla_items/honey_bottle
     execute if score @s enmity.guide matches 12 run function enmity:guide/tabs/main/entities
-        execute if score @s enmity.guide matches 121 if entity @s[tag=enmity.encountered.end_wither_skeleton] run function enmity:guide/tabs/main/entities/end_wither_skeleton
-        execute if score @s enmity.guide matches 122 if entity @s[tag=enmity.encountered.hellbat] run function enmity:guide/tabs/main/entities/hellbat
-        execute if score @s enmity.guide matches 123 if entity @s[tag=enmity.encountered.sculker] run function enmity:guide/tabs/main/entities/sculker
-        execute if score @s enmity.guide matches 124 if entity @s[tag=enmity.encountered.smiler] run function enmity:guide/tabs/main/entities/smiler
-        execute if score @s enmity.guide matches 125 if entity @s[tag=enmity.encountered.wraith] run function enmity:guide/tabs/main/entities/wraith
-        execute if score @s enmity.guide matches 126 if entity @s[tag=enmity.encountered.illusioner] run function enmity:guide/tabs/main/entities/illusioner
-        execute if score @s enmity.guide matches 127 if entity @s[tag=enmity.encountered.harpy] run function enmity:guide/tabs/main/entities/harpy
-        execute if score @s enmity.guide matches 128 if entity @s[tag=enmity.encountered.flame_spewer] run function enmity:guide/tabs/main/entities/flame_spewer
-        execute if score @s enmity.guide matches 129 if entity @s[tag=enmity.encountered.nimbus] run function enmity:guide/tabs/main/entities/nimbus
+        execute if score @s enmity.guide matches 12001 if entity @s[tag=enmity.encountered.end_wither_skeleton] run function enmity:guide/tabs/main/entities/end_wither_skeleton
+        execute if score @s enmity.guide matches 12002 if entity @s[tag=enmity.encountered.hellbat] run function enmity:guide/tabs/main/entities/hellbat
+        execute if score @s enmity.guide matches 12003 if entity @s[tag=enmity.encountered.sculker] run function enmity:guide/tabs/main/entities/sculker
+        execute if score @s enmity.guide matches 12004 if entity @s[tag=enmity.encountered.smiler] run function enmity:guide/tabs/main/entities/smiler
+        execute if score @s enmity.guide matches 12005 if entity @s[tag=enmity.encountered.wraith] run function enmity:guide/tabs/main/entities/wraith
+        execute if score @s enmity.guide matches 12006 if entity @s[tag=enmity.encountered.illusioner] run function enmity:guide/tabs/main/entities/illusioner
+        execute if score @s enmity.guide matches 12007 if entity @s[tag=enmity.encountered.harpy] run function enmity:guide/tabs/main/entities/harpy
+        execute if score @s enmity.guide matches 12008 if entity @s[tag=enmity.encountered.flame_spewer] run function enmity:guide/tabs/main/entities/flame_spewer
+        execute if score @s enmity.guide matches 12009 if entity @s[tag=enmity.encountered.nimbus] run function enmity:guide/tabs/main/entities/nimbus
+        execute if score @s enmity.guide matches 12010 if entity @s[tag=enmity.encountered.crimson_visage] run function enmity:guide/tabs/main/entities/visage
+        execute if score @s enmity.guide matches 12010 if entity @s[tag=enmity.encountered.warped_visage] run function enmity:guide/tabs/main/entities/visage
     execute if score @s enmity.guide matches 13 run function enmity:guide/tabs/main/gameplay
         execute if score @s enmity.guide matches 13001 run function enmity:guide/tabs/main/gameplay/accessories
         execute if score @s enmity.guide matches 13002 run function enmity:guide/tabs/main/gameplay/darkness
