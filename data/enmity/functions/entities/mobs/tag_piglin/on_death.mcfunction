@@ -1,0 +1,24 @@
+kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:gold_ore"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:nether_gold_ore"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:gold_block"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:gilded_blackstone"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:light_weighted_pressure_plate"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:bell"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:clock"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_carrot"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:glistering_melon_slice"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_apple"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:enchanted_golden_apple"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_helmet"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_chestplate"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_leggings"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_boots"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_horse_armor"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_sword"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_pickaxe"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_shovel"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_axe"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:golden_hoe"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:raw_gold"}}] run kill @s
+execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:raw_gold_block"}}] run kill @s

@@ -48,13 +48,13 @@ data merge entity @s[type=skeleton] {HandItems:[{id:"bow",Count:1b},{}]}
 execute if entity @s[type=wandering_trader] run function enmity:entities/mobs/wandering_trader/modification_prehardmode
 execute if entity @s[type=warden] run attribute @s generic.max_health base set 100
 execute if entity @s[type=warden] run attribute @s generic.movement_speed base set 0.35
-execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_armor
-execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,type=!skeleton] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_weapon
-execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,tag=enmity.equipped] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/enchant_equipment
-execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_armor
-execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,type=!skeleton] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_weapon
-execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:armor_wearing,tag=enmity.equipped] unless predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/enchant_equipment
-execute if entity @s[type=#enmity:armor_wearing] run function enmity:entities/modifications/equip/remove_durability
+execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:equip] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_armor
+execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:equip,type=!skeleton] if predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/give_weapon
+execute unless score %death_mode enmity.value matches 1 if entity @s[type=#enmity:equip,tag=enmity.equipped] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/enchant_equipment
+execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:equip] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_armor
+execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:equip,type=!skeleton] if predicate enmity:random/random_0.5 run function enmity:entities/modifications/equip/give_weapon
+execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:equip,tag=enmity.equipped] unless predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/enchant_equipment
+execute if entity @s[type=#enmity:remove_equipment_durability] run function enmity:entities/modifications/equip/remove_durability
 execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:misc/despawn
 
 scoreboard players set @s enmity.cooldown 0
