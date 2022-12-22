@@ -63,7 +63,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"Cloud\",\"italic\":false}'},CustomModelData:5,Enmity:1,Enmity.FloatingItem:1}"
+                "tag": "{display:{Name:'{\"text\":\"Cloud\",\"italic\":false}'},CustomModelData:5,Enmity:1}"
               }
             ],
             "conditions": [

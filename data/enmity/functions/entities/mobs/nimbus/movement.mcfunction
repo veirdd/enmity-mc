@@ -1,3 +1,4 @@
+execute if predicate enmity:random/random_0.5 store result entity @s Rotation[0] float 1 run loot spawn ~ ~ ~ loot enmity:random_360
 summon marker ^ ^ ^30 {Tags:["enmity.direction_anchor"]}
 execute store result score @s enmity.math_a run data get entity @s Pos[0]
 execute store result score @s enmity.math_c run data get entity @s Pos[2]
