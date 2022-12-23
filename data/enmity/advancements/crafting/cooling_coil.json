@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "enmity:cooling_coil"
+            }
+        }
+    },
+    "rewards": {
+        "function": "enmity:items/crafting/cooling_coil"
+    }
+}

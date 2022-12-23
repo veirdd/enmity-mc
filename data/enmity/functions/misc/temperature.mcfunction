@@ -10,26 +10,35 @@ execute if predicate enmity:environment/biome_temperature if score @s enmity.bio
 execute if score @s enmity.biome_type matches 14 run scoreboard players add @s enmity.temp 5
 execute if score @s enmity.biome_type matches 15 run scoreboard players remove @s enmity.temp 5
 execute if predicate enmity:environment/biome/volcanic_crater run scoreboard players add @s enmity.temp 4
-execute if predicate enmity:environment/near_deep_dark run scoreboard players remove @s enmity.temp 5
+execute if predicate enmity:environment/biome/deep_dark run scoreboard players remove @s enmity.temp 5
 execute if predicate enmity:environment/in_overworld if predicate enmity:environment/underground if score @s enmity.temp matches 1.. run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/in_overworld if predicate enmity:environment/underground if score @s enmity.temp matches 1.. run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/in_overworld if predicate enmity:environment/underground if score @s enmity.temp matches ..-1 run scoreboard players add @s enmity.temp 1
 execute if predicate enmity:environment/in_overworld if predicate enmity:environment/underground if score @s enmity.temp matches ..-1 run scoreboard players add @s enmity.temp 1
 execute if predicate enmity:environment/in_overworld if predicate enmity:environment/deep_underground run scoreboard players remove @s enmity.temp 1
 execute unless predicate enmity:environment/is_night if predicate enmity:environment/in_overworld if predicate enmity:environment/biome_temperature run scoreboard players add @s enmity.temp 1
-execute if predicate enmity:environment/light_level/8-15 if score @s enmity.temp matches ..-4 run scoreboard players add @s enmity.temp 1
 execute if predicate enmity:environment/sky_temp_0 if predicate enmity:environment/in_overworld unless score @s enmity.temp matches ..-2 run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/sky_temp_1 if predicate enmity:environment/in_overworld unless score @s enmity.temp matches ..-3 run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/sky_temp_2 if predicate enmity:environment/in_overworld unless score @s enmity.temp matches ..-4 run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/sky_temp_2 if predicate enmity:environment/in_overworld unless score @s enmity.temp matches ..-4 run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/sky_temp_3 if predicate enmity:environment/in_overworld unless score @s enmity.temp matches ..-5 run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/sky_temp_3 if predicate enmity:environment/in_overworld unless score @s enmity.temp matches ..-5 run scoreboard players remove @s enmity.temp 1
+execute if entity @e[type=item_frame,tag=enmity.cooling_coil,distance=..2] run scoreboard players remove @s enmity.temp 1
+execute if entity @e[type=item_frame,tag=enmity.heating_coil,distance=..2] run scoreboard players add @s enmity.temp 1
+execute if score @s enmity.temp matches -1.. if entity @e[type=item_frame,tag=enmity.cooling_coil,distance=..3] run scoreboard players remove @s enmity.temp 1
+execute if score @s enmity.temp matches ..1 if entity @e[type=item_frame,tag=enmity.heating_coil,distance=..3] run scoreboard players add @s enmity.temp 1
+execute if score @s enmity.temp matches -1.. if entity @e[type=item_frame,tag=enmity.cooling_coil,distance=..4.5] run scoreboard players remove @s enmity.temp 1
+execute if score @s enmity.temp matches ..1 if entity @e[type=item_frame,tag=enmity.heating_coil,distance=..4.5] run scoreboard players add @s enmity.temp 1
+execute if score @s enmity.temp matches -1.. if entity @e[type=item_frame,tag=enmity.cooling_coil,distance=..6] run scoreboard players remove @s enmity.temp 1
+execute if score @s enmity.temp matches ..1 if entity @e[type=item_frame,tag=enmity.heating_coil,distance=..6] run scoreboard players add @s enmity.temp 1
 execute if predicate enmity:entity/is_on_fire run scoreboard players add @s enmity.temp 10
 execute if predicate enmity:environment/in_water run scoreboard players remove @s enmity.temp 1
-execute if score @s enmity.temp matches 0.. if predicate enmity:environment/in_water run scoreboard players remove @s enmity.temp 1
-execute if score @s enmity.temp matches ..1 if predicate enmity:environment/near_heating_blocks run scoreboard players add @s enmity.temp 2
-execute if score @s enmity.temp matches 0.. if predicate enmity:environment/near_cooling_blocks run scoreboard players remove @s enmity.temp 3
-execute if predicate enmity:environment/in_overworld if predicate enmity:environment/is_raining run scoreboard players remove @s enmity.temp 1
+execute if score @s enmity.temp matches 3.. if predicate enmity:environment/in_water run scoreboard players remove @s enmity.temp 1
+execute if predicate enmity:environment/near_heating_blocks run scoreboard players add @s enmity.temp 1
+execute if predicate enmity:environment/near_heating_blocks run scoreboard players add @s enmity.temp 1
+execute if score @s enmity.temp matches -1.. if predicate enmity:environment/near_cooling_blocks run scoreboard players remove @s enmity.temp 1
+execute if score @s enmity.temp matches -1.. if predicate enmity:environment/near_cooling_blocks run scoreboard players remove @s enmity.temp 1
+execute if score @s enmity.temp matches -1.. if predicate enmity:environment/in_overworld if predicate enmity:environment/is_raining run scoreboard players remove @s enmity.temp 1
 tag @s[tag=enmity.in_powder_snow] remove enmity.in_powder_snow
 execute if block ~ ~ ~ powder_snow run tag @s add enmity.in_powder_snow
 execute if block ~ ~1.8 ~ powder_snow run tag @s add enmity.in_powder_snow

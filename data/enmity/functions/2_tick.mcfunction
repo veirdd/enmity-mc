@@ -25,5 +25,10 @@ execute as @a if score @s enmity.mana = @s enmity.max_mana run tag @s add enmity
 execute as @a if score @s enmity.mana < @s enmity.max_mana run tag @s remove enmity.mana_sound_played
 scoreboard players set @a[scores={enmity.mana=..-1}] enmity.mana 0
 
+# Other
+
+execute at @e[type=item_frame,tag=enmity.heating_coil] run particle dust 1 0.5 0 0.6 ~ ~0.5 ~ 0.3 0.1 0.3 0 5
+execute at @e[type=item_frame,tag=enmity.cooling_coil] run particle dust 0 0.8 1 0.6 ~ ~0.5 ~ 0.3 0.1 0.3 0 5
+
 
 schedule function enmity:2_tick 2t

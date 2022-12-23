@@ -1,0 +1,7 @@
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":"HEATING COIL","color":"white","bold":true},{"text":"]==============-","color":"gray"}]
+
+tellraw @s [{"text":"Heating coils are blocks capable of rising the temperature for nearby players. They can be used to survive in cold environments without the need of temperature protective gear.","color":"gray"}]
+tellraw @s [{"text":"\nPrimary obtaining method:\n   Crafting:\n      [0][0][0]\n      [0][1][0]\n      [2][2][2]\n      0 - Iron Bars\n      1 - Furnace\n      2 - Magma Block","color":"gray"}]
+tellraw @s [{"text":"\nProperties:\n   Mining level: stone\n   Immune to normal explosions.\n   Cannot be pushed and pulled by pistons.","color":"gray"}]
+
+tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 14"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

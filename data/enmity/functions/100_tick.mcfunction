@@ -21,7 +21,7 @@ execute if score %death_mode enmity.value matches 1 as @a if score @s enmity.dea
 
 # Environment
 
-execute as @a at @s if predicate enmity:environment/near_campfire run effect give @s regeneration 3 0 true
+execute as @a at @s if predicate enmity:environment/near_lit_campfire run effect give @s regeneration 3 0 true
 
 # Other
 

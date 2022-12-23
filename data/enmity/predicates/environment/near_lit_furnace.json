@@ -2,21 +2,16 @@
     "condition": "minecraft:alternative",
     "terms": [
       {
-        "condition": "minecraft:reference",
-        "name": "enmity:environment/near_lit_furnace"
-      },
-      {
-        "condition": "minecraft:reference",
-        "name": "enmity:environment/near_lit_campfire"
-      },
-      {
         "condition": "minecraft:location_check",
         "offsetX": 1,
         "offsetY": 1,
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -27,7 +22,10 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -38,7 +36,10 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -49,7 +50,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -60,7 +64,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -71,7 +78,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -82,7 +92,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -93,7 +106,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -104,7 +120,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -115,7 +134,10 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -126,7 +148,10 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -137,7 +162,10 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -148,7 +176,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -159,7 +190,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -170,7 +204,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -181,7 +218,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -192,7 +232,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -203,7 +246,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -214,7 +260,10 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -225,7 +274,10 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -236,7 +288,10 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -247,7 +302,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -258,7 +316,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -269,7 +330,10 @@
         "offsetZ": 0,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -280,7 +344,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -291,7 +358,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       },
@@ -302,7 +372,10 @@
         "offsetZ": -1,
         "predicate": {
           "block": {
-            "tag": "enmity:heating"
+            "blocks": ["minecraft:furnace"],
+            "state": {
+                "lit": true
+            }
           }
         }
       }
