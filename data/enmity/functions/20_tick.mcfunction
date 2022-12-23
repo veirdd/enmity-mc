@@ -13,7 +13,6 @@ execute as @a run function enmity:misc/projectiles/sentries/sentry_counter
 execute as @a if score @s enmity.snt_ct > @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 execute as @a at @s run function enmity:ambience/set_biome_type
 execute as @a at @s run function enmity:misc/surface_detection
-execute as @a at @s run function enmity:misc/temperature
 
 # Stats
 
@@ -48,6 +47,7 @@ execute as @a run function enmity:misc/protection_to_dr
 execute if score %death_mode enmity.value matches 0 as @a run function enmity:misc/calculate_dmg_rdc_mtp
 execute if score %death_mode enmity.value matches 1 run scoreboard players set @a enmity.dmg_rdc_mtp 110
 execute as @a if predicate enmity:entity/has_effect/berserked run function enmity:items/food/berserk_potion/effect
+execute as @a at @s run function enmity:misc/temperature
 
 # Projectiles
 

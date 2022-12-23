@@ -1,4 +1,4 @@
-kill @s
+kill @s[type=item]
 execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:gold_ore"}}] run kill @s
 execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:nether_gold_ore"}}] run kill @s
 execute as @e[type=item,distance=..0.1,tag=!enmity.modified,nbt={Item:{id:"minecraft:gold_block"}}] run kill @s

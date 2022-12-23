@@ -48,6 +48,7 @@ execute if entity @s[type=warden] run attribute @s generic.max_health base set 6
 execute if entity @s[type=#enmity:remove_equipment_durability] run function enmity:entities/modifications/equip/remove_durability
 execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:misc/despawn
 execute if entity @s[type=magma_cube] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.8 multiply_base
+execute if entity @s[type=zombified_piglin] at @s run function enmity:entities/mobs/tag_piglin/on_death
 
 scoreboard players set @s enmity.cooldown 0
 data modify entity @s Health set value 1024

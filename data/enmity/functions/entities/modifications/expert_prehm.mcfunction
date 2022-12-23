@@ -56,6 +56,7 @@ execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:eq
 execute if score %death_mode enmity.value matches 1 if entity @s[type=#enmity:equip,tag=enmity.equipped] unless predicate enmity:random/random_0.25 run function enmity:entities/modifications/equip/enchant_equipment
 execute if entity @s[type=#enmity:remove_equipment_durability] run function enmity:entities/modifications/equip/remove_durability
 execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:misc/despawn
+execute if entity @s[type=zombified_piglin] at @s run function enmity:entities/mobs/tag_piglin/on_death
 
 scoreboard players set @s enmity.cooldown 0
 data modify entity @s Health set value 1024
