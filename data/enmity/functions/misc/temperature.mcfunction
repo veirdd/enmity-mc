@@ -10,7 +10,7 @@ execute if predicate enmity:environment/biome_temperature if score @s enmity.bio
 execute if score @s enmity.biome_type matches 14 run scoreboard players add @s enmity.temp 5
 execute if score @s enmity.biome_type matches 15 run scoreboard players remove @s enmity.temp 5
 execute if predicate enmity:environment/biome/volcanic_crater run scoreboard players add @s enmity.temp 4
-execute if predicate enmity:environment/biome/deep_dark run scoreboard players remove @s enmity.temp 5
+execute if predicate enmity:environment/near_deep_dark run scoreboard players remove @s enmity.temp 5
 execute if predicate enmity:environment/in_overworld if predicate enmity:environment/underground if score @s enmity.temp matches 1.. run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/in_overworld if predicate enmity:environment/underground if score @s enmity.temp matches 1.. run scoreboard players remove @s enmity.temp 1
 execute if predicate enmity:environment/in_overworld if predicate enmity:environment/underground if score @s enmity.temp matches ..-1 run scoreboard players add @s enmity.temp 1

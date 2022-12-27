@@ -13,6 +13,7 @@ particle dust 0 0 0 1.2 ^ ^ ^0.25 0.05 0.05 0.05 0.05 2 force
 execute rotated as @p[tag=enmity.this] positioned ^ ^ ^0.75 facing entity @p[tag=enmity.this] eyes positioned ^ ^ ^0.25 run particle dust 0 0 0 1.2 ^ ^ ^0.25 0.05 0.05 0.05 0.05 2 force
 execute rotated as @p[tag=enmity.this] positioned ^ ^ ^2 facing entity @p[tag=enmity.this] eyes positioned ^ ^ ^1 run particle dust 0 0 0 1.2 ^ ^ ^0.25 0.05 0.05 0.05 0.05 2 force
 execute rotated as @p[tag=enmity.this] positioned ^ ^ ^4 facing entity @p[tag=enmity.this] eyes positioned ^ ^ ^2.5 run particle dust 0 0 0 1.2 ^ ^ ^0.25 0.05 0.05 0.05 0.05 2 force
+tp @s ^ ^ ^1.2
 execute rotated as @p[tag=enmity.this] positioned ^ ^ ^1 facing entity @p[tag=enmity.this] eyes positioned ^ ^ ^0.7 run summon marker ~ ~ ~ {Tags:["enmity.direction_anchor"]}
 execute facing entity @e[type=marker,tag=enmity.direction_anchor] feet run tp @s ^ ^ ^1 facing ^ ^ ^2
 execute at @s as @a if score @s enmity.player_id = @e[type=marker,tag=enmity.this,limit=1] enmity.player_id run tag @s add enmity.this

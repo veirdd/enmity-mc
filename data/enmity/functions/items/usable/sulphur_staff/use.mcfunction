@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 60
-scoreboard players set @s enmity.cooldown 12
+scoreboard players add @s enmity.cooldown 12
 playsound entity.creeper.death neutral @a[distance=0..] ~ ~ ~ 2 1.2 0
 playsound entity.creeper.death neutral @a[distance=0..] ~ ~ ~ 2 1.4 0
 execute at @s anchored eyes positioned ^ ^ ^-0.2 run summon minecraft:item ~ ~ ~ {Invulnerable:1,Age:-32768,PickupDelay:999,Item:{id:"minecraft:gunpowder",Count:1,tag:{Enmity.DeleteItem:1,display:{Name:'{"text":"Gunpowder Bomb","italic":false}',Lore:['[{"text":"Just a little unlooked-for bomb...","color":"gray","italic":false}]']}}},Tags:["enmity.new","enmity.gunpowder_bomb","enmity.projectile","enmity.no_motion"]}

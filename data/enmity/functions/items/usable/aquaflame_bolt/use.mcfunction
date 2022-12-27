@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 60
-scoreboard players set @s enmity.cooldown 8
+scoreboard players add @s enmity.cooldown 8
 playsound entity.player.splash.high_speed neutral @a[distance=0..] ~ ~ ~ 2.0 1.0 0.0
 playsound block.fire.extinguish neutral @a[distance=0..] ~ ~ ~ 2.0 1.0 0.0
 playsound entity.creeper.death neutral @a[distance=0..] ~ ~ ~ 2 2 0

@@ -1,3 +1,4 @@
+execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] run data modify entity @s Fire set value 60s
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit] unless data entity @s ActiveEffects[{Id:20}] run tag @s add enmity.clear_wither
 effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 1 1 true
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] store result score @s enmity.hp_dummy run data get entity @s Health
@@ -12,7 +13,6 @@ execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,t
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,gamemode=!creative,tag=!enmity.update_health] run function enmity:misc/health_modification/request
 scoreboard players set @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] enmity.iframes 10
 execute at @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] run scoreboard players add @s enmity.impact_ct 2
-execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] run data modify entity @s Fire set value 40s
 execute if entity @s[tag=enmity.flame_spewer] at @p[tag=enmity.hit] if block ~ ~ ~ #enmity:replaceable run setblock ~ ~ ~ lava[level=1]
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
 execute at @s run playsound block.lava.extinguish neutral @a[distance=0..] ~ ~ ~ 2.0 1 0.0

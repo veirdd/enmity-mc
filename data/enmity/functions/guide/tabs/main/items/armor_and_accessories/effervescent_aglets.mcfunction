@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-==========[","color":"gray"},{"text":"EFFERVESCENT AGLETS","color":"white","bold":true},{"text":"]=========-","color":"gray"}]
 
-tellraw @s [{"text":"Description:\n   Accessory type: effect\n   Causes flying boots' trails to leave additional homing sparks that damage enemies.\n   The damage scales with the quality of the boots and cannot be increased with magic damage boost.","color":"gray"}]
+tellraw @s [{"text":"Description:\n   Accessory type: effect\n   Causes flying boots' trails to leave additional homing sparks that damage enemies.\n   The damage scales with the quality of the boots and cannot be increased.","color":"gray"}]
 tellraw @s [{"text":"\nPrimary obtaining method:\n   Sold by Wandering Traders in hardmode (~33% chance).","color":"gray"}]
 tellraw @s [{"text":"\nNotes:\n   The damage is 6 when wearing Ethereal Boots and 18 when wearing Celestial Tracers.\n   The effect doesn't trigger with Cloud Hoppers as they don't grant actual flight.","color":"gray"}]
 

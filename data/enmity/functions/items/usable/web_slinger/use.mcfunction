@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 60
-scoreboard players set @s enmity.cooldown 24
+scoreboard players add @s enmity.cooldown 24
 playsound entity.leash_knot.break neutral @a[distance=0..] ~ ~ ~ 2 0.5 0
 playsound entity.leash_knot.break neutral @a[distance=0..] ~ ~ ~ 2 0.5 0
 playsound entity.spider.step neutral @a[distance=0..] ~ ~ ~ 2 1.7 0

@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 90
-scoreboard players set @s enmity.cooldown 16
+scoreboard players add @s enmity.cooldown 16
 playsound entity.evoker.cast_spell neutral @a[distance=0..] ~ ~ ~ 2 0.7 0
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.soul","enmity.projectile"]}
 execute if entity @s[tag=enmity.end_wither_skeleton] run tag @e[type=marker,tag=enmity.soul,tag=enmity.new] add enmity.end_wither_skeleton

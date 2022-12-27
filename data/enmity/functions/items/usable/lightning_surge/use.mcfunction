@@ -3,7 +3,7 @@ playsound minecraft:entity.leash_knot.break neutral @a[distance=0..] ~ ~ ~ 2 0.7
 playsound minecraft:entity.leash_knot.break neutral @a[distance=0..] ~ ~ ~ 2 0.7 0
 playsound minecraft:entity.shulker.death neutral @a[distance=0..] ~ ~ ~ 2 2 0
 scoreboard players remove @s enmity.mana 70
-scoreboard players set @s enmity.cooldown 8
+scoreboard players add @s enmity.cooldown 8
 scoreboard players set @s enmity.raycast 0
 summon marker ~ ~ ~ {Tags:["enmity.projectile","enmity.lightning_surge"]}
 scoreboard players operation @e[type=marker,tag=enmity.lightning_surge] enmity.player_id = @s enmity.player_id

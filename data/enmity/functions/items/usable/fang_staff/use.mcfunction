@@ -1,7 +1,7 @@
 execute at @s anchored eyes positioned ^ ^ ^0.5 run particle dust 0 0.5 0 0.8 ~ ~ ~ 0.4 0.4 0.4 0 30 force
 playsound entity.phantom.bite neutral @a[distance=0..] ~ ~ ~ 2 2 0
 scoreboard players remove @s enmity.mana 70
-scoreboard players set @s enmity.cooldown 16
+scoreboard players add @s enmity.cooldown 16
 summon minecraft:armor_stand ~ ~-1000 ~ {NoGravity:1,Marker:1,Silent:1,Invisible:1,ArmorItems:[{},{},{},{id:"warped_fungus_on_a_stick",Count:1,tag:{CustomModelData:1009}}],Pose:{Head:[1f,0f,0f]},Tags:["enmity.new","enmity.fang","enmity.projectile","enmity.no_spread"]}
 summon minecraft:armor_stand ~ ~-1000 ~ {NoGravity:1,Marker:1,Silent:1,Invisible:1,ArmorItems:[{},{},{},{id:"warped_fungus_on_a_stick",Count:1,tag:{CustomModelData:1009}}],Pose:{Head:[1f,0f,0f]},Tags:["enmity.new","enmity.fang","enmity.projectile"]}
 summon minecraft:armor_stand ~ ~-1000 ~ {NoGravity:1,Marker:1,Silent:1,Invisible:1,ArmorItems:[{},{},{},{id:"warped_fungus_on_a_stick",Count:1,tag:{CustomModelData:1009}}],Pose:{Head:[1f,0f,0f]},Tags:["enmity.new","enmity.fang","enmity.projectile"]}

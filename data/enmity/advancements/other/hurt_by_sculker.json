@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:shulker"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "enmity:misc/player_hit_by_sculker"
+    }
+  }
+  

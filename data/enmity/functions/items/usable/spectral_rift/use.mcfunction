@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 100
-scoreboard players set @s enmity.cooldown 12
+scoreboard players add @s enmity.cooldown 12
 playsound entity.glow_squid.squirt neutral @a[distance=0..] ~ ~ ~ 2 1.5 0
 playsound entity.evoker.cast_spell neutral @a[distance=0..] ~ ~ ~ 1.5 0.8 0
 playsound entity.evoker.cast_spell neutral @a[distance=0..] ~ ~ ~ 1.5 0.6 0

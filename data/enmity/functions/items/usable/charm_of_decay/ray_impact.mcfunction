@@ -4,7 +4,7 @@ playsound minecraft:block.beacon.power_select neutral @a[distance=0..] ~ ~ ~ 2 0
 playsound minecraft:block.beacon.power_select neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound minecraft:block.beacon.power_select neutral @a[distance=0..] ~ ~ ~ 2 0 0
 scoreboard players remove @s enmity.mana 160
-scoreboard players set @s enmity.cooldown 40
+scoreboard players add @s enmity.cooldown 40
 summon area_effect_cloud ~ ~ ~ {Duration:999999999,Tags:["enmity.projectile","enmity.new","enmity.charm_of_decay","enmity.sentry"],CustomName:'""',CustomNameVisible:1}
 scoreboard players set @e[type=area_effect_cloud,tag=enmity.new] enmity.age 59
 scoreboard players set @e[type=area_effect_cloud,tag=enmity.new] enmity.dmg 4

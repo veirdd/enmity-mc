@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 80
-scoreboard players set @s enmity.cooldown 60
+scoreboard players add @s enmity.cooldown 60
 playsound minecraft:entity.allay.ambient_without_item neutral @a[distance=0..] ~ ~ ~ 2 2 0
 playsound minecraft:entity.allay.ambient_without_item neutral @a[distance=0..] ~ ~ ~ 2 2 0
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.alliance_bolt","enmity.projectile"]}

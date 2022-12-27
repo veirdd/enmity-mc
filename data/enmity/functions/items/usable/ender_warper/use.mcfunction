@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 100
-scoreboard players set @s enmity.cooldown 16
+scoreboard players add @s enmity.cooldown 16
 playsound entity.ender_dragon.hurt neutral @a[distance=0..] ~ ~ ~ 1 2 0
 playsound entity.ender_dragon.hurt neutral @a[distance=0..] ~ ~ ~ 1 1.6 0
 playsound entity.wither.shoot neutral @a[distance=0..] ~ ~ ~ 0.3 1.4 0

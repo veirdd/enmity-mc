@@ -1,7 +1,7 @@
 tellraw @s [{"text":"-================[","color":"gray"},{"text":"SCULKER","color":"white","bold":true},{"text":"]================-","color":"gray"}]
 
-tellraw @s [{"text":"The Sculker is a replacment for the Shulker, and a hostile mob native to the Deep Dark that makes exploration of this biome slightly harder.","color":"gray"}]
-tellraw @s [{"text":"\nBehaviour:\n   Remains idle until it has detected vibrations from the player. Upon sensing the player, it inflicts Darkness onto them and from then behaves similarly to a Shulker.","color":"gray"}]
+tellraw @s [{"text":"The Sculker is a replacment for the Shulker, and a hostile mob native to the Deep Dark that makes the exploration of this biome significantly harder.","color":"gray"}]
+tellraw @s [{"text":"\nBehaviour:\n   Remains idle until a nearby sculk sensor alerts it or it is attacked by the player. Inflicts Blindness onto the player with highly damaging homing projectiles.","color":"gray"}]
 tellraw @s [{"text":"\nSpawning:\n   Spawns in the Deep Dark only on sculk blocks.","color":"gray"}]
 tellraw @s [{"text":"\nDrops:\n   Sculker Shell (50% chance)","color":"gray"}]
 

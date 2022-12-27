@@ -8,4 +8,3 @@ execute if score %hardmode enmity.value matches 0 run playsound entity.leash_kno
 execute if score %hardmode enmity.value matches 0 run playsound entity.leash_knot.break neutral @a[distance=0..] ~ ~ ~ 2 0 0
 scoreboard players set @s enmity.cooldown 5
 execute if score %difficulty enmity.value matches 1 run scoreboard players add @s enmity.cooldown 4
-tag @s remove enmity.has_view

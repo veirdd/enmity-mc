@@ -3,6 +3,6 @@ execute if score @s enmity.use matches 33 at @s unless predicate enmity:environm
 execute if score @s enmity.use matches 89 run effect give @s dolphins_grace 2 0 true
 execute if score @s enmity.use matches 91 run effect give @s haste 2 1 true
 execute if score @s enmity.use matches 92 run effect give @s saturation 1 0 true
-execute if score @s enmity.use matches 105 at @s run function enmity:items/accessories/effervescent_aglets/10_tick
+execute if score @s enmity.use matches 105 if entity @s[tag=enmity.flying] at @s run function enmity:items/accessories/effervescent_aglets/10_tick
 execute if score @s enmity.use matches 107 run effect give @s night_vision 30 0 true
 scoreboard players set @s enmity.use 0

@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 40
-scoreboard players set @s enmity.cooldown 16
+scoreboard players add @s enmity.cooldown 16
 scoreboard players set @s enmity.raycast 0
 playsound block.soul_sand.step neutral @a[distance=0..] ~ ~ ~ 2 0 0
 summon marker ~ ~ ~ {Tags:["enmity.projectile","enmity.dust_storm"]}

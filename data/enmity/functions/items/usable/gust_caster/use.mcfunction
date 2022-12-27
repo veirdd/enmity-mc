@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 100
-scoreboard players set @s enmity.cooldown 24
+scoreboard players add @s enmity.cooldown 24
 execute unless entity @s[tag=enmity.nimbus] run playsound item.trident.riptide_2 neutral @a[distance=0..] ~ ~ ~ 2 0 0
 execute at @s anchored eyes positioned ^ ^ ^0.5 run particle firework ~ ~ ~ 0.5 0.5 0.5 0.2 20 force
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.gust","enmity.projectile"]}

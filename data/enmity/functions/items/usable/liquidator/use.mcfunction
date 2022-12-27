@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 120
-scoreboard players set @s enmity.cooldown 12
+scoreboard players add @s enmity.cooldown 12
 playsound block.ender_chest.close neutral @a[distance=0..] ~ ~ ~ 1 2 0
 playsound block.redstone_torch.burnout neutral @a[distance=0..] ~ ~ ~ 0.6 2 0
 summon minecraft:armor_stand ~ ~-1000 ~ {NoGravity:1,Marker:1,Silent:1,Invisible:1,ArmorItems:[{},{},{},{id:"warped_fungus_on_a_stick",Count:1,tag:{CustomModelData:1007}}],Pose:{Head:[1f,0f,0f]},Tags:["enmity.new","enmity.liquidation_trident","enmity.projectile"]}

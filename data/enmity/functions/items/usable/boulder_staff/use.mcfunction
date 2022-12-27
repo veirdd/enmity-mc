@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 80
-scoreboard players set @s enmity.cooldown 20
+scoreboard players add @s enmity.cooldown 20
 playsound entity.iron_golem.attack neutral @a[distance=0..] ~ ~ ~ 1 0 0
 playsound entity.iron_golem.attack neutral @a[distance=0..] ~ ~ ~ 1 0 0
 playsound entity.iron_golem.attack neutral @a[distance=0..] ~ ~ ~ 1 0 0

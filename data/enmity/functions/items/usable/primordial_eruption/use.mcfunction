@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 90
-scoreboard players set @s enmity.cooldown 12
+scoreboard players add @s enmity.cooldown 12
 scoreboard players set @s enmity.raycast 0
 playsound block.soul_sand.step neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound block.soul_sand.break neutral @a[distance=0..] ~ ~ ~ 2 0 0

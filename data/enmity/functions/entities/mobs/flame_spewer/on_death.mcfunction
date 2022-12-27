@@ -1,5 +1,5 @@
 kill @s
-execute as @e[type=item,distance=..1,nbt={Age:0s}] run data merge entity @s {Invulnerable:1}
+execute as @e[type=item,distance=..0.1,nbt={Age:0s}] run data merge entity @s {Invulnerable:1}
 playsound minecraft:entity.magma_cube.jump hostile @a[distance=0..] ~ ~ ~ 1 0 0
 playsound minecraft:entity.magma_cube.jump hostile @a[distance=0..] ~ ~ ~ 1 0 0
 playsound minecraft:entity.magma_cube.jump hostile @a[distance=0..] ~ ~ ~ 1 0 0

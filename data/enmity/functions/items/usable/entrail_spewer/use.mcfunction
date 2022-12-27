@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 10
-scoreboard players set @s enmity.cooldown 4
+scoreboard players add @s enmity.cooldown 4
 function enmity:items/usable/entrail_spewer/summon_projectile
 tag @s add enmity.entrail_spewer
 execute if score @s enmity.math_a matches 1 run playsound entity.player.burp neutral @a[distance=0..] ~ ~ ~ 1 1.1 0

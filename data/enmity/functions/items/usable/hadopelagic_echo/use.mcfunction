@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 80
-scoreboard players set @s enmity.cooldown 20
+scoreboard players add @s enmity.cooldown 20
 playsound minecraft:entity.warden.death neutral @a[distance=0..] ~ ~ ~ 2 2 0
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.hadopelagic_echo","enmity.projectile"]}
 scoreboard players set @e[type=marker,tag=enmity.hadopelagic_echo,tag=enmity.new] enmity.dmg 4

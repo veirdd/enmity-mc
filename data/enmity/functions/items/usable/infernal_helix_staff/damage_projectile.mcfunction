@@ -1,3 +1,4 @@
+execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] run data modify entity @s Fire set value 60s
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit] unless data entity @s ActiveEffects[{Id:20}] run tag @s add enmity.clear_wither
 effect give @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] wither 1 1 true
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] store result score @s enmity.hp_dummy run data get entity @s Health
@@ -10,6 +11,5 @@ execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] 
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] run scoreboard players operation @s enmity.hp_dummy -= @s enmity.taken_dmg
 execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit,type=!player] store result entity @s Health float 1 run scoreboard players get @s enmity.hp_dummy
 execute as @a[tag=!enmity.invulnerable,tag=enmity.hit,gamemode=!creative,tag=!enmity.update_health] run function enmity:misc/health_modification/request
-execute as @e[type=!#enmity:not_living,tag=!enmity.invulnerable,tag=enmity.hit] run data modify entity @s Fire set value 50s
 tag @e[type=!#enmity:not_living,tag=enmity.hit] remove enmity.hit
 function enmity:items/usable/infernal_helix_staff/die_projectile

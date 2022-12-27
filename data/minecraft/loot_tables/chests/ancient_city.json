@@ -414,6 +414,21 @@
           "max": 10,
           "min": 5
         }
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:echo_shard",
+                "functions": [
+                    {
+                        "function": "minecraft:set_count",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
       }
     ]
   }

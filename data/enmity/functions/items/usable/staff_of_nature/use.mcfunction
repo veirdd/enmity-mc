@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 50
-scoreboard players set @s enmity.cooldown 8
+scoreboard players add @s enmity.cooldown 8
 execute at @s anchored eyes positioned ^ ^ ^0.5 run particle dust 0.45 0.75 0 1 ~ ~ ~ 0.5 0.5 0.5 0 20 force
 playsound minecraft:block.grass.step neutral @a[distance=0..] ~ ~ ~ 2 0 0
 summon minecraft:armor_stand ~ ~-1000 ~ {NoGravity:1,Marker:1,Silent:1,Invisible:1,ArmorItems:[{},{},{},{id:"warped_fungus_on_a_stick",Count:1,tag:{CustomModelData:1001}}],Pose:{Head:[1f,0f,0f]},Tags:["enmity.new","enmity.leaf2","enmity.projectile"]}

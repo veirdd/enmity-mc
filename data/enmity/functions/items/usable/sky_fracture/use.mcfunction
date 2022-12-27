@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 90
-scoreboard players set @s enmity.cooldown 24
+scoreboard players add @s enmity.cooldown 24
 playsound block.respawn_anchor.deplete neutral @a[distance=0..] ~ ~ ~ 0.2 2 0.0
 playsound block.redstone_torch.burnout neutral @a[distance=0..] ~ ~ ~ 0.5 2 0.0
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1,Marker:1,Silent:1,Invisible:1,Pose:{Head:[1f,0f,0f]},Tags:["enmity.new","enmity.sky_fracture","enmity.projectile"]}

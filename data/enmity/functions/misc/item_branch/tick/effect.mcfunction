@@ -7,4 +7,6 @@ execute if score @s enmity.use matches 95 at @s run function enmity:items/access
 execute if score @s enmity.use matches 107 run effect clear @s darkness
 execute if score @s enmity.use matches 111 run effect clear @s poison
 execute if score @s enmity.use matches 112 at @s run function enmity:items/accessories/ring_of_devotion/tick
+execute if score @s enmity.use matches 120 at @s run function enmity:items/accessories/crimson_glyph/tick
+execute if score @s enmity.use matches 121 at @s run function enmity:items/accessories/warped_glyph/tick
 scoreboard players set @s enmity.use 0

@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":"SILVAN ARMOR","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
 
-tellraw @s [{"text":"Description:\n   Helmet: +2 Armor, +1.5 Armor Toughness\n   Chestplate: +6 Armor, +1.5 Armor Toughness\n   Leggings: +4 Armor, +1.5 Armor Toughness\n   Boots: +2 Armor, +1.5 Armor Toughness\n   Set Bonus:\n      +1 Magic damage reduction\n      +1 Sentry slot\n         Reduces sentry mana drain by 30/s.","color":"gray"}]
+tellraw @s [{"text":"Description:\n   Helmet: +2 Armor, +1.5 Armor Toughness\n   Chestplate: +6 Armor, +1.5 Armor Toughness\n   Leggings: +4 Armor, +1.5 Armor Toughness\n   Boots: +2 Armor, +1.5 Armor Toughness\n   Set Bonus:\n      +1 Magic damage reduction\n      +1 Sentry slot\n      Reduces sentry mana drain by 30/s.","color":"gray"}]
 tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting (each piece):\n      Corresponding Leather Armor piece\n      Soul of Nature\n      Nether Wart (16)","color":"gray"}]
 
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

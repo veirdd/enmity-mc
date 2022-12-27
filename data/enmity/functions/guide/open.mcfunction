@@ -26,8 +26,8 @@ execute if score @s enmity.guide matches 1 run function enmity:guide/tabs/main
         execute if score @s enmity.guide matches 12007 if entity @s[tag=enmity.encountered.harpy] run function enmity:guide/tabs/main/entities/harpy
         execute if score @s enmity.guide matches 12008 if entity @s[tag=enmity.encountered.flame_spewer] run function enmity:guide/tabs/main/entities/flame_spewer
         execute if score @s enmity.guide matches 12009 if entity @s[tag=enmity.encountered.nimbus] run function enmity:guide/tabs/main/entities/nimbus
-        execute if score @s enmity.guide matches 12010 if entity @s[tag=enmity.encountered.crimson_visage] run function enmity:guide/tabs/main/entities/visage
-        execute if score @s enmity.guide matches 12010 if entity @s[tag=enmity.encountered.warped_visage] run function enmity:guide/tabs/main/entities/visage
+        execute if score @s enmity.guide matches 12010 if entity @s[tag=enmity.encountered.crimson_visage] run function enmity:guide/tabs/main/entities/crimson_visage
+        execute if score @s enmity.guide matches 12011 if entity @s[tag=enmity.encountered.warped_visage] run function enmity:guide/tabs/main/entities/warped_visage
     execute if score @s enmity.guide matches 13 run function enmity:guide/tabs/main/gameplay
         execute if score @s enmity.guide matches 13001 run function enmity:guide/tabs/main/gameplay/accessories
         execute if score @s enmity.guide matches 13002 run function enmity:guide/tabs/main/gameplay/darkness

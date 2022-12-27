@@ -1,39 +1,6 @@
 {
     "type": "minecraft:entity",
     "pools": [
-        {
-          "rolls": 1,
-          "entries": [
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:firework_star"
-            }
-          ],
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Soul Essence\",\"italic\":false}'},CustomModelData:1,Enmity:1}"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 1
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.2
-            }
-          ]
-        },
       {
         "rolls": 1,
         "bonus_rolls": 0,
@@ -46,8 +13,43 @@
         "conditions": [
           {
             "condition": "minecraft:random_chance_with_looting",
-            "chance": 0.02,
+            "chance": 0.05,
             "looting_multiplier": 0.05
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_fungus_on_a_stick"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_nbt",
+            "tag": "{display:{Name:'{\"text\":\"Crimson Glyph\",\"italic\":false}',Lore:['[{\"text\":\"Accessory type: \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"effect\",\"color\":\"white\"}]','[{\"text\":\"Doubles your magic damage increase.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Halves your magic damage reduction.\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"Makes your spells unhinged, enabling them\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"to hurt you. Causes some projectiles\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"to target you and some to become uncontrollable.\",\"italic\":false,\"color\":\"gray\"}]']},Unbreakable:1,HideFlags:4,CustomModelData:120,Enmity:1,Enmity.CustomCrafting:1,Enmity.ItemGroups:[\"accessories\",\"effect\"]}"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance_with_looting",
+            "chance": 0.025,
+            "looting_multiplier": 0.05
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "%hardmode"
+              },
+              "score": "enmity.value",
+              "scale": 1
+            },
+            "range": 1
           }
         ]
       },

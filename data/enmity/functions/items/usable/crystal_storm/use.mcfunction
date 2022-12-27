@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 30
-scoreboard players set @s enmity.cooldown 4
+scoreboard players add @s enmity.cooldown 4
 playsound block.fire.extinguish neutral @a[distance=0..] ~ ~ ~ 0.2 2 0.0
 playsound block.note_block.chime neutral @a[distance=0..] ~ ~ ~ 2.0 1.5 0.0
 playsound block.note_block.chime neutral @a[distance=0..] ~ ~ ~ 2.0 1.7 0.0

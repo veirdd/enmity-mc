@@ -1,4 +1,4 @@
-scoreboard players set @s enmity.cooldown 4
+scoreboard players add @s enmity.cooldown 4
 tag @s add enmity.this_2
 summon marker ~ ~ ~ {Tags:["enmity.projectile","enmity.smilers_fang"]}
 scoreboard players operation @e[type=marker,tag=enmity.smilers_fang] enmity.player_id = @s enmity.player_id

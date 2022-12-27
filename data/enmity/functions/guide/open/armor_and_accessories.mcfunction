@@ -60,3 +60,5 @@ execute if score @s enmity.guide matches 112059 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 112060 run function enmity:guide/tabs/main/items/armor_and_accessories/hermes_boots
 execute if score @s enmity.guide matches 112061 run function enmity:guide/tabs/main/items/armor_and_accessories/necklace_of_vitality
 execute if score @s enmity.guide matches 112062 run function enmity:guide/tabs/main/items/armor_and_accessories/frostfire_charm
+execute if score @s enmity.guide matches 112063 run function enmity:guide/tabs/main/items/armor_and_accessories/crimson_glyph
+execute if score @s enmity.guide matches 112064 run function enmity:guide/tabs/main/items/armor_and_accessories/warped_glyph

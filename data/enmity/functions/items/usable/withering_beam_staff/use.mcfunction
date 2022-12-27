@@ -2,7 +2,7 @@ particle smoke ^ ^0.5 ^ 0.5 0.5 0.5 0 20 force
 playsound block.redstone_torch.burnout neutral @a[distance=0..] ~ ~ ~ 2 0.7 0
 playsound entity.zombie_villager.cure neutral @a[distance=0..] ~ ~ ~ 0.5 2 0
 scoreboard players remove @s enmity.mana 140
-scoreboard players set @s enmity.cooldown 32
+scoreboard players add @s enmity.cooldown 32
 summon marker ^ ^ ^ {Tags:["enmity.projectile","enmity.withering_beam_track","enmity.new"]}
 scoreboard players set @e[type=marker,tag=enmity.new] enmity.dmg 31
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.dmg += @s enmity.dmg_bst

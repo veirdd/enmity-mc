@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 100
-scoreboard players set @s enmity.cooldown 24
+scoreboard players add @s enmity.cooldown 24
 playsound entity.elder_guardian.ambient neutral @a[distance=0..] ~ ~ ~ 2 2 0
 playsound entity.elder_guardian.ambient neutral @a[distance=0..] ~ ~ ~ 2 1.8 0
 playsound entity.elder_guardian.ambient neutral @a[distance=0..] ~ ~ ~ 2 1.6 0

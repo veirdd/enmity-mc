@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 100
-scoreboard players set @s enmity.cooldown 8
+scoreboard players add @s enmity.cooldown 8
 playsound enmity:item.delirium.shoot neutral @a[distance=0..] ~ ~ ~ 2 1.3 0
 playsound enmity:item.delirium.shoot neutral @a[distance=0..] ~ ~ ~ 2 1.3 0
 playsound enmity:item.delirium.shoot neutral @a[distance=0..] ~ ~ ~ 2 1.3 0

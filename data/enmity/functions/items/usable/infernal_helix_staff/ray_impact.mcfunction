@@ -7,7 +7,7 @@ playsound minecraft:block.lava.pop neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound minecraft:block.lava.pop neutral @a[distance=0..] ~ ~ ~ 2 0 0
 particle lava ~ ~1.5 ~ 0.3 0.3 0.3 0 50 force
 particle flame ~ ~1.5 ~ 0 0 0 0.3 100 force
-scoreboard players set @s enmity.cooldown 20
+scoreboard players add @s enmity.cooldown 20
 summon area_effect_cloud ~ ~1.5 ~ {Duration:999999999,Tags:["enmity.projectile","enmity.new","enmity.infernal_helix","enmity.sentry"],CustomName:'""',CustomNameVisible:1}
 scoreboard players set @e[type=area_effect_cloud,tag=enmity.new,tag=enmity.infernal_helix] enmity.age 59
 scoreboard players operation @e[type=area_effect_cloud,tag=enmity.new] enmity.player_id = @s enmity.player_id

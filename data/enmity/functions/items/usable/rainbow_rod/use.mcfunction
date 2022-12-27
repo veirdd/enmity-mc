@@ -3,7 +3,7 @@ playsound block.note_block.chime neutral @a[distance=0..] ~ ~ ~ 2 0 0
 playsound block.note_block.chime neutral @a[distance=0..] ~ ~ ~ 2 2 0
 playsound block.note_block.chime neutral @a[distance=0..] ~ ~ ~ 2 1 0
 scoreboard players remove @s enmity.mana 80
-scoreboard players set @s enmity.cooldown 16
+scoreboard players add @s enmity.cooldown 16
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.rainbow_bolt","enmity.projectile"]}
 scoreboard players set @e[type=marker,tag=enmity.rainbow_bolt,tag=enmity.new] enmity.dmg 29
 scoreboard players operation @e[type=marker,tag=enmity.new] enmity.dmg += @s enmity.dmg_bst

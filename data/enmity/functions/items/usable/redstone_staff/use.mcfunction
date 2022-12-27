@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 90
-scoreboard players set @s enmity.cooldown 20
+scoreboard players add @s enmity.cooldown 20
 playsound entity.ender_eye.death neutral @a[distance=0..] ~ ~ ~ 2 0.7 0
 playsound entity.ender_eye.death neutral @a[distance=0..] ~ ~ ~ 2 0.7 0
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.redstone_bolt","enmity.projectile"]}

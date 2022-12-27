@@ -3,6 +3,7 @@ function enmity:misc/solid_detection/check
 execute positioned ^ ^ ^0.5 run function enmity:misc/solid_detection/check
 execute if entity @s[tag=enmity.in_solid] run function enmity:items/usable/flamelash/die_projectile
 playsound block.fire.extinguish neutral @a[distance=0..] ~ ~ ~ 0.5 2 0
+tp @s ^ ^ ^0.75
 execute as @a if score @s enmity.player_id = @e[type=marker,tag=enmity.this,limit=1] enmity.player_id run tag @s add enmity.this
 execute rotated as @p[tag=enmity.this] positioned ^ ^ ^1 facing entity @p[tag=enmity.this] eyes positioned ^ ^ ^0.7 run summon marker ~ ~ ~ {Tags:["enmity.direction_anchor"]}
 execute facing entity @e[type=marker,tag=enmity.direction_anchor] feet run tp @s ^ ^ ^0.75 facing ^ ^ ^1

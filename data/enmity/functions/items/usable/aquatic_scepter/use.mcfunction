@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 20
-scoreboard players set @s enmity.cooldown 4
+scoreboard players add @s enmity.cooldown 4
 execute at @s anchored eyes positioned ^ ^ ^0.5 run particle splash ~ ~ ~ 0.3 0.3 0.3 0 10 force
 playsound block.water.ambient neutral @a[distance=0..] ~ ~ ~ 2 2 0.0
 playsound block.water.ambient neutral @a[distance=0..] ~ ~ ~ 2 2 0.0

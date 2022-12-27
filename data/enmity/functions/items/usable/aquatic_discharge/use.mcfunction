@@ -1,5 +1,5 @@
 scoreboard players remove @s enmity.mana 60
-scoreboard players set @s enmity.cooldown 8
+scoreboard players add @s enmity.cooldown 8
 playsound entity.player.splash.high_speed neutral @a[distance=0..] ~ ~ ~ 1 2 0.0
 summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.aquatic_discharge","enmity.projectile"]}
 execute if predicate enmity:random/random_0.5 run summon minecraft:marker ~ ~ ~ {Tags:["enmity.new","enmity.aquatic_discharge","enmity.projectile"]}
