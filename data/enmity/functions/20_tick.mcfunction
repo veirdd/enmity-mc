@@ -13,6 +13,7 @@ execute as @a run function enmity:misc/projectiles/sentries/sentry_counter
 execute as @a if score @s enmity.snt_ct > @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 execute as @a at @s run function enmity:ambience/set_biome_type
 execute as @a at @s run function enmity:misc/surface_detection
+execute unless score @s enmity.temp_cd matches -10..10 unless score @s enmity.temp matches -3..3 if score @s enmity.temp matches -4..4 run function enmity:misc/health_modification/temperature_damage
 
 # Stats
 
@@ -45,6 +46,7 @@ execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",t
 execute as @a[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/strength
 execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/mobility
 execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/effect
+execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:114}}]}] run scoreboard players set @s enmity.max_hp 2
 execute if score %death_mode enmity.value matches 0 as @a run function enmity:misc/calculate_dmg_rdc_mtp
 execute if score %death_mode enmity.value matches 1 run scoreboard players set @a enmity.dmg_rdc_mtp 110
 execute as @a at @s run function enmity:misc/temperature

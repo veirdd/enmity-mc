@@ -57,6 +57,7 @@ execute as @e[type=magma_cube,tag=enmity.flame_spewer] at @s run function enmity
 execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/mobs/nimbus/10_tick
 execute as @e[type=zombie,tag=enmity.smiler] at @s run function enmity:entities/mobs/smiler/10_tick
 execute as @e[type=zombie,tag=enmity.visage] at @s run function enmity:entities/mobs/visage/10_tick
+execute if score %difficulty enmity.value matches 2 as @e[type=#enmity:can_jump] run function enmity:entities/mobs/tag_can_jump/10_tick
 
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run particle portal ~ ~0.2 ~ 0 0 0 0.5 5
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run playsound minecraft:entity.allay.ambient_without_item neutral @a[distance=0..] ~ ~ ~ 0.3 0.4 0

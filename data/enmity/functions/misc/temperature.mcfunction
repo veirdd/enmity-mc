@@ -71,4 +71,3 @@ execute if score @s enmity.temp matches -2..2 if score @s enmity.temp_cd matches
 execute if score @s enmity.temp matches -2..2 if score @s enmity.temp_cd matches ..-1 run scoreboard players add @s enmity.temp_cd 1
 scoreboard players set @s[gamemode=!adventure,gamemode=!survival] enmity.temp_cd 0
 scoreboard players set @s[scores={enmity.age=..1200}] enmity.temp_cd 0
-execute unless score @s enmity.temp_cd matches -10..10 unless score @s enmity.temp matches -3..3 if score @s enmity.temp matches -4..4 run function enmity:misc/health_modification/temperature_damage

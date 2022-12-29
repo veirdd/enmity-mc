@@ -59,5 +59,8 @@ execute if entity @s[type=player,scores={enmity.use=108..110}] if predicate enmi
 execute if entity @s[type=player,scores={enmity.use=115}] at @s anchored eyes run function enmity:items/usable/dazzling_rod/raycast
 execute if entity @s[type=player,scores={enmity.use=116}] at @s anchored eyes run function enmity:items/usable/sculk_verge/raycast
 execute if entity @s[type=player,scores={enmity.use=117}] at @s anchored eyes run function enmity:items/usable/crystalline_twig/raycast
+execute if entity @s[scores={enmity.use=122,enmity.mana=70..}] at @s run function enmity:items/usable/healing_bolt/use
+execute if entity @s[type=player,scores={enmity.use=123}] at @s anchored eyes run function enmity:items/usable/circle_of_vigour/raycast
+
 scoreboard players set @s enmity.use 0
 execute if entity @s[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:114}}]}] run function enmity:items/accessories/mana_capacitor/on_use

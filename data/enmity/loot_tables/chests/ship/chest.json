@@ -93,6 +93,17 @@
                     "type": "minecraft:item",
                     "name": "minecraft:shield",
                     "weight": 1
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:warped_fungus_on_a_stick",
+                  "functions": [
+                      {
+                          "function": "minecraft:set_nbt",
+                          "tag": "{display:{Name:'{\"text\":\"Thermometer\",\"italic\":false}'},Unbreakable:1,HideFlags:4,CustomModelData:31,Enmity:1,Enmity.Thermometer:1,Enmity.ItemGroups:[\"usable\",\"tools\"]}"
+                      }
+                  ],
+                  "weight": 1
                 }
             ]
         },

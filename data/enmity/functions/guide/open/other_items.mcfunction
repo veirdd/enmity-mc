@@ -25,3 +25,5 @@ execute if score @s enmity.guide matches 113025 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 113026 run function enmity:guide/tabs/main/items/other_items/harpy_feather
 execute if score @s enmity.guide matches 113027 run function enmity:guide/tabs/main/items/other_items/mana_berries
 execute if score @s enmity.guide matches 113028 run function enmity:guide/tabs/main/items/other_items/mana_potion
+execute if score @s enmity.guide matches 113029 run function enmity:guide/tabs/main/items/other_items/healing_bolt
+execute if score @s enmity.guide matches 113030 run function enmity:guide/tabs/main/items/other_items/circle_of_vigour

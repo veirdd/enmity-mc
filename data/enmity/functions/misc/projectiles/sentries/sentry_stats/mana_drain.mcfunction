@@ -8,4 +8,5 @@ execute if entity @s[tag=enmity.crystalline_cluster] run scoreboard players add 
 execute if entity @s[tag=enmity.cloud] run scoreboard players add @p[tag=enmity.this] enmity.math_a 4
 execute if entity @s[tag=enmity.guardian_sentry] run scoreboard players add @p[tag=enmity.this] enmity.math_a 4
 execute if entity @s[tag=enmity.the_dance_of_souls] run scoreboard players add @p[tag=enmity.this] enmity.math_a 4
+execute if entity @s[tag=enmity.circle_of_vigour] run scoreboard players add @p[tag=enmity.this] enmity.math_a 4
 execute if entity @s[tag=enmity.sacred_storm] run scoreboard players add @p[tag=enmity.this] enmity.math_a 5

@@ -102,7 +102,6 @@ execute as @e[type=giant] at @s run function enmity:entities/mobs/giant/tick
 execute as @e[type=zombie,tag=enmity.zombie_minion] at @s run function enmity:entities/mobs/giant/zombie_minion_tick
 execute as @e[type=phantom,tag=!enmity.custom_mob] at @s run particle portal ~ ~ ~ 0.25 0.1 0.25 0.5 1 normal
 execute as @e[type=illusioner] at @s run function enmity:entities/mobs/illusioner/tick
-execute if score %difficulty enmity.value matches 2 as @e[type=#enmity:can_jump] run function enmity:entities/mobs/tag_can_jump/tick
 execute as @e[type=bat,tag=enmity.bat] at @s run function enmity:entities/mobs/bat/tick
 execute as @e[type=wither_skeleton,tag=enmity.end_wither_skeleton] at @s run function enmity:entities/mobs/end_wither_skeleton/tick
 execute as @e[type=armor_stand,tag=enmity.target_dummy] at @s run function enmity:entities/other_entities/target_dummy/tick_model

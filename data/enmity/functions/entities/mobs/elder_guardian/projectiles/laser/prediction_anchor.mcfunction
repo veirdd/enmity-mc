@@ -2,7 +2,9 @@ summon marker ~ ~ ~ {Tags:["enmity.elder_laser_anchor"]}
 execute store result score @s enmity.math_a run scoreboard players get @s enmity.math_d
 execute store result score @s enmity.math_b run scoreboard players get @s enmity.math_e
 execute store result score @s enmity.math_c run scoreboard players get @s enmity.math_f
-function enmity:entities/mobs/elder_guardian/projectiles/laser/get_target_position
+execute store result score @s enmity.math_d run data get entity @p[tag=enmity.elder_target] Pos[0] 100
+execute store result score @s enmity.math_e run data get entity @p[tag=enmity.elder_target] Pos[1] 100
+execute store result score @s enmity.math_f run data get entity @p[tag=enmity.elder_target] Pos[2] 100
 execute store result score @s enmity.math_a run scoreboard players operation @s enmity.math_a -= @s enmity.math_d
 execute store result score @s enmity.math_b run scoreboard players operation @s enmity.math_b -= @s enmity.math_e
 execute store result score @s enmity.math_c run scoreboard players operation @s enmity.math_c -= @s enmity.math_f

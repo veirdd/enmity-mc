@@ -36,6 +36,7 @@
       "minecraft:pillager",
       "minecraft:bat",
       "minecraft:warden",
-      "minecraft:giant"
+      "minecraft:giant",
+      "minecraft:illusioner"
     ]
 }

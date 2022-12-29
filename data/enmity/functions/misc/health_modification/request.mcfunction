@@ -1,3 +1,4 @@
+execute if score @s enmity.taken_dmg matches -1 run function enmity:misc/health_modification/increase_health_by_1
 execute if score @s enmity.taken_dmg matches 1 run function enmity:misc/health_modification/reduce_health_by_1
 execute if score @s enmity.taken_dmg matches 2 run function enmity:misc/health_modification/reduce_health_by_2
 execute if score @s enmity.taken_dmg matches 3 run function enmity:misc/health_modification/reduce_health_by_3

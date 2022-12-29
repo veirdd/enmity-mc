@@ -41,3 +41,4 @@ execute if entity @s[tag=enmity.spectral_lifesteal] at @s run function enmity:it
 execute if entity @s[tag=enmity.crystalline_bolt] at @s run function enmity:items/usable/crystalline_twig/tick_projectile
 execute if entity @s[tag=enmity.nether_geyser_spawner] at @s run function enmity:entities/other_entities/nether_geyser/tick_spawner
 execute if entity @s[tag=enmity.nether_geyser] at @s run function enmity:entities/other_entities/nether_geyser/tick_geyser
+execute if entity @s[tag=enmity.healing_bolt] at @s run function enmity:items/usable/healing_bolt/tick_projectile
