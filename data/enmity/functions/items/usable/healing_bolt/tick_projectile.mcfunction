@@ -15,11 +15,11 @@ particle dust 0.84 0.33 0.88 1 ~ ~ ~ 0.025 0.025 0.025 0 3 force
 particle dust 0.84 0.33 0.88 1 ^ ^ ^0.6 0.025 0.025 0.025 0 3 force
 particle entity_effect ~ ~ ~ 0.84 0.33 0.88 1 0 force
 particle entity_effect ^ ^ ^0.6 0.84 0.33 0.88 1 0 force
-execute as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
-execute positioned ^ ^ ^0.24 as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
-execute positioned ^ ^ ^0.48 as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
-execute positioned ^ ^ ^0.72 as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
-execute positioned ^ ^ ^0.96 as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] unless score @e[tag=enmity.this,limit=1] enmity.player_id = @s enmity.player_id positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
+execute if score @s enmity.age matches 3.. as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
+execute if score @s enmity.age matches 3.. positioned ^ ^ ^0.24 as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
+execute if score @s enmity.age matches 3.. positioned ^ ^ ^0.48 as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
+execute if score @s enmity.age matches 3.. positioned ^ ^ ^0.72 as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
+execute if score @s enmity.age matches 3.. positioned ^ ^ ^0.96 as @e[type=!#enmity:not_living,tag=!enmity.projectile,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run tag @s add enmity.hit
 execute if entity @e[type=!#enmity:not_living,tag=enmity.hit] run function enmity:items/usable/healing_bolt/damage_projectile
 execute if score @s enmity.age matches 20.. run function enmity:items/usable/healing_bolt/die_projectile
 tag @s remove enmity.this

@@ -16,3 +16,4 @@ execute if entity @s[nbt={Item:{id:"minecraft:potion"}}] run function enmity:ite
 execute if entity @s[nbt={Item:{id:"minecraft:glass_bottle"}}] run function enmity:items/crafting/custom/checks/specific_passed
 execute if entity @s[nbt={Item:{id:"minecraft:honey_bottle"}}] run function enmity:items/crafting/custom/checks/specific_passed
 execute if entity @s[nbt={Item:{id:"minecraft:enchanted_book"}}] run function enmity:items/crafting/custom/checks/specific_passed
+execute if entity @s[nbt={Item:{id:"minecraft:nether_star"}}] run function enmity:items/crafting/custom/checks/specific_passed

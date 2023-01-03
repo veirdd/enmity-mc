@@ -13,3 +13,4 @@ execute as @e[type=marker,tag=enmity.this] at @s rotated as @p[tag=enmity.this] 
 execute at @e[type=marker,tag=enmity.this] run particle dust 0 0.5 0.7 0.5 ~ ~ ~ 0.05 0.05 0.05 0 7 force
 tag @e[type=marker,tag=enmity.this] remove enmity.this
 tag @s remove enmity.this
+tag @s add enmity.accessories.warped_glyph

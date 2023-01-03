@@ -42,3 +42,5 @@ execute if entity @s[tag=enmity.crystalline_bolt] at @s run function enmity:item
 execute if entity @s[tag=enmity.nether_geyser_spawner] at @s run function enmity:entities/other_entities/nether_geyser/tick_spawner
 execute if entity @s[tag=enmity.nether_geyser] at @s run function enmity:entities/other_entities/nether_geyser/tick_geyser
 execute if entity @s[tag=enmity.healing_bolt] at @s run function enmity:items/usable/healing_bolt/tick_projectile
+execute if entity @s[tag=enmity.liquidator] at @s run function enmity:items/usable/liquidator/tick
+execute if entity @s[tag=enmity.sky_fracture] at @s run function enmity:items/usable/sky_fracture/tick

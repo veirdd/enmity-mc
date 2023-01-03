@@ -1,0 +1,30 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "enmity:entity/remove_durability/head"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "enmity:entity/remove_durability/chest"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "enmity:entity/remove_durability/legs"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "enmity:entity/remove_durability/feet"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "enmity:entity/remove_durability/mainhand"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "enmity:entity/remove_durability/offhand"
+        }
+    ]
+}
+  

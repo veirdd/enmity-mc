@@ -1,9 +1,12 @@
+# Other
+
+execute if score %death_mode enmity.value matches 0 run gamerule naturalRegeneration true
+
 # Items
 
-execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/10_tick/mobility
-execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/10_tick/effect
-execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:64}}]}] at @s run effect give @s night_vision 30 0 true
-execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:22}}]}] at @s unless predicate enmity:environment/near_deep_dark run effect give @s night_vision 30 0 true
+execute as @a[tag=enmity.accessories.any.mana] run function enmity:misc/item_branch/10_tick/mana
+execute as @a[tag=enmity.accessories.any.mobility] run function enmity:misc/item_branch/10_tick/mobility
+execute as @a[tag=enmity.accessories.any.effect] run function enmity:misc/item_branch/10_tick/effect
 
 execute as @a[gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run particle portal ~ ~0.8 ~ 0.2 0.4 0.2 0.5 10
 execute as @a[gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:33}}}] at @s run effect give @e[type=!#enmity:not_living,tag=!enmity.projectile,distance=0.01..16,tag=!enmity.target_dummy] glowing 1 0 true
@@ -72,6 +75,6 @@ execute as @a at @s if predicate enmity:environment/near_deep_dark unless predic
 
 # Other
 
-effect give @e[tag=enmity.invulnerable] resistance 2 255 true
+effect give @e[type=!#enmity:not_living,tag=enmity.invulnerable] resistance 2 255 true
 
 schedule function enmity:10_tick 10t

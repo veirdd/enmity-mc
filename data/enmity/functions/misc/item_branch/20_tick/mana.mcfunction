@@ -1,4 +1,6 @@
-execute store result score @s enmity.use run data get entity @s Inventory[{Slot:9b}].tag.CustomModelData
+scoreboard players set @s enmity.use 0
+execute if entity @s[tag=enmity.accessories.inventory.mana] store result score @s enmity.use run data get entity @s Inventory[{Slot:9b}].tag.CustomModelData
+execute if entity @s[tag=enmity.accessories.ender.mana] store result score @s enmity.use run data get entity @s EnderItems[{Slot:0b}].tag.CustomModelData
 execute if score @s enmity.use matches 8 run scoreboard players add @s enmity.max_mana 200
 execute if score @s enmity.use matches 10 run scoreboard players add @s enmity.max_mana 200
 execute if score @s enmity.use matches 20 run scoreboard players add @s enmity.max_mana 400

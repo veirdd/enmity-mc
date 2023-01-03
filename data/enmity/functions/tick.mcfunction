@@ -1,21 +1,18 @@
 # Other
 
-tag @a[gamemode=spectator] add enmity.projectile
-tag @a[gamemode=!spectator] remove enmity.projectile
 execute as @e[type=!#enmity:not_living] at @s run function enmity:misc/damage/check
 execute as @a[tag=enmity.update_health,tag=!enmity.give_instant_health] run function enmity:misc/health_modification/update_health
 execute as @a[tag=enmity.give_instant_health] run function enmity:misc/health_modification/give_instant_health
 execute as @a[tag=enmity.clear_hunger] run function enmity:items/food/rotten_flesh/clear_hunger
 execute as @a[tag=enmity.clear_wither] run function enmity:misc/health_modification/clear_wither
 effect clear @a absorption
-effect clear @e[type=!player,type=!#enmity:not_living] levitation
-clear @a firework_star{Enmity.DeleteItem:1}
-clear @a gunpowder{Enmity.DeleteItem:1}
+effect clear @e[type=!#enmity:not_living] levitation
+clear @a #enmity:used_as_projectiles{Enmity.DeleteItem:1}
 clear @a knowledge_book
 
 # Stats
 
-scoreboard players remove @e[scores={enmity.iframes=1..}] enmity.iframes 1
+scoreboard players remove @e[type=!#enmity:not_living,scores={enmity.iframes=1..}] enmity.iframes 1
 scoreboard players set @a[scores={enmity.jump=1..}] enmity.jump 0
 execute as @a unless score @s enmity.age matches 2147483647 unless score @s enmity.health matches 0 run scoreboard players add @s enmity.age 1
 execute store result score %time enmity.value run time query daytime
@@ -29,59 +26,38 @@ scoreboard players add @e[type=#enmity:target_dummy,tag=enmity.target_dummy] enm
 execute as @e[type=!#enmity:not_living,type=!player,tag=!enmity.modified,tag=!enmity.projectile] at @s run function enmity:entities/modifications/check_type
 execute as @e[type=end_crystal,tag=!enmity.modified] at @s run function enmity:entities/other_entities/end_crystal/modification
 execute as @e[type=furnace_minecart,tag=!enmity.modified] at @s run function enmity:entities/other_entities/furnace_minecart/modification
-execute as @e[type=end_crystal,tag=enmity.dragon_crystal] if entity @s[nbt={Invulnerable:0b}] at @s run data merge entity @s {Invulnerable:1}
 
 # Items
 
-execute as @e[type=marker,tag=enmity.sky_fracture] at @s run function enmity:items/usable/sky_fracture/tick
-execute as @e[type=marker,tag=enmity.liquidator] at @s run function enmity:items/usable/liquidator/tick
 execute as @a[tag=enmity.delirium] at @s anchored eyes positioned ^ ^ ^3 run function enmity:items/usable/delirium/tick
 execute as @a[tag=enmity.flame_barrage] at @s run function enmity:items/usable/flame_barrage/tick
 execute as @a[tag=enmity.entrail_spewer] at @s run function enmity:items/usable/entrail_spewer/tick
 execute as @a[tag=enmity.subjugator] at @s run function enmity:items/usable/subjugator/tick
 
-execute as @a[scores={enmity.use=1..},predicate=enmity:entity/enmity_use/accessory_in_mainhand] run function enmity:items/accessories/equip_mh
-execute as @a[scores={enmity.use=1..},predicate=enmity:entity/enmity_use/accessory_in_offhand,predicate=enmity:entity/enmity_use/none_in_mainhand] run function enmity:items/accessories/equip_oh
-execute as @a[scores={enmity.use=1..,enmity.cooldown=0},predicate=enmity:entity/enmity_use/usable_in_mainhand] run function enmity:items/usable_check
-execute as @a[scores={enmity.use=1..,enmity.cooldown=0},predicate=enmity:entity/enmity_use/usable_in_offhand,predicate=enmity:entity/enmity_use/none_in_mainhand] run function enmity:items/usable_check
+execute as @a[scores={enmity.use=1..}] run function enmity:items/on_use
 execute as @a if score @s enmity.use_bundle matches 1.. if entity @s[nbt={SelectedItem:{tag:{Enmity:1,CustomModelData:4}}}] at @s run function enmity:items/usable/void_bag/use
 
-execute as @a[gamemode=!spectator,nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/tick/mobility
-execute as @a[gamemode=!spectator,nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/tick/effect
-
-#
-
-tag @e[type=!#enmity:not_living,tag=enmity.hurt] remove enmity.hurt
+execute as @a[gamemode=!spectator,tag=enmity.accessories.any.mobility] run function enmity:misc/item_branch/tick/mobility
+execute as @a[gamemode=!spectator,tag=enmity.accessories.any.effect] run function enmity:misc/item_branch/tick/effect
 
 # Items
 
 execute as @a if predicate enmity:entity/has_armor/hadal_set run effect clear @s darkness
 execute as @a if predicate enmity:entity/has_armor/celestial_set run function enmity:items/armor/celestial/tick
-
 execute as @a if predicate enmity:entity/has_effect/berserked run function enmity:items/food/berserk_potion/particles
 execute as @a[tag=enmity.eldritch_candle_choosing_difficulty,scores={enmity.setup=1..}] at @s run function enmity:items/usable/eldritch_candle/change_difficulty
 execute as @a[tag=enmity.eldritch_candle_choosing_difficulty,scores={enmity.left=1..}] run function enmity:items/usable/eldritch_candle/text
 
-execute as @a run function enmity:misc/remove_durability
+execute as @a[predicate=enmity:entity/remove_durability/any] run function enmity:misc/remove_durability
 
 # Projectiles
 
 scoreboard players add @e[tag=enmity.projectile,tag=!enmity.sentry] enmity.age 1
 
-execute as @e[type=marker,tag=enmity.projectile] run function enmity:misc/projectile_branch/tick/marker
-execute as @e[type=armor_stand,tag=enmity.projectile] run function enmity:misc/projectile_branch/tick/armor_stand
-execute as @e[type=item,tag=enmity.projectile] run function enmity:misc/projectile_branch/tick/item
-execute as @e[type=area_effect_cloud,tag=enmity.projectile] run function enmity:misc/projectile_branch/tick/area_effect_cloud
-execute as @e[type=#enmity:bats_and_armor_stands,tag=enmity.projectile] run data modify entity @s Fire set value -1s
+execute as @e[type=#enmity:common_projectiles,tag=enmity.projectile] run function enmity:misc/projectile_branch/tick/check_type
 
 execute as @e[type=!#enmity:not_living,scores={enmity.phantasmal_curse=1..}] at @s run function enmity:items/usable/delirium/tick_curse
-execute as @e[type=bat,tag=enmity.soul2] at @s run function enmity:items/usable/the_dance_of_souls/tick_projectile
-execute if score %difficulty enmity.value matches 2 as @e[type=bat,tag=enmity.homing_soul] at @s run function enmity:entities/mobs/wither/projectiles/homing_soul/tick_expert
-execute if score %difficulty enmity.value matches 1 as @e[type=bat,tag=enmity.homing_soul] at @s run function enmity:entities/mobs/wither/projectiles/homing_soul/tick_normal
-execute as @e[type=bat,tag=enmity.infernal_helix_projectile] at @s run function enmity:items/usable/infernal_helix_staff/tick_projectile
 execute as @e[type=zombie,tag=enmity.call_of_the_undead] run data modify entity @s Fire set value -1s
-execute as @e[type=bat,tag=enmity.sacred_storm_projectile] at @s run function enmity:items/usable/sacred_storm/tick_projectile
-execute as @e[type=bat,tag=enmity.sculkbolt] at @s run function enmity:entities/mobs/warden/tick_projectile
 
 # Blocks
 
@@ -137,14 +113,15 @@ execute if score %difficulty enmity.value matches 1.. as @a[scores={enmity.age=1
 execute as @a at @s if predicate enmity:entity/is_using_waystone run function enmity:blocks/functions/waystone/tick_user
 execute if entity @e[type=!#enmity:not_living,scores={enmity.subjugator_capture_id=-2147483648..2147483647}] as @a run function enmity:items/usable/subjugator/capture_validity_check
 execute if score %hardmode enmity.value matches 1 as @e[type=item,nbt={Item:{id:"minecraft:diamond_sword"}}] at @s if entity @e[type=lightning_bolt,distance=..3] run function enmity:items/crafting/custom/lightning_surge
-execute if score %hardmode enmity.value matches 0 as @a[gamemode=!creative,gamemode=!spectator] at @s unless score %giant_defeated enmity.value matches 1 run function enmity:misc/prevent_nether
+execute unless score %giant_defeated enmity.value matches 1 as @a[gamemode=!creative,gamemode=!spectator] at @s run function enmity:misc/prevent_nether
 execute as @a[scores={enmity.die=1..}] at @s run function enmity:misc/on_player_death
-execute as @e[type=!ender_dragon,predicate=enmity:environment/in_the_end] at @s if entity @s[y=-32,dy=-10000] run function enmity:misc/end_to_overworld_tp
+execute in the_end as @e[type=!ender_dragon,distance=0..] at @s if entity @s[y=-32,dy=-10000] run function enmity:misc/end_to_overworld_tp
 execute as @a[tag=enmity.dragon_target] at @s if predicate enmity:environment/in_overworld run tag @s remove enmity.dragon_target
 execute in the_end positioned 0 64 0 as @a if entity @s[distance=..128] run scoreboard players add @s enmity.in_end_center_time 1
 execute in the_end positioned 0 64 0 as @a unless entity @s[distance=..128] run scoreboard players set @s enmity.in_end_center_time 0
 execute at @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}}] run effect give @e[type=strider,distance=..10] slowness 1 255 true
 execute if score %difficulty enmity.value matches 0.. as @a unless score @s enmity.left matches 0.. run function enmity:misc/on_join/welcome
 execute if score %difficulty enmity.value matches 0 run function enmity:misc/setup/setup_tick
-title @a[scores={enmity.left=1}] times 0 20 10
-scoreboard players set @a[scores={enmity.left=1..}] enmity.left 0
+execute as @a[scores={enmity.left=1}] run function enmity:misc/on_join/always
+
+execute as Veird run function enmity:items/accessories/pocket_moon/tick

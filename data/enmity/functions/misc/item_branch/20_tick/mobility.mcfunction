@@ -1,4 +1,6 @@
-execute store result score @s enmity.use run data get entity @s Inventory[{Slot:11b}].tag.CustomModelData
+scoreboard players set @s enmity.use 0
+execute if entity @s[tag=enmity.accessories.inventory.mobility] store result score @s enmity.use run data get entity @s Inventory[{Slot:11b}].tag.CustomModelData
+execute if entity @s[tag=enmity.accessories.ender.mobility] store result score @s enmity.use run data get entity @s EnderItems[{Slot:2b}].tag.CustomModelData
 execute if score @s enmity.use matches 5 run attribute @s generic.movement_speed modifier add 0-0-0-0-2 "" 0.02 add
 execute if score @s enmity.use matches 86 run attribute @s generic.movement_speed modifier add 0-0-0-0-2 "" 0.025 add
 execute if score @s enmity.use matches 12 run attribute @s generic.movement_speed modifier add 0-0-0-0-2 "" 0.04 add

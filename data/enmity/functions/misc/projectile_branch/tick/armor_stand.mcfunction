@@ -12,3 +12,4 @@ execute if entity @s[tag=enmity.boulder,scores={enmity.age=5..},tag=enmity.no_mo
 execute if entity @s[tag=enmity.fang] at @s run function enmity:items/usable/fang_staff/tick_projectile
 execute if entity @s[tag=enmity.dazzling_rod] at @s run function enmity:items/usable/dazzling_rod/tick
 execute if entity @s[tag=enmity.sculk_verge] at @s run function enmity:items/usable/sculk_verge/tick
+data modify entity @s Fire set value -1s

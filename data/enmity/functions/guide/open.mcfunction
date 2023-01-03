@@ -47,6 +47,7 @@ execute if score @s enmity.guide matches 1 run function enmity:guide/tabs/main
         execute if score @s enmity.guide matches 141 run function enmity:guide/tabs/main/blocks/waystone
         execute if score @s enmity.guide matches 142 run function enmity:guide/tabs/main/blocks/heating_coil
         execute if score @s enmity.guide matches 143 run function enmity:guide/tabs/main/blocks/cooling_coil
+        execute if score @s enmity.guide matches 144 run function enmity:guide/tabs/main/blocks/soul_chest
 
 scoreboard players set @s enmity.guide 0
 scoreboard players enable @s enmity.guide

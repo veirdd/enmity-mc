@@ -6,14 +6,14 @@ kill @e[type=item,name="Air"]
 difficulty hard
 gamerule freezeDamage false
 gamerule announceAdvancements false
-execute if score %death_mode enmity.value matches 1 run gamerule naturalRegeneration false
-execute if score %death_mode enmity.value matches 0 run gamerule naturalRegeneration true
+execute if score %difficulty enmity.value matches 2 run gamerule naturalRegeneration false
 execute as @e[type=item] at @s if block ~ ~ ~ enchanting_table run function enmity:items/crafting/custom/checks/check_if_applicable
 execute as @a run function enmity:misc/projectiles/sentries/sentry_counter
 execute as @a if score @s enmity.snt_ct > @s enmity.max_snt run function enmity:misc/projectiles/sentries/remove_sentry
 execute as @a at @s run function enmity:ambience/set_biome_type
 execute as @a at @s run function enmity:misc/surface_detection
 execute unless score @s enmity.temp_cd matches -10..10 unless score @s enmity.temp matches -3..3 if score @s enmity.temp matches -4..4 run function enmity:misc/health_modification/temperature_damage
+execute as @a run function enmity:items/accessories/set_tags
 
 # Stats
 
@@ -41,12 +41,18 @@ scoreboard players set @a enmity.dmg_rdc 0
 scoreboard players set @a enmity.dmg_bst 0
 execute as @a if predicate enmity:entity/has_effect/berserked run function enmity:items/food/berserk_potion/effect
 execute as @a run function enmity:misc/protection_to_dr
+
+# Items
+
 execute as @a if predicate enmity:entity/has_armor/enmity_set run function enmity:misc/item_branch/20_tick/armor
-execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/mana
-execute as @a[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/strength
-execute as @a[nbt={Inventory:[{Slot:11b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/mobility
-execute as @a[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1}}]}] run function enmity:misc/item_branch/20_tick/effect
+execute as @a[tag=enmity.accessories.any.mana] run function enmity:misc/item_branch/20_tick/mana
+execute as @a[tag=enmity.accessories.any.strength] run function enmity:misc/item_branch/20_tick/strength
+execute as @a[tag=enmity.accessories.any.mobility] run function enmity:misc/item_branch/20_tick/mobility
+execute as @a[tag=enmity.accessories.any.effect] run function enmity:misc/item_branch/20_tick/effect
 execute as @a[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:114}}]}] run scoreboard players set @s enmity.max_hp 2
+
+# Stats
+
 execute if score %death_mode enmity.value matches 0 as @a run function enmity:misc/calculate_dmg_rdc_mtp
 execute if score %death_mode enmity.value matches 1 run scoreboard players set @a enmity.dmg_rdc_mtp 110
 execute as @a at @s run function enmity:misc/temperature
