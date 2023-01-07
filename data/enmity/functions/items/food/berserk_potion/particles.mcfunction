@@ -1,3 +1,2 @@
-tag @s add enmity.this
-execute as @e[type=#enmity:not_living,tag=enmity.projectile] if score @s enmity.player_id = @a[tag=enmity.this,limit=1] enmity.player_id if score @s enmity.dmg matches 0.. at @s run function enmity:items/food/berserk_potion/particle_adjust
-tag @s remove enmity.this
+execute as @a if predicate enmity:entity/has_effect/berserked run function enmity:items/food/berserk_potion/tag_projectiles
+execute as @e[type=#enmity:common_projectiles,tag=enmity.berserked] at @s run function enmity:items/food/berserk_potion/particle_adjust

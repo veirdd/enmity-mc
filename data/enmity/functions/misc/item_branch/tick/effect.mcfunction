@@ -13,5 +13,6 @@ execute if score @s enmity.use matches 112 at @s run function enmity:items/acces
 execute if score @s enmity.use matches 120 at @s run function enmity:items/accessories/crimson_glyph/tick
 execute if score @s enmity.use matches 121 at @s run function enmity:items/accessories/warped_glyph/tick
 execute if score @s enmity.use matches 100 at @s run function enmity:items/accessories/pocket_moon/tick
+execute if score @s enmity.use matches 125 at @s run function enmity:items/accessories/shield_capacitor/tick
 execute if entity @s[tag=enmity.accessories.ender.effect_2] run function enmity:misc/item_branch/tick/ender_effect
 scoreboard players set @s enmity.use 0

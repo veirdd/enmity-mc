@@ -62,6 +62,7 @@ scoreboard objectives remove enmity.xp
 scoreboard objectives remove enmity.xp_old
 scoreboard objectives remove enmity.midair_time
 scoreboard objectives remove enmity.remove_sentries
+scoreboard objectives remove enmity.shield_capacitor
 bossbar remove enmity.giant
 bossbar remove enmity.elder_guardian
 kill @e[type=marker,tag=enmity.setup]

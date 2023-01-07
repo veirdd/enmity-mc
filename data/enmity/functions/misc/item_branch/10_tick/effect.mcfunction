@@ -9,4 +9,5 @@ execute if score @s enmity.use matches 92 if score @s enmity.food matches 15.. r
 execute if score @s enmity.use matches 105 if entity @s[tag=enmity.flying] at @s run function enmity:items/accessories/effervescent_aglets/10_tick
 execute if score @s enmity.use matches 107 run effect give @s night_vision 30 0 true
 execute if entity @s[tag=enmity.accessories.ender.effect_2] run function enmity:misc/item_branch/10_tick/ender_effect
+execute unless entity @s[tag=enmity.accessories.shield_capacitor] run scoreboard players set @s enmity.shield_capacitor 0
 scoreboard players set @s enmity.use 0

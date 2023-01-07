@@ -8,4 +8,5 @@ scoreboard players set @s enmity.death_mode_regen_cd 0
 scoreboard players set @s enmity.amb_loop 0
 scoreboard players set @s enmity.flight 0
 scoreboard players set @s enmity.amb_loop 0
+scoreboard players set @s enmity.cooldown 0
 title @s times 0 20 10

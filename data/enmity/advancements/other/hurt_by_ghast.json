@@ -5,14 +5,14 @@
         "conditions": {
           "damage": {
             "source_entity": {
-              "type": "minecraft:shulker"
+              "type": "minecraft:ghast"
             }
           }
         }
       }
     },
     "rewards": {
-        "function": "enmity:misc/damage/alternative_damage/on_player_hurt_by_sculker"
+        "function": "enmity:misc/damage/alternative_damage/on_player_hurt_by_ghast"
     }
   }
   

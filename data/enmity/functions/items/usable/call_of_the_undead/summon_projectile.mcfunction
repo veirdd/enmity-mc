@@ -12,7 +12,7 @@ execute if entity @e[type=#enmity:enemies,tag=enmity.this,distance=4.00000000000
 execute if entity @e[type=#enmity:enemies,tag=enmity.this,distance=7.0000000000001..] run scoreboard players operation @s enmity.math_f *= %const_3 enmity.value
 scoreboard players operation @s enmity.math_a += @s enmity.math_d
 scoreboard players operation @s enmity.math_c += @s enmity.math_f
-execute as @e[type=#enmity:enemies,tag=enmity.this] at @s anchored eyes run summon marker ~ ~ ~ {Tags:["enmity.direction_anchor"]}
+execute as @e[type=#enmity:enemies,tag=enmity.this] at @s anchored eyes run summon marker ^ ^ ^ {Tags:["enmity.direction_anchor"]}
 execute store result entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Pos[0] double 0.01 run scoreboard players get @s enmity.math_a
 execute store result entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Pos[2] double 0.01 run scoreboard players get @s enmity.math_c
 tag @e[type=#enmity:enemies,tag=enmity.this] remove enmity.this

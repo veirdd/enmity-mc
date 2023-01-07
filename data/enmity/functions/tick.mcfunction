@@ -39,12 +39,13 @@ execute as @a if score @s enmity.use_bundle matches 1.. if entity @s[nbt={Select
 
 execute as @a[gamemode=!spectator,tag=enmity.accessories.any.mobility] run function enmity:misc/item_branch/tick/mobility
 execute as @a[gamemode=!spectator,tag=enmity.accessories.any.effect] run function enmity:misc/item_branch/tick/effect
+execute as @a[gamemode=!spectator,tag=enmity.accessories.any.strength] run function enmity:misc/item_branch/tick/strength
 
 # Items
 
 execute as @a if predicate enmity:entity/has_armor/hadal_set run effect clear @s darkness
 execute as @a if predicate enmity:entity/has_armor/celestial_set run function enmity:items/armor/celestial/tick
-execute as @a if predicate enmity:entity/has_effect/berserked run function enmity:items/food/berserk_potion/particles
+function enmity:items/food/berserk_potion/particles
 execute as @a[tag=enmity.eldritch_candle_choosing_difficulty,scores={enmity.setup=1..}] at @s run function enmity:items/usable/eldritch_candle/change_difficulty
 execute as @a[tag=enmity.eldritch_candle_choosing_difficulty,scores={enmity.left=1..}] run function enmity:items/usable/eldritch_candle/text
 
@@ -123,5 +124,3 @@ execute at @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{En
 execute if score %difficulty enmity.value matches 0.. as @a unless score @s enmity.left matches 0.. run function enmity:misc/on_join/welcome
 execute if score %difficulty enmity.value matches 0 run function enmity:misc/setup/setup_tick
 execute as @a[scores={enmity.left=1}] run function enmity:misc/on_join/always
-
-execute as Veird run function enmity:items/accessories/pocket_moon/tick

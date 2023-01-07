@@ -5,10 +5,6 @@ execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s run function enmity:items/other/compass/2_tick
 execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] at @s run function enmity:items/other/compass/2_tick
 
-# Entities
-
-execute at @e[type=item,tag=!enmity.projectile,tag=!enmity.eternal,scores={enmity.age=270..}] run particle dust 1 0 0 0.5 ~ ~0.7 ~ 0 0 0 0 2
-
 # Stats
 
 scoreboard players set @a[gamemode=!survival,gamemode=!adventure] enmity.mana 9999
@@ -17,6 +13,7 @@ scoreboard players set @a[gamemode=!creative,gamemode=!spectator] enmity.mana_re
 execute as @a[gamemode=!creative,gamemode=!spectator,tag=enmity.accessories.any.mana] run function enmity:misc/item_branch/2_tick/mana
 execute as @a run function enmity:misc/projectiles/sentries/sentry_stats/calculate
 scoreboard players operation @a[gamemode=!creative,gamemode=!spectator,scores={enmity.cooldown=1..}] enmity.mana_regen /= %const_2 enmity.value
+execute as @a[gamemode=!creative,gamemode=!spectator,scores={enmity.cooldown=0,enmity.midair_time=0},predicate=enmity:entity/is_sneaking] run scoreboard players add @s enmity.mana_regen 1
 execute as @a[gamemode=!creative,gamemode=!spectator] run scoreboard players operation @s enmity.mana += @s enmity.mana_regen
 execute as @a[gamemode=!creative,gamemode=!spectator] if score @s enmity.mana > @s enmity.max_mana run scoreboard players operation @s enmity.mana = @s enmity.max_mana
 execute as @a run function enmity:misc/mana_display/check_type

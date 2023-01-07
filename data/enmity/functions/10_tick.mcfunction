@@ -65,6 +65,7 @@ execute if score %difficulty enmity.value matches 2 as @e[type=#enmity:can_jump]
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run particle portal ~ ~0.2 ~ 0 0 0 0.5 5
 execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:7}}}] at @s run playsound minecraft:entity.allay.ambient_without_item neutral @a[distance=0..] ~ ~ ~ 0.3 0.4 0
 execute as @e[type=item,tag=enmity.moon_shrine] at @s run particle end_rod ~ ~ ~ 3 3 3 0.02 10
+execute at @e[type=item,tag=!enmity.projectile,tag=!enmity.eternal,scores={enmity.age=270..}] if entity @p[distance=..10] run particle dust 1 0 0 0.5 ~ ~0.7 ~ 0 0 0 0 3
 
 # Environment
 

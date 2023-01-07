@@ -7,11 +7,15 @@ tag @s remove enmity.accessories.ender.strength
 tag @s remove enmity.accessories.ender.mobility
 tag @s remove enmity.accessories.ender.effect_1
 tag @s remove enmity.accessories.ender.effect_2
-tag @s remove enmity.accessories.soul_gem
 tag @s remove enmity.accessories.any.mana
 tag @s remove enmity.accessories.any.strength
 tag @s remove enmity.accessories.any.mobility
 tag @s remove enmity.accessories.any.effect
+tag @s remove enmity.accessories.soul_gem
+tag @s remove enmity.accessories.elemental_emblem
+tag @s remove enmity.accessories.rotten_chunk
+tag @s remove enmity.accessories.magic_cuffs
+tag @s remove enmity.accessories.shield_capacitor
 execute if entity @s[nbt={Inventory:[{Slot:12b,tag:{Enmity:1,CustomModelData:124}}]}] run tag @s add enmity.accessories.soul_gem
 execute if entity @s[tag=!enmity.accessories.soul_gem,nbt={Inventory:[{Slot:9b,tag:{Enmity.ItemGroups:["accessories","mana"]}}]}] run tag @s add enmity.accessories.inventory.mana
 execute if entity @s[tag=!enmity.accessories.soul_gem,nbt={Inventory:[{Slot:10b,tag:{Enmity.ItemGroups:["accessories","strength"]}}]}] run tag @s add enmity.accessories.inventory.strength

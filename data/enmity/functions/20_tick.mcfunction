@@ -13,13 +13,13 @@ execute as @a if score @s enmity.snt_ct > @s enmity.max_snt run function enmity:
 execute as @a at @s run function enmity:ambience/set_biome_type
 execute as @a at @s run function enmity:misc/surface_detection
 execute unless score @s enmity.temp_cd matches -10..10 unless score @s enmity.temp matches -3..3 if score @s enmity.temp matches -4..4 run function enmity:misc/health_modification/temperature_damage
-execute as @a run function enmity:items/accessories/set_tags
 
 # Stats
 
 execute as @a unless score @s enmity.health matches 0.. run function enmity:misc/enable_health
 execute as @a unless score @s enmity.player_id matches 0.. run function enmity:misc/register_new_player/request
 execute as @e unless score @s enmity.iframes matches -9999.. run scoreboard players set @s enmity.iframes 0
+execute as @a[tag=!enmity.accessories.shield_capacitor,tag=!enmity.accessories.elemental_emblem] run scoreboard players set @s enmity.shield_capacitor 0
 
 scoreboard players remove @a[scores={enmity.egapple_cooldown=1..}] enmity.egapple_cooldown 1
 
@@ -44,6 +44,7 @@ execute as @a run function enmity:misc/protection_to_dr
 
 # Items
 
+execute as @a run function enmity:items/accessories/set_tags
 execute as @a if predicate enmity:entity/has_armor/enmity_set run function enmity:misc/item_branch/20_tick/armor
 execute as @a[tag=enmity.accessories.any.mana] run function enmity:misc/item_branch/20_tick/mana
 execute as @a[tag=enmity.accessories.any.strength] run function enmity:misc/item_branch/20_tick/strength

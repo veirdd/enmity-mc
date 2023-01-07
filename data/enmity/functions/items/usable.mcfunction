@@ -63,4 +63,4 @@ execute if entity @s[scores={enmity.use=122,enmity.mana=70..}] at @s run functio
 execute if entity @s[type=player,scores={enmity.use=123}] at @s anchored eyes run function enmity:items/usable/circle_of_vigour/raycast
 
 scoreboard players set @s enmity.use 0
-execute if entity @s[nbt={Inventory:[{Slot:9b,id:"minecraft:warped_fungus_on_a_stick",tag:{Enmity:1,CustomModelData:114}}]}] run function enmity:items/accessories/mana_capacitor/on_use
+execute if entity @s[tag=enmity.accessories.mana_capacitor] run function enmity:items/accessories/mana_capacitor/on_use

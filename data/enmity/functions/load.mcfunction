@@ -5,3 +5,4 @@ schedule function enmity:40_tick 20t
 schedule function enmity:100_tick 50t
 schedule function enmity:400_tick 200t
 schedule function enmity:misc/setup/setup_check 20t
+function enmity:misc/setup/scoreboard

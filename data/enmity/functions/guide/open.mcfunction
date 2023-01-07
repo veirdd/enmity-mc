@@ -43,6 +43,7 @@ execute if score @s enmity.guide matches 1 run function enmity:guide/tabs/main
         execute if score @s enmity.guide matches 13012 run function enmity:guide/tabs/main/gameplay/death_mode
         execute if score @s enmity.guide matches 13013 run function enmity:guide/tabs/main/gameplay/coordinates
         execute if score @s enmity.guide matches 13014 run function enmity:guide/tabs/main/gameplay/enchantment_changes
+        execute if score @s enmity.guide matches 13015 run function enmity:guide/tabs/main/gameplay/mana
     execute if score @s enmity.guide matches 14 run function enmity:guide/tabs/main/blocks
         execute if score @s enmity.guide matches 141 run function enmity:guide/tabs/main/blocks/waystone
         execute if score @s enmity.guide matches 142 run function enmity:guide/tabs/main/blocks/heating_coil
