@@ -98,13 +98,14 @@ execute as @e[type=drowned] at @s run function enmity:entities/mobs/drowned/tick
 execute as @e[type=zombie,tag=enmity.nimbus] at @s run function enmity:entities/mobs/nimbus/tick
 execute as @e[type=shulker] if entity @s[nbt={HurtTime:9s}] run function enmity:entities/mobs/sculker/sensed_player
 execute as @e[type=zombie,tag=enmity.visage] at @s run function enmity:entities/mobs/visage/tick
+execute as @e[type=end_crystal,tag=enmity.dragon_crystal] at @s run function enmity:entities/other_entities/end_crystal/tick_dragon_crystal
 
 kill @e[type=item,tag=!enmity.projectile,tag=enmity.modified,nbt={Item:{tag:{Enmity.DeleteItem:1}}}]
 execute as @e[type=arrow,nbt={HasBeenShot:0b}] at @s run function enmity:misc/arrow_damage
 
 # Other
 
-execute as @a at @s run function enmity:misc/projectiles/sentries/sentry_anchor/tick
+execute as @a[scores={enmity.snt_ct=1..}] at @s run function enmity:misc/projectiles/sentries/sentry_anchor/tick
 execute as @a run function enmity:misc/xp_gain/check
 execute as @a if score @s enmity.guide matches 1.. run function enmity:guide/open
 execute as @a if score @s enmity.remove_sentries matches 1.. run function enmity:misc/projectiles/sentries/remove_all
