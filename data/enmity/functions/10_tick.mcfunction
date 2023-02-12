@@ -1,6 +1,7 @@
 # Other
 
 execute if score %death_mode enmity.value matches 0 run gamerule naturalRegeneration true
+execute as @a[scores={enmity.food=20}] unless score @s enmity.health = @s enmity.max_hp run effect give @s hunger 1 30 true
 
 # Items
 

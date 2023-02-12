@@ -13,4 +13,5 @@ execute if entity @s[tag=enmity.has_view,tag=!enmity.obstructed] facing entity @
 execute if entity @s[tag=enmity.has_view,tag=!enmity.obstructed] run data modify entity @e[type=marker,tag=enmity.direction_anchor,limit=1] Pos[1] set from entity @s Pos[1]
 execute if entity @s[tag=enmity.has_view,tag=!enmity.obstructed] facing entity @e[type=marker,tag=enmity.direction_anchor,limit=1] feet positioned ^ ^0.1 ^0.2 if block ~0.15 ~ ~0.15 #enmity:nimbus_flight if block ~-0.15 ~ ~0.15 #enmity:nimbus_flight if block ~0.15 ~ ~-0.15 #enmity:nimbus_flight if block ~-0.15 ~ ~-0.15 #enmity:nimbus_flight if block ~0.15 ~0.975 ~0.15 #enmity:nimbus_flight if block ~-0.15 ~0.975 ~0.15 #enmity:nimbus_flight if block ~0.15 ~0.975 ~-0.15 #enmity:nimbus_flight if block ~-0.15 ~0.975 ~-0.15 #enmity:nimbus_flight run tp @s ~ ~ ~ facing entity @p[gamemode=!creative,gamemode=!spectator]
 kill @e[type=marker,tag=enmity.direction_anchor]
+effect clear @s wither
 execute if entity @s[nbt={HurtTime:9s}] run function enmity:entities/mobs/visage/on_harm

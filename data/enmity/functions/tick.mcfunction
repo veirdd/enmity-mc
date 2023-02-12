@@ -41,8 +41,6 @@ execute as @a[gamemode=!spectator,tag=enmity.accessories.any.mobility] run funct
 execute as @a[gamemode=!spectator,tag=enmity.accessories.any.effect] run function enmity:misc/item_branch/tick/effect
 execute as @a[gamemode=!spectator,tag=enmity.accessories.any.strength] run function enmity:misc/item_branch/tick/strength
 
-# Items
-
 execute as @a if predicate enmity:entity/has_armor/hadal_set run effect clear @s darkness
 execute as @a if predicate enmity:entity/has_armor/celestial_set run function enmity:items/armor/celestial/tick
 function enmity:items/food/berserk_potion/particles

@@ -20,15 +20,6 @@
             "weight": 4,
             "functions": [
               {
-                "function": "minecraft:set_damage",
-                "damage": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 0.25
-                },
-                "add": false
-              },
-              {
                 "function": "minecraft:enchant_with_levels",
                 "levels": 30,
                 "treasure": true
@@ -40,15 +31,6 @@
             "type": "minecraft:item",
             "weight": 4,
             "functions": [
-              {
-                "function": "minecraft:set_damage",
-                "damage": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 0.25
-                },
-                "add": false
-              },
               {
                 "function": "minecraft:enchant_with_levels",
                 "levels": 30,

@@ -54,15 +54,6 @@
                 "function": "minecraft:set_count"
               },
               {
-                "add": false,
-                "damage": {
-                  "type": "minecraft:uniform",
-                  "max": 1,
-                  "min": 0.8
-                },
-                "function": "minecraft:set_damage"
-              },
-              {
                 "function": "minecraft:enchant_with_levels",
                 "levels": {
                   "type": "minecraft:uniform",

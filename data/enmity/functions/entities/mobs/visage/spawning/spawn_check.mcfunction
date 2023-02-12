@@ -1,2 +1,0 @@
-execute store result score @s enmity.math_a if entity @e[type=zombie,tag=enmity.visage,nbt=!{PersistenceRequired:1b},distance=..64]
-execute if score @s enmity.math_a matches ..6 run function enmity:entities/mobs/visage/spawning/spawn

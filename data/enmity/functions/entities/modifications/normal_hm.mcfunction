@@ -49,6 +49,8 @@ execute if entity @s[type=#enmity:remove_equipment_durability] run function enmi
 execute if entity @s[type=magma_cube,nbt={Size:0,PersistenceRequired:1b}] run function enmity:misc/despawn
 execute if entity @s[type=magma_cube] run attribute @s generic.movement_speed modifier add 0-0-0-0-0 "" 0.8 multiply_base
 execute if entity @s[type=zombified_piglin] at @s run function enmity:entities/mobs/tag_piglin/on_death
+execute if entity @s[type=piglin] if predicate enmity:environment/biome/crimson_forest if predicate enmity:random/random_0.2 run function enmity:entities/replacement_spawns/crimson_visage
+execute if entity @s[type=enderman] if predicate enmity:environment/biome/warped_forest if predicate enmity:random/random_0.25 run function enmity:entities/replacement_spawns/warped_visage
 
 scoreboard players set @s enmity.cooldown 0
 data modify entity @s Health set value 1024

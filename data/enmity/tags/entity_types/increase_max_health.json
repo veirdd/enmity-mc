@@ -26,6 +26,7 @@
       "minecraft:creeper",
       "minecraft:guardian",
       "minecraft:magma_cube",
-      "minecraft:slime"
+      "minecraft:slime",
+      "minecraft:witch"
     ]
 }

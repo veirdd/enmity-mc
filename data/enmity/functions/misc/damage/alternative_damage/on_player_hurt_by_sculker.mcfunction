@@ -1,7 +1,10 @@
 effect clear @s levitation
 effect give @s blindness 10 0
 tag @s add enmity.hit
-scoreboard players set @s enmity.taken_dmg 6
+execute if score %hardmode enmity.value matches 0 if score %difficulty enmity.value matches 1 run scoreboard players set @s enmity.taken_dmg 4
+execute if score %hardmode enmity.value matches 0 if score %difficulty enmity.value matches 2 run scoreboard players set @s enmity.taken_dmg 6
+execute if score %hardmode enmity.value matches 1 if score %difficulty enmity.value matches 1 run scoreboard players set @s enmity.taken_dmg 19
+execute if score %hardmode enmity.value matches 1 if score %difficulty enmity.value matches 2 run scoreboard players set @s enmity.taken_dmg 11
 execute if score @s enmity.dmg_rdc_mtp matches 0.. run scoreboard players operation @s enmity.taken_dmg *= @s enmity.dmg_rdc_mtp
 execute if score @s enmity.dmg_rdc_mtp matches 0.. run scoreboard players operation @s enmity.taken_dmg /= %const_100 enmity.value
 scoreboard players operation @s enmity.taken_dmg -= @s enmity.dmg_rdc

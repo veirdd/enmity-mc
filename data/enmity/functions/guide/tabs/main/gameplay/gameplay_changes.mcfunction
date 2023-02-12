@@ -16,6 +16,7 @@ tellraw @s [{"text":"   - Villagers and Wandering Traders regenerate health.","c
 tellraw @s [{"text":"   - Iron Golems regenerate health when in proximity of Villagers.","color":"gray"}]
 tellraw @s [{"text":"   - Geysers occassionaly erupt from lava in the Nether.","color":"gray"}]
 tellraw @s [{"text":"   - Falling into the End's void teleports you to the Overworld.","color":"gray"}]
+tellraw @s [{"text":"   - Regeneration from food is slightly lower, however satiation is reduced while player's health is not full to allow more frequent eating.","color":"gray"}]
 tellraw @s [{"text":"   - Campfires grant Regeneration if stood next to.","color":"gray"}]
 tellraw @s [{"text":"   - Leaves can be fallen into and are climbable.","color":"gray"}]
 tellraw @s [{"text":"   - Some crops drop experience upon harvesting.","color":"gray"}]

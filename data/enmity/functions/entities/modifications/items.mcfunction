@@ -15,5 +15,7 @@ execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"v
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"piglin"}}}] at @s run function enmity:entities/mobs/tag_piglin/on_death
 execute if entity @s[nbt={Item:{id:"minecraft:firework_star",tag:{Enmity.Type:"crop_xp"}}}] at @s run function enmity:misc/crop_xp
 execute if entity @s[nbt={Item:{id:"minecraft:elytra"}}] unless entity @s[nbt={Item:{tag:{Enmity:1}}}] run kill @s
+execute if entity @s[nbt={Item:{tag:{Enmity.BossLoot:1}}}] run function enmity:entities/other_entities/items/boss_loot/modification
+execute if entity @s[nbt={Item:{id:"minecraft:nether_star"}}] unless data entity @s Item.tag."Enmity.BossLoot" run kill @s
 execute if entity @s[nbt={Item:{tag:{Enmity.CustomBlock:1}}}] run kill @s
 execute unless entity @s[nbt={Age:0s}] run tag @s add enmity.modified
