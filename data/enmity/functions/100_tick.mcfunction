@@ -1,7 +1,7 @@
 # Items
 
-execute if entity @s[tag=enmity.accessories.any.strength] run function enmity:misc/item_branch/100_tick/strength
-execute if entity @s[tag=enmity.accessories.any.effect] run function enmity:misc/item_branch/100_tick/effect
+execute as @a if entity @s[tag=enmity.accessories.any.strength] run function enmity:misc/item_branch/100_tick/strength
+execute as @a if entity @s[tag=enmity.accessories.any.effect] run function enmity:misc/item_branch/100_tick/effect
 execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/hadal_set] at @s run particle shriek 0 ~ ~-0.2 ~ 0 0 0 0 1
 
 # Entities

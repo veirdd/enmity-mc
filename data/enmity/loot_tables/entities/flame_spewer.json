@@ -59,20 +59,65 @@
           "entries": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:netherite_scrap",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance_with_looting",
-                  "chance": 0.1,
-                  "looting_multiplier": 0.1
+              "name": "minecraft:netherite_scrap"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_looting",
+              "chance": 0.1,
+              "looting_multiplier": 0.1
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "%hardmode"
                 },
-                {
-                    "condition": "minecraft:location_check",
-                    "predicate": {
-                        "dimension": "minecraft:the_nether"
-                    }
-                }
-              ]
+                "score": "enmity.value",
+                "scale": 1
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:reference",
+              "name": "enmity:environment/in_the_nether"
+            }
+          ]
+        },
+        {
+          "rolls": 1,
+          "bonus_rolls": 0,
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_scrap"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_looting",
+              "chance": 0.25,
+              "looting_multiplier": 0.1
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "%hardmode"
+                },
+                "score": "enmity.value",
+                "scale": 1
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:reference",
+              "name": "enmity:environment/in_the_nether"
             }
           ]
         },
