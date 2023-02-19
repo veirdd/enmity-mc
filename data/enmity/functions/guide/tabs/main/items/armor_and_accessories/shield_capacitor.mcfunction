@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-============[","color":"gray"},{"text":"SHIELD CAPACITOR","color":"white","bold":true},{"text":"]===========-","color":"gray"}]
 
-tellraw @s [{"text":"Description:\n   Accessory type: effect\n   Allows you to deflect magic damage once. Deflecting damage disables the protection. You must wait 2 minutes to recharge the shield. Recharging is disrupted if you take magic damage.","color":"gray"}]
+tellraw @s [{"text":"Description:\n   Accessory type: effect\n   Allows you to deflect magic damage once. Deflecting damage disables the protection. You must wait 1 minute to recharge the shield. Recharging is disrupted if you take magic damage.","color":"gray"}]
 tellraw @s [{"text":"\nPrimary obtaining method:\n   Enchantment crafting:\n      Conduit\n      Diamond (2)\n      Netherite Ingot (2)\n      Iron Ingot (8)","color":"gray"}]
 
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

@@ -47,3 +47,7 @@ execute if score @s enmity.guide matches 111046 run function enmity:guide/tabs/m
 execute if score @s enmity.guide matches 111047 run function enmity:guide/tabs/main/items/magic_weapons/dazzling_rod
 execute if score @s enmity.guide matches 111048 run function enmity:guide/tabs/main/items/magic_weapons/sculk_verge
 execute if score @s enmity.guide matches 111049 run function enmity:guide/tabs/main/items/magic_weapons/crystalline_twig
+execute if score @s enmity.guide matches 111050 run function enmity:guide/tabs/main/items/magic_weapons/magical_pistol
+execute if score @s enmity.guide matches 111051 run function enmity:guide/tabs/main/items/magic_weapons/magical_boomstick
+execute if score @s enmity.guide matches 111052 run function enmity:guide/tabs/main/items/magic_weapons/magical_blaster
+execute if score @s enmity.guide matches 111053 run function enmity:guide/tabs/main/items/magic_weapons/magical_rifle

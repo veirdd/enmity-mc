@@ -70,10 +70,6 @@ execute as @e[type=zombie,tag=enmity.call_of_the_undead] at @s run function enmi
 execute as @e[type=guardian,tag=enmity.guardian_sentry,scores={enmity.age=0}] at @s run function enmity:items/usable/guardian_thorn/die
 execute as @e[type=guardian,tag=enmity.guardian_sentry] at @s run function enmity:items/usable/guardian_thorn/20_tick
 
-# Items
-
-execute as @a[gamemode=!spectator,nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:70}}]}] at @s run function enmity:items/accessories/wither_rose_ring/20_tick
-
 # Entities
 
 execute as @e[type=skeleton,tag=enmity.wraith] at @s run function enmity:entities/mobs/wraith/20_tick

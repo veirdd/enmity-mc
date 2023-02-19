@@ -18,6 +18,10 @@ execute if score @s enmity.use matches 76 run scoreboard players add @s enmity.m
 execute if score @s enmity.use matches 77 run scoreboard players add @s enmity.max_hp 4
 execute if score @s enmity.use matches 78 run scoreboard players add @s enmity.max_hp 12
 execute if score @s enmity.use matches 78 run tag @s add enmity.accessories.elemental_emblem
+execute if score @s enmity.use matches 55 run tag @s add enmity.accessories.heart_of_the_overworld
+execute if score @s enmity.use matches 56 run tag @s add enmity.accessories.heart_of_the_nether
+execute if score @s enmity.use matches 76 run tag @s add enmity.accessories.heart_of_light
+execute if score @s enmity.use matches 77 run tag @s add enmity.accessories.heart_of_darkness
 execute if score @s enmity.use matches 51 run attribute @s generic.armor modifier add 0-0-0-0-1 "" 2 add
 execute if score @s enmity.use matches 58 run attribute @s generic.attack_damage modifier add 0-0-0-0-1 "" 0.15 multiply
 execute if score @s enmity.use matches 61 run attribute @s generic.attack_speed modifier add 0-0-0-0-1 "" 0.2 multiply

@@ -61,5 +61,9 @@ execute if entity @s[type=player,scores={enmity.use=116}] at @s anchored eyes ru
 execute if entity @s[type=player,scores={enmity.use=117}] at @s anchored eyes run function enmity:items/usable/crystalline_twig/raycast
 execute if entity @s[scores={enmity.use=122,enmity.mana=70..}] at @s run function enmity:items/usable/healing_bolt/use
 execute if entity @s[type=player,scores={enmity.use=123}] at @s anchored eyes run function enmity:items/usable/circle_of_vigour/raycast
+execute if entity @s[scores={enmity.use=126,enmity.mana=40..}] at @s run function enmity:items/usable/magical_pistol/use
+execute if entity @s[scores={enmity.use=127,enmity.mana=180..}] at @s run function enmity:items/usable/magical_boomstick/use
+execute if entity @s[scores={enmity.use=128,enmity.mana=30..}] at @s run function enmity:items/usable/magical_blaster/use
+execute if entity @s[scores={enmity.use=129,enmity.mana=100..}] at @s run function enmity:items/usable/magical_rifle/use
 
 scoreboard players set @s enmity.use 0

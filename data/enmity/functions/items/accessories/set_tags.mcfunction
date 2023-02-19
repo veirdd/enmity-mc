@@ -19,6 +19,15 @@ tag @s remove enmity.accessories.shield_capacitor
 tag @s remove enmity.accessories.elemental_talisman
 tag @s remove enmity.accessories.mana_capacitor
 tag @s remove enmity.accessories.warped_glyph
+tag @s remove enmity.accessories.heart_of_the_overworld
+tag @s remove enmity.accessories.heart_of_the_nether
+tag @s remove enmity.accessories.heart_of_light
+tag @s remove enmity.accessories.heart_of_darkness
+tag @s remove enmity.accessories.elemental_emblem
+tag @s remove enmity.accessories.frostfire_charm
+tag @s remove enmity.accessories.fiery_charm
+tag @s remove enmity.accessories.frozen_charm
+tag @s remove enmity.accessories.fathomless_amulet
 execute if entity @s[nbt={Inventory:[{Slot:12b,tag:{Enmity:1,CustomModelData:124}}]}] run tag @s add enmity.accessories.soul_gem
 execute if entity @s[tag=!enmity.accessories.soul_gem,nbt={Inventory:[{Slot:9b,tag:{Enmity.ItemGroups:["accessories","mana"]}}]}] run tag @s add enmity.accessories.inventory.mana
 execute if entity @s[tag=!enmity.accessories.soul_gem,nbt={Inventory:[{Slot:10b,tag:{Enmity.ItemGroups:["accessories","strength"]}}]}] run tag @s add enmity.accessories.inventory.strength

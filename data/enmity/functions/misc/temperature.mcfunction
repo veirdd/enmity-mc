@@ -52,15 +52,16 @@ execute if score @s enmity.temp matches -2 if entity @s[nbt={SelectedItem:{id:"m
 
 execute if predicate enmity:entity/has_armor/wool_set run scoreboard players add @s enmity.temp 2
 execute if predicate enmity:entity/has_effect/fire_resistance if score @s enmity.temp matches 1.. run scoreboard players set @s enmity.temp 0
-scoreboard players set @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:56}}]}] enmity.temp 0
-scoreboard players set @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:55}}]}] enmity.temp 0
-execute if score @s enmity.temp matches 1.. run scoreboard players set @s[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:82}}]}] enmity.temp 0
-execute if score @s enmity.temp matches ..-1 run scoreboard players set @s[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:81}}]}] enmity.temp 0
-execute if score @s enmity.temp matches ..-1 run scoreboard players set @s[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:107}}]}] enmity.temp 0
-scoreboard players set @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:76}}]}] enmity.temp 0
-scoreboard players set @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:77}}]}] enmity.temp 0
-scoreboard players set @s[nbt={Inventory:[{Slot:10b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:78}}]}] enmity.temp 0
-scoreboard players set @s[nbt={Inventory:[{Slot:12b,id:"minecraft:warped_fungus_on_a_stick",tag:{CustomModelData:119}}]}] enmity.temp 0
+scoreboard players set @s[tag=enmity.accessories.heart_of_the_overworld] enmity.temp 0
+scoreboard players set @s[tag=enmity.accessories.heart_of_the_nether] enmity.temp 0
+scoreboard players set @s[tag=enmity.accessories.heart_of_light] enmity.temp 0
+scoreboard players set @s[tag=enmity.accessories.heart_of_darkness] enmity.temp 0
+scoreboard players set @s[tag=enmity.accessories.elemental_emblem] enmity.temp 0
+scoreboard players set @s[tag=enmity.accessories.frostfire_charm] enmity.temp 0
+execute if score @s enmity.temp matches 1.. run scoreboard players set @s[tag=enmity.accessories.fiery_charm] enmity.temp 0
+execute if score @s enmity.temp matches ..-1 run scoreboard players set @s[tag=enmity.accessories.frozen_charm] enmity.temp 0
+execute if score @s enmity.temp matches ..-1 run scoreboard players set @s[tag=enmity.accessories.fathomless_amulet] enmity.temp 0
+
 execute if score @s enmity.temp matches ..-5 if score @s enmity.temp_cd matches -19.. run scoreboard players remove @s enmity.temp_cd 1
 execute if score @s enmity.temp matches ..-4 if score @s enmity.temp_cd matches -19.. run scoreboard players remove @s enmity.temp_cd 1
 execute if score @s enmity.temp matches ..-3 if score @s enmity.temp_cd matches -19.. run scoreboard players remove @s enmity.temp_cd 1
@@ -69,5 +70,6 @@ execute if score @s enmity.temp matches 4.. if score @s enmity.temp_cd matches .
 execute if score @s enmity.temp matches 5.. if score @s enmity.temp_cd matches ..19 run scoreboard players add @s enmity.temp_cd 1
 execute if score @s enmity.temp matches -2..2 if score @s enmity.temp_cd matches 1.. run scoreboard players remove @s enmity.temp_cd 1
 execute if score @s enmity.temp matches -2..2 if score @s enmity.temp_cd matches ..-1 run scoreboard players add @s enmity.temp_cd 1
+
 scoreboard players set @s[gamemode=!adventure,gamemode=!survival] enmity.temp_cd 0
 scoreboard players set @s[scores={enmity.age=..1200}] enmity.temp_cd 0
