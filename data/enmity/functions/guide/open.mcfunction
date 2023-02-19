@@ -8,7 +8,7 @@ execute if score @s enmity.guide matches 1 run function enmity:guide/tabs/main
             execute if score @s enmity.guide matches 112001..112099 run function enmity:guide/open/armor_and_accessories
         execute if score @s enmity.guide matches 113 run function enmity:guide/tabs/main/items/other_items
             execute if score @s enmity.guide matches 113001..113099 run function enmity:guide/open/other_items
-        execute if score @s enmity.guide matches 114 run function enmity:guide/tabs/main/items/modified_vanilla_items
+        execute if score @s enmity.guide matches 114 run function enmity:guide/tabs/main/items/modified_vanilla_items/highlights/null
             execute if score @s enmity.guide matches 1141 run function enmity:guide/tabs/main/items/modified_vanilla_items/saplings
             execute if score @s enmity.guide matches 1142 run function enmity:guide/tabs/main/items/modified_vanilla_items/bundle
             execute if score @s enmity.guide matches 1143 run function enmity:guide/tabs/main/items/modified_vanilla_items/enchanted_golden_apple

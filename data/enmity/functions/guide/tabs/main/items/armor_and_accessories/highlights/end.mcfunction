@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-=========[","color":"gray"},{"text":"ARMOR AND ACCESSORIES","color":"white","bold":true},{"text":"]========-","color":"gray"}]
 
-tellraw @s [{"text":"Items which can be obtained at the current stage of progression are","color":"gray"},{"text":" highlighted","color":"green"},{"text":".\n","color":"gray"}]
+tellraw @s [{"text":"Items available since previous stages of progression are marked","color":"gray"},{"text":" green","color":"green"},{"text":". Items made available at the current stage of progression are marked","color":"gray"},{"text":" yellow","color":"yellow"},{"text":".\n","color":"gray"}]
 
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Amethyst Armor","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Amethyst Armor"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112001"}},{"text":"]","color":"gray"}]
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Ancient Bone Dust","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Ancient Bone Dust"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 112002"}},{"text":"]","color":"gray"}]

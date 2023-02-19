@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-=============[","color":"gray"},{"text":"MAGIC WEAPONS","color":"white","bold":true},{"text":"]=============-","color":"gray"}]
 
-tellraw @s [{"text":"Items which can be obtained at the current stage of progression are","color":"gray"},{"text":" highlighted","color":"green"},{"text":".\n","color":"gray"}]
+tellraw @s [{"text":"Items available since previous stages of progression are marked","color":"gray"},{"text":" green","color":"green"},{"text":". Items made available at the current stage of progression are marked","color":"gray"},{"text":" yellow","color":"yellow"},{"text":".\n","color":"gray"}]
 
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Alliance Rod","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Alliance Rod"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111001"}},{"text":"]","color":"gray"}]
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Aquaflame Bolt","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Aquaflame Bolt"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111002"}},{"text":"]","color":"gray"}]
@@ -50,6 +50,6 @@ tellraw @s [{"text":"   [","color":"gray"},{"text":"Water Bolt","color":"green",
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Web Slinger","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Web Slinger"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111046"}},{"text":"]","color":"gray"}]
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Withered Scepter","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Withered Scepter"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111044"}},{"text":"]","color":"gray"}]
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Withering Beam Staff","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Withering Beam Staff"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111045"}},{"text":"]","color":"gray"}]
-tellraw @s [{"text":"   [","color":"gray"},{"text":"???","color":"green","hoverEvent":{"action":"show_text","value":{"text":"???"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111010"}},{"text":"]","color":"gray"}]
+tellraw @s [{"text":"   [","color":"gray"},{"text":"???","color":"yellow","hoverEvent":{"action":"show_text","value":{"text":"???"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 111010"}},{"text":"]","color":"gray"}]
 
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":" ◀ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Back"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 11"}},{"text":"]=====[","color":"gray"},{"text":" ⌂ ","color":"white","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Home"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide"}},{"text":"]==============-","color":"gray"}]

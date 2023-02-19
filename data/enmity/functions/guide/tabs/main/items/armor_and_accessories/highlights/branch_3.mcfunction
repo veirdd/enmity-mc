@@ -1,0 +1,2 @@
+execute unless score %ender_dragon_defeated enmity.value matches 1 run function enmity:guide/tabs/main/items/armor_and_accessories/highlights/pre_ender_dragon
+execute if score %ender_dragon_defeated enmity.value matches 1 run function enmity:guide/tabs/main/items/armor_and_accessories/highlights/end

@@ -1,6 +1,6 @@
 tellraw @s [{"text":"-==============[","color":"gray"},{"text":"OTHER ITEMS","color":"white","bold":true},{"text":"]==============-","color":"gray"}]
 
-tellraw @s [{"text":"Items which can be obtained at the current stage of progression are","color":"gray"},{"text":" highlighted","color":"green"},{"text":".\n","color":"gray"}]
+tellraw @s [{"text":"Items available since previous stages of progression are marked","color":"gray"},{"text":" green","color":"green"},{"text":". Items made available at the current stage of progression are marked","color":"gray"},{"text":" yellow","color":"yellow"},{"text":".\n","color":"gray"}]
 
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Acacia Seed","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Acacia Seed"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 113001"}},{"text":"]","color":"gray"}]
 tellraw @s [{"text":"   [","color":"gray"},{"text":"Birch Catkin","color":"green","hoverEvent":{"action":"show_text","value":{"text":"Birch Catkin"}},"clickEvent":{"action":"run_command","value":"/trigger enmity.guide set 113001"}},{"text":"]","color":"gray"}]

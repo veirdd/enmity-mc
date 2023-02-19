@@ -1,2 +1,0 @@
-execute unless score %elder_guardian_defeated enmity.value matches 1 run function enmity:guide/tabs/main/items/modified_vanilla_items/highlights/pre_elder_guardian
-execute if score %elder_guardian_defeated enmity.value matches 1 run function enmity:guide/tabs/main/items/modified_vanilla_items/highlights/post_elder_guardian
