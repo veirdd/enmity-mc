@@ -6,6 +6,7 @@ execute as @a[gamemode=!spectator,predicate=enmity:entity/has_armor/hadal_set] a
 
 # Entities
 
+execute as @e[type=item,nbt={Item:{id:"minecraft:firework_star",Count:1b,tag:{Enmity:1,CustomModelData:10}}}] at @s run function enmity:entities/other_entities/items/elder_guardian_scale/100_tick
 execute as @e[type=iron_golem] at @s if entity @e[type=villager,distance=..8] run effect give @s regeneration 5 0
 execute as @e[type=marker,tag=enmity.tower_dungeon_spawner] at @s if entity @p[distance=..10,gamemode=!spectator] run function enmity:entities/other_entities/tower_dungeon/spawner/100_tick
 
