@@ -3,7 +3,7 @@ attribute @s generic.max_health modifier add 0-0-0-0-0 "" 820 add
 data merge entity @s[tag=!enmity.boss] {DeathLootTable:"minecraft:empty"}
 data merge entity @s[tag=enmity.boss] {Silent:1,NoAI:1}
 scoreboard players set @s enmity.dmg_rdc 7
-scoreboard players set @s enmity.dmg_rdc_mtp 50
+scoreboard players set @s enmity.dmg_rdc_mtp 75
 scoreboard players set @s enmity.math_a 0
 scoreboard players set @s enmity.cooldown 0
 scoreboard players set @s enmity.dmg 18

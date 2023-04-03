@@ -9,6 +9,7 @@ effect clear @a absorption
 effect clear @e[type=!#enmity:not_living] levitation
 clear @a #enmity:used_as_projectiles{Enmity.DeleteItem:1}
 clear @a knowledge_book
+kill @e[type=armor_stand,tag=enmity.eternal]
 
 # Stats
 
